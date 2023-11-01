@@ -10,6 +10,6 @@ Volume Gateway: Offers block storage volumes over iSCSI, backed by Amazon S3, wi
 
 Common use cases for AWS Storage Gateway include moving backups to the cloud, presenting on-premises file shares backed by cloud storage, and providing low-latency access to cloud-stored data for on-premises applications. It simplifies storage management, reduces costs, and enhances data accessibility in a hybrid cloud environment.
 
-<image src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e0a373f6-400c-4337-bb00-99df3ce32e00" height="500" width="500">
+<image src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e0a373f6-400c-4337-bb00-99df3ce32e00">
 
 
