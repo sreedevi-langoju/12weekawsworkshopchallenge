@@ -60,5 +60,17 @@ Before you configure the File Gateway, you must create the primary S3 bucket (or
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/de478cfe-76de-4883-89e7-3b20f58cde35" height="300" width="500">
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/15211fc1-5b7f-480c-a191-825873c02576"height="300" width="500">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/15211fc1-5b7f-480c-a191-825873c02576" height="300" width="500">
+
+4. Return to and select the link to the bucket you created in the US East (Ohio) Region.
+   
+5. Choose Upload to upload a file from your local computer to the bucket.( Ex:  ![amazon-s3-aws-storage-classes](https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/0ae0a17c-ef36-4f85-8b13-6b08e34979fd))
+
+6. Choose Add files, locate and open the file, then choose Upload 
+7. Wait for the file to upload, then choose Close. Return to the bucket you created in the US West (Oregon) Region. 
+The file that you uploaded should also now have been copied to this bucket.
+
+  Note: You may need to refresh  the console for the object to appear.
+
+
 
