@@ -25,27 +25,17 @@ In this lab, you will :
 
 Before you configure the File Gateway, you must create the primary S3 bucket (or the source) where you will replicate the data. You will also create the secondary bucket (or the destination) that will be used for cross-Region replication.
 
-1. In the search box to the right of  Services, search for and choose S3 to open the S3 console.
+1. Open the AWS Management Console and navigate to the S3 service.
+2. Create the primary S3 bucket in the US East (Ohio) region with versioning enabled.
+   * Bucket name: Create a name . It must be globally unique. Ex: 
+   * Region: US East (Ohio) us-east-2
+   * Bucket Versioning: Enable
 
+     Note :  For cross-Region replication, you must enable versioning for both the source and destination buckets.
+ <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/667e40d8-652b-4505-bb7a-d5ad979e0328" height="300" width="300">
 
-Choose Create bucket then configure these settings:
-
-Bucket name: Create a name that you can remember easily. It must be globally unique.
-
-Region: US East (Ohio) us-east-2
-
-Bucket Versioning: Enable
-
- For cross-Region replication, you must enable versioning for both the source and destination buckets.  
-
- 
-
-Choose Create bucket
-
- 
-
-Repeat the previous steps in this task to create a second bucket with the following configuration:
-
-Bucket name: Create a name you can easily remember. It must be globally unique.
-Region: US West (Oregon) us-west-2
-Versioning: Enable
+ 3. Create a second bucket in the US West (Oregon) region with versioning enabled.
+   * Bucket name: Create a name . It must be globally unique. Ex: 
+   * Region: US West (Oregon) us-west-2
+   * Bucket Versioning: Enable
+  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/25ddff80-152d-4b36-871a-91cf5b1c6d92" height="300" width="300">
