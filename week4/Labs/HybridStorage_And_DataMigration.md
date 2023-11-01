@@ -97,14 +97,20 @@ In this task, you will deploy the File Gateway appliance as an Amazon Elastic Co
 
     * Gateway type: Amazon S3 File Gateway
 
-    * Host platform: choose Amazon EC2. Choose Customize your settings. Then choose the <b>Launch instance</b> button.
+    * Host platform: choose <b>Amazon EC2</b>. Choose <b>Customize your settings</b>. Then choose the <b>Launch instance</b> button.
 
-      <img src="![image](https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/2814d019-8688-4b98-88f5-ca70069dcab1)">
-      <img src="![image](https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/daec1783-e274-4953-9343-169b91fded8a)">
-
-
+      <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/2814d019-8688-4b98-88f5-ca70069dcab1">
+      <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/daec1783-e274-4953-9343-169b91fded8a">
   
 3. A new tab opens to the EC2 instance launch wizard. This link automatically selects the correct Amazon Machine Image (AMI) that must be used for the File Gateway appliance.
+   
+4. In the Launch an instance screen, begin configuring the gateway as described:
+
+    * Name: File Gateway Appliance
+
+    * AMI from catalog: Accept the default aws-storage-gateway AMI.
+  
+    * Instance type: Select the t2.xlarge instance type
 
 
 
