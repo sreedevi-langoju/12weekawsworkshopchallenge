@@ -20,6 +20,7 @@ In this lab, you will :
 * The Storage Gateway virtual appliance is also deployed in the same Region as the Linux server.
 * The primary S3 bucket (source) is created in the us-east-2 (Ohio) Region.
 * The secondary S3 bucket (destination) is created in the us-west-2 (Oregon) Region.
+  
 
 ## Step 1: Creating Primary and Secondary S3 Buckets
 
@@ -39,6 +40,7 @@ Before you configure the File Gateway, you must create the primary S3 bucket (or
    * Region: US West (Oregon) us-west-2
    * Bucket Versioning: Enable
   <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/25ddff80-152d-4b36-871a-91cf5b1c6d92" height="300" width="500">
+
 
 
 ## Step 2: Enabling Cross-Region Replication
@@ -78,6 +80,7 @@ Before you configure the File Gateway, you must create the primary S3 bucket (or
   Note: You may need to refresh  the console for the object to appear.
 
 
+
 ## Step 3: Configuring the File Gateway and creating an NFS file share
 
 In this task, you will deploy the File Gateway appliance as an Amazon Elastic Compute Cloud (Amazon EC2) instance. You will then configure a cache disk, select an S3 bucket to synchronize your on-premises files to, and select an IAM policy to use. Finally, you will create an NFS file share on the File Gateway.
@@ -94,7 +97,7 @@ In this task, you will deploy the File Gateway appliance as an Amazon Elastic Co
 
     * Gateway type: Amazon S3 File Gateway
 
-    * Host platform: choose Amazon EC2. Choose Customize your settings. Then choose the             Launch instance button.
+    * Host platform: choose Amazon EC2. Choose Customize your settings. Then choose the <b>Launch instance</b> button.
 
       <img src="![image](https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/2814d019-8688-4b98-88f5-ca70069dcab1)">
       <img src="![image](https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/daec1783-e274-4953-9343-169b91fded8a)">
