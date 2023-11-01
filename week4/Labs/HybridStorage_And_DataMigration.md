@@ -64,13 +64,44 @@ Before you configure the File Gateway, you must create the primary S3 bucket (or
 
 4. Return to and select the link to the bucket you created in the US East (Ohio) Region.
    
-5. Choose Upload to upload a file from your local computer to the bucket.( Ex:  ![amazon-s3-aws-storage-classes](https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/0ae0a17c-ef36-4f85-8b13-6b08e34979fd))
+5. Choose Upload to upload a file from your local computer to the bucket.( You can download the attached png file to upload )
 
 6. Choose Add files, locate and open the file, then choose Upload 
-7. Wait for the file to upload, then choose Close. Return to the bucket you created in the US West (Oregon) Region. 
-The file that you uploaded should also now have been copied to this bucket.
+7. Wait for the file to upload, then choose Close. 
+
+ <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/7b32fb23-4306-4402-842e-c7ebf71e2173" >
+
+8. Return to the bucket you created in the <b> US West (Oregon) Region </b>.The file that you uploaded should also now have been copied to this bucket.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/f4db1fbf-0017-4ee8-813f-c745aed50267">
 
   Note: You may need to refresh  the console for the object to appear.
+
+
+## Step 3: Configuring the File Gateway and creating an NFS file share
+
+In this task, you will deploy the File Gateway appliance as an Amazon Elastic Compute Cloud (Amazon EC2) instance. You will then configure a cache disk, select an S3 bucket to synchronize your on-premises files to, and select an IAM policy to use. Finally, you will create an NFS file share on the File Gateway.
+
+1. In the search box to the right of  Services, search for and choose Storage Gateway to open the Storage Gateway console.
+ 
+2. At the top-right of the console, verify that the current Region is N. Virginia.
+
+   Choose Create gateway then begin configuring the Step 1: Set up gateway settings:
+
+    * Gateway name: File Gateway
+
+    * Gateway time zone: Choose GMT -5:00 Eastern Time (US & Canada), Bogota, Lima
+
+    * Gateway type: Amazon S3 File Gateway
+
+    * Host platform: choose Amazon EC2. Choose Customize your settings. Then choose the             Launch instance button.
+
+      <img src="![image](https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/2814d019-8688-4b98-88f5-ca70069dcab1)">
+      <img src="![image](https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/daec1783-e274-4953-9343-169b91fded8a)">
+
+
+  
+3. A new tab opens to the EC2 instance launch wizard. This link automatically selects the correct Amazon Machine Image (AMI) that must be used for the File Gateway appliance.
 
 
 
