@@ -13,7 +13,7 @@ In this lab, you will :
   
  Let's get started:
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/b05f35f2-a9e3-4ed8-b685-5ddc5388f075" height="600" width="600">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/b05f35f2-a9e3-4ed8-b685-5ddc5388f075" height="600" width="800">
 
 * This lab utilizes three AWS Regions.
 * A Linux EC2 instance emulating an on-premises server is deployed in the us-east-1 (N. Virginia) Region.
@@ -32,10 +32,33 @@ Before you configure the File Gateway, you must create the primary S3 bucket (or
    * Bucket Versioning: Enable
 
      Note :  For cross-Region replication, you must enable versioning for both the source and destination buckets.
- <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/667e40d8-652b-4505-bb7a-d5ad979e0328" height="300" width="300">
+ <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/667e40d8-652b-4505-bb7a-d5ad979e0328" height="300" width="500">
 
  3. Create a second bucket in the US West (Oregon) region with versioning enabled.
    * Bucket name: Create a name . It must be globally unique. Ex: 
    * Region: US West (Oregon) us-west-2
    * Bucket Versioning: Enable
-  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/25ddff80-152d-4b36-871a-91cf5b1c6d92" height="300" width="300">
+  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/25ddff80-152d-4b36-871a-91cf5b1c6d92" height="300" width="500">
+
+
+## Step 2: Enabling Cross-Region Replication
+
+1. Select the primary (source) bucket in the US East (Ohio) Region.
+2. Go to the Management tab and create a replication rule.
+    * Replication rule name: crr-full-bucket
+    * Status : Enabled
+    * Source bucket:
+       * For Choose a rule scope, select  Apply to all objects in the bucket
+    * Destination:
+       * Choose a bucket in this account
+       * Choose Browse S3 and select the bucket you created in the US West (Oregon) Region.
+       * Select Choose path
+       * IAM role: S3-CRR-Role(This was pre-created IAM role with required permissions)
+
+3. Save the rule and choose not to replicate existing objects.
+   <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/4927a0fc-706a-4033-9981-026001c3b3f9">
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/de478cfe-76de-4883-89e7-3b20f58cde35" height="300" width="500">
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/15211fc1-5b7f-480c-a191-825873c02576"height="300" width="500">
+
