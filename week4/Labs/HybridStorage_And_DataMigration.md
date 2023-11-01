@@ -99,8 +99,8 @@ In this task, you will deploy the File Gateway appliance as an Amazon Elastic Co
 
     * Host platform: choose <b>Amazon EC2</b>. Choose <b>Customize your settings</b>. Then choose the <b>Launch instance</b> button.
 
-      <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/2814d019-8688-4b98-88f5-ca70069dcab1">
-      <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/daec1783-e274-4953-9343-169b91fded8a">
+      <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/2814d019-8688-4b98-88f5-ca70069dcab1" height="500" width="300">
+      <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/daec1783-e274-4953-9343-169b91fded8a" height="500" width="300">
   
 3. A new tab opens to the EC2 instance launch wizard. This link automatically selects the correct Amazon Machine Image (AMI) that must be used for the File Gateway appliance.
    
@@ -111,6 +111,42 @@ In this task, you will deploy the File Gateway appliance as an Amazon Elastic Co
     * AMI from catalog: Accept the default aws-storage-gateway AMI.
   
     * Instance type: Select the t2.xlarge instance type
+      
+    * Key pair name - required: choose the existing vockey key pair.
+      
+    * Configure the network and security group settings for the gateway.
 
+        Next to Network settings, choose Edit, then configure: 
+
+        * VPC: On-Prem-VPC
+        * Subnet: On-Prem-Subnet
+        * Auto-assign public IP: Enable
+        * Under Firewall (security groups), choose  Select an existing security group.
+          
+             * Select the security group with <b> FileGatewayAccess </b> in the name
+
+              Note: This security group is configured to allow traffic through ports 80 (HTTP), 443 (HTTPS), 53 (DNS), 123 (NTP), and 2049 (NFS). These ports enable the activation of                  the File Gateway appliance. They also enable connectivity from the Linux server to the NFS share that you will create on the File Gateway.
+          
+             * Also select the security group with OnPremSshAccess in the name
+
+              Note: This security group is configured to allow Secure Shell (SSH) connections on port 22.
+
+              Verify that both security group now appear as selected (details on each will appear in boxes in the console). 
+
+              Tip: You may need to choose Show all selected to see them both.
+          
+  * Configure the storage settings for the gateway.
+
+      In the Configure storage panel, notice there is already an entry to create one 80GiB root volume.
+
+        Choose <b> Add </b> new volume . Set the size of the EBS volume to 150GiB
+    
+  * Finish creating the gateway.
+
+  * In the Summary panel on the right, keep the number of instances set to 1, and choose Launch instance
+
+  * A Success message displays.Choose View all instances
+
+  * Your File Gateway Appliance instance will take a few minutes to initialize.
 
 
