@@ -3,5 +3,49 @@
 Introduction:
 In this lab, I will walk you through the process of setting up an AWS Storage Gateway File Gateway to facilitate hybrid storage and data migration. This lab helps you configure a File Gateway with an NFS file share, attach it to a Linux instance, and migrate data to an Amazon S3 bucket. You will also see how to configure advanced Amazon S3 features, including lifecycle policies and cross-Region replication.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/b05f35f2-a9e3-4ed8-b685-5ddc5388f075" height="300" width="300">
+In this lab, you will :
 
+* Configure a File Gateway with an NFS file share and attach it to a Linux instance
+* Migrate a set of data from the Linux instance to an S3 bucket
+* Create and configure a primary S3 bucket to migrate on-premises server data to AWS
+* Create and configure a secondary S3 bucket to use for cross-Region replication
+* Create an S3 lifecycle policy to automatically manage data in a bucket
+  
+ Let's get started:
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/b05f35f2-a9e3-4ed8-b685-5ddc5388f075" height="600" width="600">
+
+* This lab utilizes three AWS Regions.
+* A Linux EC2 instance emulating an on-premises server is deployed in the us-east-1 (N. Virginia) Region.
+* The Storage Gateway virtual appliance is also deployed in the same Region as the Linux server.
+* The primary S3 bucket (source) is created in the us-east-2 (Ohio) Region.
+* The secondary S3 bucket (destination) is created in the us-west-2 (Oregon) Region.
+
+## Step 1: Creating Primary and Secondary S3 Buckets
+
+Before you configure the File Gateway, you must create the primary S3 bucket (or the source) where you will replicate the data. You will also create the secondary bucket (or the destination) that will be used for cross-Region replication.
+
+1. In the search box to the right of  Services, search for and choose S3 to open the S3 console.
+
+
+Choose Create bucket then configure these settings:
+
+Bucket name: Create a name that you can remember easily. It must be globally unique.
+
+Region: US East (Ohio) us-east-2
+
+Bucket Versioning: Enable
+
+ For cross-Region replication, you must enable versioning for both the source and destination buckets.  
+
+ 
+
+Choose Create bucket
+
+ 
+
+Repeat the previous steps in this task to create a second bucket with the following configuration:
+
+Bucket name: Create a name you can easily remember. It must be globally unique.
+Region: US West (Oregon) us-west-2
+Versioning: Enable
