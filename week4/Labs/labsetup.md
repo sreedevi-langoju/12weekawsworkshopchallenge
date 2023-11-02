@@ -119,46 +119,43 @@ Let's get started by setting up each of these components to ensure you're well-p
       b. Find the route table associated with your public subnet: On-Prem-Subnet
       c. Edit the route table and add a route with destination 0.0.0.0/0 and target as the On-Prem-IGW ,the Internet Gateway you created.
 
+#### Security Groups:
 
+To Create Security Groups:
 
+   a. Go to the EC2 Dashboard.
+   b. In the left navigation pane, under "Network & Security," click on "Security Groups."
+   c. Click the "Create Security Group" button.
+   d. Create the first security group for your EC2 instance, which we'll call "FileGatewayAccess." This security group will control inbound                traffic to your instance. Configure the following rules:
 
+      Inbound Rules:
+       This security group is configured to allow traffic through ports 80 (HTTP), 443 (HTTPS), 53 (DNS), 123 (NTP), and 2049 (NFS). These ports            enable the activation of the File Gateway appliance. They also enable connectivity from the Linux server to the NFS share that you will              create on the File Gateway.
+       
+      Outbound Rules:
+      All traffic: Allow all outbound traffic to anywhere.   
+         
+   e. Create the second security group, which we'll call "OnPremSshAccess." 
 
+      Inbound Rules:
+      This security group This security group is configured to allow Secure Shell (SSH) connections on port 22.
 
+      Outbound Rules:
+      All traffic: Allow all outbound traffic to anywhere.  
 
+#### Launch an EC2 Instance:
 
-   7. Create or Use an Existing Key Pair:
+   a. Go to the EC2 Dashboard.
+   b. Click the "Launch Instances" button.
+   c. Choose an Amazon Machine Image (AMI) for your Linux instance.
+   d. Instance Name : "On-Prem Linux Server"  Select an instance type: .
+   e. Configure the instance details.VPC : On-Prem-VPC and Subnet: On-Prem-Subnet, the public subnet you created.
+   f. Configure the instance details, including security groups.
+ 
+   g. Create or Use an Existing Key Pair:
 
       If you don't have an existing EC2 key pair, you can create one. You will need this key pair to SSH into your EC2 instance. You can manage key        pairs in the "Key Pairs" section of the EC2 Dashboard.
 
-   5. Create Security Groups:
-
-a. Go to the EC2 Dashboard.
-
-b. In the left navigation pane, under "Network & Security," click on "Security Groups."
-
-c. Click the "Create Security Group" button.
-
-d. Create the first security group for your EC2 instance, which we'll call "WebServerSG." This security group will control inbound traffic to your instance. Configure the following rules:
-
-Inbound Rules:
-SSH (Secure Shell): Allow inbound traffic on port 22 (for SSH access) from your IP or IP range.
-HTTP: Allow inbound traffic on port 80 (for web traffic) from anywhere.
-HTTPS: Allow inbound traffic on port 443 (for secure web traffic) from anywhere.
-e. Create the second security group, which we'll call "DatabaseSG." This security group will control outbound traffic from your EC2 instance. Configure the following rule:
-
-Outbound Rules:
-All traffic: Allow all outbound traffic to anywhere.
-
-7. Launch an EC2 Instance:
-
-a. Go to the EC2 Dashboard.
-b. Click the "Launch Instances" button.
-c. Choose an Amazon Machine Image (AMI) for your Linux instance.
-d. Select an instance type.
-e. Configure the instance details. In the "Subnet" section, select the public subnet you created.
-f. Configure the instance details, including security groups, IAM roles, and user data if needed.
-g. On the "Review" page, review your settings, and then click "Launch."
-
+   h. On the "Review" page, review your settings, and then click "Launch.
 
 
 ### These are the prerequisites that you should have in place before proceeding with the lab.
