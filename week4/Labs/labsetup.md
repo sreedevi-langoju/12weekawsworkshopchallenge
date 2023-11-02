@@ -15,10 +15,11 @@ Security is paramount, and for that, we'll configure security groups to control 
 ### 4. EC2 Instance in the Created VPC:
 Additionally, you'll need to launch an EC2 instance within the created VPC, which will be a core component of our lab exercises.
 
+Let's get started by setting up each of these components to ensure you're well-prepared for what's to come.
 
-These are the prerequisites that you should have in place before proceeding with the lab. 
 
-### 1 : IAM Roles and Permissions Creation:
+
+### IAM Roles and Permissions Creation:
 
    You need to create two IAM roles one for S3 Cross-Region Replication and another for S3 File Gateway
 
@@ -79,11 +80,9 @@ These are the prerequisites that you should have in place before proceeding with
           }
         ]
       }
-      
-Note : Make sure to replace "your-s3-bucket-name" with the actual name of your S3 bucket.
 
 
-#### 2: VPC Configuration: 
+#### VPC Configuration: 
 
    1. Log In to AWS Console:
    Log in to your AWS console using your AWS account credentials.
@@ -111,14 +110,14 @@ Note : Make sure to replace "your-s3-bucket-name" with the actual name of your S
 
       a. In the VPC Dashboard, select "Internet Gateways" in the left navigation pane.
       b. Click the "Create Internet Gateway" button.
-      c. Give it a name and create the IGW.
-      d. Select the IGW, click "Actions," and choose "Attach to VPC." Attach it to your VPC.
+      c. Give it a name: On-Prem-IGW  and create the IGW.
+      d. Select the IGW, click "Actions," and choose "Attach to VPC." Attach it to your On-Prem-VPC .
 
    6. Configure the Route Table:
 
       a. Go to the "Route Tables" section in the VPC Dashboard.
-      b. Find the route table associated with your public subnet (usually the main one).
-      c. Edit the route table and add a route with destination 0.0.0.0/0 and target as the Internet Gateway you created.
+      b. Find the route table associated with your public subnet: On-Prem-Subnet
+      c. Edit the route table and add a route with destination 0.0.0.0/0 and target as the On-Prem-IGW ,the Internet Gateway you created.
 
 
 
@@ -162,6 +161,6 @@ g. On the "Review" page, review your settings, and then click "Launch."
 
 
 
-
+### These are the prerequisites that you should have in place before proceeding with the lab.
 
 
