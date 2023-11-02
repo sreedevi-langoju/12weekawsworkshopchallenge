@@ -32,13 +32,15 @@ Before you configure the File Gateway, you must create the primary S3 bucket (or
    * Region: US East (Ohio) us-east-2
    * Bucket Versioning: Enable
 
-     Note :  For cross-Region replication, you must enable versioning for both the source and destination buckets.
+         Note :  For cross-Region replication, you must enable versioning for both the source and destination buckets.
+     
  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/667e40d8-652b-4505-bb7a-d5ad979e0328" height="300" width="500">
 
  3. Create a second bucket in the US West (Oregon) region with versioning enabled.
    * Bucket name: Create a name . It must be globally unique. Ex: 
    * Region: US West (Oregon) us-west-2
    * Bucket Versioning: Enable
+     
   <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/25ddff80-152d-4b36-871a-91cf5b1c6d92" height="300" width="500">
 
 
@@ -58,7 +60,7 @@ Before you configure the File Gateway, you must create the primary S3 bucket (or
        * IAM role: S3-CRR-Role(This was pre-created IAM role with required permissions)
 
 3. Save the rule and choose not to replicate existing objects.
-   <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/4927a0fc-706a-4033-9981-026001c3b3f9"  height="500" width="500">
+   <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/4927a0fc-706a-4033-9981-026001c3b3f9">
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/de478cfe-76de-4883-89e7-3b20f58cde35" height="300" width="500">
 
