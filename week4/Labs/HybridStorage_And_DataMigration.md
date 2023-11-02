@@ -190,7 +190,8 @@ In this task, you will deploy the File Gateway appliance as an Amazon Elastic Co
  13. Start creating a file share. Wait for File Gateway status to change to Running.
      * From the left side panel, choose File shares.
      * Choose Create file share.
-     <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9b1fc5fd-f313-4668-995b-2a941bb39b6a"  height="500" width="500">
+       
+     <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9b1fc5fd-f313-4668-995b-2a941bb39b6a">
 
      
  14. On the Create file share screen, configure these settings:
