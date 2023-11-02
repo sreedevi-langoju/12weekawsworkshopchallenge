@@ -8,6 +8,9 @@ You can define your VPC's IP address range, create subnets, and configure route 
 
 ### Components of Amazon VPC
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/8bd74feb-73b0-4c08-b20c-a8a66911ae48">
+
+
 Components of Amazon VPCCIDR Block: A VPC is associated with an IPv4 address range specified in Classless Inter-Domain Routing (CIDR) notation. This address range is used for the VPC and its subnets.
 
 Subnet: Subnets are partitions of a VPC's IP address range. You can create multiple subnets within a VPC, each residing in a specific Availability Zone. Subnets are essential for distributing your resources across different data centers for high availability.
