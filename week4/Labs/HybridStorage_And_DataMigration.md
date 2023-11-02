@@ -28,16 +28,16 @@ Before you configure the File Gateway, you must create the primary S3 bucket (or
 
 1. Open the AWS Management Console and navigate to the S3 service.
 2. Create the primary S3 bucket in the US East (Ohio) region with versioning enabled.
-   * Bucket name: Create a name . It must be globally unique. Ex: 
+   * Bucket name: Create a name . It must be globally unique. Ex: migrationdata-primary-bucket
    * Region: US East (Ohio) us-east-2
    * Bucket Versioning: Enable
 
-         Note :  For cross-Region replication, you must enable versioning for both the source and destination buckets.
+      Note :  For cross-Region replication, you must enable versioning for both the source and destination buckets.
      
  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/667e40d8-652b-4505-bb7a-d5ad979e0328" height="300" width="500">
 
  3. Create a second bucket in the US West (Oregon) region with versioning enabled.
-   * Bucket name: Create a name . It must be globally unique. Ex: 
+   * Bucket name: Create a name . It must be globally unique. Ex: migrationdata-crr-bucket
    * Region: US West (Oregon) us-west-2
    * Bucket Versioning: Enable
      
@@ -79,7 +79,7 @@ Before you configure the File Gateway, you must create the primary S3 bucket (or
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/b0dc64f2-451a-46ca-9fd2-79c0e9c51fae">
 
-    Note: You may need to refresh  the console for the object to appear.
+  Note: You may need to refresh  the console for the object to appear.
 
 
 
@@ -127,15 +127,15 @@ In this task, you will deploy the File Gateway appliance as an Amazon Elastic Co
           
              * Select the security group with <b> FileGatewayAccess </b> in the name
 
-              Note: This security group is configured to allow traffic through ports 80 (HTTP), 443 (HTTPS), 53 (DNS), 123 (NTP), and 2049 (NFS). These ports enable the activation of                  the File Gateway appliance. They also enable connectivity from the Linux server to the NFS share that you will create on the File Gateway.
+          Note: This security group is configured to allow traffic through ports 80 (HTTP), 443 (HTTPS), 53 (DNS), 123 (NTP), and 2049 (NFS). These ports                   enable the activation of the File Gateway appliance. They also enable connectivity from the Linux server to the NFS share that you will create on                the File Gateway.
           
              * Also select the security group with OnPremSshAccess in the name
 
-              Note: This security group is configured to allow Secure Shell (SSH) connections on port 22.
+          Note: This security group is configured to allow Secure Shell (SSH) connections on port 22.
 
             Verify that both security group now appear as selected (details on each will appear in boxes             in the console). 
 
-              Tip: You may need to choose Show all selected to see them both.
+          Tip: You may need to choose Show all selected to see them both.
           
           <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/2c29455f-d0b7-4144-85bc-324f277eb14b"  height="500" width="500">
 
@@ -171,7 +171,8 @@ In this task, you will deploy the File Gateway appliance as an Amazon Elastic Co
     * For the Service endpoint, select Publicly accessible. Choose Next
       
  8.  In the Step 3: Review and activate settings screen choose Activate gateway
- 9.  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/b4bc50f1-8a75-42b6-bb61-701d064a1dad"  height="500" width="500">
+    
+     <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/b4bc50f1-8a75-42b6-bb61-701d064a1dad"  height="500" width="500">
  
  10. Configure the Step 4: Configure gateway settings:
 
@@ -289,7 +290,7 @@ Note: S3 Object replication can take up to 15 minutes to complete. Keep refreshi
 
  
 
-Congratuations, you successfully migrated data to Amazon S3 by using AWS Storage Gateway in File Gateway mode! After your data is stored in Amazon S3, you can act on it like native Amazon S3 data. In this lab, you created a replication policy to copy the data to a secondary Region. You could also perform other operations, such as configuring a lifecycle policy. For example, you could migrate infrequently used data automatically from S3 Standard to Amazon Simple Storage Service Glacier for long-term storage, which can reduce costs. Please delete the configured resources to avoid billing 
+Congratuations, you successfully migrated data to Amazon S3 by using AWS Storage Gateway in File Gateway mode! After your data is stored in Amazon S3, you can act on it like native Amazon S3 data. In this lab, you created a replication policy to copy the data to a secondary Region. You could also perform other operations, such as configuring a lifecycle policy. For example, you could migrate infrequently used data automatically from S3 Standard to Amazon Simple Storage Service Glacier for long-term storage, which can reduce costs. Don't forget to delete the configured resources when they are no longer needed to avoid unnecessary billing.
 
 
    
