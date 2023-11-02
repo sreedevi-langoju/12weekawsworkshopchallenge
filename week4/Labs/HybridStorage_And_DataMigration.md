@@ -240,30 +240,33 @@ In this task, you will deploy the File Gateway appliance as an Amazon Elastic Co
   Before you can migrate data to the NFS share that you created, you must first mount the share. In this task, you will mount the NFS share on a Linux server, then copy data to the share.
 
   1. SSH into the On-Prem Linux Server instance.(Pre created Linux Ec2 instance)
-  2. On the Linux instance, to view the data that exists on this server, enter the following command:
+     
+      Note : Refer to <b> SSH_Into_Linux_Instance.md</b> file in this repository on how to ssh into Linux EC2 instance
+     
+  3. On the Linux instance, to view the data that exists on this server, enter the following command:
 
          ls /media/data
      
      You should see 20 image files in the .png format.
 
      
-  3. Create the directory that will be used to synchronize data with your S3 bucket by using the following command:
+  4. Create the directory that will be used to synchronize data with your S3 bucket by using the following command:
 
          sudo mkdir -p /mnt/nfs/s3
 
      <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/6e4c798e-477a-40db-90c1-1eb43b47108b"  height="500" width="500">
 
-  4. Mount the file share on the Linux instance by using the command that you located in the Storage Gateway file shares details screen at the end of the last task.
+  5. Mount the file share on the Linux instance by using the command that you located in the Storage Gateway file shares details screen at the end of the last task.
 
          sudo mount -t nfs -o nolock,hard <File-Gateway-appliance-private-IP-address>:/share /mnt/nfs/s3
 
      Ex: sudo mount -t nfs -o nolock,hard 10.10.1.33:/share /mnt/nfs/s3
      
-  5. Verify that the share was mounted correctly by entering the following command:
+  6. Verify that the share was mounted correctly by entering the following command:
     
          df -h
 
-  6. Now that you created the mount point, you can copy the data that you want to migrate to Amazon S3 into the share by using this command:
+  7. Now that you created the mount point, you can copy the data that you want to migrate to Amazon S3 into the share by using this command:
 
           cp -v /media/data/*.png /mnt/nfs/s3
 
@@ -272,6 +275,7 @@ In this task, you will deploy the File Gateway appliance as an Amazon Elastic Co
 
 
  ## Step 5: Verifying that the data is migrated
+ 
 You have finished configuring the gateway and copying data into the NFS share. Now, you will verify that the configuration works as intended.
 
 In the  Services search box, search for and choose S3 to open the S3 console.
