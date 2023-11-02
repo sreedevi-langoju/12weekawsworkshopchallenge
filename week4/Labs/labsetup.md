@@ -155,6 +155,8 @@ To Create Security Groups:
       If you don't have an existing EC2 key pair, you can create one with name "vockey". You will need this key pair to SSH into your EC2 instance.          You can manage key pairs in the "Key Pairs" section of the EC2 Dashboard.
 
    h. On the "Review" page, review your settings, and then click "Launch.
+   i. SSH into EC2 instance .Refer to SSH_Into_Linux_Instance.md file for detailed instructions.
+   j. Copy multiple png or jpeg files from local system or cteate some text files to the following directory. These files will be copied to Amazon S3 bucket using S3 FileGateway.
 
 
 ### These are the prerequisites that you should have in place before proceeding with the lab.
