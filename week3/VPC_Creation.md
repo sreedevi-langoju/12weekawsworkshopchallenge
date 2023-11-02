@@ -2,7 +2,7 @@
 
 Creating a Virtual Private Cloud (VPC) in Amazon Web Services (AWS) is a fundamental step in setting up your network infrastructure. A VPC allows you to launch AWS resources into a virtual network that you've defined.
 
-For a comprehensive introduction to VPC and its fundamental components, consider checking out [Networking_Fundamentals.md] (./Networking_Fundamentals.md)
+For a comprehensive introduction to VPC and its fundamental components, consider checking out my [Networking_Fundamentals.md](./Networking_Fundamentals.md) 
 
 Here are the steps to create below architecture of VPC and its components in AWS:
 
