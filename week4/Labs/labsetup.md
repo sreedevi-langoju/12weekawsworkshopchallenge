@@ -100,3 +100,35 @@ This policy grants the required permissions for S3 CRR:
           }
         ]
       }
+
+
+## To create an IAM role for an S3 File Gateway with JSON permissions:
+
+Go to the IAM Console in AWS.
+
+Create a role with the use case "Storage Gateway."
+
+Attach a custom policy with JSON permissions that grant access to specific S3 buckets. For example:
+
+
+      {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": [
+              "s3:ListBucket",
+              "s3:GetObject",
+              "s3:PutObject",
+              "s3:DeleteObject"
+            ],
+            "Resource": [
+              "arn:aws:s3:::your-s3-bucket-name",
+              "arn:aws:s3:::your-s3-bucket-name/*"
+            ]
+          }
+        ]
+      }
+Make sure to replace "your-s3-bucket-name" with the actual name of your S3 bucket.
+
+Review and create the role, naming it "S3-File-Gateway-Role."
