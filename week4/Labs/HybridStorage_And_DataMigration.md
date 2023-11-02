@@ -12,7 +12,7 @@ In this lab, you will :
 * Create and configure a secondary S3 bucket to use for cross-Region replication
 * Create an S3 lifecycle policy to automatically manage data in a bucket
   
- Let's get started:
+ Let's get started !!
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/b05f35f2-a9e3-4ed8-b685-5ddc5388f075" height="600" width="800">
 
@@ -241,7 +241,7 @@ In this task, you will deploy the File Gateway appliance as an Amazon Elastic Co
 
   1. SSH into the On-Prem Linux Server instance.(Pre created Linux Ec2 instance)
      
-      Note : Refer to <b> SSH_Into_Linux_Instance.md</b> file in this repository on how to ssh into Linux EC2 instance
+      Note : Refer to <a href="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/blob/main/week4/Labs/SSH_Into_Linux_Instance.md">SSH_Into_Linux_Instance.md</a>  file on how to ssh into Linux EC2 instance
      
   3. On the Linux instance, to view the data that exists on this server, enter the following command:
 
