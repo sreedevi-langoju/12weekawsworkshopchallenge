@@ -24,7 +24,7 @@ In this lab, you will :
 * The secondary S3 bucket (destination) is created in the us-west-2 (Oregon) Region.
 
   
-#### Before you can start working on the exercises in each lab, you need to deploy the proper resources. Please check the [labsetup.md] (./labsetup.md) file to create the necessary resources for this lab.
+#### Before you can start working on the exercises in each lab, you need to deploy the proper resources. Please check [labsetup.md file ](./labsetup.md) to create the necessary resources for this lab.
 
 
 ## Step 1: Creating Primary and Secondary S3 Buckets
@@ -241,7 +241,7 @@ In this task, you will deploy the File Gateway appliance as an Amazon Elastic Co
 
   1. SSH into the On-Prem Linux Server instance.(Pre-created Linux Ec2 instance)
      
-   Note : Refer  my [SSH_Into_Linux_Instance.md file ](./SSH_Into_Linux_Instance.md) on how to ssh into Linux EC2 instance !
+   Note : Refer my [SSH_Into_Linux_Instance.md file ](./SSH_Into_Linux_Instance.md) on how to ssh into Linux EC2 instance !
   
   3. On the Linux instance, to view the data that exists on this server, enter the following command:
 
