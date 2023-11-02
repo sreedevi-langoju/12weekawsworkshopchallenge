@@ -38,6 +38,25 @@ c. Edit the route table and add a route with destination 0.0.0.0/0 and target as
 
 If you don't have an existing EC2 key pair, you can create one. You will need this key pair to SSH into your EC2 instance. You can manage key pairs in the "Key Pairs" section of the EC2 Dashboard.
 
+5. Create Security Groups:
+
+a. Go to the EC2 Dashboard.
+
+b. In the left navigation pane, under "Network & Security," click on "Security Groups."
+
+c. Click the "Create Security Group" button.
+
+d. Create the first security group for your EC2 instance, which we'll call "WebServerSG." This security group will control inbound traffic to your instance. Configure the following rules:
+
+Inbound Rules:
+SSH (Secure Shell): Allow inbound traffic on port 22 (for SSH access) from your IP or IP range.
+HTTP: Allow inbound traffic on port 80 (for web traffic) from anywhere.
+HTTPS: Allow inbound traffic on port 443 (for secure web traffic) from anywhere.
+e. Create the second security group, which we'll call "DatabaseSG." This security group will control outbound traffic from your EC2 instance. Configure the following rule:
+
+Outbound Rules:
+All traffic: Allow all outbound traffic to anywhere.
+
 7. Launch an EC2 Instance:
 
 a. Go to the EC2 Dashboard.
