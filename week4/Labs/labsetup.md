@@ -147,13 +147,12 @@ To Create Security Groups:
    a. Go to the EC2 Dashboard.
    b. Click the "Launch Instances" button.
    c. Choose an Amazon Machine Image (AMI) for your Linux instance.
-   d. Instance Name : "On-Prem Linux Server"  Select an instance type: .
+   d. Instance Name : "On-Prem Linux Server" and Select an instance type:"t2.micro".
    e. Configure the instance details.VPC : On-Prem-VPC and Subnet: On-Prem-Subnet, the public subnet you created.
-   f. Configure the instance details, including security groups.
- 
+   f. Public Address Ip: "Enable".
    g. Create or Use an Existing Key Pair:
 
-      If you don't have an existing EC2 key pair, you can create one. You will need this key pair to SSH into your EC2 instance. You can manage key        pairs in the "Key Pairs" section of the EC2 Dashboard.
+      If you don't have an existing EC2 key pair, you can create one with name "vockey". You will need this key pair to SSH into your EC2 instance.          You can manage key pairs in the "Key Pairs" section of the EC2 Dashboard.
 
    h. On the "Review" page, review your settings, and then click "Launch.
 
