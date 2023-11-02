@@ -66,3 +66,37 @@ d. Select an instance type.
 e. Configure the instance details. In the "Subnet" section, select the public subnet you created.
 f. Configure the instance details, including security groups, IAM roles, and user data if needed.
 g. On the "Review" page, review your settings, and then click "Launch."
+
+
+
+
+
+## To create an IAM role for S3 Cross-Region Replication:
+
+Go to IAM in the AWS Console.
+Create a role with the use case "S3 - Cross-Region Replication."
+Attach a custom policy with the required S3 CRR permissions.
+Review and create the role, naming it "S3-CRR-Role."
+
+This policy grants the required permissions for S3 CRR:
+   
+      {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Effect": "Allow",
+            "Action": [
+              "s3:GetReplicationConfiguration",
+              "s3:ListBucket",
+              "s3:GetObjectVersionForReplication",
+              "s3:GetReplicationConfiguration",
+              "s3:GetObjectVersion",
+              "s3:GetObjectVersionTagging"
+            ],
+            "Resource": [
+              "arn:aws:s3:::your-source-bucket-name",
+              "arn:aws:s3:::your-destination-bucket-name"
+            ]
+          }
+        ]
+      }
