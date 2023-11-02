@@ -24,7 +24,7 @@ In this lab, you will :
 * The secondary S3 bucket (destination) is created in the us-west-2 (Oregon) Region.
 
   
-### Before you can start working on the exercises in each lab, you need to deploy the proper resources. Please check the labsetup.md file in this repository.
+#### Before you can start working on the exercises in each lab, you need to deploy the proper resources. Please check the [labsetup.md] (./labsetup.md) file to create the necessary resources for this lab.
 
 
 ## Step 1: Creating Primary and Secondary S3 Buckets
