@@ -1,6 +1,6 @@
 # Hybrid Storage and Data Migration with AWS Storage Gateway File Gateway
 
-Introduction:
+### Introduction:
 
 In this lab, I will walk you through the process of setting up an AWS Storage Gateway File Gateway to facilitate hybrid storage and data migration. This lab helps you configure a File Gateway with an NFS file share, attach it to a Linux instance, and migrate data to an Amazon S3 bucket. You will also see how to configure advanced Amazon S3 features, including lifecycle policies and cross-Region replication.
 
