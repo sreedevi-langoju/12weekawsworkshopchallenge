@@ -241,9 +241,8 @@ In this task, you will deploy the File Gateway appliance as an Amazon Elastic Co
 
   1. SSH into the On-Prem Linux Server instance.(Pre-created Linux Ec2 instance)
      
-   Note : Refer to
-     <a href="https://github.com/sreedevilangoju/12weekawsworkshopchallenge-/blob/main/week4/Labs/SSH_Into_Linux_Instance.md"> SSH_Into_Linux_Instance </a>  file on how to ssh into Linux EC2 instance
-     
+   Note : Refer  my [SSH_Into_Linux_Instance.md file ](./SSH_Into_Linux_Instance.md) on how to ssh into Linux EC2 instance !
+  
   3. On the Linux instance, to view the data that exists on this server, enter the following command:
 
          ls /media/data
