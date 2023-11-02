@@ -58,7 +58,7 @@ Before you configure the File Gateway, you must create the primary S3 bucket (or
        * IAM role: S3-CRR-Role(This was pre-created IAM role with required permissions)
 
 3. Save the rule and choose not to replicate existing objects.
-   <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/4927a0fc-706a-4033-9981-026001c3b3f9">
+   <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/4927a0fc-706a-4033-9981-026001c3b3f9"  height="500" width="500">
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/de478cfe-76de-4883-89e7-3b20f58cde35" height="300" width="500">
 
@@ -77,7 +77,7 @@ Before you configure the File Gateway, you must create the primary S3 bucket (or
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/b0dc64f2-451a-46ca-9fd2-79c0e9c51fae">
 
-  Note: You may need to refresh  the console for the object to appear.
+    Note: You may need to refresh  the console for the object to appear.
 
 
 
@@ -131,17 +131,16 @@ In this task, you will deploy the File Gateway appliance as an Amazon Elastic Co
 
               Note: This security group is configured to allow Secure Shell (SSH) connections on port 22.
 
-              Verify that both security group now appear as selected (details on each will appear in boxes in the console). 
+            Verify that both security group now appear as selected (details on each will appear in boxes             in the console). 
 
               Tip: You may need to choose Show all selected to see them both.
           
-          <img src="<img width="513" alt="Screenshot 2023-10-31 at 11 05 00 PM" src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/2c29455f-d0b7-4144-85bc-324f277eb14b">
+          <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/2c29455f-d0b7-4144-85bc-324f277eb14b"  height="500" width="500">
 
           
     * Configure the storage settings for the gateway.In the Configure storage panel, notice there is already an entry to create one 80GiB root volume.
+      Choose Add new volume. Set the size of the EBS volume to 150GiB.
 
-              Choose Add new volume . Set the size of the EBS volume to 150GiB
-    
     * Finish creating the gateway.
 
     * In the Summary panel on the right, keep the number of instances set to 1, and choose Launch instance
@@ -152,7 +151,7 @@ In this task, you will deploy the File Gateway appliance as an Amazon Elastic Co
       
     * Monitor the status of the deployment and wait for Status Checks to complete.
 
-            Tip: Choose the refresh  button to more quickly learn the status of the instance.
+       Tip: Choose the refresh  button to more quickly learn the status of the instance.
       
     * Select your File Gateway instance, then in the Details tab below, locate the Public IPv4 address and copy it. 
 
@@ -170,7 +169,7 @@ In this task, you will deploy the File Gateway appliance as an Amazon Elastic Co
     * For the Service endpoint, select Publicly accessible. Choose Next
       
  8.  In the Step 3: Review and activate settings screen choose Activate gateway
- 9.  <img src="![image](https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/b4bc50f1-8a75-42b6-bb61-701d064a1dad)">
+ 9.  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/b4bc50f1-8a75-42b6-bb61-701d064a1dad"  height="500" width="500">
  
  10. Configure the Step 4: Configure gateway settings:
 
@@ -178,7 +177,7 @@ In this task, you will deploy the File Gateway appliance as an Amazon Elastic Co
 
      * CloudWatch alarms: No Alarm
 
-  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/3161f3a5-d588-4f28-908f-860fa75ed9d9">
+  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/3161f3a5-d588-4f28-908f-860fa75ed9d9"  height="500" width="500">
 
  11. A Successfully activated gateway File Gateway Appliance message displays.
      
@@ -188,18 +187,18 @@ In this task, you will deploy the File Gateway appliance as an Amazon Elastic Co
  13. Start creating a file share. Wait for File Gateway status to change to Running.
      * From the left side panel, choose File shares.
      * Choose Create file share.
-     * <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9b1fc5fd-f313-4668-995b-2a941bb39b6a">
+     <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9b1fc5fd-f313-4668-995b-2a941bb39b6a"  height="500" width="500">
 
      
  14. On the Create file share screen, configure these settings:
 
-    * Gateway: Select the name of the File Gateway that you just created (which should be File Gateway Appliance)
-    * File share protocol: NFS
-    * Amazon S3 bucket name: Choose the name of the source bucket that you created in the US East (Ohio) us-east-2 Region in Task 1.
-    * Choose Customize configuration
-    * For File share name use share and choose Next.
+     * Gateway: Select the name of the File Gateway that you just created (which should be File Gateway Appliance)
+     * File share protocol: NFS
+     * Amazon S3 bucket name: Choose the name of the source bucket that you created in the US East (Ohio) us-east-2 Region in Task 1.
+     * Choose Customize configuration
+     * For File share name use share and choose Next.
     
-    <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/c5b0a24a-ba94-4bb9-9c6b-ac1fed564cbe" >
+  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/c5b0a24a-ba94-4bb9-9c6b-ac1fed564cbe"  height="500" width="500" >
     
  15. On the Amazon S3 storage settings screen, configure these settings:
 
@@ -211,7 +210,7 @@ In this task, you will deploy the File Gateway appliance as an Amazon Elastic Co
 
      * IAM role: Paste the FgwIamPolicyARN, which you previously created  – Choose Next
        
- <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/4d4dd7cf-d297-4c4d-b86e-bb1b16c85e3a">
+ <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/4d4dd7cf-d297-4c4d-b86e-bb1b16c85e3a"  height="500" width="500">
 
  16. In the File access settings screen, accept the default settings.
 
@@ -224,7 +223,7 @@ In this task, you will deploy the File Gateway appliance as an Amazon Elastic Co
  18. At the bottom of the screen, note the command to mount the file share on Linux. You will need it for the next 
      task.
 
-  <img width="1349" alt="Screenshot 2023-10-31 at 11 34 47 PM" src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/5c8da6ba-d058-431f-b16c-2d59708ee0d6">
+  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/5c8da6ba-d058-431f-b16c-2d59708ee0d6"  height="500" width="500">
 
 
   ## Step 4 :Mounting the file share to the Linux instance and migrating the data
@@ -234,40 +233,39 @@ In this task, you will deploy the File Gateway appliance as an Amazon Elastic Co
   1. SSH into the On-Prem Linux Server instance.(Pre created Linux Ec2 instance)
   2. On the Linux instance, to view the data that exists on this server, enter the following command:
 
-      ls /media/data
+     ls /media/data
      
      You should see 20 image files in the .png format.
 
      
   3. Create the directory that will be used to synchronize data with your S3 bucket by using the following command:
 
-      sudo mkdir -p /mnt/nfs/s3
+         sudo mkdir -p /mnt/nfs/s3
 
-     <img width="700" alt="Screenshot 2023-10-31 at 11 45 22 PM" src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/6e4c798e-477a-40db-90c1-1eb43b47108b">
+     <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/6e4c798e-477a-40db-90c1-1eb43b47108b"  height="500" width="500">
 
   4. Mount the file share on the Linux instance by using the command that you located in the Storage Gateway file shares details screen at the end of the last task.
 
-     sudo mount -t nfs -o nolock,hard <File-Gateway-appliance-private-IP-address>:/share /mnt/nfs/s3
+         sudo mount -t nfs -o nolock,hard <File-Gateway-appliance-private-IP-address>:/share /mnt/nfs/s3
 
      Ex: sudo mount -t nfs -o nolock,hard 10.10.1.33:/share /mnt/nfs/s3
      
   5. Verify that the share was mounted correctly by entering the following command:
+    
+         df -h
 
-     df -h
+  6. Now that you created the mount point, you can copy the data that you want to migrate to Amazon S3 into the share by using this command:
 
-  6. Now that you created the mount point, you can copy the data that you want to migrate to Amazon S3 into the share      by using this command:
+          cp -v /media/data/*.png /mnt/nfs/s3
 
-    cp -v /media/data/*.png /mnt/nfs/s3
+    
+ <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/d4d11415-709a-4e37-8078-caf8be216e02" height="300" width="300">
 
 
  ## Step 5: Verifying that the data is migrated
 You have finished configuring the gateway and copying data into the NFS share. Now, you will verify that the configuration works as intended.
 
- 
-
 In the  Services search box, search for and choose S3 to open the S3 console.
-
- 
 
 Select the bucket that you created in the US East (Ohio) Region.
 
@@ -275,11 +273,15 @@ Verify that the 20 image files are listed.
 
 Note: You might need to choose the refresh  icon in the S3 console.
 
- 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/8b6dd39d-592c-4667-9749-9993ecea2240"  height="500" width="500">
+
 
 Return to the Buckets page and select the bucket that you created in the US West (Oregon) Region. 
 
 Verify that the images files were replicated to this bucket, based on the policy that you created earlier.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/3445ce58-48c6-479f-bb38-461778eed19e"  height="500" width="500">
+
 
 Note: S3 Object replication can take up to 15 minutes to complete. Keep refreshing until you see the replicated objects. 
 
