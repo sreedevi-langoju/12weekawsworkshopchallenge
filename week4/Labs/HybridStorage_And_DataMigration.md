@@ -225,17 +225,17 @@ In this task, you will deploy the File Gateway appliance as an Amazon Elastic Co
  18. At the bottom of the screen, note the command to mount the file share on Linux. You will need it for the next 
      task.
 
-  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/5c8da6ba-d058-431f-b16c-2d59708ee0d6"  height="500" width="500">
+  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/5c8da6ba-d058-431f-b16c-2d59708ee0d6">
 
 
   ## Step 4 :Mounting the file share to the Linux instance and migrating the data
   
-  Before you can migrate data to the NFS share that you created, you must first mount the share. In this task, you      will mount the NFS share on a Linux server, then copy data to the share.
+  Before you can migrate data to the NFS share that you created, you must first mount the share. In this task, you will mount the NFS share on a Linux server, then copy data to the share.
 
   1. SSH into the On-Prem Linux Server instance.(Pre created Linux Ec2 instance)
   2. On the Linux instance, to view the data that exists on this server, enter the following command:
 
-     ls /media/data
+         ls /media/data
      
      You should see 20 image files in the .png format.
 
@@ -261,7 +261,7 @@ In this task, you will deploy the File Gateway appliance as an Amazon Elastic Co
           cp -v /media/data/*.png /mnt/nfs/s3
 
     
- <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/d4d11415-709a-4e37-8078-caf8be216e02" height="300" width="300">
+ <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/d4d11415-709a-4e37-8078-caf8be216e02" height="400" width="400">
 
 
  ## Step 5: Verifying that the data is migrated
@@ -275,21 +275,22 @@ Verify that the 20 image files are listed.
 
 Note: You might need to choose the refresh  icon in the S3 console.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/8b6dd39d-592c-4667-9749-9993ecea2240"  height="500" width="500">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/8b6dd39d-592c-4667-9749-9993ecea2240" >
 
 
 Return to the Buckets page and select the bucket that you created in the US West (Oregon) Region. 
 
 Verify that the images files were replicated to this bucket, based on the policy that you created earlier.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/3445ce58-48c6-479f-bb38-461778eed19e"  height="500" width="500">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/3445ce58-48c6-479f-bb38-461778eed19e">
 
 
 Note: S3 Object replication can take up to 15 minutes to complete. Keep refreshing until you see the replicated objects. 
 
  
 
-Congratuations, you successfully migrated data to Amazon S3 by using AWS Storage Gateway in File Gateway mode! After your data is stored in Amazon S3, you can act on it like native Amazon S3 data. In this lab, you created a replication policy to copy the data to a secondary Region. You could also perform other operations, such as configuring a lifecycle policy. For example, you could migrate infrequently used data automatically from S3 Standard to Amazon Simple Storage Service Glacier for long-term storage, which can reduce costs. 
+Congratuations, you successfully migrated data to Amazon S3 by using AWS Storage Gateway in File Gateway mode! After your data is stored in Amazon S3, you can act on it like native Amazon S3 data. In this lab, you created a replication policy to copy the data to a secondary Region. You could also perform other operations, such as configuring a lifecycle policy. For example, you could migrate infrequently used data automatically from S3 Standard to Amazon Simple Storage Service Glacier for long-term storage, which can reduce costs. Please delete the configured resources to avoid billing 
+
 
    
 
