@@ -260,7 +260,32 @@ In this task, you will deploy the File Gateway appliance as an Amazon Elastic Co
     cp -v /media/data/*.png /mnt/nfs/s3
 
 
+ ## Step 5: Verifying that the data is migrated
+You have finished configuring the gateway and copying data into the NFS share. Now, you will verify that the configuration works as intended.
+
  
+
+In the  Services search box, search for and choose S3 to open the S3 console.
+
+ 
+
+Select the bucket that you created in the US East (Ohio) Region.
+
+Verify that the 20 image files are listed.
+
+Note: You might need to choose the refresh  icon in the S3 console.
+
+ 
+
+Return to the Buckets page and select the bucket that you created in the US West (Oregon) Region. 
+
+Verify that the images files were replicated to this bucket, based on the policy that you created earlier.
+
+Note: S3 Object replication can take up to 15 minutes to complete. Keep refreshing until you see the replicated objects. 
+
+ 
+
+Congratuations, you successfully migrated data to Amazon S3 by using AWS Storage Gateway in File Gateway mode! After your data is stored in Amazon S3, you can act on it like native Amazon S3 data. In this lab, you created a replication policy to copy the data to a secondary Region. You could also perform other operations, such as configuring a lifecycle policy. For example, you could migrate infrequently used data automatically from S3 Standard to Amazon Simple Storage Service Glacier for long-term storage, which can reduce costs. 
 
    
 
