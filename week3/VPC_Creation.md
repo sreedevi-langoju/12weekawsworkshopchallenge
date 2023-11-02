@@ -2,23 +2,26 @@
 
 Creating a Virtual Private Cloud (VPC) in Amazon Web Services (AWS) is a fundamental step in setting up your network infrastructure. A VPC allows you to launch AWS resources into a virtual network that you've defined.
 
-For a comprehensive introduction to VPC and its fundamental components, consider checking out our dedicated blog post on 'VPC Fundamentals'.
- Here are the steps to create below architecture of VPC and its components in AWS:
- 
-### Step1: Create VPC
+For a comprehensive introduction to VPC and its fundamental components, consider checking out [Networking_Fundamentals.md] (./Networking_Fundamentals.md)
+
+Here are the steps to create below architecture of VPC and its components in AWS:
 
 Click Deploy Pre-requisites for the steps to follow to create the necessary IAM roles, policies, and other resources before creating the VPC.
 Sign in to the AWS Management Console: Open your web browser and go to the AWS Management Console. Sign in with your AWS account credentials.
 Navigate to the VPC Dashboard: In the AWS Management Console, go to the "Services" menu and select "VPC" under the "Networking & Content Delivery" section.
-Create a VPC: In the VPC Dashboard, click on the "Your VPCs" link on the left sidebar. Then click the "Create VPC" button.
-Configure VPC Settings: You'll need to provide the following information when creating your VPC:
 
-Enter VPC A as the Name tag
-Specify 10.0.0.0/16 as IPv4 CIDR block.
-Do not enable IPv6.
-Leave Default selected as Tenancy.
-Accept proposed Tags
-Click Create VPC
+### Step1: Create VPC
+
+1.In the VPC Dashboard, click on the "Your VPCs" link on the left sidebar. 
+2.Then click the "Create VPC" button.
+3.Configure VPC Settings: You'll need to provide the following information when creating your VPC:
+
+4. Enter VPC A as the Name tag
+  Specify 10.0.0.0/16 as IPv4 CIDR block.
+  Do not enable IPv6.
+  Leave Default selected as Tenancy.
+  Accept proposed Tags
+  Click Create VPC
 
 5. After completing these steps, you should have a new VPC listed under Your VPC
 6. Click on Actions > select Edit VPC settings from the dropdown, check the box to enable DNS hostnames, and select Save.
