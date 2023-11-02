@@ -1,6 +1,7 @@
 # Hybrid Storage and Data Migration with AWS Storage Gateway File Gateway
 
 Introduction:
+
 In this lab, I will walk you through the process of setting up an AWS Storage Gateway File Gateway to facilitate hybrid storage and data migration. This lab helps you configure a File Gateway with an NFS file share, attach it to a Linux instance, and migrate data to an Amazon S3 bucket. You will also see how to configure advanced Amazon S3 features, including lifecycle policies and cross-Region replication.
 
 In this lab, you will :
@@ -15,12 +16,16 @@ In this lab, you will :
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/b05f35f2-a9e3-4ed8-b685-5ddc5388f075" height="600" width="800">
 
+
 * This lab utilizes three AWS Regions.
 * A Linux EC2 instance emulating an on-premises server is deployed in the us-east-1 (N. Virginia) Region.
 * The Storage Gateway virtual appliance is also deployed in the same Region as the Linux server.
 * The primary S3 bucket (source) is created in the us-east-2 (Ohio) Region.
 * The secondary S3 bucket (destination) is created in the us-west-2 (Oregon) Region.
+
   
+## Before you can start working on the exercises in each lab, you need to deploy the proper resources. Please check the labsetup.md file in this repository.
+
 
 ## Step 1: Creating Primary and Secondary S3 Buckets
 
