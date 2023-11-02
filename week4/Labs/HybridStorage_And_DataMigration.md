@@ -99,8 +99,8 @@ In this task, you will deploy the File Gateway appliance as an Amazon Elastic Co
 
     * Host platform: choose <b>Amazon EC2</b>. Choose <b>Customize your settings</b>. Then choose the <b>Launch instance</b> button.
 
-      <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/2814d019-8688-4b98-88f5-ca70069dcab1" height="500" width="300">
-      <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/daec1783-e274-4953-9343-169b91fded8a" height="500" width="300">
+      <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/2814d019-8688-4b98-88f5-ca70069dcab1" height="400" width="500">
+      <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/daec1783-e274-4953-9343-169b91fded8a" height="400" width="500">
   
 3. A new tab opens to the EC2 instance launch wizard. This link automatically selects the correct Amazon Machine Image (AMI) that must be used for the File Gateway appliance.
    
@@ -135,18 +135,95 @@ In this task, you will deploy the File Gateway appliance as an Amazon Elastic Co
 
               Tip: You may need to choose Show all selected to see them both.
           
-  * Configure the storage settings for the gateway.
+          <img src="<img width="513" alt="Screenshot 2023-10-31 at 11 05 00 PM" src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/2c29455f-d0b7-4144-85bc-324f277eb14b">
 
-      In the Configure storage panel, notice there is already an entry to create one 80GiB root volume.
+          
+    * Configure the storage settings for the gateway.In the Configure storage panel, notice there is already an entry to create one 80GiB root volume.
 
-        Choose <b> Add </b> new volume . Set the size of the EBS volume to 150GiB
+              Choose Add new volume . Set the size of the EBS volume to 150GiB
     
-  * Finish creating the gateway.
+    * Finish creating the gateway.
 
-  * In the Summary panel on the right, keep the number of instances set to 1, and choose Launch instance
+    * In the Summary panel on the right, keep the number of instances set to 1, and choose Launch instance
 
-  * A Success message displays.Choose View all instances
+    * A Success message displays.Choose View all instances
 
-  * Your File Gateway Appliance instance will take a few minutes to initialize.
+    * Your File Gateway Appliance instance will take a few minutes to initialize.
+      
+    * Monitor the status of the deployment and wait for Status Checks to complete.
+
+            Tip: Choose the refresh  button to more quickly learn the status of the instance.
+      
+    * Select your File Gateway instance, then in the Details tab below, locate the Public IPv4 address and copy it. 
+
+    * You will use this IP address when you complete the File Gateway deployment.
+
+ 5. Return to the AWS Storage Gateway tab in your browser. It should still be at the Set up gateway on Amazon EC2 screen.
+    
+ 6. Check the box next to I completed all the steps above and launched the EC2 instance, then choose Next
+
+ 7. Configure the Step 2: Connect to AWS settings:
+
+    * In the Gateway connection options:
+
+    * For IP address, paste in the IPv4 Public IP address that you copied from your File Gateway Appliance instance
+    * For the Service endpoint, select Publicly accessible. Choose Next
+      
+ 8.  In the Step 3: Review and activate settings screen choose Activate gateway
+ 9.  <img src="![image](https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/b4bc50f1-8a75-42b6-bb61-701d064a1dad)">
+ 
+ 10. Configure the Step 4: Configure gateway settings:
+
+     * CloudWatch log group: Deactivate logging
+
+     * CloudWatch alarms: No Alarm
+
+  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/3161f3a5-d588-4f28-908f-860fa75ed9d9">
+
+ 11. A Successfully activated gateway File Gateway Appliance message displays.
+     
+ 12. In the Configure cache storage panel, you will see that a message the local disks are loading. Wait for the local disks status to show that it finished processing (approximately 1 minute).Choose Configure
+
+
+ 13. Start creating a file share. Wait for File Gateway status to change to Running.
+     * From the left side panel, choose File shares.
+     * Choose Create file share.
+     * <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9b1fc5fd-f313-4668-995b-2a941bb39b6a">
+
+     
+ 14. On the Create file share screen, configure these settings:
+
+    * Gateway: Select the name of the File Gateway that you just created (which should be File Gateway Appliance)
+    * File share protocol: NFS
+    * Amazon S3 bucket name: Choose the name of the source bucket that you created in the US East (Ohio) us-east-2 Region in Task 1.
+    * Choose Customize configuration
+    * For File share name use share and choose Next.
+    
+    <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/c5b0a24a-ba94-4bb9-9c6b-ac1fed564cbe" >
+    
+ 15. On the Amazon S3 storage settings screen, configure these settings:
+
+     * Storage class for new objects: S3 Standard
+     * Select checkbox Object metadata: Guess MIME type
+     * Select checkbox Gateway files acccessible to S3 bucket owner
+
+     * Access your S3 bucket: Use an existing IAM role
+
+     * IAM role: Paste the FgwIamPolicyARN, which you previously created  – Choose Next
+       
+ <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/4d4dd7cf-d297-4c4d-b86e-bb1b16c85e3a">
+
+ 16. In the File access settings screen, accept the default settings.
+
+      Note: You might get a warning message that the file share is accessible from anywhere. For this lab, you can          safely disregard this warning.
+     
+ 17. Scroll to the bottom of the Review and create screen, then select Create 
+
+     Monitor the status of the deployment and wait for Status to change to Available, which takes less than a minute.
+
+
+ 
+
+   
 
 
