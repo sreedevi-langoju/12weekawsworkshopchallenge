@@ -156,7 +156,7 @@ To Create Security Groups:
 
    h. On the "Review" page, review your settings, and then click "Launch.
    i. SSH into EC2 instance .Refer to SSH_Into_Linux_Instance.md file for detailed instructions.
-   j. Copy multiple png or jpeg files from local system or cteate some text files to the following directory. These files will be copied to Amazon S3 bucket using S3 FileGateway.
+   j. Copy multiple png or jpeg files from local system or cteate some text files to the following directory  /media/data ( if not exists create one). These files will be copied to Amazon S3 bucket using S3 FileGateway.
 
 
 ### These are the prerequisites that you should have in place before proceeding with the lab.
