@@ -75,7 +75,9 @@ width=300 height=300>
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/a827a769-ecdd-4abe-9d5d-35a3b44e9b77" width=600 height=300>
 
-7. In the advanced setting section, copy and paste the below script in the User data:
+7. In the advanced setting section, copy and paste the below script in the User data.
+
+   With this script  we are going to install and start MariaDB server on the Linux EC2 instance that was launched in the previously. MariaDB is a popular open-source relational database management system, and it needs to be installed on the EC2 instance to serve as the source database for the migration process.
 
   ```
     #!/bin/bash
@@ -96,7 +98,20 @@ width=300 height=300>
 
 11. SSH into the EC2 instance with public IP address of EC2 instance and key pair .pem file downloaded before.Follow these steps  [SSh_Into_Linux_Instance.md file ](./labsetup.md) 
     
-12. Install the MariaDB server on the EC2 instance.
+12. Check the MariaDB server installation and status on the EC2 instance.
+
+    * Once connected to the server, switch to root user
+    *  sudo su
+   
+13. Now, we have to set the password, for the root user. Please keep a note of this password as we will use this in upcoming steps. To set the default password,  please run the below-provided commands one by one:
+
+14. Now you can only log in using the password you have set and nothing else.After successful login, you will be able to see the welcome message and mysql> prompt waiting for your command:
+
+15. Make sure you do not give any extra spaces while executing these commands.
+
+
+
+      
     
 
 ## Step 2:Create an AWS RDS - MySQL Instance (Destination Database):
