@@ -1,4 +1,7 @@
-# Database Migration from EC2MariaDB to Amazon RDS MySQL using Amazon Database Migration Service(DMS)
+# Database Migration of MariaDB databse from EC2 Instance to Amazon RDS MySQL using Amazon Database Migration Service(DMS)
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e4af4a9f-3174-4eb1-921f-1ceecad5a8bc">
+
 
 Migrating a MariaDB database from an Amazon EC2 instance to an Amazon RDS MySQL database using the AWS Database Migration Service (DMS) involves several steps.
 
