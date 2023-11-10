@@ -78,12 +78,22 @@ width=300 height=300>
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/a827a769-ecdd-4abe-9d5d-35a3b44e9b77
 " width=300 height=300>
 
+7. In the advanced setting section, copy and paste the below script in the User data:
 
-7. Keep rest thing Default and Click on Launch Instance Button.
+   '''
+    #!/bin/bash
+    sudo dnf update -y
+    sudo dnf install mariadb105-server -y
+    sudo systemctl start mariadb
+    sudo systemctl enable mariadb '''
 
-8. Click on View Instances. After 1-2 Mins, Instance State will become running and is ready.
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/c4df809c-3f2b-4d4d-9253-a551a4f69e57)">
 
-9. Note down the IPv4 Public IP address.
+8. Keep rest thing Default and Click on Launch Instance Button.
+
+9. Click on View Instances. After 1-2 Mins, Instance State will become running and is ready.
+
+10. Note down the IPv4 Public IP address.
 
    
 
