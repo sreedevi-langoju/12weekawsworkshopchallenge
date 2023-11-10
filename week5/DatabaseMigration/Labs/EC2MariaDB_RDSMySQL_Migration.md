@@ -102,10 +102,10 @@ width=300 height=300>
 
     switch to root user:   
         
-        ``` 
-        sudo su 
-        ```
-
+    
+              sudo su 
+    
+ 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/63a7e96c-aba9-4de7-80bc-3f7995b08e65">
 
  Once connected to the server, check the status of the MariaDB server
@@ -243,7 +243,7 @@ Example: mydbinstance.c81x4bxxayay.us-east-1.rds.amazonaws.com
 
 ## Step 3:Create a Replication Instance:
 
-In this task, we are going to create a replication instance in the AWS Database Migration Service (DMS). The replication instance will be used to replicate data from an EC2 MySQL database to an Amazon RDS database.
+In this task, we are going to create a replication instance in the AWS Database Migration Service (DMS). The replication instance will be used to replicate data from an EC2 MySQL database to an Amazon RDS database.Ensure that the replication instance is in the same VPC as your source and target databases, as well as the appropriate subnets and security groups.
 
 1. Click on Services and then choose Database Migration Service under the Migration & Transfer.Make sure you are in the N.Virginia region.
 
@@ -296,7 +296,7 @@ login to Mariadb server: ``` mysql -u root -p ``` ( use new passowrd)
 
 10. Command syntax to create a new user in a MySQL Database 
 
-        ``` CREATE USER 'root'@<<Private IP of Replication Instance>> IDENTIFIED BY             'your-root-password'; ```
+        ``` CREATE USER 'root'@<<Private IP of Replication Instance>> IDENTIFIED BY 'your-root-password'; ```
 
 Example : CREATE USER 'root'@10.0.9.95 IDENTIFIED BY 'your-root-password';
 
@@ -308,7 +308,7 @@ Example:   GRANT ALL ON *.* TO root@10.0.9.95;
 
 12. And repeat the same step now with the Public IP address of the replication instance.
 
-       ``` CREATE USER 'root'@<<Public IP of Replication Instance>> IDENTIFIED BY             'your-root-password';
+       ``` CREATE USER 'root'@<<Public IP of Replication Instance>> IDENTIFIED BY 'your-root-password';
         GRANT ALL ON *.* TO root@<<Public IP of Replication Instance>>;```
 
 
@@ -329,12 +329,6 @@ Example : GRANT ALL ON *.* TO root@44.214.111.130;
         sudo systemctl stop mariadb
         sudo systemctl start mariadb
 
-    
-## Step 3:Create a Replication Instance:
-
-In the DMS console, go to "Replication instances" and create a replication instance.
-Configure the replication instance with the desired instance class, VPC, and other settings.
-Ensure that the replication instance is in the same VPC as your source and target databases, as well as the appropriate subnets and security groups.
 
 ## Step 4: Create Endpoints for Your Source and Destination Databases:
 
