@@ -100,19 +100,19 @@ width=300 height=300>
     
 12. Check the MariaDB server installation and status on the EC2 instance.
 
-switch to root user:   
+    switch to root user:   
+        
         ``` 
         sudo su 
         ```
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/63a7e96c-aba9-4de7-80bc-3f7995b08e65">
 
-    * Once connected to the server, check the status of the MAriaDB server
+ Once connected to the server, check the status of the MariaDB server
+  
+       ```   sudo systemctl status mariadb  ```
+       
 
-        ``` 
-        sudo systemctl status mariadb
-        ```
-    
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e3ae7a1f-0ee5-46f1-a2ba-5b4f4bcb0681">
 
    
@@ -122,25 +122,28 @@ switch to root user:
 14. It prompts for passsword, the default password for root user in Mariadb is nothing , so just press enter.
 
 15. Now, we have to set the password, for the root user. Please keep a note of this password as we will use this in upcoming steps. To set the default password,  please run the below-provided commands one by one:
+    
      ```
      SET PASSWORD FOR 'root'@'localhost' = PASSWORD ('enter your new password here');
      FLUSH PRIVILEGES;
      exit;
+     
     ```
     <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/72bb0a4a-d8f7-41f8-840d-088fe9309098">
 
-16. Now stop and start the mariadb server using below commands.
+17. Now stop and start the mariadb server using below commands.
+    
          ``` 
         sudo systemctl stop mariadb
          sudo systemctl start mariadb
     
         ```
 
-16. Now you can only log in using the password you have set and nothing else.After successful login, you will be able to see the welcome message and mysql> prompt waiting for your command.
+18. Now you can only log in using the password you have set and nothing else.After successful login, you will be able to see the welcome message and mysql> prompt waiting for your command.
 
 Note: Make sure you do not give any extra spaces while executing these commands.
     
-##### 17. Create a simple custom Database on Source EC2:
+##### 19. Create a simple custom Database on Source EC2:
 
 we will create a simple database and create a table inside EC2 Mariadb which will be migrated using DMS.
 
@@ -148,13 +151,18 @@ we will create a simple database and create a table inside EC2 Mariadb which wil
 
 2. Connect to Source MySQL Client using user : root and password: new password you set before
    
-3. Create a Database
+3. Please find the database queries in the attached dbschema.sql file.
 
-4. Switch the database <b> awschallenge</b>.
 
-5. Create a sample Table of  <b>Cohort </b>.
+4. Create a Database
 
-6. Create a sample Table of  <b>Students_Details </b>.
+5. Switch the database <b> awschallenge</b>.
+
+6. Create a sample Table of  <b>Cohort </b>.
+
+7. Create a sample Table of  <b>Students_Details </b>.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/f7e9e71b-699f-4dca-afdf-4bbc1e23edee)">
 
 7. Insert data into the table  <b>Cohort </b>.
    
