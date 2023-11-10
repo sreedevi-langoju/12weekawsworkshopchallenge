@@ -110,23 +110,23 @@ width=300 height=300>
 
  Once connected to the server, check the status of the MariaDB server
   
-       ```   sudo systemctl status mariadb  ```
+             sudo systemctl status mariadb  
        
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e3ae7a1f-0ee5-46f1-a2ba-5b4f4bcb0681">
 
    
 13. Now log into mariadb server using command :
-       mysql -u root -p 
+              mysql -u root -p 
 
 14. It prompts for passsword, the default password for root user in Mariadb is nothing , so just press enter.
 
 15. Now, we have to set the password, for the root user. Please keep a note of this password as we will use this in upcoming steps. To set the default password,  please run the below-provided commands one by one:
     
      
-     SET PASSWORD FOR 'root'@'localhost' = PASSWORD ('enter your new password here');
-     FLUSH PRIVILEGES;
-     exit;
+             SET PASSWORD FOR 'root'@'localhost' = PASSWORD ('enter your new password here');
+             FLUSH PRIVILEGES;
+             exit;
      
     
     <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/72bb0a4a-d8f7-41f8-840d-088fe9309098">
@@ -178,7 +178,76 @@ we will create a simple database and create a table inside EC2 Mariadb which wil
 ## Step 2:Create an AWS RDS - MySQL Instance (Destination Database):
 
 In the AWS Management Console, navigate to Amazon RDS.
-Create an RDS MySQL instance, specifying configuration details like instance type, storage, and database credentials.
+1. Create an RDS MySQL instance, specifying configuration details like instance type, storage, and database credentials.
+Click on the Services and select the RDS under the Database section.
+
+In the left navigation pane, click on Databases.
+
+Make sure you are in N.Virginia Region.
+
+Click on Databases from the left navigation menu and then click Create database
+
+Specify DB details:
+
+Instance specifications
+Database creation method : Standard create
+
+Engine options : Select MySQL
+
+Version : Default
+
+Template : Select Free tier
+
+DB instance identifier : Enter mydbinstance
+
+Master username. : Enter awsrdsuser
+
+Master password and Confirm password: Enter whizlabs123
+
+Note: This is the username/password combo used to log onto your database. Please make note of them somewhere safe.
+DB instance class : Select Burstable classes db.t2.micro — 1 vCPUs, 1 GiB RAM
+
+NOTE : Select Include previous generation classes If t2.micro is not visible
+
+Storage type : Select General Purpose SSD (gp2)
+
+Allocated storage : Select 20 (default)
+Enable storage autoscaling : Uncheck
+
+Virtual Private Cloud(VPC) : Select Default VPC
+
+Subnet group : Select Default
+
+Public Access : Select No
+
+VPC Security groups : Select Choose existing
+
+Existing VPC security group name : Remove the default security group and select Migration-SG from the dropdown list
+
+Scroll down to Additional Configuration options
+
+Initial database name: Enter myrdsdatabase
+
+DB parameter group: Select default
+
+Option group: Select default
+
+Enable automated backups: uncheck
+
+Enable auto minor version upgrade: uncheck
+
+Maintenance window: Select No preference
+
+Enable deletion protection: uncheck
+
+Leave other parameters as default. Scroll to the bottom of the page, Click Create database.
+
+It will take around 5 minutes for the database to become available. Once the status changes from creating to available, the database is ready.
+
+Open mydbinstance and note down the Endpoint of RDS under Connectivity and security
+
+Example: mydbinstance.c81x4bxxayay.us-east-1.rds.amazonaws.com
+
 
 ## Step 3:Create a Replication Instance:
 
