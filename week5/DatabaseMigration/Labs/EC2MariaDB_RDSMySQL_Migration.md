@@ -29,6 +29,9 @@ Creating a Virtual Private Cloud (VPC) with two public subnets and two private s
 
 5. Click on "Create VPC".
 
+6. <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/939d55d4-ce0a-4b8c-9077-0beb6b43635d"
+width=300 height=300>
+
 
 ## Step 2: Create a Source Database on EC2 (Linux) Instance and Install MariaDB Server:
  
@@ -70,6 +73,12 @@ Creating a Virtual Private Cloud (VPC) with two public subnets and two private s
     Click on Add security group rule
     Source : Anywhere
     Choose Type : MYSQL/Aurora 
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/d8e3f28a-82af-43d4-84bb-b19934c2f097
+" width=300 height=300>
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/946dc820-3999-494c-8f2d-b5ec18f93714" width=300 height=300>
+
 
 7. Keep rest thing Default and Click on Launch Instance Button.
 
