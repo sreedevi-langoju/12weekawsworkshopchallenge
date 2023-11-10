@@ -457,6 +457,11 @@ An AWS Database Migration Service task is where all the migration process happen
         Source table name : Enter % (all tables)
         Action : Include
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9353c24d-463d-4199-b7ba-28a852cd6f33" width=400 height=400>
+
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/45dfc980-2f21-4b5c-a03a-22b941b2c2bd" width=400 height=400>
+
 4. Leave other settings as default.
 
 5. Click on Create task.
@@ -474,13 +479,30 @@ Verify that data is being replicated correctly, and address any errors or issues
 2. If you followed all the previous steps correctly, it will show the migration task status as Load complete, replication ongoing
 Now the Migration of database to Amazon RDS is completed.
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/6b177ac1-259d-4513-bb18-f1fcd20a689c">
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/cf9d953b-a375-49c4-9c67-6a5af3982b17">
+
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/43e0f91c-50bd-46a4-b548-c77b6de7a0ba">
+
+
+
 3.To check the migration status and details, we need to connect to the destination MySQL database which is in AWS RDS Instance.
 
 4. SSH back into Source EC2 Instance.
 
-5. Connect to AWS RDS instance. 
+5. Connect to AWS RDS instance using below command :use user: admin paddword: your password( created earlier)
+
+               mysql -h <RDS endpou=int> -u admin -p
+
+   
+   <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e8d0afaa-5e42-414c-87ce-d0fb90eeb139">
 
 6. Once inside MySQL Client, check the databases available.
+
+
+   <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/d6e4d693-3ef5-465d-8155-c7bb06393455">
 
 
 7. Now we can see the awschallenge and its tables Cohort and Students_Details, which were available in Source EC2 Linux Server migrated to Amazon RDS Instance Database.
