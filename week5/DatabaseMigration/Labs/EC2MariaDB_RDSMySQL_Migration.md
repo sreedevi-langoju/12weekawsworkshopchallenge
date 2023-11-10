@@ -151,8 +151,7 @@ we will create a simple database and create a table inside EC2 Mariadb which wil
 
 2. Connect to Source MySQL Client using user : root and password: new password you set before
    
-3. Please find the database queries in the attached dbschema.sql file.
-
+3. Please find the database queries in the attached [dbschema.sql file](./week5/DatabaseMigration/Labs/dbschema.sql).
 
 4. Create a Database
 
@@ -164,14 +163,13 @@ we will create a simple database and create a table inside EC2 Mariadb which wil
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/f7e9e71b-699f-4dca-afdf-4bbc1e23edee)">
 
-7. Insert data into the table  <b>Cohort </b>.
-   
+8. Insert data into the table  <b>Cohort </b>.  
 
-8. Insert data into the table <b>Students_Details </b>.
+9. Insert data into the table <b>Students_Details </b>.
 
-9. Check the items added in the Tables.
+10. Check the items added in the Tables.
 
-10. After database migration, this new custom tables can be used as proof of database migration.
+11. After database migration, this new custom tables can be used as proof of database migration.
 
 
       
