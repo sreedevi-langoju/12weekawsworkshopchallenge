@@ -1,4 +1,4 @@
-# Database Migration of MariaDB databse from EC2 Instance to Amazon RDS MySQL using Amazon Database Migration Service(DMS)
+# Database Migration of MariaDB data on EC2 Instance to Amazon RDS MySQL using Amazon Database Migration Service(DMS)
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e4af4a9f-3174-4eb1-921f-1ceecad5a8bc">
 <br>
@@ -507,8 +507,8 @@ Now the Migration of database to Amazon RDS is completed.
 
 7. Now we can see the awschallenge and its tables Cohort and Students_Details, which were available in Source EC2 Linux Server migrated to Amazon RDS Instance Database.
 
+## Congratuations, you successfully migrated MariaDB databse data from EC2 Instance to Amazon RDS MySQL using Amazon Database Migration Service(DMS)
 
 ## Cleanup:
-
-After confirming that the migration was successful and your application is functioning properly with the RDS MySQL instance, you can terminate or decommission the EC2 instance running MariaDB, as it is no longer needed.Don't forget to delete the configured resources when they are no longer needed to avoid unnecessary billing.
+Don't forget to delete the configured resources when they are no longer needed to avoid unnecessary billing.
 
