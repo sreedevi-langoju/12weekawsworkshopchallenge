@@ -287,7 +287,28 @@ Ex: Public IP address : 34.179.22.178
 
 Ex: Private IP address : 10.0.0.22
 
-8. fjSDHFH
+8. Configure Replication Instance details in Source EC2 Instance:
+
+9. Login to the MySQL:
+
+ommand Syntax to create a new user in a MySQL Database 
+
+CREATE USER 'root'@<<Private IP of Replication Instance>> IDENTIFIED BY 'your-root-password';
+
+Example : CREATE USER 'root'@172.31.29.148 IDENTIFIED BY 'source123';
+We need to grant root access to the replication instance to connect with the MySQL server on Source EC2. To give access, follow the below steps:
+Command Syntax : 
+GRANT ALL ON *.* TO root@'<<Private IP of Replication Instance>>' IDENTIFIED BY 'your-root-password';
+Example: GRANT ALL ON *.* TO root@172.31.29.148;
+And repeat the same step now with the Public IP address of the replication instance.
+
+CREATE USER 'root'@3.224.227.68 IDENTIFIED BY 'source123';
+
+GRANT ALL ON *.* TO root@3.224.227.68;
+Save the changes by using the following command:  
+
+FLUSH PRIVILEGES;
+
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/659497ed-9ad6-454d-a802-e93fd93ed098" width=500 height=300>
 
