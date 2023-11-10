@@ -195,7 +195,7 @@ Create an RDS MySQL instance, specifying configuration details like instance typ
          Engine options : Select MySQL
          Version : Default
          Template : Select Free tier
-         DB instance identifier : target-database
+         DB instance identifier : mysqltarget-database
          Master username. : admin
          Master password and Confirm password: enter your password 
 
@@ -243,10 +243,51 @@ Example: mydbinstance.c81x4bxxayay.us-east-1.rds.amazonaws.com
 
 ## Step 3:Create a Replication Instance:
 
-In the DMS console, go to "Replication instances" and create a replication instance.
-Configure the replication instance with the desired instance class, VPC, and other settings.
-Ensure that the replication instance is in the same VPC as your source and target databases, as well as the appropriate subnets and security groups.
+In this task, we are going to create a replication instance in the AWS Database Migration Service (DMS). The replication instance will be used to replicate data from an EC2 MySQL database to an Amazon RDS database.
 
+Click on Services and then choose Database Migration Service under the Migration & Transfer.
+
+Make sure you are in the N.Virginia region.
+
+Click on Replication instances from the left navigation menu and then click Create replication instance.
+
+In the Replication instance configuration section,
+
+Name : Enter myreplicationinstance
+
+Description : Enter To replicate EC2-Mysql to AWS RDS 
+
+Instance class : Select dms.t3.micro
+
+Engine version : Default
+
+Allocated storage (GB) : Enter 10 GB
+
+High Availability : Select Dev or test workload (Single-AZ).
+
+VPC : default VPC
+Publicly accessible : Check
+In Advanced security and network configuration section,
+
+Replication subnet group : Default
+
+Availability zone : Default
+
+VPC security group(s) : Enter Migration-SG
+
+KMS master key : Default
+
+Leave other settings as default.
+
+Click on the  Create button to create the replication instance.
+
+NOTE : Ignore the error and click on Create button again
+It will take 5 minutes for a replication instance to be created. Once status changes to available, click on the instance and scroll down. You will find the details section of the replication instance.
+
+Select myreplicationinstance from Details section, copy the private & public IP address and note it down on the notepad.
+Public IP address : 34.199.212.178
+
+Private IP address : 172.31.15.146
 
 ## Step 3:Create a Replication Instance:
 
