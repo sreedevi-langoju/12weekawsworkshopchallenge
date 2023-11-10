@@ -189,7 +189,8 @@ Create an RDS MySQL instance, specifying configuration details like instance typ
 
 4. Specify DB details:
 
-       * Instance specifications
+    Instance specifications:
+   
          Database creation method : Standard create
          Engine options : Select MySQL
          Version : Default
@@ -210,7 +211,18 @@ Create an RDS MySQL instance, specifying configuration details like instance typ
          VPC Security groups : Select Choose existing
          Existing VPC security group name : Remove the default security group and select MigrationSG from the dropdown list
 
-5. Scroll down to Additional Configuration options
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/2f585895-327a-4fe3-bbcf-40fe041fc17f" width=300 height=300>
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/69a11a2f-8807-4b2f-b63d-904f312c78e5" width=300 height=300 >
+
+<br>
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/2a6308c3-743e-494c-98b8-0940eff4a672" width=300 height=300>
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/09756f6e-31d2-45fc-aa8f-0711c7ea3058" width=300 height=300> 
+
+
+6. Scroll down to Additional Configuration options
 
          Initial database name:  awschallenge
          DB parameter group: Select default
@@ -220,7 +232,7 @@ Create an RDS MySQL instance, specifying configuration details like instance typ
          Maintenance window: Select No preference
          Enable deletion protection: uncheck
 
-6. Leave other parameters as default. Scroll to the bottom of the page, Click Create database.
+7. Leave other parameters as default. Scroll to the bottom of the page, Click Create database.
 
 It will take around 5 minutes for the database to become available. Once the status changes from creating to available, the database is ready.
 
