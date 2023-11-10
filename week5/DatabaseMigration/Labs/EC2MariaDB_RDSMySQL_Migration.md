@@ -414,35 +414,76 @@ Follow the below steps to complete Endpoint type:
    
 6. Click on the Create endpoint  button.
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9d6c5da0-1a0d-4973-a1a3-60da6b3ea3ec" width=600 height=400>
 
 ## Step 5:Create a Database Migration Task:
 
+
 In the DMS console, create a database migration task.
-Associate the task with the source and target endpoints you created in step 5.
-Configure the task settings, including migration type, table mappings, and any additional task settings as needed.
+Associate the task with the source and target endpoints you created in step 4.
 
-## Step 6: Start the Database Migration Task:
+An AWS Database Migration Service task is where all the migration process happens. We will specify the tables and schemas to use for the migration and any special processing, such as logging requirements, control table data, and error handling.
 
-After setting up the migration task, start it from the DMS console.
-DMS will begin replicating data from the source (EC2 MariaDB) to the target (RDS MySQL) as specified in your task settings.
-Monitor the Migration:
+1. Navigate to AWS DMS console and click on the Database migration tasks.Make sure you are in N.Virginia (us east-1) Region.
+
+2. Click on Database migration tasks from the left navigation menu and then click Create task
+
+3. Create a database migration task:
+
+    Task configuration:
+
+        Task identifier : Database-Migration-Task
+        Replication instance : Select dbmigration
+        Source database endpoint : Enter mysqlsource-database
+        Target database endpoint : Enter target-database
+        Migration type : Migrate existing data
+
+    Task settings:
+
+        Editing mode: Wizard
+        Target table preparation mode: Do nothing
+        LOB column settings: Limited LOB mode
+        Maximum LOB size (KB): 32 KB
+        Validation: Uncheck Turn on
+        Task logs: Uncheck Turn on cloudwatch logs
+        Leave Advance tasks settings as default.
+
+  Table mappings:
+
+        Editing mode : Wizard
+        Selection rules : Click on Add new Selection rule button
+        Schema : Select Enter a Schema
+        Source name : Enter %awschallenge (Database name)
+        Source table name : Enter % (all tables)
+        Action : Include
+
+4. Leave other settings as default.
+
+5. Click on Create task.
+
+Now the migration of Database will occur. Usually it will take around 1 minute.
+
+## Step 6:Status of AWS Database Migration Tasks:
 
 Continuously monitor the DMS console to track the progress of your migration task.
 Verify that data is being replicated correctly, and address any errors or issues that may arise during the migration process.
-Data Validation and Cutover:
 
-Once the migration task is complete, validate the data in the RDS MySQL instance to ensure data integrity.
-Plan for a cutover by stopping any writes to the source MariaDB database on the EC2 instance and making the RDS MySQL instance the new production database.
-Update Application Configuration:
+1. Navigate to Database migration tasks in left panel of DMS page.
 
-Update your application's configuration to point to the new RDS MySQL database as the destination.
-Test Your Application:
+   
+2. If you followed all the previous steps correctly, it will show the migration task status as Load complete, replication ongoing
+Now the Migration of database to Amazon RDS is completed.
 
-Thoroughly test your application with the new RDS MySQL instance to ensure it works as expected and all data is accessible.
+3.To check the migration status and details, we need to connect to the destination MySQL database which is in AWS RDS Instance.
+
+4. SSH back into Source EC2 Instance.
+
+5. Connect to AWS RDS instance. 
+
+6. Once inside MySQL Client, check the databases available.
 
 
-
-
+7. Now we can see the awschallenge and its tables Cohort and Students_Details, which were available in Source EC2 Linux Server migrated to Amazon RDS Instance Database.
 
 
 ## Cleanup:
