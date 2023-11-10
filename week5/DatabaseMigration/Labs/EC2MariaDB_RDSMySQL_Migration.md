@@ -20,13 +20,19 @@ Once Signed In to the AWS Management Console, make the default AWS Region as US 
 
 5. Launch an EC2 instance with follwoing details:
    
-  Name : Enter SourceEC2Instance
-  For Amazon Machine Image (AMI): Select Ubuntu in quickstart and in the drop box.
+  Name : ec2sourcedatbase
+  For Amazon Machine Image (AMI): Select Linux.
   For Instance Type: select t2.micro
   For Key pair: Select Create a new key pair Button
-  Key pair name: WhizKey
+  Key pair name: ec2sourceKP
   Key pair type: RSA
   Private key file format: .pem.
+
+  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/a3afb3c1-b57b-4e67-999b-1dca08fce2ac" width=300 height=300>
+
+    <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/04d7a894-3aeb-4fb8-996d-ec30b36fa748" width=300 height=300>
+  
+
 
 6. In Network Settings, Click on Edit:
 
@@ -34,6 +40,21 @@ Once Signed In to the AWS Management Console, make the default AWS Region as US 
   Select Create a new security group
   Security group name : Enter MigrationSG
   Description : Enter MigrationSG
+  
+  To Choose SSH,
+    Choose Type : SSH
+    Source : Anywhere
+   
+  For MYSQL/Aurora,
+    Click on Add security group rule
+    Source : Anywhere
+    Choose Type : MYSQL/Aurora 
+
+7. Keep rest thing Default and Click on Launch Instance Button.
+
+8. Click on View Instances. After 1-2 Mins, Instance State will become running and is ready.
+
+9. Note down the IPv4 Public IP address.
 
    
 
