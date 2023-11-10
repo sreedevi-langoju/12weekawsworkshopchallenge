@@ -119,25 +119,34 @@ switch to root user:
 13. Now log into mariadb server using command :
    ``` mysql -u root -p ```
 
-14. It prompts for passsword, the default password for root user in MAriadb is nothing , so press just enter .
+14. It prompts for passsword, the default password for root user in Mariadb is nothing , so just press enter.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/72bb0a4a-d8f7-41f8-840d-088fe9309098">
+15. Now, we have to set the password, for the root user. Please keep a note of this password as we will use this in upcoming steps. To set the default password,  please run the below-provided commands one by one:
+     ```
+     SET PASSWORD FOR 'root'@'localhost' = PASSWORD ('enter your new password here');
+     FLUSH PRIVILEGES;
+     exit;
+    ```
+    <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/72bb0a4a-d8f7-41f8-840d-088fe9309098">
+
+16. Now stop and start the mariadb server using below commands.
+         ``` 
+        sudo systemctl stop mariadb
+         sudo systemctl start mariadb
     
+        ```
+
+16. Now you can only log in using the password you have set and nothing else.After successful login, you will be able to see the welcome message and mysql> prompt waiting for your command.
+
+Note: Make sure you do not give any extra spaces while executing these commands.
     
+##### 17. Create a simple custom Database on Source EC2:
 
-16. Now, we have to set the password, for the root user. Please keep a note of this password as we will use this in upcoming steps. To set the default password,  please run the below-provided commands one by one:
-
-17. Now you can only log in using the password you have set and nothing else.After successful login, you will be able to see the welcome message and mysql> prompt waiting for your command:
-
-18. Make sure you do not give any extra spaces while executing these commands.
-    
-##### 16. Create a simple custom Database on Source EC2:
-
-we will create a simple database and create a table inside which will be migrated using DMS.
+we will create a simple database and create a table inside EC2 Mariadb which will be migrated using DMS.
 
 1. SSH back to Source EC2 Instance if you are out of it.
 
-2. Connect to Source MySQL Client .
+2. Connect to Source MySQL Client using user : root and password: new password you set before
    
 3. Create a Database
 
