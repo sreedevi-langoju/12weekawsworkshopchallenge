@@ -100,8 +100,16 @@ width=300 height=300>
     
 12. Check the MariaDB server installation and status on the EC2 instance.
 
-    * Once connected to the server, switch to root user
-    *  sudo su
+switch to root user:   ``` sudo su ```
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/63a7e96c-aba9-4de7-80bc-3f7995b08e65">
+
+    * Once connected to the server, check the status of the MAriaDB server
+
+        ``` sudo systemctl status mariadb ```
+    
+    <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e3ae7a1f-0ee5-46f1-a2ba-5b4f4bcb0681">
+
    
 13. Now, we have to set the password, for the root user. Please keep a note of this password as we will use this in upcoming steps. To set the default password,  please run the below-provided commands one by one:
 
