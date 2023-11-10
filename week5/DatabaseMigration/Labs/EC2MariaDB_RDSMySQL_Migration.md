@@ -1,6 +1,6 @@
 # Database Migration of MariaDB data on EC2 Instance to Amazon RDS MySQL using Amazon Database Migration Service(DMS)
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e4af4a9f-3174-4eb1-921f-1ceecad5a8bc" width=800 height=800>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e4af4a9f-3174-4eb1-921f-1ceecad5a8bc" width=800 height=600>
 <br>
 
 Migrating a MariaDB database from an Amazon EC2 instance to an Amazon RDS MySQL database using the AWS Database Migration Service (DMS) involves several steps.
@@ -414,7 +414,7 @@ Follow the below steps to complete Endpoint type:
    
 6. Click on the Create endpoint  button.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9d6c5da0-1a0d-4973-a1a3-60da6b3ea3ec" width=800 height=600>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9d6c5da0-1a0d-4973-a1a3-60da6b3ea3ec">
 
 ## Step 5:Create a Database Migration Task:
 
@@ -494,7 +494,7 @@ Now the Migration of database to Amazon RDS is completed.
 
 5. Connect to AWS RDS instance using below command :use user: admin paddword: your password( created earlier)
 
-               mysql -h <RDS endpou=int> -u admin -p
+               mysql -h < RDS endpoint > -u admin -p
 
    
    <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e8d0afaa-5e42-414c-87ce-d0fb90eeb139">
