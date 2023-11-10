@@ -73,7 +73,7 @@ width=300 height=300>
     Choose Type : MYSQL/Aurora 
     Source : Anywhere
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/a827a769-ecdd-4abe-9d5d-35a3b44e9b77" width=300 height=300>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/a827a769-ecdd-4abe-9d5d-35a3b44e9b77" width=600 height=300>
 
 7. In the advanced setting section, copy and paste the below script in the User data:
 
@@ -84,7 +84,7 @@ width=300 height=300>
     sudo systemctl start mariadb
     sudo systemctl enable mariadb '''
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/c4df809c-3f2b-4d4d-9253-a551a4f69e57">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/c4df809c-3f2b-4d4d-9253-a551a4f69e57" width=300 height=300>
 
 8. Keep rest thing Default and Click on Launch Instance Button.
 
@@ -92,23 +92,10 @@ width=300 height=300>
 
 10. Note down the IPv4 Public IP address.
 
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-SSH into the EC2 instance.
-Install the MariaDB server on the EC2 instance.
+11. SSH into the EC2 instance with public IP address of EC2 instance and key pair .pem file downloaded before.Follow these steps 
+    
+12. Install the MariaDB server on the EC2 instance.
+    
 
 ## Step 2:Create an AWS RDS - MySQL Instance (Destination Database):
 
