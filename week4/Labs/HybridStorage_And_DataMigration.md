@@ -138,7 +138,7 @@ In this task, you will deploy the File Gateway appliance as an Amazon Elastic Co
 
           Note: This security group is configured to allow Secure Shell (SSH) connections on port 22.
 
-            Verify that both security group now appear as selected (details on each will appear in boxes             in the console). 
+            Verify that both security group now appear as selected (details on each will appear in boxes in the console). 
 
           Tip: You may need to choose Show all selected to see them both.
           
@@ -223,7 +223,7 @@ In this task, you will deploy the File Gateway appliance as an Amazon Elastic Co
 
  16. In the File access settings screen, accept the default settings.
 
-      Note: You might get a warning message that the file share is accessible from anywhere. For this lab, you can          safely disregard this warning.
+      Note: You might get a warning message that the file share is accessible from anywhere. For this lab, you can safely disregard this warning.
      
  17. Scroll to the bottom of the Review and create screen, then select Create 
 
