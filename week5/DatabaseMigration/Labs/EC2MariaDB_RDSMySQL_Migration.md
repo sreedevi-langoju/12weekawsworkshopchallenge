@@ -277,7 +277,7 @@ Click on the  Create button to create the replication instance.
 
       NOTE : Ignore the error and click on Create button again
       
-7. It will take 5 minutes for a replication instance to be created. Once status changes to available, click on the instance and scroll down. You will find the details section of the replication instance.
+8. It will take 5 minutes for a replication instance to be created. Once status changes to available, click on the instance and scroll down. You will find the details section of the replication instance.
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/1fb3e4c5-54b3-4f73-94df-26c10193cf86">
 
@@ -287,31 +287,49 @@ Ex: Public IP address : 34.179.22.178
 
 Ex: Private IP address : 10.0.0.22
 
-8. Configure Replication Instance details in Source EC2 Instance:
+##### Configure Replication Instance details in Source EC2 Instance:
 
 9. Login to the MySQL:
 
-ommand Syntax to create a new user in a MySQL Database 
+SSH back into EC2 insatnce.
+login to Mariadb server: ``` mysql -u root -p ``` ( use new passowrd)
 
-CREATE USER 'root'@<<Private IP of Replication Instance>> IDENTIFIED BY 'your-root-password';
+10. Command syntax to create a new user in a MySQL Database 
 
-Example : CREATE USER 'root'@172.31.29.148 IDENTIFIED BY 'source123';
-We need to grant root access to the replication instance to connect with the MySQL server on Source EC2. To give access, follow the below steps:
-Command Syntax : 
-GRANT ALL ON *.* TO root@'<<Private IP of Replication Instance>>' IDENTIFIED BY 'your-root-password';
-Example: GRANT ALL ON *.* TO root@172.31.29.148;
-And repeat the same step now with the Public IP address of the replication instance.
+        ``` CREATE USER 'root'@<<Private IP of Replication Instance>> IDENTIFIED BY             'your-root-password'; ```
 
-CREATE USER 'root'@3.224.227.68 IDENTIFIED BY 'source123';
+Example : CREATE USER 'root'@10.0.9.95 IDENTIFIED BY 'your-root-password';
 
-GRANT ALL ON *.* TO root@3.224.227.68;
-Save the changes by using the following command:  
+11. We need to grant root access to the replication instance to connect with the MySQL server on Source EC2. 
+ 
+       ```  GRANT ALL ON *.* TO root@<<Private IP of Replication Instance>>; ```
+    
+Example:   GRANT ALL ON *.* TO root@10.0.9.95;
 
-FLUSH PRIVILEGES;
+12. And repeat the same step now with the Public IP address of the replication instance.
+
+       ``` CREATE USER 'root'@<<Public IP of Replication Instance>> IDENTIFIED BY             'your-root-password';
+        GRANT ALL ON *.* TO root@<<Public IP of Replication Instance>>;```
+
+
+Example : CREATE USER 'root'@44.214.111.130 IDENTIFIED BY ''your-root-password'';
+Example : GRANT ALL ON *.* TO root@44.214.111.130;
+
+ 
+13. Save the changes by using the following command:  
+
+      ```  FLUSH PRIVILEGES; ```
 
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/659497ed-9ad6-454d-a802-e93fd93ed098" width=500 height=300>
 
+14. Now stop and start the mariadb server using below commands.
+    
+         
+        sudo systemctl stop mariadb
+        sudo systemctl start mariadb
+
+    
 ## Step 3:Create a Replication Instance:
 
 In the DMS console, go to "Replication instances" and create a replication instance.
