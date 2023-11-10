@@ -287,6 +287,10 @@ Ex: Public IP address : 34.179.22.178
 
 Ex: Private IP address : 10.0.0.22
 
+8. fjSDHFH
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/659497ed-9ad6-454d-a802-e93fd93ed098" width=500 height=300>
+
 ## Step 3:Create a Replication Instance:
 
 In the DMS console, go to "Replication instances" and create a replication instance.
