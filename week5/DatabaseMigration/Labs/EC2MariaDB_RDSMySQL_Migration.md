@@ -245,44 +245,38 @@ Example: mydbinstance.c81x4bxxayay.us-east-1.rds.amazonaws.com
 
 In this task, we are going to create a replication instance in the AWS Database Migration Service (DMS). The replication instance will be used to replicate data from an EC2 MySQL database to an Amazon RDS database.
 
-Click on Services and then choose Database Migration Service under the Migration & Transfer.
+1. Click on Services and then choose Database Migration Service under the Migration & Transfer.Make sure you are in the N.Virginia region.
 
-Make sure you are in the N.Virginia region.
+2. Click on Replication instances from the left navigation menu and then click Create replication instance.
 
-Click on Replication instances from the left navigation menu and then click Create replication instance.
+3. In the Replication instance configuration section,
 
-In the Replication instance configuration section,
+      Name : dbmiration
+      Description : Enter any description
+      Instance class : Select dms.t3.medium
+      Engine version : Default
+      Allocated storage (GB) : Enter 10 GB
+      High Availability : Select Dev or test workload (Single-AZ).
+      VPC : migration-vpc( created in step1)
+      Publicly accessible : Check
 
-Name : Enter myreplicationinstance
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/f5bbfbd1-2801-44db-9681-0cc13afdb82f" width=500 height=300>
 
-Description : Enter To replicate EC2-Mysql to AWS RDS 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/8699893e-b0c2-4e73-81e7-1af916dd1bfa" width=500 height=300>
+5. In Advanced security and network configuration section,
 
-Instance class : Select dms.t3.micro
+      Replication subnet group : Default
+      Availability zone : Default
+      VPC security group(s) : Enter MigrationSG
+      KMS master key : Default
 
-Engine version : Default
-
-Allocated storage (GB) : Enter 10 GB
-
-High Availability : Select Dev or test workload (Single-AZ).
-
-VPC : default VPC
-Publicly accessible : Check
-In Advanced security and network configuration section,
-
-Replication subnet group : Default
-
-Availability zone : Default
-
-VPC security group(s) : Enter Migration-SG
-
-KMS master key : Default
-
-Leave other settings as default.
+6. Leave other settings as default.
 
 Click on the  Create button to create the replication instance.
 
-NOTE : Ignore the error and click on Create button again
-It will take 5 minutes for a replication instance to be created. Once status changes to available, click on the instance and scroll down. You will find the details section of the replication instance.
+      NOTE : Ignore the error and click on Create button again
+      
+7. It will take 5 minutes for a replication instance to be created. Once status changes to available, click on the instance and scroll down. You will find the details section of the replication instance.
 
 Select myreplicationinstance from Details section, copy the private & public IP address and note it down on the notepad.
 Public IP address : 34.199.212.178
@@ -334,5 +328,5 @@ Thoroughly test your application with the new RDS MySQL instance to ensure it wo
 
 ## Cleanup:
 
-After confirming that the migration was successful and your application is functioning properly with the RDS MySQL instance, you can terminate or decommission the EC2 instance running MariaDB, as it is no longer needed.And delete all the other resources you have provisioned to avoid unwanted billing.
+After confirming that the migration was successful and your application is functioning properly with the RDS MySQL instance, you can terminate or decommission the EC2 instance running MariaDB, as it is no longer needed.Don't forget to delete the configured resources when they are no longer needed to avoid unnecessary billing.
 
