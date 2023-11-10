@@ -113,7 +113,7 @@ width=300 height=300>
              sudo systemctl status mariadb  
        
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e3ae7a1f-0ee5-46f1-a2ba-5b4f4bcb0681">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e3ae7a1f-0ee5-46f1-a2ba-5b4f4bcb0681" width=600 height=300>
 
    
 13. Now log into mariadb server using command :
@@ -129,7 +129,7 @@ width=300 height=300>
              exit;
      
     
-    <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/72bb0a4a-d8f7-41f8-840d-088fe9309098">
+    <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/72bb0a4a-d8f7-41f8-840d-088fe9309098" width=600 height=300>
 
 17. Now stop and start the mariadb server using below commands.
     
@@ -161,7 +161,7 @@ we will create a simple database and create a table inside EC2 Mariadb which wil
 
 7. Create a sample Table of  <b>Students_Details </b>.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/f7e9e71b-699f-4dca-afdf-4bbc1e23edee)">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/f7e9e71b-699f-4dca-afdf-4bbc1e23edee" width=500 height=300>
 
 8. Insert data into the table  <b>Cohort </b>.  
 
@@ -169,7 +169,7 @@ we will create a simple database and create a table inside EC2 Mariadb which wil
 
 10. Check the items added in the Tables.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/8073feea-5297-4a67-8fff-32ddeb07e46b">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/8073feea-5297-4a67-8fff-32ddeb07e46b" width=500 height=300>
 
 
 11. After database migration, this new custom tables can be used as proof of database migration.
@@ -211,15 +211,15 @@ Create an RDS MySQL instance, specifying configuration details like instance typ
          VPC Security groups : Select Choose existing
          Existing VPC security group name : Remove the default security group and select MigrationSG from the dropdown list
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/2f585895-327a-4fe3-bbcf-40fe041fc17f" width=300 height=300>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/2f585895-327a-4fe3-bbcf-40fe041fc17f" width=500 height=300>
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/69a11a2f-8807-4b2f-b63d-904f312c78e5" width=300 height=300 >
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/69a11a2f-8807-4b2f-b63d-904f312c78e5" width=500 height=300 >
 
-<br>
+<br><br><br>
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/2a6308c3-743e-494c-98b8-0940eff4a672" width=300 height=300>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/2a6308c3-743e-494c-98b8-0940eff4a672" width=500 height=300>
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/09756f6e-31d2-45fc-aa8f-0711c7ea3058" width=300 height=300> 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/09756f6e-31d2-45fc-aa8f-0711c7ea3058" width=500 height=300> 
 
 
 6. Scroll down to Additional Configuration options
@@ -328,7 +328,11 @@ Test Your Application:
 Thoroughly test your application with the new RDS MySQL instance to ensure it works as expected and all data is accessible.
 
 
-Cleanup:
 
-After confirming that the migration was successful and your application is functioning properly with the RDS MySQL instance, you can terminate or decommission the EC2 instance running MariaDB, as it is no longer needed.
+
+
+
+## Cleanup:
+
+After confirming that the migration was successful and your application is functioning properly with the RDS MySQL instance, you can terminate or decommission the EC2 instance running MariaDB, as it is no longer needed.And delete all the other resources you have provisioned to avoid unwanted billing.
 
