@@ -8,7 +8,29 @@ Migrating a MariaDB database from an Amazon EC2 instance to an Amazon RDS MySQL 
 
 Once Signed In to the AWS Management Console, make the default AWS Region as US East (N. Virginia) us-east-1 for the entire process.
 
-## Step 1: Create a Source Database on EC2 (Linux) Instance and Install MariaDB Server:
+## Step 1: Create VPC:
+
+Creating a Virtual Private Cloud (VPC) with two public subnets and two private subnets, spanning two Availability Zones (AZs).
+
+1. In the AWS Management Console, search for VPC 
+2. Go to the VPC Dashboard.
+3. Create a VPC: Click on "Create VPC" Choose "VPC and More" option.
+4. Create VPC with following details:
+    VPC Name: migration
+    CIDR block:10.0.0.0/16
+    No.of AZ's: 2
+    No.of Public subnets: 2
+    No.of Private Subnets: 2
+    Select checkbox : Enable DNS hostnames and Enable DNS resolution
+   
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/a9822113-716c-4397-80f0-43a16f9c5460" width=300 height=300>
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/a0268749-ad9b-4121-8d0c-bf5883b15400" width=300 height=300>
+
+5. Click on "Create VPC".
+
+
+## Step 2: Create a Source Database on EC2 (Linux) Instance and Install MariaDB Server:
  
 1. In this task, we are going to create a new EC2 (Linux) Instance that will serve as the source database for the migration to Amazon RDS instance
 
@@ -30,12 +52,11 @@ Once Signed In to the AWS Management Console, make the default AWS Region as US 
 
   <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/a3afb3c1-b57b-4e67-999b-1dca08fce2ac" width=300 height=300>
 
-    <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/04d7a894-3aeb-4fb8-996d-ec30b36fa748" width=300 height=300>
+   <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/04d7a894-3aeb-4fb8-996d-ec30b36fa748" width=300 height=300>
   
-
-
+<br>
 6. In Network Settings, Click on Edit:
-
+  Choose VPC: migration (vpc cretaed in step1)
   Auto-assign public IP: Enable
   Select Create a new security group
   Security group name : Enter MigrationSG
