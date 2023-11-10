@@ -1,6 +1,6 @@
 # Database Migration of MariaDB data on EC2 Instance to Amazon RDS MySQL using Amazon Database Migration Service(DMS)
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e4af4a9f-3174-4eb1-921f-1ceecad5a8bc" width=600 height=600>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e4af4a9f-3174-4eb1-921f-1ceecad5a8bc" width=800 height=800>
 <br>
 
 Migrating a MariaDB database from an Amazon EC2 instance to an Amazon RDS MySQL database using the AWS Database Migration Service (DMS) involves several steps.
@@ -23,9 +23,9 @@ Creating a Virtual Private Cloud (VPC) with two public subnets and two private s
     No.of Private Subnets: 2
     Select checkbox : Enable DNS hostnames and Enable DNS resolution
    
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/a9822113-716c-4397-80f0-43a16f9c5460" width=500 height=400>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/a9822113-716c-4397-80f0-43a16f9c5460" width=400 height=400>
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/a0268749-ad9b-4121-8d0c-bf5883b15400" width=500 height=400>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/a0268749-ad9b-4121-8d0c-bf5883b15400" width=400 height=400>
 
 5. Click on "Create VPC".
 
@@ -106,7 +106,7 @@ width=500 height=400>
               sudo su 
     
  
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/63a7e96c-aba9-4de7-80bc-3f7995b08e65">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/63a7e96c-aba9-4de7-80bc-3f7995b08e65" width=600 height=300>
 
  Once connected to the server, check the status of the MariaDB server
   
