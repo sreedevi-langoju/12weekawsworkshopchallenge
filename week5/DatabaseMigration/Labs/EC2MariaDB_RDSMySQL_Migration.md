@@ -117,27 +117,27 @@ width=300 height=300>
 
    
 13. Now log into mariadb server using command :
-   ``` mysql -u root -p ```
+       mysql -u root -p 
 
 14. It prompts for passsword, the default password for root user in Mariadb is nothing , so just press enter.
 
 15. Now, we have to set the password, for the root user. Please keep a note of this password as we will use this in upcoming steps. To set the default password,  please run the below-provided commands one by one:
     
-     ```
+     
      SET PASSWORD FOR 'root'@'localhost' = PASSWORD ('enter your new password here');
      FLUSH PRIVILEGES;
      exit;
      
-    ```
+    
     <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/72bb0a4a-d8f7-41f8-840d-088fe9309098">
 
 17. Now stop and start the mariadb server using below commands.
     
-         ``` 
+         
         sudo systemctl stop mariadb
-         sudo systemctl start mariadb
+        sudo systemctl start mariadb
     
-        ```
+        
 
 18. Now you can only log in using the password you have set and nothing else.After successful login, you will be able to see the welcome message and mysql> prompt waiting for your command.
 
@@ -151,7 +151,7 @@ we will create a simple database and create a table inside EC2 Mariadb which wil
 
 2. Connect to Source MySQL Client using user : root and password: new password you set before
    
-3. Please find the database queries in the attached [dbschema.sql file](./week5/DatabaseMigration/Labs/dbschema.sql).
+3. Please find the database queries in the attached [dbschema.sql file](./dbschema.sql).
 
 4. Create a Database
 
@@ -169,10 +169,10 @@ we will create a simple database and create a table inside EC2 Mariadb which wil
 
 10. Check the items added in the Tables.
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/8073feea-5297-4a67-8fff-32ddeb07e46b">
+
+
 11. After database migration, this new custom tables can be used as proof of database migration.
-
-
-      
     
 
 ## Step 2:Create an AWS RDS - MySQL Instance (Destination Database):
