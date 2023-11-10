@@ -6,7 +6,7 @@ In the world of cloud computing, Amazon Web Services (AWS) offers a plethora of 
 
 ### Amazon RDS (Relational Database Service):
 Database Type: Relational Database
-Definition: Amazon RDS is a managed service for relational databases that simplifies database setup, patching, and backups. It supports various database engines like MySQL, PostgreSQL, Oracle, SQL Server, and MariaDB, making it ideal for structured data storage with ACID compliance.
+Definition: Amazon RDS is a managed service for relational databases that simplifies database setup, patching, and backups. It supports various database engines like Aurora, MySQL, PostgreSQL, Oracle, SQL Server, and MariaDB, making it ideal for structured data storage with ACID compliance.
 Use Cases: Ideal for traditional applications where data consistency and integrity are crucial, such as content management systems and e-commerce platforms.
 
 ### Amazon Aurora:
