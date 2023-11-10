@@ -17,13 +17,13 @@ INSERT INTO Cohort (Cohort_Name,No_Of_Students) Values ('Cohort-Summer-23',75);
 
 
 
-INSERT INTO Students_Details ( Student_Name ,Student_Email ,Student_Contact_Num,Cohort_Num) VALUES ('Student 1','student1@gmail.com','123456',1);
+INSERT INTO Students_Details ( Student_Name ,Student_Email ,Student_Contact_Num,Cohort_Num) VALUES ('Student 1','student1@gmail.com','1245826',1);
 
-INSERT INTO Students_Details ( Student_Name ,Student_Email ,Student_Contact_Num,Cohort_Num) VALUES ('Student 2','student2@gmail.com','123456',1);
+INSERT INTO Students_Details ( Student_Name ,Student_Email ,Student_Contact_Num,Cohort_Num) VALUES ('Student 2','student2@gmail.com','123457656',1);
 
-INSERT INTO Students_Details ( Student_Name ,Student_Email ,Student_Contact_Num,Cohort_Num) VALUES ('Student 3','student3@gmail.com','123456',1);
+INSERT INTO Students_Details ( Student_Name ,Student_Email ,Student_Contact_Num,Cohort_Num) VALUES ('Student 3','student3@gmail.com','2565704',1);
 
-INSERT INTO Students_Details ( Student_Name ,Student_Email ,Student_Contact_Num,Cohort_Num) VALUES ('Student 4','student4@gmail.com','123456',1);
+INSERT INTO Students_Details ( Student_Name ,Student_Email ,Student_Contact_Num,Cohort_Num) VALUES ('Student 4','student4@gmail.com','742085',1);
 
 
 INSERT INTO Students_Details ( Student_Name ,Student_Email ,Student_Contact_Num,Cohort_Num) VALUES ('Student 5','student5@gmail.com','13579',2);
