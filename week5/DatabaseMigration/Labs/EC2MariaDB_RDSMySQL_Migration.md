@@ -68,15 +68,12 @@ width=300 height=300>
   To Choose SSH,
     Choose Type : SSH
     Source : Security best practice is : choose My IP or Custom IP
-   
-  For MYSQL/Aurora,
-    Click on Add security group rule
-    Source : Anywhere
+
+  Click on Add security group rule
     Choose Type : MYSQL/Aurora 
+    Source : Anywhere
 
-
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/a827a769-ecdd-4abe-9d5d-35a3b44e9b77
-" width=300 height=300>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/a827a769-ecdd-4abe-9d5d-35a3b44e9b77" width=300 height=300>
 
 7. In the advanced setting section, copy and paste the below script in the User data:
 
@@ -87,7 +84,7 @@ width=300 height=300>
     sudo systemctl start mariadb
     sudo systemctl enable mariadb '''
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/c4df809c-3f2b-4d4d-9253-a551a4f69e57)">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/c4df809c-3f2b-4d4d-9253-a551a4f69e57">
 
 8. Keep rest thing Default and Click on Launch Instance Button.
 
