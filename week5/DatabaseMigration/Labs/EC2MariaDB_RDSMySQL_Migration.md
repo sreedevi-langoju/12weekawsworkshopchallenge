@@ -67,17 +67,16 @@ width=300 height=300>
   
   To Choose SSH,
     Choose Type : SSH
-    Source : Anywhere
+    Source : Security best practice is : choose My IP or Custom IP
    
   For MYSQL/Aurora,
     Click on Add security group rule
     Source : Anywhere
     Choose Type : MYSQL/Aurora 
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/d8e3f28a-82af-43d4-84bb-b19934c2f097
-" width=300 height=300>
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/946dc820-3999-494c-8f2d-b5ec18f93714" width=300 height=300>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/a827a769-ecdd-4abe-9d5d-35a3b44e9b77
+" width=300 height=300>
 
 
 7. Keep rest thing Default and Click on Launch Instance Button.
