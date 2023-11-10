@@ -87,7 +87,7 @@ width=300 height=300>
     sudo systemctl enable mariadb
    ```
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/c4df809c-3f2b-4d4d-9253-a551a4f69e57" width=300 height=300>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/c4df809c-3f2b-4d4d-9253-a551a4f69e57" width=600 height=300>
 
 
 8. Keep rest thing Default and Click on Launch Instance Button.
@@ -100,22 +100,36 @@ width=300 height=300>
     
 12. Check the MariaDB server installation and status on the EC2 instance.
 
-switch to root user:   ``` sudo su ```
+switch to root user:   
+        ``` 
+        sudo su 
+        ```
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/63a7e96c-aba9-4de7-80bc-3f7995b08e65">
 
     * Once connected to the server, check the status of the MAriaDB server
 
-        ``` sudo systemctl status mariadb ```
+        ``` 
+        sudo systemctl status mariadb
+        ```
     
-    <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e3ae7a1f-0ee5-46f1-a2ba-5b4f4bcb0681">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e3ae7a1f-0ee5-46f1-a2ba-5b4f4bcb0681">
 
    
-13. Now, we have to set the password, for the root user. Please keep a note of this password as we will use this in upcoming steps. To set the default password,  please run the below-provided commands one by one:
+13. Now log into mariadb server using command :
+   ``` mysql -u root -p ```
 
-14. Now you can only log in using the password you have set and nothing else.After successful login, you will be able to see the welcome message and mysql> prompt waiting for your command:
+14. It prompts for passsword, the default password for root user in MAriadb is nothing , so press just enter .
 
-15. Make sure you do not give any extra spaces while executing these commands.
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/72bb0a4a-d8f7-41f8-840d-088fe9309098">
+    
+    
+
+16. Now, we have to set the password, for the root user. Please keep a note of this password as we will use this in upcoming steps. To set the default password,  please run the below-provided commands one by one:
+
+17. Now you can only log in using the password you have set and nothing else.After successful login, you will be able to see the welcome message and mysql> prompt waiting for your command:
+
+18. Make sure you do not give any extra spaces while executing these commands.
     
 ##### 16. Create a simple custom Database on Source EC2:
 
