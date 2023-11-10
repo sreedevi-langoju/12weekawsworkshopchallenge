@@ -108,7 +108,31 @@ width=300 height=300>
 14. Now you can only log in using the password you have set and nothing else.After successful login, you will be able to see the welcome message and mysql> prompt waiting for your command:
 
 15. Make sure you do not give any extra spaces while executing these commands.
+    
+##### 16. Create a simple custom Database on Source EC2:
 
+we will create a simple database and create a table inside which will be migrated using DMS.
+
+1. SSH back to Source EC2 Instance if you are out of it.
+
+2. Connect to Source MySQL Client .
+   
+3. Create a Database
+
+4. Switch the database <b> awschallenge</b>.
+
+5. Create a sample Table of  <b>Cohort </b>.
+
+6. Create a sample Table of  <b>Students_Details </b>.
+
+7. Insert data into the table  <b>Cohort </b>.
+   
+
+8. Insert data into the table <b>Students_Details </b>.
+
+9. Check the items added in the Tables.
+
+10. After database migration, this new custom tables can be used as proof of database migration.
 
 
       
