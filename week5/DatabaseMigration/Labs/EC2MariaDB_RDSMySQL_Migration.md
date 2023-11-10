@@ -296,20 +296,21 @@ login to Mariadb server: ``` mysql -u root -p ``` ( use new passowrd)
 
 10. Command syntax to create a new user in a MySQL Database 
 
-        ``` CREATE USER 'root'@<<Private IP of Replication Instance>> IDENTIFIED BY 'your-root-password'; ```
+           CREATE USER 'root'@<<Private IP of Replication Instance>> IDENTIFIED BY 'your-root-password'; 
 
 Example : CREATE USER 'root'@10.0.9.95 IDENTIFIED BY 'your-root-password';
 
 11. We need to grant root access to the replication instance to connect with the MySQL server on Source EC2. 
  
-       ```  GRANT ALL ON *.* TO root@<<Private IP of Replication Instance>>; ```
+          GRANT ALL ON *.* TO root@<<Private IP of Replication Instance>>; 
     
 Example:   GRANT ALL ON *.* TO root@10.0.9.95;
 
 12. And repeat the same step now with the Public IP address of the replication instance.
 
-       ``` CREATE USER 'root'@<<Public IP of Replication Instance>> IDENTIFIED BY 'your-root-password';
-        GRANT ALL ON *.* TO root@<<Public IP of Replication Instance>>;```
+         CREATE USER 'root'@<<Public IP of Replication Instance>> IDENTIFIED BY 'your-root-password';
+    
+         GRANT ALL ON *.* TO root@<<Public IP of Replication Instance>>;
 
 
 Example : CREATE USER 'root'@44.214.111.130 IDENTIFIED BY ''your-root-password'';
@@ -318,7 +319,7 @@ Example : GRANT ALL ON *.* TO root@44.214.111.130;
  
 13. Save the changes by using the following command:  
 
-      ```  FLUSH PRIVILEGES; ```
+          FLUSH PRIVILEGES; 
 
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/659497ed-9ad6-454d-a802-e93fd93ed098" width=500 height=300>
@@ -332,9 +333,96 @@ Example : GRANT ALL ON *.* TO root@44.214.111.130;
 
 ## Step 4: Create Endpoints for Your Source and Destination Databases:
 
-In the AWS DMS console, create source and target endpoints.
-For the source endpoint, specify the EC2 instance with MariaDB, including connection details.
-For the target endpoint, select the RDS MySQL instance you created in step 4, and provide the necessary connection details.
+In the AWS DMS console, we have to create the Source and Target endpoints for EC2 and RDS Instances. These endpoints will help to connect the replication instance with both source and target machines. 
+
+#### Source Endpoint
+
+1.Make sure you are in N.Virginia (us-east-1) region.
+
+2.To create an Endpoint, Click on the Endpoints (Left panel) in the DMS service console page and click on Create endpoint
+Follow the below steps to complete Endpoint type:
+
+3. Select endpoint as Source endpoint
+
+    Select RDS DB instance: Uncheck (This is for Source, i.e. Mariadb on EC2)
+    Endpoint configuration:
+    Endpoint identifier : ec2source-database
+    Descriptive Amazon Resource Name (ARN): sourcemysqlendpoint
+    Source engine : Select MariaDB
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/c2d5749b-4754-4302-9859-c62bea7fdb66" width=500 height=400>
+
+    Access to endpoint database: Choose Provide access information manually
+    Server name : Public IP address of Source EC2 Instance (Enter your IP)
+    Port : 3306
+    Username :  root
+    Password :  enter your root password( Which was created earlier)
+    Secure Socket Layer (SSL) mode: None
+    Leave other configurations as default.
+
+    
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/8bf7d7c1-eff6-4b89-ad0c-f7d227c36ec4" width=500 height=400>
+
+
+    Test endpoint connection:
+        VPC : migration (Which was created earlier)
+        Replication instance : Enter dbmigration (Which was created earlier)
+        
+        
+5. Click on Run test to test the connection. If all are working fine, you will be able to see the status as “successful” as         shown in the below screenshot.
+
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/bfa82f9c-3ffa-4810-abca-93d1eebc0c56" width=500 height=400>
+
+
+6. Click on Create Endpoint.
+   
+
+#### Target Endpoint:
+To create an Endpoint, Click on the Endpoints(Left panel) in the DMS service console page and click on the Create endpoint button
+
+Follow the below steps to complete Endpoint type:
+
+Select endpoint as Target endpoint
+
+Select RDS DB instance: check (This is for Target i.eRDS Instance)
+
+Select RDS Database: mydbinstance
+
+Endpoint configuration:
+
+Endpoint identifier : Enter mydbinstance
+
+Descriptive Amazon Resource Name (ARN): Enter awsrdsendpoint
+
+Target engine : Enter MySQL
+
+Access to endpoint database: Choose Provide access information manually
+
+Server name : Enter mydbinstance.c81x4bxxayay.us-east-1.rds.amazonaws.com ? DNS Endpoint of RDS database
+
+Port : Enter 3306
+
+Secure Socket Layer (SSL) mode: None
+
+User name : Enter awsrdsuser
+
+Password : Enter whizlabs123
+
+Leave other settings as default.
+
+Test endpoint connection:
+
+VPC : Default
+
+Replication instance : Enter myreplicationinstance (Which we created earlier)
+
+Click on Run test to test the connection.
+
+Click on the Create endpoint  button.
+
+
+
 
 
 ## Step 5:Create a Database Migration Task:
