@@ -1,6 +1,6 @@
 # Database Migration of MariaDB data on EC2 Instance to Amazon RDS MySQL using Amazon Database Migration Service(DMS)
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e4af4a9f-3174-4eb1-921f-1ceecad5a8bc">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e4af4a9f-3174-4eb1-921f-1ceecad5a8bc" width=600 height=600>
 <br>
 
 Migrating a MariaDB database from an Amazon EC2 instance to an Amazon RDS MySQL database using the AWS Database Migration Service (DMS) involves several steps.
@@ -23,14 +23,14 @@ Creating a Virtual Private Cloud (VPC) with two public subnets and two private s
     No.of Private Subnets: 2
     Select checkbox : Enable DNS hostnames and Enable DNS resolution
    
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/a9822113-716c-4397-80f0-43a16f9c5460" width=300 height=300>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/a9822113-716c-4397-80f0-43a16f9c5460" width=500 height=400>
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/a0268749-ad9b-4121-8d0c-bf5883b15400" width=300 height=300>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/a0268749-ad9b-4121-8d0c-bf5883b15400" width=500 height=400>
 
 5. Click on "Create VPC".
 
-6. <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/939d55d4-ce0a-4b8c-9077-0beb6b43635d"
-width=300 height=300>
+ <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/939d55d4-ce0a-4b8c-9077-0beb6b43635d"
+width=500 height=400>
 
 
 ## Step 2: Create a Source Database on EC2 (Linux) Instance and Install MariaDB Server:
@@ -43,7 +43,7 @@ width=300 height=300>
 
 4. Click on Instances from the left sidebar and then click on Launch instances.
 
-5. Launch an EC2 instance with follwoing details:
+5. Launch an EC2 instance with following details:
    
   Name : ec2sourcedatbase
   For Amazon Machine Image (AMI): Select Linux.
