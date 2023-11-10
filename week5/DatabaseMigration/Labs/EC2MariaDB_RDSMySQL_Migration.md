@@ -379,50 +379,40 @@ Follow the below steps to complete Endpoint type:
    
 
 #### Target Endpoint:
-To create an Endpoint, Click on the Endpoints(Left panel) in the DMS service console page and click on the Create endpoint button
 
-Follow the below steps to complete Endpoint type:
+1. To create an Endpoint, Click on the Endpoints(Left panel) in the DMS service console page and click on the Create endpoint button
 
-Select endpoint as Target endpoint
+2. Follow the below steps to complete Endpoint type:
 
-Select RDS DB instance: check (This is for Target i.eRDS Instance)
+        Select endpoint as Target endpoint
+        Select RDS DB instance: check (This is for Target i.eRDS Instance)
+        RDS insatnce details populate automatically
 
-Select RDS Database: mydbinstance
-
-Endpoint configuration:
-
-Endpoint identifier : Enter mydbinstance
-
-Descriptive Amazon Resource Name (ARN): Enter awsrdsendpoint
-
-Target engine : Enter MySQL
-
-Access to endpoint database: Choose Provide access information manually
-
-Server name : Enter mydbinstance.c81x4bxxayay.us-east-1.rds.amazonaws.com ? DNS Endpoint of RDS database
-
-Port : Enter 3306
-
-Secure Socket Layer (SSL) mode: None
-
-User name : Enter awsrdsuser
-
-Password : Enter whizlabs123
-
-Leave other settings as default.
-
-Test endpoint connection:
-
-VPC : Default
-
-Replication instance : Enter myreplicationinstance (Which we created earlier)
-
-Click on Run test to test the connection.
-
-Click on the Create endpoint  button.
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/79cc3c8f-e9f9-4324-b8c1-707a24c06b41" width=600 height=400>
 
 
+        Select Access to endpoint database: Choose Provide access information manually
+        Server name :  DNS Endpoint of RDS database populate automatically
+        Port : Enter 3306
+        Secure Socket Layer (SSL) mode: None
+        User name : admin
+        Password : enter your admin password( which created earlier)
+        Leave other settings as default.
+        
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/f51218eb-7620-4d1d-8a22-6dd7b3a3804f" width=600 height=400>
 
+
+4. Test endpoint connection:
+
+        VPC : Default
+        Replication instance : Enter dbmigration (Which we created earlier)
+
+5. Click on Run test to test the connection.If all are working fine, you will be able to see the status as “successful” as         shown in the below screenshot.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/b047e071-c2a3-4ea1-9060-240f13c971ba" width=600 height=400>
+
+   
+6. Click on the Create endpoint  button.
 
 
 ## Step 5:Create a Database Migration Task:
