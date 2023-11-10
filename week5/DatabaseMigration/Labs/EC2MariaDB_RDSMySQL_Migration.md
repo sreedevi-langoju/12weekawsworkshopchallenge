@@ -263,6 +263,7 @@ In this task, we are going to create a replication instance in the AWS Database 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/f5bbfbd1-2801-44db-9681-0cc13afdb82f" width=500 height=300>
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/8699893e-b0c2-4e73-81e7-1af916dd1bfa" width=500 height=300>
+
 5. In Advanced security and network configuration section,
 
       Replication subnet group : Default
@@ -270,7 +271,7 @@ In this task, we are going to create a replication instance in the AWS Database 
       VPC security group(s) : Enter MigrationSG
       KMS master key : Default
 
-6. Leave other settings as default.
+7. Leave other settings as default.
 
 Click on the  Create button to create the replication instance.
 
@@ -278,10 +279,13 @@ Click on the  Create button to create the replication instance.
       
 7. It will take 5 minutes for a replication instance to be created. Once status changes to available, click on the instance and scroll down. You will find the details section of the replication instance.
 
-Select myreplicationinstance from Details section, copy the private & public IP address and note it down on the notepad.
-Public IP address : 34.199.212.178
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/1fb3e4c5-54b3-4f73-94df-26c10193cf86">
 
-Private IP address : 172.31.15.146
+Select dbmiration from Details section, copy the private & public IP address and note it down on the notepad.
+
+Ex: Public IP address : 34.179.22.178
+
+Ex: Private IP address : 10.0.0.22
 
 ## Step 3:Create a Replication Instance:
 
