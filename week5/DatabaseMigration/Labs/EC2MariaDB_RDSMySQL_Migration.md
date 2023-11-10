@@ -407,14 +407,14 @@ Follow the below steps to complete Endpoint type:
         VPC : Default
         Replication instance : Enter dbmigration (Which we created earlier)
 
-5. Click on Run test to test the connection.If all are working fine, you will be able to see the status as “successful” as         shown in the below screenshot.
+5. Click on Run test to test the connection.If all are working fine, you will be able to see the status as “successful” as shown in the below screenshot.
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/b047e071-c2a3-4ea1-9060-240f13c971ba" width=600 height=400>
 
    
 6. Click on the Create endpoint  button.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9d6c5da0-1a0d-4973-a1a3-60da6b3ea3ec" width=600 height=400>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9d6c5da0-1a0d-4973-a1a3-60da6b3ea3ec" width=800 height=600>
 
 ## Step 5:Create a Database Migration Task:
 
