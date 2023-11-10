@@ -96,7 +96,7 @@ width=300 height=300>
 
 10. Note down the IPv4 Public IP address.
 
-11. SSH into the EC2 instance with public IP address of EC2 instance and key pair .pem file downloaded before.Follow these steps  [SSh_Into_Linux_Instance.md file ](/week4/Labs/SSH_Into_Linux_Instance.md) 
+11. SSH into the EC2 instance with public IP address of EC2 instance and key pair .pem file downloaded before.Follow these steps  [SSh_Into_Linux_Instance.md file ](./SSH_Into_Linux_Instance.md) 
     
 12. Check the MariaDB server installation and status on the EC2 instance.
 
