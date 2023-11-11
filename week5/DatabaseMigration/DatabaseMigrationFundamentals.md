@@ -6,6 +6,8 @@ Database Migration is the process of transferring data, schema, and configuratio
 Amazon Database Migration Service (DMS) is a fully managed database migration service provided by Amazon Web Services (AWS). It simplifies the process of migrating databases, making it easier for organizations to move data between different database platforms and locations. DMS supports various source and target database engines, including but not limited to MySQL, PostgreSQL, Oracle, SQL Server, and Amazon RDS.
 Its advantages include a managed service, low downtime, heterogeneous support, data transformation, real-time replication, and schema conversion
 
+<img src=https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/6fc07d7c-53ee-4f8c-8617-4201dd9a0ab1">
+
 
 ### Why We Need Amazon DMS:
 
