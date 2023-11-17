@@ -78,16 +78,36 @@ Here's a step-by-step guide to create a VPC with one public subnet, one private 
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e85fc901-10f3-49f5-8154-56813b54451b">
 
-  * check the resources created:
-  * VPC with public and private subnets.
-  * Internet Gateway attached to the VPC.
-  * Route tables configured for subnets.
-  * EC2 instance launched in the public subnet with a security group configured.
+  * Check the outputs tab for EC2Instance stack , you will find the Public IP address of the EC2 Instance
+
+ <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/1425bc09-a085-4443-b03f-3665812a2086">
+
+  * Goto VPC console andcheck the resources created:
+    
+    * check VPC with public and private subnets.
+    * Internet Gateway attached to the VPC.
+    * Route tables configured for subnets.   
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/60d01a86-bfc4-491b-bfb1-764596c93063">
 
 
-Post-Stack Creation Actions:
+    * EC2 instance launched in the public subnet with a security group configured.
 
-Test connectivity to the EC2 instance using SSH based on the security group settings.
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/075533df-c8f7-4315-b22a-084f2f0a4946">
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/93e76cd8-0e35-4e53-bf16-3befbce4765c">
+
+   * Copy the public IP address of the EC2 isnatnce and paste it on a web browser ,you will see the Helloworld message as below:
+     
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/415c1acb-056e-4ba5-bebb-a2bc48cf0b24">
+
+    Test connectivity to the EC2 instance using SSH based on the security group settings.
+
+## Step 6: Cleanup:
+
 Ensure that the VPC, subnets, and EC2 instance are functioning as expected.
-This process involves setting up a nested CloudFormation stack where the parent stack references the URLs of the VPC and EC2 templates stored in an S3 bucket, enabling the creation of VPC resources, subnets, and an EC2 instance within the defined VPC. Adjust parameters and configurations according to your specific requirements and AWS environment.
+
+If you delete the parent stack from the cloud formation, all the resources created with it will get deleted.
+
+
 
