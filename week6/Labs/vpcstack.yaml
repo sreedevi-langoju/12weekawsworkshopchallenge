@@ -1,0 +1,88 @@
+Parameters:
+  VPCCidrBlock:
+    Description: Enter the CIDR block for the VPC
+    Type: String
+    Default: "10.0.0.0/16"
+
+  PublicSubnetCidrBlock:
+    Description: Enter the CIDR block for the Public Subnet
+    Type: String
+    Default: "10.0.1.0/24"
+
+  PrivateSubnetCidrBlock:
+    Description: Enter the CIDR block for the Private Subnet
+    Type: String
+    Default: "10.0.2.0/24"
+
+Resources:
+  MyVPC:
+    Type: "AWS::EC2::VPC"
+    Properties:
+      CidrBlock: !Ref VPCCidrBlock
+
+  InternetGateway:
+    Type: "AWS::EC2::InternetGateway"
+    Properties:
+      Tags:
+        - Key: Name
+          Value: MyInternetGateway
+
+  AttachGateway:
+    Type: "AWS::EC2::VPCGatewayAttachment"
+    Properties:
+      VpcId: !Ref MyVPC
+      InternetGatewayId: !Ref InternetGateway
+
+  PublicSubnet:
+    Type: "AWS::EC2::Subnet"
+    Properties:
+      VpcId: !Ref MyVPC
+      CidrBlock: !Ref PublicSubnetCidrBlock
+      MapPublicIpOnLaunch: true
+      AvailabilityZone: !Select [ 0, !GetAZs  '' ]
+
+  PrivateSubnet:
+    Type: "AWS::EC2::Subnet"
+    Properties:
+      VpcId: !Ref MyVPC
+      CidrBlock: !Ref PrivateSubnetCidrBlock
+      AvailabilityZone: !Select [ 0, !GetAZs  '' ]
+
+  PublicRouteTable:
+    Type: "AWS::EC2::RouteTable"
+    Properties:
+      VpcId: !Ref MyVPC
+
+  PrivateRouteTable:
+    Type: "AWS::EC2::RouteTable"
+    Properties:
+      VpcId: !Ref MyVPC
+
+  InternetRoute:
+    Type: "AWS::EC2::Route"
+    DependsOn: AttachGateway
+    Properties:
+      RouteTableId: !Ref PublicRouteTable
+      DestinationCidrBlock: "0.0.0.0/0"
+      GatewayId: !Ref InternetGateway
+
+  PublicSubnetRouteTableAssociation:
+    Type: "AWS::EC2::SubnetRouteTableAssociation"
+    Properties:
+      SubnetId: !Ref PublicSubnet
+      RouteTableId: !Ref PublicRouteTable
+
+  PrivateSubnetRouteTableAssociation:
+    Type: "AWS::EC2::SubnetRouteTableAssociation"
+    Properties:
+      SubnetId: !Ref PrivateSubnet
+      RouteTableId: !Ref PrivateRouteTable
+
+Outputs:
+  MyVPC:
+    Description: VPC ID
+    Value: !Ref MyVPC
+
+  PublicSubnet:
+    Description: Public Subnet ID
+    Value: !Ref PublicSubnet

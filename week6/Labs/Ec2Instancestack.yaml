@@ -1,0 +1,67 @@
+Parameters:
+  VPCId:
+    Description: Enter the ID of the VPC
+    Type: String
+
+  PublicSubnetId:
+    Description: Enter the ID of the Public Subnet
+    Type: String
+
+  EC2KeyName:
+    Description: Name of the EC2 Key Pair
+    Type: AWS::EC2::KeyPair::KeyName
+
+  EC2ImageId:
+    Description: ID of the Amazon Machine Image (AMI)
+    Type: AWS::EC2::Image::Id
+
+  EC2InstanceType:
+    Description: Type of EC2 Instance
+    Type: String
+
+  MyIP:
+    Description: Your IP Address
+    Type: String
+
+Resources:
+  MySecurityGroup:
+    Type: "AWS::EC2::SecurityGroup"
+    Properties:
+      GroupDescription: Security group for SSH and HTTP
+      VpcId: !Ref VPCId
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: !Ref MyIP # Allow SSH from your specific IP
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: "0.0.0.0/0" # Allow HTTP from any IP
+
+  MyEC2Instance:
+    Type: "AWS::EC2::Instance"
+    Properties:
+      ImageId: !Ref EC2ImageId
+      InstanceType: !Ref EC2InstanceType
+      SubnetId: !Ref PublicSubnetId
+      KeyName: !Ref EC2KeyName
+      SecurityGroupIds:
+        - !Ref MySecurityGroup # Reference the security group here
+      UserData:
+        Fn::Base64: |
+          #!/bin/bash
+          yum update -y
+          yum install -y httpd
+          systemctl start httpd
+          systemctl enable httpd
+          echo "<h1>Hello World from $(hostname -f)</h1>" > /var/www/html/index.html
+          chmod 755 /var/www/html # the chmod mode
+      Tags:
+        - Key: Name
+          Value: MyEC2Instance
+
+Outputs:
+  PublicIPAddress:
+    Description: Public IP Address of the EC2 Instance
+    Value: !GetAtt MyEC2Instance.PublicIp
