@@ -116,8 +116,8 @@ If you delete the parent stack from the cloud formation, all the resources creat
 
 Now delete the S3 bucket and objects int it.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/7c1392e1-fcc3-470b-9d6b-01516d657fc9">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/7c1392e1-fcc3-470b-9d6b-01516d657fc9" width=400 height=400>
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e8cab37c-df9f-4b80-9df0-a86a1e49971f">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e8cab37c-df9f-4b80-9df0-a86a1e49971f" width=400 height=400>
 
 ##### Congratuations, you successfully created VPC and its compoennets and launch EC2 instance with in that VPC using AWS Cloud Formation service - Nested Stacks!!!
