@@ -23,11 +23,11 @@ Here's a step-by-step guide to create a VPC with one public subnet, one private 
 
   * Retrieve the Object URLs of each uploaded file.
     
-   Ex: https://mycfbucket1116.s3.amazonaws.com/parentstack.yaml
+   Ex:  https://mycfbucket1116.s3.amazonaws.com/parentstack.yaml
 
-       https://mycfbucket1116.s3.amazonaws.com/vpcstack.yaml
+        https://mycfbucket1116.s3.amazonaws.com/vpcstack.yaml
 
-       https://mycfbucket1116.s3.amazonaws.com/Ec2Instancestack.yaml
+        https://mycfbucket1116.s3.amazonaws.com/Ec2Instancestack.yaml
  
   * Download the parentstack.yaml CloudFormation template to your local environment.
     
@@ -103,11 +103,21 @@ Here's a step-by-step guide to create a VPC with one public subnet, one private 
 
     Test connectivity to the EC2 instance using SSH based on the security group settings.
 
+
 ## Step 6: Cleanup:
 
-Ensure that the VPC, subnets, and EC2 instance are functioning as expected.
+Ensure that the VPC, subnets, and EC2 instance are functioning as expected.Don't forget to delete the configured resources when they are no longer needed to avoid unnecessary billing.
 
 If you delete the parent stack from the cloud formation, all the resources created with it will get deleted.
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/d0a1d0e5-b663-4d40-b5de-9ffcfa20b252">
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/adbcc31c-dee1-4489-849e-e9fc46559b08">
 
+Now delete the S3 bucket and objects int it.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/7c1392e1-fcc3-470b-9d6b-01516d657fc9">
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e8cab37c-df9f-4b80-9df0-a86a1e49971f">
+
+##### Congratuations, you successfully created VPC and its compoennets and launch EC2 instance with in that VPC using AWS Cloud Formation service - Nested Stacks!!!
