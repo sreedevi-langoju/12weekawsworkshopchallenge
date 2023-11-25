@@ -25,8 +25,7 @@ Creating a Docker image for an Apache web server on local machine, pushing it to
           </body>
         </html>
 
-<img src="<img width="734" alt="image" src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/900f15a1-b1fb-4014-89d5-31d1a3211038">
-">
+
 
 ## Step 4: Write Dockerfile
 
@@ -41,7 +40,7 @@ Creating a Docker image for an Apache web server on local machine, pushing it to
         # Expose port 80
         EXPOSE 80
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/900f15a1-b1fb-4014-89d5-31d1a3211038">
+
     
 ## Step 5: Build the Docker Image
 
@@ -177,13 +176,32 @@ Creating a Docker image for an Apache web server on local machine, pushing it to
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/bfe043cd-64de-46b7-9a49-2233a7fddc82">
 
- * Once service is successfully created , click on the TAsk section in the bottom section of the screen.
+ * Once service is successfully created , click on the Task tab section in the bottom section of the screen.Your two tasks should be up and running.
 
-<img src="![image](https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/29331a1f-fdbc-4c42-8e1c-8526c9318509)
-">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/959605a5-c2b2-4a65-8cd0-9c3293f4743d">
 
-5. Access Your Application:
-Once the ECS task is running, you can access your application by finding the public IP or DNS of the associated EC2 instance in the ECS cluster. Check the "Tasks" tab for details on the running task.
+
+## Step 13: Access Your Application:
+
+
+ * Click on the one task and goto Networking section ,copy the Public IP.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/25e9d01f-446f-46b7-92a9-697a9d51b4b3">
+
+ * Open New Incognito window browser and paste the public ip you copied earlier and press enter, you should be able to view application html page.
+
+<image src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/ddfd4ce3-65e3-4b12-ad53-f26edd7d8729">
+
+ * Repeat the above two steps for the second task also to access the application.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/c9e6f5e1-9c3e-4c4f-b248-7e28d365d4a6">
+
+   
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/627c694f-33c0-4901-a12a-e82a23500177">
+   
+
+
+
 
 These steps cover the process through the AWS Management Console, and it should guide you through setting up ECR, pushing an image, and launching an ECS task using the image you pushed.
 
