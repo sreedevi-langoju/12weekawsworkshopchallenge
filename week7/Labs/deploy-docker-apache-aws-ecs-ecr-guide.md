@@ -67,6 +67,10 @@ Creating a Docker image for an Apache web server on local machine, pushing it to
 
         Note: To stop the container, use docker stop <container_id> where <container_id> is the ID of the            running container. You can find the container ID by running docker ps.
            If you make changes to your index.html or Dockerfile, you'll need to rebuild the image (docker            build -t my-apache-server.) and then rerun the container (docker run -d -p 8080:80 my-apache-             server).
+
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/fed82401-1671-4d1f-8981-015d1e065a09">
+
   
 
 ## Step 8: Create an ECR Repository
@@ -203,7 +207,19 @@ Creating a Docker image for an Apache web server on local machine, pushing it to
 
 ## Step 14 : Cleanup Resources
 
+ * Don't forget to delete the resources created earlier to avoid unnecessary billing . 
 
+ * Goto ECS Console - Clutsers - select the cluster "my-project-cluster" and click on the Delete cluster, which will delete the all the related resources.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/4729b04e-039f-422d-b542-d5c8ed63ede2">
+
+ * You can check the deletion status in cloud formation .
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/ca556f45-bfb6-4a33-af9e-1677af6a0384">
+
+ * Goto ECR console, select the created repository "my-project-repo" and click on the delete buttion.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/22c64bc8-77ed-4da0-be62-9dd8b1fad923">
 
 
 
