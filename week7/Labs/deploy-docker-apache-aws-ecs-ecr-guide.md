@@ -64,7 +64,7 @@ Creating a Docker image for an Apache web server on local machine, pushing it to
 
 ## Step 7: Access the Apache Server
 
-  * Open a web browser and enter http://localhost:8080 in the address bar. You should see the content of your index.html file served by Apache running inside the Docker container.
+  * Open a web browser and enter http://localhost:8080 in the address bar. You should see the content of      your index.html file served by Apache running inside the Docker container.
 
   * Notes:
     To stop the container, use docker stop <container_id> where <container_id> is the ID of the running       container. You can find the container ID by running docker ps.
@@ -91,7 +91,12 @@ Creating a Docker image for an Apache web server on local machine, pushing it to
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/074c1c62-841a-4ba7-9e88-efe2625b0257">
 
- * Execute the commands on your local terminal or command-line interfcae to push the docker image.If you receive an error, install or upgrade to the latest version of the AWS CLI. For more information, see Installing the AWS Command Line Interface in the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
+
+ * Execute the commands on your local terminal or command-line interfcae to push the docker image.
+ 
+       Note: If you receive an error, install or upgrade to the latest version of the AWS CLI. For more information, see Installing the AWS Command Line Interface in the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html). And Configure AWS CLI using aws configure,check [here]() for instructions.
+ 
+   
    
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/7f708821-92d3-4d04-a6da-5b14734a5a22">
 
