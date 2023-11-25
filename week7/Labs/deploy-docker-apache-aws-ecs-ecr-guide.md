@@ -24,12 +24,10 @@ Creating a Docker image for an Apache web server on local machine, pushing it to
         # Expose port 80
         EXPOSE 80
 
-    
 ## Step 4: Create index.html
 
   * In the same directory, create an index.html file and add your HTML content:
-
-  
+    
         <!DOCTYPE html>
         <html>
           <head>
@@ -69,29 +67,68 @@ Creating a Docker image for an Apache web server on local machine, pushing it to
     If you make changes to your index.html or Dockerfile, you'll need to rebuild the image (docker build -t my-apache-server       .) and then rerun the container (docker run -d -p 8080:80 my-apache-server).
     These steps should get you up and running with an Apache web server inside a Docker container on your Mac!
 
+## Step 8: Create an ECR Repository
 
+ * Open the AWS Management Console.
+ * Navigate to the Amazon ECR service.
+ * In the ECR dashboard, choose "Create repository."
+ * Enter a meaningful repository name, e.g., "my-project-repo".
+ * Choose "Create repository."
 
+<img src=" ">
 
+Docker Image:
+Build and Tag Your Docker Image:
+Open a terminal.
 
+Navigate to the directory containing your Dockerfile.
 
-
-
-Replace ./your-web-content with the path to your web content files if you have any custom files, and modify the COPY command accordingly. You can also include a custom Apache configuration file if needed.
-
-3. Build the Docker Image:
-Open a terminal, navigate to the directory containing the Dockerfile, and run the following command to build the Docker image:
+Build your Docker image:
 
 bash
 Copy code
 docker build -t your-image-name .
-Replace your-image-name with a meaningful name for your Docker image.
-
-4. Test the Docker Image Locally:
-After the image is built, you can run a container locally to test it:
+Tag your Docker image:
 
 bash
 Copy code
-docker run -p 8080:80 your-image-name
-Visit http://localhost:8080 in your web browser to confirm that the Apache web server is working as expected.
+docker tag your-image-name:latest your-account-id.dkr.ecr.your-region.amazonaws.com/your-repo-name:latest
+Replace your-account-id, your-region, and your-repo-name with your AWS account ID, AWS region, and the name of the ECR repository created earlier.
+
+3. Push Docker Image to ECR:
+Authenticate Docker to your ECR registry:
+
+bash
+Copy code
+aws ecr get-login-password --region your-region | docker login --username AWS --password-stdin your-account-id.dkr.ecr.your-region.amazonaws.com
+Push your Docker image to ECR:
+
+bash
+Copy code
+docker push your-account-id.dkr.ecr.your-region.amazonaws.com/your-repo-name:latest
+4. ECS (Elastic Container Service):
+Create an ECS Task Definition:
+Open the Amazon ECS Console.
+In the navigation pane, choose "Task Definitions" under "Amazon ECS."
+Choose "Create new Task Definition."
+Configure your task definition, including the container definition. Specify the ECR image URI.
+Run an ECS Task:
+In the ECS Console, choose "Clusters" in the navigation pane.
+Choose "Create Cluster."
+Configure your ECS cluster settings and choose "Create."
+Run a Task in the ECS Cluster:
+In the cluster details page, choose "Tasks" tab.
+Choose "Run new task."
+Select the task definition you created.
+Configure the task settings and choose "Run Task."
+5. Access Your Application:
+Once the ECS task is running, you can access your application by finding the public IP or DNS of the associated EC2 instance in the ECS cluster. Check the "Tasks" tab for details on the running task.
+
+These steps cover the process through the AWS Management Console, and it should guide you through setting up ECR, pushing an image, and launching an ECS task using the image you pushed.
+
+
+
+
+
 
 
