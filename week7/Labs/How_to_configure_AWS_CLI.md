@@ -4,15 +4,19 @@ Open a terminal window.
 
 Run the following command:
 
-bash
-Copy code
-aws configure
+
+    aws configure
+
 You'll be prompted to enter the following information:
 
 AWS Access Key ID: Enter your AWS access key.
+
 AWS Secret Access Key: Enter your AWS secret key.
+
 Default region name: Enter your preferred AWS region (e.g., us-east-1, us-west-2).
+
 Default output format: Enter your preferred output format (e.g., json, text, table).
+
 The access key and secret key are associated with an IAM user that you have created in the AWS Management Console.
 
 If you haven't created an IAM user or need to generate new access and secret keys, you can do so in the IAM console under "Users" > "Security credentials" tab for the specific user.
