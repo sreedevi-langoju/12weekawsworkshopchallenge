@@ -66,9 +66,8 @@ Creating a Docker image for an Apache web server on local machine, pushing it to
 
   * Open a web browser and enter http://localhost:8080 in the address bar. You should see the content of      your index.html file served by Apache running inside the Docker container.
 
-  * Notes:
-    To stop the container, use docker stop <container_id> where <container_id> is the ID of the running       container. You can find the container ID by running docker ps.
-    If you make changes to your index.html or Dockerfile, you'll need to rebuild the image (docker build      -t my-apache-server.) and then rerun the container (docker run -d -p 8080:80 my-apache-server).
+        Note: To stop the container, use docker stop <container_id> where <container_id> is the ID of the            running container. You can find the container ID by running docker ps.
+           If you make changes to your index.html or Dockerfile, you'll need to rebuild the image (docker            build -t my-apache-server.) and then rerun the container (docker run -d -p 8080:80 my-apache-             server).
   
 
 ## Step 8: Create an ECR Repository
@@ -94,26 +93,47 @@ Creating a Docker image for an Apache web server on local machine, pushing it to
 
  * Execute the commands on your local terminal or command-line interfcae to push the docker image.
  
-       Note: If you receive an error, install or upgrade to the latest version of the AWS CLI. For more information, see Installing the AWS Command Line Interface in the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html). And Configure AWS CLI using aws configure,check [here]() for instructions.
+       Note: If you receive an error, install or upgrade to the latest version of the AWS CLI. For more information, see Installing the AWS Command Line Interface in the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html). And Configure AWS CLI using aws configure,check [here](https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/blob/main/week7/Labs/How_to_configure_AWS_CLI.md) for instructions.
+
  
-   
    
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/7f708821-92d3-4d04-a6da-5b14734a5a22">
 
+ * Once image is sucessfully pushed, you should be able to see the image in the ECR repository .
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/c751cdfe-252c-4113-bcc4-d19ec3c14781">
+
+ * Click on the the latest image link , you can see the image details. Notedown the URI of the image to use later.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/f18be8dc-4fda-44d3-9061-744a5919aa0f">
 
 
+## Step 10: Create  ECS Cluster (Elastic Container Service):
+
+ * In the ECS Console, choose "Clusters" in the navigation pane.
+ * Choose "Create Cluster." with Cluster name "my-project-cluster".
+ * Configure your ECS cluster settings and choose "Create."
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/d60faee2-dab2-4279-8ddf-32de1d4996ec">
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/ade2ab08-fd4a-4f79-90ec-df9f97c50d49">
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/67d4242a-3f1b-4c06-8610-3e7e56dec9c8">
+
+## Step 11: Create an ECS Task Definition:
+
+ * Open the Amazon ECS Console.
+ * In the navigation pane, choose "Task Definitions" under "Amazon ECS."
+ * Choose "Create new Task Definition."
+ * Configure your task definition, including the container definition. Specify the ECR image URI.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/a269777c-070c-4d57-b222-0200c03cae81">
+
+<img src="![image](https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/8f25579e-af0e-4fc4-8aeb-78a22a905657)
+">
 
 
-4. ECS (Elastic Container Service):
-Create an ECS Task Definition:
-Open the Amazon ECS Console.
-In the navigation pane, choose "Task Definitions" under "Amazon ECS."
-Choose "Create new Task Definition."
-Configure your task definition, including the container definition. Specify the ECR image URI.
 Run an ECS Task:
-In the ECS Console, choose "Clusters" in the navigation pane.
-Choose "Create Cluster."
-Configure your ECS cluster settings and choose "Create."
 Run a Task in the ECS Cluster:
 In the cluster details page, choose "Tasks" tab.
 Choose "Run new task."
