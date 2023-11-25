@@ -82,6 +82,9 @@ Creating a Docker image for an Apache web server on local machine, pushing it to
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/47443e05-cc59-407b-97ea-d119fb63eb1e">
 
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/8cd36d20-a03c-40b9-b327-1450f29f0236">
+
 ## Step 9: Push Docker Image to ECR:
 
  * You can push your container images to an Amazon ECR repository with the docker push command.
@@ -114,23 +117,35 @@ Creating a Docker image for an Apache web server on local machine, pushing it to
  * Choose "Create Cluster." with Cluster name "my-project-cluster".
  * Configure your ECS cluster settings and choose "Create."
 
+
+
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/d60faee2-dab2-4279-8ddf-32de1d4996ec">
+
+
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/ade2ab08-fd4a-4f79-90ec-df9f97c50d49">
 
+
+
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/67d4242a-3f1b-4c06-8610-3e7e56dec9c8">
+
+
 
 ## Step 11: Create an ECS Task Definition:
 
  * Open the Amazon ECS Console.
  * In the navigation pane, choose "Task Definitions" under "Amazon ECS."
- * Choose "Create new Task Definition."
- * Configure your task definition, including the container definition. Specify the ECR image URI.
+ * Choose "Create new Task Definition." with name "my-project-taskdef".
+ * Configure your task definition, including the container definition. 
+ * Choose Task size CPU: 1 vCPU and Memory: 3GB
+ * Select Task role and Task execution role as : ecsTaskExecutionRole 
+ *   Specify the ECR image URI.
+
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/a269777c-070c-4d57-b222-0200c03cae81">
 
-<img src="![image](https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/8f25579e-af0e-4fc4-8aeb-78a22a905657)
-">
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/8f25579e-af0e-4fc4-8aeb-78a22a905657">
 
 
 Run an ECS Task:
