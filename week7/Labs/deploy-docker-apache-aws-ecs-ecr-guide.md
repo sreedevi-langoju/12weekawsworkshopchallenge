@@ -6,25 +6,11 @@ Creating a Docker image for an Apache web server on local machine, pushing it to
 
   * Make sure Docker is installed on your local machine. You can download and install Docker from the official website: [Install Docker](https://docs.docker.com/engine/install/)
 
-
 ## Step 2: Create a Folder Structure
 
   * Create a directory for your project. Inside this directory, create two files: Dockerfile and index.html.
 
-## Step 3: Write Dockerfile
-
-  * Open the Dockerfile using a text editor. Add the following content:
-
-        # Use the official Apache image as the base image
-        FROM httpd:latest
-
-        # Copy the local index.html file to the Apache server directory
-        COPY ./index.html /usr/local/apache2/htdocs/
-
-        # Expose port 80
-        EXPOSE 80
-
-## Step 4: Create index.html
+## Step 3: Create index.html
 
   * In the same directory, create an index.html file and add your HTML content:
     
@@ -38,6 +24,24 @@ Creating a Docker image for an Apache web server on local machine, pushing it to
             <p>This is a sample HTML file served by Apache inside a Docker container.</p>
           </body>
         </html>
+
+<img src="<img width="734" alt="image" src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/900f15a1-b1fb-4014-89d5-31d1a3211038">
+">
+
+## Step 4: Write Dockerfile
+
+  * Open the Dockerfile using a text editor. Add the following content:
+
+        # Use the official Apache image as the base image
+        FROM httpd:latest
+
+        # Copy the local index.html file to the Apache server directory
+        COPY ./index.html /usr/local/apache2/htdocs/
+
+        # Expose port 80
+        EXPOSE 80
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/900f15a1-b1fb-4014-89d5-31d1a3211038">
     
 ## Step 5: Build the Docker Image
 
