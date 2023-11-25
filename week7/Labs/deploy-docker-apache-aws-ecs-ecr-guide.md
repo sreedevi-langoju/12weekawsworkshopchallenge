@@ -87,8 +87,13 @@ Creating a Docker image for an Apache web server on local machine, pushing it to
 
  * You can push your container images to an Amazon ECR repository with the docker push command.
  * To push a Docker image to an Amazon ECR repository the Amazon ECR repository must exist before you        push the image.
- * 
+ * Click the "my-project-repo" ECR repository created in the previous step, click on the " View push         commands".
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/074c1c62-841a-4ba7-9e88-efe2625b0257">
+
+ * Execute the commands on your local terminal or command-line interfcae to push the docker image.If you receive an error, install or upgrade to the latest version of the AWS CLI. For more information, see Installing the AWS Command Line Interface in the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
+   
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/7f708821-92d3-4d04-a6da-5b14734a5a22">
 
 
 
