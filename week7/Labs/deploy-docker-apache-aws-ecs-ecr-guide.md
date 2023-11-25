@@ -198,12 +198,14 @@ Creating a Docker image for an Apache web server on local machine, pushing it to
 
    
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/627c694f-33c0-4901-a12a-e82a23500177">
-   
+
+##### Congratulations!!! You have successfully created a Docker image for an Apache web server on local machine, pushed it to Amazon Elastic Container Registry (ECR), and then launched an Amazon ECS (Elastic Container Service) task using the ECR image.
+
+## Step 14 : Cleanup Resources
 
 
 
 
-These steps cover the process through the AWS Management Console, and it should guide you through setting up ECR, pushing an image, and launching an ECS task using the image you pushed.
 
 
 
