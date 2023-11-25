@@ -136,24 +136,52 @@ Creating a Docker image for an Apache web server on local machine, pushing it to
  * Open the Amazon ECS Console.
  * In the navigation pane, choose "Task Definitions" under "Amazon ECS."
  * Choose "Create new Task Definition." with name "my-project-taskdef".
+ * Select the launch type compatibility (EC2 or Fargate).
  * Configure your task definition, including the container definition. 
- * Choose Task size CPU: 1 vCPU and Memory: 3GB
- * Select Task role and Task execution role as : ecsTaskExecutionRole 
- *   Specify the ECR image URI.
-
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/a269777c-070c-4d57-b222-0200c03cae81">
 
+ * Choose Task size CPU: 1 vCPU and Memory: 3GB
+ * Select Task role and Task execution role as : ecsTaskExecutionRole
 
+   
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/8f25579e-af0e-4fc4-8aeb-78a22a905657">
 
+ * In the Container-1 section Specify the Name and URI : Pushed ECR image URI( copied earlier)
 
-Run an ECS Task:
-Run a Task in the ECS Cluster:
-In the cluster details page, choose "Tasks" tab.
-Choose "Run new task."
-Select the task definition you created.
-Configure the task settings and choose "Run Task."
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/8553593c-9672-422b-b830-b5681ee6ba69">
+
+ * In the Log collection section, unselect Use log collection checkbox.
+
+ * Click on create , Task definition will be created.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/ade61867-211c-4597-8c6f-87aaff6327d5">
+
+
+## Step 12: Create ECS Service:
+
+ * From Task definition console, select the previously created Task defintion.
+ * Select "Create service" option From the "Deploy" button.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/c676a93b-1cbe-47aa-a96f-231d6e11d261">
+
+ * In the deployment configuration, select "Service" as Application type, give service name: "my-project-service" and Desired tasks: 2
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/0f015761-f929-4196-8549-1126da1a41c4">
+
+ * In the Network section: select VPC:default VPC and choose available subnets.
+ * Create a new security group allowing HTTP protocol on port 80 from Anywhere.
+ * Enable Public IP. Click on create.It will take couple of minutes to complete.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e9292c67-f6c6-40c2-bcde-c55cfe63fa2b">
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/bfe043cd-64de-46b7-9a49-2233a7fddc82">
+
+ * Once service is successfully created , click on the TAsk section in the bottom section of the screen.
+
+<img src="![image](https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/29331a1f-fdbc-4c42-8e1c-8526c9318509)
+">
+
 5. Access Your Application:
 Once the ECS task is running, you can access your application by finding the public IP or DNS of the associated EC2 instance in the ECS cluster. Check the "Tasks" tab for details on the running task.
 
