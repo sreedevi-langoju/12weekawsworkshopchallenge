@@ -1,6 +1,9 @@
-# Deploying a Dockerized Apache Web Server on AWS ECS with ECR: A Step-by-Step Guide
+# Deploying a Docker Containerized Apache Web Application on AWS ECS with ECR and Fargate: Step-by-Step Guide
 
-Creating a Docker image for an Apache web server on local machine, pushing it to Amazon Elastic Container Registry (ECR), and then launching an Amazon ECS (Elastic Container Service) task using the ECR image involves several steps. Below are the steps you can follow:
+
+
+
+Creating a Docker image for an Apache web application on local machine, pushing it to Amazon Elastic Container Registry (ECR), and then launching an Amazon ECS (Elastic Container Service) task using the ECR image involves several steps. Below are the steps you can follow:
 
 ## Step 1: Install Docker:
 
@@ -203,7 +206,7 @@ Creating a Docker image for an Apache web server on local machine, pushing it to
    
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/627c694f-33c0-4901-a12a-e82a23500177">
 
-##### Congratulations!!! You have successfully created a Docker image for an Apache web server on local machine, pushed it to Amazon Elastic Container Registry (ECR), and then launched an Amazon ECS (Elastic Container Service) task using the ECR image.
+##### Congratulations!!! You have successfully created a Docker image for an Apache web application on local machine, pushed it to Amazon Elastic Container Registry (ECR), and then launched an Amazon ECS (Elastic Container Service) task using the ECR image.
 
 ## Step 14 : Cleanup Resources
 
