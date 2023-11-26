@@ -1,7 +1,7 @@
 # Deploying Dockerized Apache Web Server on AWS ECS with ECR and Fargate: Step-by-Step Guide"
 
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/6a7f46c7-67e2-49cb-9b15-8bbdfd691987" width=700 height=400>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/8b9ea80f-d6e5-4e39-a82c-8cc664b85dea" width=700 height=400>
 
 Here I will walk through the steps required to set up and deploy an Apache web server using Docker containers on AWS ECS (Elastic Container Service) utilizing ECR (Elastic Container Registry) and Fargate as the deployment infrastructure.
 
