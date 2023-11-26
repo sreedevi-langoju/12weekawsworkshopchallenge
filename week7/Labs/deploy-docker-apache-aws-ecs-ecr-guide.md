@@ -1,7 +1,7 @@
 # Deploying a Docker Containerized Apache Web Application on AWS ECS with ECR and Fargate: Step-by-Step Guide
 
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/048fb8d0-36c4-4dbb-b734-fb512c3f26f6" width=600 height=400>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/6a7f46c7-67e2-49cb-9b15-8bbdfd691987" width=700 height=400>
 
 
 
