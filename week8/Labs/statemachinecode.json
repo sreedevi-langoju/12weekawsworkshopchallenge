@@ -26,12 +26,11 @@
             "Next": "ProcessImageFile"
           }
         ],
-        "Default": "SendNotSuccessNotification"
+        "Default": "SendFileTypeNotSupportedNotification"
       },
       "ProcessCSVFile": {
         "Type": "Task",
-        "Resource": "ProcessCSVFile_ARN",// ARN of ProcessCSVFile lambda function 
-        
+        "Resource": "ProcessCSVFile_ARN",
         "Parameters": {
           "bucket.$": "$.bucket",
           "key.$": "$.key"
@@ -48,7 +47,7 @@
       },
       "ProcessImageFile": {
         "Type": "Task",
-        "Resource": "ProcessImageFile_ARN", // ARN of ProcessImageFile lambda function 
+        "Resource": "ProcessImageFile_ARN",
         "Parameters": {
           "bucket.$": "$.bucket",
           "key.$": "$.key"
@@ -67,7 +66,7 @@
         "Type": "Task",
         "Resource": "arn:aws:states:::sns:publish",
         "Parameters": {
-          "TopicArn": "Topic_ARN",  // add your SNS topic ARN
+          "TopicArn": "Topic_ARN",
           "Message": "CSV file processed successfully.",
           "Subject": "CSV Success"
         },
@@ -77,7 +76,7 @@
         "Type": "Task",
         "Resource": "arn:aws:states:::sns:publish",
         "Parameters": {
-          "TopicArn": "Topic_ARN",  // add your SNS topic ARN
+          "TopicArn": "Topic_ARN",
           "Message": "CSV file processing not successful.",
           "Subject": "CSV Failure"
         },
@@ -87,7 +86,7 @@
         "Type": "Task",
         "Resource": "arn:aws:states:::sns:publish",
         "Parameters": {
-          "TopicArn": "Topic_ARN",  // add your SNS topic ARN
+          "TopicArn": "Topic_ARN",
           "Message": "Image file processed successfully.",
           "Subject": "Image Success"
         },
@@ -97,14 +96,21 @@
         "Type": "Task",
         "Resource": "arn:aws:states:::sns:publish",
         "Parameters": {
-          "TopicArn": "Topic_ARN",  // add your SNS topic ARN
+          "TopicArn": "Topic_ARN",
           "Message": "Image file processing not successful.",
           "Subject": "Image Failure"
         },
         "End": true
       },
-      "SendNotSuccessNotification": {
-        "Type": "Fail"
+      "SendFileTypeNotSupportedNotification": {
+        "Type": "Task",
+        "Resource": "arn:aws:states:::sns:publish",
+        "Parameters": {
+          "TopicArn": "Topic_ARN",
+          "Message": "File type not supported.",
+          "Subject": "File Type Not Supported"
+        },
+        "End": true
       }
     }
   }
