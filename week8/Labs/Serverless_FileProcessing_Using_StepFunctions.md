@@ -1,5 +1,8 @@
+# Serverless File Processing using Lambda and Step Functions
 
-Absolutely! Here's an updated sequence that includes creating an SNS topic before Lambda functions:
+Here's a step-by-step guide on how to implement the Lambda-Initiated Step Functions Orchestrating CSV and Image  file Processing with S3 Triggers and SNS Notifications using the AWS Management Console:
+
+
 
 1. IAM Roles and Permissions:
 a. IAM Role for Lambda Execution:
