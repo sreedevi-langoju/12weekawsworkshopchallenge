@@ -1,0 +1,111 @@
+{
+    "Comment": "Check File Type and Process Accordingly",
+    "StartAt": "CheckFileType",
+    "States": {
+      "CheckFileType": {
+        "Type": "Choice",
+        "Choices": [
+          {
+            "Variable": "$.file_extension",
+            "StringEquals": ".csv",
+            "Next": "ProcessCSVFile"
+          },
+          {
+            "Variable": "$.file_extension",
+            "StringEquals": ".jpeg",
+            "Next": "ProcessImageFile"
+          },
+          {
+            "Variable": "$.file_extension",
+            "StringEquals": ".png",
+            "Next": "ProcessImageFile"
+          },
+          {
+            "Variable": "$.file_extension",
+            "StringEquals": ".jpg",
+            "Next": "ProcessImageFile"
+          }
+        ],
+        "Default": "SendNotSuccessNotification"
+      },
+      "ProcessCSVFile": {
+        "Type": "Task",
+        "Resource": "ProcessCSVFile_ARN",// ARN of ProcessCSVFile lambda function 
+        
+        "Parameters": {
+          "bucket.$": "$.bucket",
+          "key.$": "$.key"
+        },
+        "Next": "SendCSVSuccessNotification",
+        "Catch": [
+          {
+            "ErrorEquals": [
+              "States.ALL"
+            ],
+            "Next": "SendCSVNotSuccessNotification"
+          }
+        ]
+      },
+      "ProcessImageFile": {
+        "Type": "Task",
+        "Resource": "ProcessImageFile_ARN", // ARN of ProcessImageFile lambda function 
+        "Parameters": {
+          "bucket.$": "$.bucket",
+          "key.$": "$.key"
+        },
+        "Next": "SendImageSuccessNotification",
+        "Catch": [
+          {
+            "ErrorEquals": [
+              "States.ALL"
+            ],
+            "Next": "SendImageNotSuccessNotification"
+          }
+        ]
+      },
+      "SendCSVSuccessNotification": {
+        "Type": "Task",
+        "Resource": "arn:aws:states:::sns:publish",
+        "Parameters": {
+          "TopicArn": "Topic_ARN",  // add your SNS topic ARN
+          "Message": "CSV file processed successfully.",
+          "Subject": "CSV Success"
+        },
+        "End": true
+      },
+      "SendCSVNotSuccessNotification": {
+        "Type": "Task",
+        "Resource": "arn:aws:states:::sns:publish",
+        "Parameters": {
+          "TopicArn": "Topic_ARN",  // add your SNS topic ARN
+          "Message": "CSV file processing not successful.",
+          "Subject": "CSV Failure"
+        },
+        "End": true
+      },
+      "SendImageSuccessNotification": {
+        "Type": "Task",
+        "Resource": "arn:aws:states:::sns:publish",
+        "Parameters": {
+          "TopicArn": "Topic_ARN",  // add your SNS topic ARN
+          "Message": "Image file processed successfully.",
+          "Subject": "Image Success"
+        },
+        "End": true
+      },
+      "SendImageNotSuccessNotification": {
+        "Type": "Task",
+        "Resource": "arn:aws:states:::sns:publish",
+        "Parameters": {
+          "TopicArn": "Topic_ARN",  // add your SNS topic ARN
+          "Message": "Image file processing not successful.",
+          "Subject": "Image Failure"
+        },
+        "End": true
+      },
+      "SendNotSuccessNotification": {
+        "Type": "Fail"
+      }
+    }
+  }
+  
