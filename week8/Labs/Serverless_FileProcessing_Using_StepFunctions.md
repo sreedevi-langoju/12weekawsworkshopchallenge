@@ -89,16 +89,31 @@ Remove the existing code in Lambda and Copy the python code from TriggerStepFunc
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/abcab2f5-0578-4b88-bbdb-d16973c13192">
 
+Click on Add Trigger to add the s3 trigger to this lamda function.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/6c45446b-841d-4080-9e84-c956a00f49ab">
 
 
 b. ProcessCSVFile Lambda:
+
 Lambda function to process CSV files, extract data, and store it in DynamoDB.
-Ensure it handles success/failure and sends appropriate SNS notifications.
+
+Function Name: TriggerStepFunction
+Runtime:Python 3.9
+Choose Existing role: Choose IAM role created earlier
+In General Configuration change the Time out: 3 min 0 sec
+Remove the existing code in Lambda and Copy the python code from ProcessCSVFile.py( find this file in Labs folder in this repository)
+
 
 c. ProcessImageFile Lambda:
 Lambda function to process image files using Rekognition, extract labels, and store them in DynamoDB.
-Similar to ProcessCSVFile, handle success/failure and send SNS notifications.
 
+
+Function Name: TriggerStepFunction
+Runtime:Python 3.9
+Choose Existing role: Choose IAM role created earlier
+In General Configuration change the Time out: 3 min 0 sec
+Remove the existing code in Lambda and Copy the python code from ProcessImageFile.py( find this file in Labs folder in this repository)
 
 ## Step 6: AWS Step Functions:
 
