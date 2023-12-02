@@ -25,7 +25,8 @@ Go to the AWS S3 Console.
 Click on "Create bucket".
 Enter a unique bucket name and select the AWS region as us-east-1.
 Keep other options as default and create the bucket.
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/d5882ee9-1de4-4761-8445-16adc0c2f094">
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/081bae5d-c29c-4216-a681-c2cbafed7f6c">
 
 
 ## Step3 :Create DynamoDB tables:
