@@ -14,9 +14,8 @@ For "Select type of trusted entity", choose "AWS service", then pick "Lambda" in
 Attach policies granting full access to S3, DynamoDB, Step Functions, Rekognition, and SNS.
 Review and create the role.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9b1f5649-a782-4e83-a84e-4ae6d8081605">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/7f0807bc-ae0e-49ad-a8ca-5d0ff0b51d28">
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/2cfc6486-7004-49b3-add7-9f8ba0c78cf1">
 
 ## Step 2: Create S3 Bucket:
 
