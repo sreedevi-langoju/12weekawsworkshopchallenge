@@ -8,6 +8,12 @@ Here's a step-by-step guide on how to implement the Lambda-Initiated Step Functi
 
 Create an IAM role for Lambda functions with policies granting access to necessary services (S3, DynamoDB, Rekognition, SNS).
 
+Role Name: Give any name
+Trusted Entity: AWS Service
+USecase: Lambda
+Policies: Select these .
+Attach Inline Policy:
+
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9b1f5649-a782-4e83-a84e-4ae6d8081605">
 
