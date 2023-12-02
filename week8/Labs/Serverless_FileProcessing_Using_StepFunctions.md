@@ -104,12 +104,13 @@ Click on Add Trigger to add the s3 trigger to this lamda function and choose the
 ### b. ProcessCSVFile Lambda:
 
 Lambda function to process CSV files, extract data, and store it in DynamoDB.
-Function Name: ProcessCSVFile
-Runtime:Python 3.9
-Choose Existing role: Choose IAM role created earlier
-In General Configuration change the Time out: 3 min 0 sec
+Function Name: ProcessCSVFile.
+Runtime:Python 3.9.
+Choose Existing role: Choose IAM role created earlier.
+In General Configuration change the Time out: 3 min 0 sec.
 Remove the existing code in Lambda and Copy the python code from ProcessCSVFile.py( find this file in Labs folder in this repository) and click on Deploy button.
-Copy the ARN of the lambda function
+Replace the correct Dynamodb table name in the code.
+Copy the ARN of the lambda function.
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/f52060ae-2d91-4478-8d03-bc029166f496">
 
@@ -117,13 +118,14 @@ Copy the ARN of the lambda function
 ### c. ProcessImageFile Lambda:
 
 Lambda function to process image files using Rekognition, extract labels, and store them in DynamoDB.
-Function Name: ProcessImageFile
-Runtime:Python 3.9
-Choose Existing role: Choose IAM role created earlier
-In General Configuration change the Time out: 3 min 0 sec
+Function Name: ProcessImageFile.
+Runtime:Python 3.9.
+Choose Existing role: Choose IAM role created earlier.
+In General Configuration change the Time out: 3 min 0 sec.
 Remove the existing code in Lambda and Copy the python code from ProcessImageFile.py( find this file in Labs folder in this repository) and click on Deploy button.
+Replace the correct Dynamodb table name in the code.
 Copy the ARN of the lambda function
-
+.
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/d1e8740d-9eea-4e90-90eb-c8ce54376392">
 
 
