@@ -64,7 +64,7 @@ Choose the protocol for the endpoint to receive notifications (e.g., Email, SMS,
 Enter the necessary details based on the chosen protocol.
 Confirm the subscription.(Check your email to confirm subscription for Email protocol)
 
-## STep 5: Create Lambda Functions:
+## Step 5: Create Lambda Functions:
 
 Go to the AWS Lambda Console.
 Create four Lambda functions: TriggerStepFunction, ProcessCSVFile and ProcessImageFile.
@@ -84,14 +84,19 @@ Lambda function to process image files using Rekognition, extract labels, and st
 Similar to ProcessCSVFile, handle success/failure and send SNS notifications.
 
 
-6. AWS Step Functions:
+## Step 6: AWS Step Functions:
+
 a. Create State Machine:
 Define a state machine using AWS Step Functions with:
 State to check file type (CSV or image).
 States to invoke ProcessCSVFile and ProcessImageFile Lambda functions based on file type.
 States for sending SNS notifications.
 Handle success and failure paths.
-7. Test Workflow:
+
+
+
+
+## Step 7: Test Workflow:
 a. Upload Test Files:
 Upload test files (CSV, image) to the configured S3 bucket.
 b. Monitor Execution:
