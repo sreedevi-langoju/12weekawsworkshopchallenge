@@ -81,6 +81,16 @@ a. TriggerStepFunction Lambda:
 Create a Lambda function triggered by S3 bucket events.
 The function should start the Step Functions execution using the start_execution API.
 
+Function Name: TriggerStepFunction
+Runtime:Python 3.9
+Choose Existing role: Choose IAM role created earlier
+In General Configuration change the Time out: 3 min 0 sec
+Remove the existing code in Lambda and Copy the python code from TriggerStepFunction.py( find this file in Labs folder in this repository)
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/abcab2f5-0578-4b88-bbdb-d16973c13192">
+
+
+
 b. ProcessCSVFile Lambda:
 Lambda function to process CSV files, extract data, and store it in DynamoDB.
 Ensure it handles success/failure and sends appropriate SNS notifications.
