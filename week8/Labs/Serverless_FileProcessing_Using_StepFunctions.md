@@ -19,6 +19,10 @@ Attach Inline Policy:
 
 ## Step 2: Create S3 Bucket:
 Create an S3 bucket where files will be uploaded.
+
+
+<img src="![image](https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/d5882ee9-1de4-4761-8445-16adc0c2f094)
+">
 Enable event notifications for object creation to trigger Lambda.
 3. DynamoDB:
 a. Create DynamoDB Table:
