@@ -126,10 +126,12 @@ Choose Existing role: Choose IAM role created earlier.
 In General Configuration change the Time out: 3 min 0 sec.
 Remove the existing code in Lambda and Copy the python code from ProcessImageFile.py( find this file in Labs folder in this repository) and click on Deploy button.
 Replace the correct Dynamodb table name in the code.
-Copy the ARN of the lambda function
-.
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/d1e8740d-9eea-4e90-90eb-c8ce54376392">
+Copy the ARN of the lambda function.
 
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/71c22095-cdfa-45f5-8c9a-2e1f5220acec">
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/78a03114-2779-4304-87bf-e236831ce654">
 
 
 ## Step 6: AWS Step Functions - Create State Machine:
