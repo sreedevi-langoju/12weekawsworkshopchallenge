@@ -54,7 +54,15 @@ Step 4: Create SNS Topic:
 
 Create an SNS topic for sending notifications.
 
+Go to the AWS SNS Console.
+Click "Create topic".
+Enter a topic name and create the topic.
 
+After creating the topic, select the newly created topic from the list.
+Click on "Create subscription".
+Choose the protocol for the endpoint to receive notifications (e.g., Email, SMS, HTTPS, Lambda, etc.).
+Enter the necessary details based on the chosen protocol.
+Confirm the subscription.(Check your email to confirm subscription for Email protocol)
 
 
 5. Lambda Functions:
