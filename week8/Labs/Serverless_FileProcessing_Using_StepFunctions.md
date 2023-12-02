@@ -16,7 +16,7 @@ Review and create the role.
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9b1f5649-a782-4e83-a84e-4ae6d8081605">
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/4d508ed8-d5dc-454d-8dcd-533fe7346b53">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/3f8d0e80-344b-4048-8958-a281c7b0bb0e">
 
 ## Step 2: Create S3 Bucket:
 
