@@ -32,9 +32,9 @@ All other options default
 
 Create a DynamoDB table with the necessary attributes to store processed data.
 
-<img src="">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/d6278645-f43a-4d30-932a-ded4b4794be0">
 
-<img src="">
+<img src="!https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/4d7d84c0-e4d1-46d9-b82b-621e7c8e82cb">
 
 
 
