@@ -18,6 +18,7 @@ Review and create the role.
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/3f8d0e80-344b-4048-8958-a281c7b0bb0e">
 
+
 ## Step 2: Create S3 Bucket:
 
 Create an S3 bucket where files will be uploaded.
@@ -58,6 +59,7 @@ Create an SNS topic for sending notifications.
 Go to the AWS SNS Console.
 Click "Create topic".
 Enter a topic name and create the topic.
+Copy ARN of the SNS topic created.
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/4e25cdf0-212b-4281-878e-b1203427f347">
 
@@ -88,11 +90,16 @@ Remove the existing code in Lambda and Copy the python code from TriggerStepFunc
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/abcab2f5-0578-4b88-bbdb-d16973c13192">
 
-Click on Add Trigger to add the s3 trigger to this lamda function.
+
+Click on Add Trigger to add the s3 trigger to this lamda function and choose the s3 bucked you created earlier.
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/6c45446b-841d-4080-9e84-c956a00f49ab">
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/73ecd337-4299-4057-a646-03ff5bb31543">
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/12b43b26-9cb3-473b-9964-e6068ed7b0cf">
+
+
 
 ### b. ProcessCSVFile Lambda:
 
@@ -101,9 +108,10 @@ Function Name: ProcessCSVFile
 Runtime:Python 3.9
 Choose Existing role: Choose IAM role created earlier
 In General Configuration change the Time out: 3 min 0 sec
-Remove the existing code in Lambda and Copy the python code from ProcessCSVFile.py( find this file in Labs folder in this repository)
+Remove the existing code in Lambda and Copy the python code from ProcessCSVFile.py( find this file in Labs folder in this repository) and click on Deploy button.
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/f52060ae-2d91-4478-8d03-bc029166f496">
+
 
 ### c. ProcessImageFile Lambda:
 
