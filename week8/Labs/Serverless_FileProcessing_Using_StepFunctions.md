@@ -2,15 +2,16 @@
 
 Here's a step-by-step guide on how to implement the Lambda-Initiated Step Functions Orchestrating CSV and Image  file Processing with S3 Triggers and SNS Notifications using the AWS Management Console:
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/2467e325-e5ec-4206-98bf-ad7db0e7cfe3">
 
+## Step1 : IAM Roles and Permissions - IAM Role for Lambda Execution:
 
-1. IAM Roles and Permissions:
-a. IAM Role for Lambda Execution:
 Create an IAM role for Lambda functions with policies granting access to necessary services (S3, DynamoDB, Rekognition, SNS).
-b. IAM Role for Step Functions Execution:
-Create an IAM role for Step Functions with policies allowing execution of Lambda functions and access to S3, DynamoDB, and SNS services.
-2. Amazon S3:
-a. Create S3 Bucket:
+
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9b1f5649-a782-4e83-a84e-4ae6d8081605">
+
+## Step 2: Create S3 Bucket:
 Create an S3 bucket where files will be uploaded.
 Enable event notifications for object creation to trigger Lambda.
 3. DynamoDB:
