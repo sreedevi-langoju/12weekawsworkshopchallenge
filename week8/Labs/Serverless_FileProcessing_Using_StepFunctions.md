@@ -71,7 +71,7 @@ Choose the protocol for the endpoint to receive notifications (e.g., Email, SMS,
 Enter the necessary details based on the chosen protocol.
 Confirm the subscription.(Check your email to confirm subscription for Email protocol)
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/b1396d1a-174b-4c96-9f00-b8a8231b0ddc">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/beb6c3e0-27ec-4bfe-ae65-62a3e141b854">
 
 ## Step 5: Create Lambda Functions:
 
