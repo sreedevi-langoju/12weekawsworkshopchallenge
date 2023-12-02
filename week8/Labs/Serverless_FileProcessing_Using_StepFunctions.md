@@ -112,7 +112,9 @@ Remove the existing code in Lambda and Copy the python code from ProcessCSVFile.
 Replace the correct Dynamodb table name in the code.
 Copy the ARN of the lambda function.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/f52060ae-2d91-4478-8d03-bc029166f496">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/f398889a-1fde-4af6-b7e0-5608bbe53f23">
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/31b4eac1-2502-4dee-887c-0633e21a5d85">
 
 
 ### c. ProcessImageFile Lambda:
