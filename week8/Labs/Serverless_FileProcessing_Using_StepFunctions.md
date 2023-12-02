@@ -93,6 +93,7 @@ Click on Add Trigger to add the s3 trigger to this lamda function.
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/6c45446b-841d-4080-9e84-c956a00f49ab">
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/73ecd337-4299-4057-a646-03ff5bb31543">
 
 b. ProcessCSVFile Lambda:
 
