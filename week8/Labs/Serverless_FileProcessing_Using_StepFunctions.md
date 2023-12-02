@@ -162,13 +162,13 @@ Check the StepFunction console and chekc the status of the state machine created
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/eb0739e9-66d1-4741-9ecb-065741ba2c9a">
 
 
-Now check the DynamoDB Images table - Explore table items - It will display the labels generated for image you have uploaded.
+Now check the DynamoDB Students table - Explore table items - It will display the csv row data that you have uploaded.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/f0f0fae7-242f-49ac-8c08-39f099246585">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e30c9d49-d068-47e6-870b-ca30a4877e79">
 
 Now check your email subscribed to the Notification. You will recieve the sucess notitification.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/f98ef9c9-4a84-48d5-9016-aae9bf0b4805">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/6c12d8c9-7faf-4099-8cb7-cffbd9a329a7">
 
 
 #### 2. Upload any image(.jpeg or .jpg or .png) file (ex: city.jpg find in the Labs reposiroty folder here) file to s3 bucket created earlier.
