@@ -89,16 +89,15 @@ Choose Existing role: Choose IAM role created earlier
 In General Configuration change the Time out: 3 min 0 sec
 Remove the existing code in Lambda and Copy the python code from TriggerStepFunction.py( find this file in Labs folder in this repository) and click on Deploy button.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/abcab2f5-0578-4b88-bbdb-d16973c13192">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9059eedf-35e3-431d-9cdf-dd815cc669df">
 
 
 Click on Add Trigger to add the s3 trigger to this lamda function and choose the s3 bucked you created earlier.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/6c45446b-841d-4080-9e84-c956a00f49ab">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/aa61ce6b-9fc2-42e4-8463-1c5ec7f49652">
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/73ecd337-4299-4057-a646-03ff5bb31543">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/eefefb6e-6e83-4087-b851-6363c80ab916">
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/12b43b26-9cb3-473b-9964-e6068ed7b0cf">
 
 
 
