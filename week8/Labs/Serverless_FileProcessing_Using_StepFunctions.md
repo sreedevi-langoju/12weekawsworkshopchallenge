@@ -11,11 +11,12 @@ Create an IAM role for Lambda functions with policies granting access to necessa
 Go to AWS IAM Console.
 Select "Roles" and click "Create role".
 For "Select type of trusted entity", choose "AWS service", then pick "Lambda" in the "Choose a use case" section.
-Attach policies granting access to S3, DynamoDB, Step Functions, Rekognition, and SNS.
+Attach policies granting full access to S3, DynamoDB, Step Functions, Rekognition, and SNS.
 Review and create the role.
 
-
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9b1f5649-a782-4e83-a84e-4ae6d8081605">
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/4d508ed8-d5dc-454d-8dcd-533fe7346b53">
 
 ## Step 2: Create S3 Bucket:
 
@@ -57,6 +58,8 @@ Create an SNS topic for sending notifications.
 Go to the AWS SNS Console.
 Click "Create topic".
 Enter a topic name and create the topic.
+
+
 
 After creating the topic, select the newly created topic from the list.
 Click on "Create subscription".
