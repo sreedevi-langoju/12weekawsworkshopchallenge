@@ -51,6 +51,8 @@ Table 2:  Table Name :Images
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9a1421d8-c81e-4403-bc55-779471c663b3" height=500 width=400>
 
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/8f79f789-a39a-40f3-bf2c-2bee34a165f2">
+
 ## Step 4: Create SNS Topic:
 
 Create an SNS topic for sending notifications.
