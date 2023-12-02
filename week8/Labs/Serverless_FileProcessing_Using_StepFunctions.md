@@ -217,5 +217,13 @@ Delete all the resources created earlier to avoid unnecessary billing.
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/1aef3844-d87f-42e2-9dc0-8b4ab49534f9">
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/8163d50b-6139-4bff-975e-e28750da333f">
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/27221687-7777-40eb-9aab-58f72f5f1f2b">
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/8df33289-4407-4213-bf20-b8c602859451">
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/93a5a625-7c8c-42c2-9044-96577b07b32f">
+
 
 
