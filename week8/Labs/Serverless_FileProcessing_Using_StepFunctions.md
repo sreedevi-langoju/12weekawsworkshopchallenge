@@ -26,7 +26,7 @@ Click on "Create bucket".
 Enter a unique bucket name and select the AWS region as us-east-1.
 Keep other options as default and create the bucket.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/081bae5d-c29c-4216-a681-c2cbafed7f6c">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/081bae5d-c29c-4216-a681-c2cbafed7f6c" height=300 width=400>
 
 
 ## Step3: Create DynamoDB tables:
