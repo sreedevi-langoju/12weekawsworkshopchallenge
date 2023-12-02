@@ -59,6 +59,7 @@ Go to the AWS SNS Console.
 Click "Create topic".
 Enter a topic name and create the topic.
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/4e25cdf0-212b-4281-878e-b1203427f347">
 
 
 After creating the topic, select the newly created topic from the list.
@@ -66,6 +67,8 @@ Click on "Create subscription".
 Choose the protocol for the endpoint to receive notifications (e.g., Email, SMS, HTTPS, Lambda, etc.).
 Enter the necessary details based on the chosen protocol.
 Confirm the subscription.(Check your email to confirm subscription for Email protocol)
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/b1396d1a-174b-4c96-9f00-b8a8231b0ddc">
 
 ## Step 5: Create Lambda Functions:
 
