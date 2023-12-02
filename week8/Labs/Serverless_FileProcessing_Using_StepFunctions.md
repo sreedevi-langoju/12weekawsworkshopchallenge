@@ -189,6 +189,21 @@ Now check your email subscribed to the Notification. You will recieve the sucess
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/f98ef9c9-4a84-48d5-9016-aae9bf0b4805">
 
+
+#### 3. Upload any file other than image(.jpeg or .jpg or .png) file or csv file  (ex: city.pdf find in the Labs reposiroty folder here) file to s3 bucket created earlier.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/ff155add-d667-4dda-9747-3f69d0ebb0f1">
+
+Check the StepFunction console and chekc the status of the state machine created earlier.If it is succeeded, click on that link.You will see the not success path.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/f90c6a96-8f4a-479b-839f-233925be173a">
+
+
+Now check your email subscribed to the Notification. You will recieve the File type not support email  notitification.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/20b3b994-5eac-42a8-be50-4a3ee0798161">
+
+
 b. Monitor Execution:
 Monitor executions in AWS Step Functions.
 Check DynamoDB tables for stored data.
