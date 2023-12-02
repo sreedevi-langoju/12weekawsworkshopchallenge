@@ -1,4 +1,4 @@
-# Serverless File Processing using Lambda and Step Functions
+# Serverless File Processing with Step Functions, Lambda, Rekognition, SNS, and S3 Trigger
 
 Here's a step-by-step guide on how to implement the Lambda-Initiated Step Functions Orchestrating CSV and Image  file Processing with S3 Triggers and SNS Notifications using the AWS Management Console:
 
