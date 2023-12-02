@@ -143,9 +143,9 @@ Design automatically display on the right side.
 Click on the config tab and give name the State machine,Type:Standard and choose Create new Role.
  
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/4fd9b589-6d1e-40e3-8e4a-58fc6cc28d1b">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/c65e42cf-1fd8-42e9-a870-4435f393b751">
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/ed9d75c7-8fc9-439d-a245-1bbd7d140d8b">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/1a462821-bc3e-4255-9b02-67481d5a220d">
 
 Copy the ARN of the State machine and add that in TriggerStepFunction.py code file.
 
