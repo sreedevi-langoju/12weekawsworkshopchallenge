@@ -86,7 +86,7 @@ Function Name: TriggerStepFunction
 Runtime:Python 3.9
 Choose Existing role: Choose IAM role created earlier
 In General Configuration change the Time out: 3 min 0 sec
-Remove the existing code in Lambda and Copy the python code from TriggerStepFunction.py( find this file in Labs folder in this repository)
+Remove the existing code in Lambda and Copy the python code from TriggerStepFunction.py( find this file in Labs folder in this repository) and click on Deploy button.
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/abcab2f5-0578-4b88-bbdb-d16973c13192">
 
@@ -109,6 +109,7 @@ Runtime:Python 3.9
 Choose Existing role: Choose IAM role created earlier
 In General Configuration change the Time out: 3 min 0 sec
 Remove the existing code in Lambda and Copy the python code from ProcessCSVFile.py( find this file in Labs folder in this repository) and click on Deploy button.
+Copy the ARN of the lambda function
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/f52060ae-2d91-4478-8d03-bc029166f496">
 
@@ -120,19 +121,20 @@ Function Name: ProcessImageFile
 Runtime:Python 3.9
 Choose Existing role: Choose IAM role created earlier
 In General Configuration change the Time out: 3 min 0 sec
-Remove the existing code in Lambda and Copy the python code from ProcessImageFile.py( find this file in Labs folder in this repository)
+Remove the existing code in Lambda and Copy the python code from ProcessImageFile.py( find this file in Labs folder in this repository) and click on Deploy button.
+Copy the ARN of the lambda function
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/d1e8740d-9eea-4e90-90eb-c8ce54376392">
 
-## Step 6: AWS Step Functions:
 
-a. Create State Machine:
-Define a state machine using AWS Step Functions with:
-State to check file type (CSV or image).
-States to invoke ProcessCSVFile and ProcessImageFile Lambda functions based on file type.
-States for sending SNS notifications.
-Handle success and failure paths.
 
+## Step 6: AWS Step Functions - Create State Machine:
+Go to the AWS Step Functions Console.
+Click "Create state machine".
+Define your state machine with appropriate states to check file type, invoke ProcessCSVFile and ProcessImageFile Lambdas, and send SNS notifications.
+Handle success and failure paths in the state machine.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/4fd9b589-6d1e-40e3-8e4a-58fc6cc28d1b">
 
 
 
