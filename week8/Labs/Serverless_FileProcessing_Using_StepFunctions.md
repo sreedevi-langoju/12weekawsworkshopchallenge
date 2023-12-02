@@ -59,10 +59,10 @@ Create an SNS topic for sending notifications.
 
 Go to the AWS SNS Console.
 Click "Create topic".
-Enter a topic name and create the topic.
+Choose: Standard type and Enter a topic name and create the topic.
 Copy ARN of the SNS topic created.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/4e25cdf0-212b-4281-878e-b1203427f347">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/aefc6413-720d-448b-9673-8c96fd7257b1">
 
 
 After creating the topic, select the newly created topic from the list.
