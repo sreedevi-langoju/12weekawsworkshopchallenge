@@ -50,7 +50,7 @@ Table 2:  Table Name :Images
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/4d7d84c0-e4d1-46d9-b82b-621e7c8e82cb" height=500 width=400>
 
 
-Step 4: Create SNS Topic:
+## Step 4: Create SNS Topic:
 
 Create an SNS topic for sending notifications.
 
@@ -64,19 +64,26 @@ Choose the protocol for the endpoint to receive notifications (e.g., Email, SMS,
 Enter the necessary details based on the chosen protocol.
 Confirm the subscription.(Check your email to confirm subscription for Email protocol)
 
+## STep 5: Create Lambda Functions:
 
-5. Lambda Functions:
+Go to the AWS Lambda Console.
+Create four Lambda functions: TriggerStepFunction, ProcessCSVFile and ProcessImageFile.
+Configure these functions according to their specific roles in your workflow.
+Ensure TriggerStepFunction Lambda is triggered by S3 bucket events.
+
 a. TriggerStepFunction Lambda:
 Create a Lambda function triggered by S3 bucket events.
 The function should start the Step Functions execution using the start_execution API.
+
 b. ProcessCSVFile Lambda:
 Lambda function to process CSV files, extract data, and store it in DynamoDB.
 Ensure it handles success/failure and sends appropriate SNS notifications.
+
 c. ProcessImageFile Lambda:
 Lambda function to process image files using Rekognition, extract labels, and store them in DynamoDB.
 Similar to ProcessCSVFile, handle success/failure and send SNS notifications.
-d. SendNotification Lambda:
-Lambda function to send SNS notifications for success/failure events.
+
+
 6. AWS Step Functions:
 a. Create State Machine:
 Define a state machine using AWS Step Functions with:
