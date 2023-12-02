@@ -143,12 +143,18 @@ Click on the config tab and give name the State machine,Type:Standard and choose
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/ed9d75c7-8fc9-439d-a245-1bbd7d140d8b">
 
-
+Copy the ARN of the State machine and add that in TriggerStepFunction.py code file.
 
 
 ## Step 7: Test Workflow:
-a. Upload Test Files:
+
+### a. Upload Test Files:
 Upload test files (CSV, image) to the configured S3 bucket.
+
+First upload csv (ex: students.csv find in the Labs reposiroty folder here) file to s3 bucket created earlier.
+
+<img src=https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/eb43fbf9-fbe5-4072-ac0e-1eadda61be47">
+
 b. Monitor Execution:
 Monitor executions in AWS Step Functions.
 Check DynamoDB tables for stored data.
