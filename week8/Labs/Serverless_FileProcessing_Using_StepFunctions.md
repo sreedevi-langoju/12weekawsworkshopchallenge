@@ -164,7 +164,7 @@ Check the StepFunction console and chekc the status of the state machine created
 
 Now check the DynamoDB Students table - Explore table items - It will display the csv row data that you have uploaded.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e30c9d49-d068-47e6-870b-ca30a4877e79">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/333a1928-3e40-4c01-b8c1-da25b2ca0f8e">
 
 Now check your email subscribed to the Notification. You will recieve the sucess notitification.
 
@@ -214,3 +214,8 @@ Ensure that all resources (Lambda, Step Functions, S3, DynamoDB, SNS) have prope
 Delete all the resources created earlier to avoid unnecessary billing.
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/4f9d219e-eb1e-48ac-b422-4631ce66aae6">
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/1aef3844-d87f-42e2-9dc0-8b4ab49534f9">
+
+
+
