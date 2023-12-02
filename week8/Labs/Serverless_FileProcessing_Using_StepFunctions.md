@@ -8,11 +8,11 @@ Here's a step-by-step guide on how to implement the Lambda-Initiated Step Functi
 
 Create an IAM role for Lambda functions with policies granting access to necessary services (S3, DynamoDB, Rekognition, SNS).
 
-Role Name: Give any name
-Trusted Entity: AWS Service
-USecase: Lambda
-Policies: Select these .
-Attach Inline Policy:
+Go to AWS IAM Console.
+Select "Roles" and click "Create role".
+For "Select type of trusted entity", choose "AWS service", then pick "Lambda" in the "Choose a use case" section.
+Attach policies granting access to S3, DynamoDB, Step Functions, Rekognition, and SNS.
+Review and create the role.
 
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9b1f5649-a782-4e83-a84e-4ae6d8081605">
@@ -27,20 +27,32 @@ All other options default
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/d5882ee9-1de4-4761-8445-16adc0c2f094">
 
 
-
 ## Step3 :Create DynamoDB tables:
 
-Create a DynamoDB table with the necessary attributes to store processed data.
+Create a two DynamoDB table with the necessary attributes to store processed data.
+
+Table 1:  Table Name :Students 
+          Partition key:StudentId
+          All other options default
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/d6278645-f43a-4d30-932a-ded4b4794be0" height=500 width=400>
 
-<img src="!https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/4d7d84c0-e4d1-46d9-b82b-621e7c8e82cb" height=500 width=400>
+
+Table 2:  Table Name :Images 
+          Partition key:ImageKey
+          All other options default
+
+          
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/4d7d84c0-e4d1-46d9-b82b-621e7c8e82cb" height=500 width=400>
 
 
+Step 4: Create SNS Topic:
 
-4. SNS Topic:
-a. Create SNS Topic:
 Create an SNS topic for sending notifications.
+
+
+
+
 5. Lambda Functions:
 a. TriggerStepFunction Lambda:
 Create a Lambda function triggered by S3 bucket events.
