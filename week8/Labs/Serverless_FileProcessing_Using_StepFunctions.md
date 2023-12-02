@@ -18,18 +18,26 @@ Attach Inline Policy:
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9b1f5649-a782-4e83-a84e-4ae6d8081605">
 
 ## Step 2: Create S3 Bucket:
+
 Create an S3 bucket where files will be uploaded.
 Bucket Name: Unique Name
 AWS Region:us-east-1
 All other options default
 
-
-
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/d5882ee9-1de4-4761-8445-16adc0c2f094">
-Enable event notifications for object creation to trigger Lambda.
-3. DynamoDB:
-a. Create DynamoDB Table:
+
+
+
+## Step3 :Create DynamoDB tables:
+
 Create a DynamoDB table with the necessary attributes to store processed data.
+
+<img src="">
+
+<img src="">
+
+
+
 4. SNS Topic:
 a. Create SNS Topic:
 Create an SNS topic for sending notifications.
