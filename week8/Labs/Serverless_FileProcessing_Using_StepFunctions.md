@@ -49,7 +49,7 @@ Table 2:  Table Name :Images
           All other options default
 
           
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/4d7d84c0-e4d1-46d9-b82b-621e7c8e82cb" height=500 width=400>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/0f6444b5-3c60-4096-96f1-82785ade45b1" height=500 width=400>
 
 
 ## Step 4: Create SNS Topic:
