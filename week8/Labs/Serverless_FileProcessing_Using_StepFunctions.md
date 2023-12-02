@@ -30,7 +30,10 @@ Keep other options as default and create the bucket.
 
 ## Step3 :Create DynamoDB tables:
 
-Create a two DynamoDB table with the necessary attributes to store processed data.
+Go to the AWS DynamoDB Console.
+Click "Create table".
+Create two tables: "Students" and "Images" with the specified partition keys.
+Keep other settings as default and create the tables.
 
 Table 1:  Table Name :Students 
           Partition key:StudentId
