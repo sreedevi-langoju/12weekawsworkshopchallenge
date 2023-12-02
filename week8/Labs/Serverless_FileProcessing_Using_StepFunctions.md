@@ -141,9 +141,9 @@ Design automatically display on the right side.
 Click on the config tab and give name the State machine,Type:Standard and choose Create new Role.
  
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/c65e42cf-1fd8-42e9-a870-4435f393b751">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/c65e42cf-1fd8-42e9-a870-4435f393b751"  height=600 width=600 >
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/1a462821-bc3e-4255-9b02-67481d5a220d">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/1a462821-bc3e-4255-9b02-67481d5a220d"  height=600 width=600 >
 
 Copy the ARN of the State machine and add that in TriggerStepFunction.py code file.
 
@@ -168,7 +168,7 @@ Now check the DynamoDB Students table - Explore table items - It will display th
 
 Now check your email subscribed to the Notification. You will recieve the sucess notitification.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/6c12d8c9-7faf-4099-8cb7-cffbd9a329a7">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/6c12d8c9-7faf-4099-8cb7-cffbd9a329a7" height=300 width=400 >
 
 
 #### 2. Upload any image(.jpeg or .jpg or .png) file (ex: city.jpg find in the Labs reposiroty folder here) file to s3 bucket created earlier.
@@ -187,7 +187,7 @@ Now check the DynamoDB Images table - Explore table items - It will display the 
 
 Now check your email subscribed to the Notification. You will recieve the sucess notitification.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/f98ef9c9-4a84-48d5-9016-aae9bf0b4805">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/f98ef9c9-4a84-48d5-9016-aae9bf0b4805" height=300 width=400>
 
 
 #### 3. Upload any file other than image(.jpeg or .jpg or .png) file or csv file  (ex: city.pdf find in the Labs reposiroty folder here) file to s3 bucket created earlier.
@@ -201,7 +201,7 @@ Check the StepFunction console and chekc the status of the state machine created
 
 Now check your email subscribed to the Notification. You will recieve the File type not support email  notitification.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/20b3b994-5eac-42a8-be50-4a3ee0798161">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/20b3b994-5eac-42a8-be50-4a3ee0798161" height=300 width=400>
 
 ### b. Monitor Execution:
 Monitor executions in AWS Step Functions.
