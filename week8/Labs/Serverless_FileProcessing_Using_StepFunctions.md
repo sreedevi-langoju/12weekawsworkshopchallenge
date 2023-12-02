@@ -132,12 +132,17 @@ Copy the ARN of the lambda function
 
 Go to the AWS Step Functions Console.
 Click "Create state machine".
-Copy the JSON code from into the {} code section. Design automatically display on the right side.
-Click on the config tab and give name the State machine and Type:Standard.
+Copy the code from statemachinecode.json  into the {} code section and add the ARN of the lambda functions created earlier and ARN of the sns topic  accordingly. 
+Design automatically display on the right side.
+Click on the config tab and give name the State machine,Type:Standard and choose Create new Role.
+ 
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/4fd9b589-6d1e-40e3-8e4a-58fc6cc28d1b">
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/ed9d75c7-8fc9-439d-a245-1bbd7d140d8b">
+
+
+
 
 ## Step 7: Test Workflow:
 a. Upload Test Files:
