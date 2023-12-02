@@ -203,9 +203,14 @@ Now check your email subscribed to the Notification. You will recieve the File t
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/20b3b994-5eac-42a8-be50-4a3ee0798161">
 
-
-b. Monitor Execution:
+### b. Monitor Execution:
 Monitor executions in AWS Step Functions.
 Check DynamoDB tables for stored data.
 Monitor SNS for success/failure notifications.
 Ensure that all resources (Lambda, Step Functions, S3, DynamoDB, SNS) have proper permissions and configurations set up. This sequence outlines a structured approach to setting up the workflow and testing its functionality. Adjustments and validations are essential to ensure the workflow functions as expected.
+
+## Step 8: Cleanup Resources:
+
+Delete all the resources created earlier to avoid unnecessary billing.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/4f9d219e-eb1e-48ac-b422-4631ce66aae6">
