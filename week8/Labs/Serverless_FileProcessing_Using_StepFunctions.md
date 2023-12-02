@@ -20,10 +20,11 @@ Review and create the role.
 ## Step 2: Create S3 Bucket:
 
 Create an S3 bucket where files will be uploaded.
-Bucket Name: Unique Name
-AWS Region:us-east-1
-All other options default
 
+Go to the AWS S3 Console.
+Click on "Create bucket".
+Enter a unique bucket name and select the AWS region as us-east-1.
+Keep other options as default and create the bucket.
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/d5882ee9-1de4-4761-8445-16adc0c2f094">
 
 
