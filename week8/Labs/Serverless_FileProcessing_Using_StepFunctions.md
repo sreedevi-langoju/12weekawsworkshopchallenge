@@ -29,7 +29,7 @@ Keep other options as default and create the bucket.
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/081bae5d-c29c-4216-a681-c2cbafed7f6c">
 
 
-## Step3 :Create DynamoDB tables:
+## Step3: Create DynamoDB tables:
 
 Go to the AWS DynamoDB Console.
 Click "Create table".
@@ -40,7 +40,7 @@ Table 1:  Table Name :Students
           Partition key:StudentId
           All other options default
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/d6278645-f43a-4d30-932a-ded4b4794be0" height=500 width=400>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/0007685a-b26d-4db9-8303-3aa6f8e74058" height=500 width=400>
 
 
 Table 2:  Table Name :Images 
@@ -48,7 +48,7 @@ Table 2:  Table Name :Images
           All other options default
 
           
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/0f6444b5-3c60-4096-96f1-82785ade45b1" height=500 width=400>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9a1421d8-c81e-4403-bc55-779471c663b3" height=500 width=400>
 
 
 ## Step 4: Create SNS Topic:
