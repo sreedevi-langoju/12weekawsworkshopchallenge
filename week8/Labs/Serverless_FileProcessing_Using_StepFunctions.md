@@ -26,7 +26,7 @@ Click on "Create bucket".
 Enter a unique bucket name and select the AWS region as us-east-1.
 Keep other options as default and create the bucket.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/081bae5d-c29c-4216-a681-c2cbafed7f6c" height=300 width=400>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/081bae5d-c29c-4216-a681-c2cbafed7f6c" height=300 width=300>
 
 
 ## Step3: Create DynamoDB tables:
@@ -141,7 +141,7 @@ Design automatically display on the right side.
 Click on the config tab and give name the State machine,Type:Standard and choose Create new Role.
  
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/c65e42cf-1fd8-42e9-a870-4435f393b751"  height=600 width=600 >
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/c65e42cf-1fd8-42e9-a870-4435f393b751" >
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/1a462821-bc3e-4255-9b02-67481d5a220d"  height=600 width=600 >
 
