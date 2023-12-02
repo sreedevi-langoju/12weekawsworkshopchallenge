@@ -99,8 +99,6 @@ Click on Add Trigger to add the s3 trigger to this lamda function and choose the
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/eefefb6e-6e83-4087-b851-6363c80ab916">
 
 
-
-
 ### b. ProcessCSVFile Lambda:
 
 Lambda function to process CSV files, extract data, and store it in DynamoDB.
@@ -155,9 +153,24 @@ Copy the ARN of the State machine and add that in TriggerStepFunction.py code fi
 ### a. Upload Test Files:
 Upload test files (CSV, image) to the configured S3 bucket.
 
-First upload csv (ex: students.csv find in the Labs reposiroty folder here) file to s3 bucket created earlier.
+1. First upload csv (ex: students.csv find in the Labs reposiroty folder here) file to s3 bucket created earlier.
 
 <img src=https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/eb43fbf9-fbe5-4072-ac0e-1eadda61be47">
+
+2. Upload any image(.jpeg or .jpg or .png) file (ex: city.jpg find in the Labs reposiroty folder here) file to s3 bucket created earlier.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/18dd1664-7c21-4c29-b2c4-01f5b378011f">
+
+Check the StepFunction console and chekc the status of the state machine created earlier.If it is succeeded, click on that link.You will see the success path.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/b292fb6d-de4c-4f48-ad1c-fe0e11b840ef">
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/8b39a8f5-6075-482b-9f7d-b8e78a99cb09">
+
+Now check the DynamoDB Images table - Explore table items - It will display the labels generated for image you have uploaded.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/f0f0fae7-242f-49ac-8c08-39f099246585">
+
 
 b. Monitor Execution:
 Monitor executions in AWS Step Functions.
