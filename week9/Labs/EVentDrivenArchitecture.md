@@ -85,6 +85,9 @@ In this project, I built an event-driven architecture by harnessing the capabili
 * Choose "SNS" as the destination and select the SNS topic you created in Step 2.
 * Click "Save" to configure the notification.
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/b5d2346d-6bca-426c-958e-d1b33269cbcd">
+
+
 #### Step 8: Upload a Text File to S3
 Upload a text file to the S3 bucket. This will trigger the Lambda function, which will count the words and send a notification to the SNS topic.
 
