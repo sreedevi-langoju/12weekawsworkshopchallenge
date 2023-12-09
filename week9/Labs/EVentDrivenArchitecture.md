@@ -26,6 +26,9 @@ In this project, I built an event-driven architecture by harnessing the capabili
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/5c300b9e-36f8-4816-8702-e6d51ba5b47a">
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/73cc472f-d934-43d6-b1f3-6a17d76bccd1">
+
+
 
 #### Step 3: Create an IAM Role for Lambda
 
