@@ -102,4 +102,7 @@ The SNS topic will send a notification to the specified email address with the w
 
 You have now set up a Lambda function to count words in a text file, configured S3 to trigger the Lambda function, and created an SNS topic to report the word count via email notifications.
 
+#### Step 10: Cleanup
+
+Dont forget to delete the resources s3 bucket, SNS topic and Lambda function created earlier to avoid unnecessary billing.
 
