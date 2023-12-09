@@ -10,6 +10,8 @@ In this project, I built an event-driven architecture by harnessing the capabili
 * Go to the AWS S3 console.
 * Click "Create bucket" and follow the wizard to create a new bucket or select an existing one.
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9ef6f87d-c6b8-4238-bade-2b5c82768f38">
+
 
 
   
