@@ -97,6 +97,9 @@ Upload a text file to the S3 bucket. This will trigger the Lambda function, whic
 #### Step 9: Receive Word Count Report
 The SNS topic will send a notification to the specified email address with the word count report whenever a text file is uploaded to the S3 bucket.
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/6da07bc3-0e04-43a7-a3f1-0b2690b9f5fc">
+
+
 You have now set up a Lambda function to count words in a text file, configured S3 to trigger the Lambda function, and created an SNS topic to report the word count via email notifications.
 
 
