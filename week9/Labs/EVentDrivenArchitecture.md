@@ -24,6 +24,9 @@ In this project, I built an event-driven architecture by harnessing the capabili
 * Need to subscribe to this SNS topic.
 * Notedown the SNS Topic ARN value.
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/5c300b9e-36f8-4816-8702-e6d51ba5b47a">
+
+
 #### Step 3: Create an IAM Role for Lambda
 
 * Go to the AWS IAM console.
