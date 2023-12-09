@@ -40,6 +40,9 @@ In this project, I built an event-driven architecture by harnessing the capabili
 * AmazonS3ReadOnlyAccess (for reading from S3)
 * AmazonSNSFullAccess (for publishing to SNS)
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/c87ceb05-6a01-4e34-a2e7-09dd5216f63e">
+
+
 #### Step 4: Create the Lambda Function
 
 * Go to the AWS Lambda console.
