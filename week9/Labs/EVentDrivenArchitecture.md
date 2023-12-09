@@ -10,6 +10,8 @@ In this project, I built an event-driven architecture by harnessing the capabili
 * Go to the AWS S3 console.
 * Click "Create bucket" and follow the wizard to create a new bucket or select an existing one.
 
+  
+
 #### Step 2: Create an SNS Topic
 
 * Go to the AWS SNS console.
