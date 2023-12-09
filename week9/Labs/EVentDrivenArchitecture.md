@@ -12,7 +12,7 @@ In this project, I built an event-driven architecture by harnessing the capabili
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9ef6f87d-c6b8-4238-bade-2b5c82768f38">
 
-
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/0548476d-09d8-4d41-acb9-278842e58200">
 
   
 
