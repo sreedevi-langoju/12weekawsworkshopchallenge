@@ -91,6 +91,9 @@ In this project, I built an event-driven architecture by harnessing the capabili
 #### Step 8: Upload a Text File to S3
 Upload a text file to the S3 bucket. This will trigger the Lambda function, which will count the words and send a notification to the SNS topic.
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/565b87d4-67d1-481b-bb8b-c55f405f6e38">
+
+
 #### Step 9: Receive Word Count Report
 The SNS topic will send a notification to the specified email address with the word count report whenever a text file is uploaded to the S3 bucket.
 
