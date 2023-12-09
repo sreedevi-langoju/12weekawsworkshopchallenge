@@ -49,9 +49,11 @@ In this project, I built an event-driven architecture by harnessing the capabili
 * Click "Create function" and select "Author from scratch."
 * Configure your function:
 * Name: Choose a name for your Lambda function.
-* Runtime: Select the appropriate runtime for your code (e.g., Python, Node.js, etc.).Here I am choosing Python 3.11
+* Runtime: Select the appropriate runtime for your code (e.g., Python, Node.js, etc.).Here I am choosing Python 3.9
 * Execution role: Choose "Use an existing role" and select the IAM role created in Step 3.
 * Click "Create function".
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/647a95a5-82bb-45ed-922a-136147723a86">
 
 #### Step 5: Write Lambda Function Code
 * Write the Lambda function code to count words in the uploaded text file. 
@@ -62,6 +64,9 @@ In this project, I built an event-driven architecture by harnessing the capabili
 * Add a new environmental variable with a key like SNS_TOPIC_ARN and the value set to your SNS topic's ARN.
 * Add SNS Topic ARN Variable
 * Click "Save" to save the environmental variable.
+
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/fed8dbb2-c818-42d6-a8c0-225576b1a915">
 
 #### Step 6: Configure S3 Event Trigger for Lambda
 
