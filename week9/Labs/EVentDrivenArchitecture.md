@@ -75,6 +75,8 @@ In this project, I built an event-driven architecture by harnessing the capabili
 * Configure the trigger with the S3 bucket you created in Step 1 and set event type to "ObjectCreated (All)."
 * Click "Add."
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/cb145bdc-1f8a-4d60-a9ab-ca1562c58960">
+
 #### Step 7: Configure SNS Notification
 
 * Go to your Lambda function in the AWS Lambda console.
