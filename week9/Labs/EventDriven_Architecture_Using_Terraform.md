@@ -322,7 +322,7 @@ To generate the action plans run the below command,
 
 Enter the value as your email-id and review the whole generated plan.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/59d9328d-9267-4ffb-be1f-50612f53c701">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/4afebe10-a7ab-4cdd-bbcf-b95f7799ef86">
 
 To create all the resources declared in main.tf configuration file, run the below command:
 
@@ -334,12 +334,16 @@ Enter the value as your email-id and you will be able to see the resources which
 
 Id’s of all the resources created by terraform will be visible there.
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/c0aef952-f277-4152-bf39-3626ea499b75">
 
 ## Task 12: Confirm the subscription on your email id
 
 You will receive an email in your mailbox from SNS.  
 
 Click on Confirm subscription.
+
+<img src="![image](https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/0f2c1e4c-e94e-48fe-aebb-ef877d8ec8a7)
+">
 
 Your email address is now subscribed to SNS Topic MyServerMonitor.
 
@@ -353,13 +357,14 @@ Navigate to EC2 by clicking on Services on the top, then click on EC2 in the Com
 
 Click on the Instances on the left navigation panel. You can see the instance created successfully.
 
-         
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/d410ff0b-a3d7-4e19-a171-25c16215afa8">
+     
 
 To Check SNS Topic Creation Select Simple Notification Service under Application Integration section.
 
 Click on the Topics on the left navigation panel and select the topic created. You can see that the topic is created successfully.
 
-
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/d7e6d55b-0c59-47b1-af56-41e61f433bfc">
 
 Select the topic created and Scroll down you can see the subscription being created and confirmed successfully.
 
