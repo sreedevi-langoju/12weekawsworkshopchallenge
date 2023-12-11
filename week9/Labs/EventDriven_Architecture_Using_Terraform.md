@@ -50,8 +50,6 @@ Now click on the first icon Explorer present on the left sidebar.
 
 Click on the button called Open folder and navigate to the location of folder task_10102.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/ee5a967f-4049-4e11-9acb-c9e8305df109">
-
 Visual Studio Code is now ready to use.
 
 ## Task 2: Create a variable file
@@ -314,14 +312,17 @@ Initialize Terraform by running the below command,
 
 ``` terraform init ```
 
-
 Note: terraform init will check for all the plugin dependencies and download them if required, this will be used for creating a deployment plan
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/c9cab2e9-15ee-41b6-92a7-4ecab7a2271f">
 
 To generate the action plans run the below command,
 
 ``` terraform plan ```
 
 Enter the value as your email-id and review the whole generated plan.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/59d9328d-9267-4ffb-be1f-50612f53c701">
 
 To create all the resources declared in main.tf configuration file, run the below command:
 
