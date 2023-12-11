@@ -1,13 +1,21 @@
 # Create an EventBridge Rule to get notified on EC2 Instance state change using Terraform
 
-Task 1: Sign in to AWS Management Console
-Click on the Open Console button, and you will get redirected to AWS Console in a new browser tab.
 
-On the AWS sign-in page,
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/86cd56c4-e056-416d-afa6-e58955b1a920">
 
-Leave the Account ID as default. Never edit/remove the 12 digit Account ID present in the AWS Console. otherwise, you cannot proceed with the lab.
 
-Now copy your User Name and Password in the Lab Console to the IAM Username and Password in AWS Console and click on the Sign in button
+## Prerequisites
+Install Terraform in your local machine using this official guide by Hashicorp.
+
+To install Terraform using CLI, use this guide https://learn.hashicorp.com/tutorials/terraform/install-cli
+
+To install Terraform by downloading, use this guide https://www.terraform.io/downloads.html 
+
+Download and Install Visual Studio Code editor using this guide https://code.visualstudio.com/download
+
+
+
+## Task 1: Setup Visual Studio Code
 
 Once Signed In to the AWS Management Console, Make the default AWS Region as US East (N. Virginia) us-east-1.
 Task 2: Setup Visual Studio Code
@@ -306,7 +314,8 @@ Your email address is now subscribed to SNS Topic MyServerMonitor.
 
 You can unsubscribe to the SNS Topic at any time.
 
-Task 14: Check the resources in AWS Console
+Task 14: * Sign-in intp AWS management Open Console 
+ Check the resources in AWS Console
 Make sure you are in the US East (N. Virginia) us-east-1 Region.
 
 Navigate to EC2 by clicking on Services on the top, then click on EC2 in the Compute section.
