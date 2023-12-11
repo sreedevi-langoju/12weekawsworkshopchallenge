@@ -368,15 +368,13 @@ Click on the Topics on the left navigation panel and select the topic created. Y
 
 Select the topic created and Scroll down you can see the subscription being created and confirmed successfully.
 
-
-
 To Check CloudWatch Event rule Creation click on Cloudwatch under Management & Governance
 
 Navigate to Events in the left panel of the CloudWatch page. Click on Rules under Events.
 
 You can see that the rule is created successfully.
 
-
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/147a2ef0-c3ae-4e8a-8ee7-76d4409eec4c">
 
 ## Task 14: Test Cloudwatch Event 
 
