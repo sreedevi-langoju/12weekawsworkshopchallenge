@@ -41,8 +41,7 @@ Change your present working directory to use the newly created folder by running
 
 Get the location of the present working directory by running the below command:
 
- ``` pwd
-```
+ ``` pwd ```
 
 Note down the location, as you will open the same in the next steps.
 
@@ -52,7 +51,8 @@ Click on the button called Open folder and navigate to the location of folder ta
 
 Visual Studio Code is now ready to use.
 
-Task 3: Create a variable file
+## Task 2: Create a variable file
+
 In this task, you will create variable files where you will declare all the global variables with a short description and a default value.
 
 To create a variable file, expand the folder task_10102 and click on the New File icon to add the file.
@@ -63,6 +63,7 @@ Note: Don't change the location of the new file, keep it default, i.e. inside th
 
 Paste the below contents in variables.tf file.
 
+```
  variable "access_key" {
     description = "Access key to AWS console"
 }
@@ -76,7 +77,8 @@ variable "region" {
 variable "endpoint" {
   type = string
   description = "Email endpoint for the SNS subscription"
-}			
+}
+```		
 In the above content, you are declaring a variable called, access_key, secret_key, and region with a short description of all 3.
 
 After pasting the above contents, save the file by pressing ctrl + S.
