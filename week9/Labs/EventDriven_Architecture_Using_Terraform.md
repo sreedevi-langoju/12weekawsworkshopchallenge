@@ -17,8 +17,6 @@ Download and Install Visual Studio Code editor using this guide https://code.vis
 
 ## Task 1: Setup Visual Studio Code
 
-Once Signed In to the AWS Management Console, Make the default AWS Region as US East (N. Virginia) us-east-1.
-Task 2: Setup Visual Studio Code
 Open the visual studio code.
 
 If you have already installed and using Visual studio code, open a new window.
@@ -30,8 +28,9 @@ Open Terminal by selecting View from the Menu bar and choose Terminal.
 It may take up to 2 minutes to open the terminal window.
 
 Once the terminal is ready, let us navigate to the Desktop.
+                
+''' cd Desktop '''
 
-cd Desktop
 Create a new folder by running the below command.
 
 mkdir task_10102
