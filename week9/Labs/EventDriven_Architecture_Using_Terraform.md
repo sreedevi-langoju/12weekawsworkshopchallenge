@@ -78,7 +78,8 @@ variable "endpoint" {
   type = string
   description = "Email endpoint for the SNS subscription"
 }
-```		
+```
+
 In the above content, you are declaring a variable called, access_key, secret_key, and region with a short description of all 3.
 
 After pasting the above contents, save the file by pressing ctrl + S.
@@ -89,18 +90,21 @@ Name the file as terraform.tfvars and press Enter to save it.
 
 Paste the below content into the terraform.tfvars file.
 
+```
 region = "us-east-1"
 access_key = "<YOUR AWS CONSOLE ACCESS ID>"
-secret_key = "<YOUR AWS CONSOLE SECRET KEY>"			
+secret_key = "<YOUR AWS CONSOLE SECRET KEY>"
+
+```
 In the above code, you are defining the dynamic values of variables declared earlier.
 
 Replace the values of access_key and secret_key by copying from the lab page.
 
 After replacing the values of access_key and secret_key, save the file by pressing Ctrl + S.
+    
 
-        
+## Task 3: Create a security group in main.tf file
 
-Task 4: Create a security group in main.tf file
  In this task, you will create a main.tf file where you will add details of the provider and resources.
 
 To create a main.tf file, expand the folder task_10102 and click on the New File icon to add the file.
@@ -108,12 +112,13 @@ To create a main.tf file, expand the folder task_10102 and click on the New File
 Name the file as main.tf and press Enter to save it.
 
 Paste the below content into the main.tf file.
-
+```
 provider "aws" {
     region     = "${var.region}"
     access_key = "${var.access_key}"
     secret_key = "${var.secret_key}"
-}			
+}
+```		
 In the above code, you are defining the provider as aws.
 
 Next, we want to tell Terraform to create a Security group for EC2 Instance
