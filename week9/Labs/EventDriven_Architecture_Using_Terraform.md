@@ -41,7 +41,8 @@ Change your present working directory to use the newly created folder by running
 
 Get the location of the present working directory by running the below command:
 
- $ pwd
+ ``` pwd
+```
 
 Note down the location, as you will open the same in the next steps.
 
