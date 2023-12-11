@@ -396,9 +396,11 @@ Two CloudWatch Event emails have been sent due to the MyEC2Server State changes.
 
 Navigate back to the EC2 Page and Start the EC2 instance. You will receive another two emails for the state changes. (pending and running).
 
-            
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/7f8a2890-9686-454b-8233-afcfb1ca847a">
 
 Note: If you can't find the emails, check in the SPAM folder of your email.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/483ed6ff-c113-40da-ab59-64d08003f6e4">
 
 You have successfully triggered CloudWatch Event SNS notification emails.
 
