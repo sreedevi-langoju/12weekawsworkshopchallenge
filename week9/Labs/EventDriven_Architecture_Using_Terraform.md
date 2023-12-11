@@ -29,17 +29,20 @@ It may take up to 2 minutes to open the terminal window.
 
 Once the terminal is ready, let us navigate to the Desktop.
                 
-''' cd Desktop '''
+``` cd Desktop ```
 
 Create a new folder by running the below command.
 
-mkdir task_10102
+``` mkdir task_10102 ```
+
 Change your present working directory to use the newly created folder by running the below command:
 
-cd task_10102
+``` cd task_10102 ```
+
 Get the location of the present working directory by running the below command:
 
-pwd
+``` pwd ```
+
 Note down the location, as you will open the same in the next steps.
 
 Now click on the first icon Explorer present on the left sidebar.
