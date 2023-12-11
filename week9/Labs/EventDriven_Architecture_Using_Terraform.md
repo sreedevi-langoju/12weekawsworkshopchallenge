@@ -5,6 +5,7 @@
 
 
 ## Prerequisites
+
 Install Terraform in your local machine using this official guide by Hashicorp.
 
 To install Terraform using CLI, use this guide https://learn.hashicorp.com/tutorials/terraform/install-cli
@@ -48,6 +49,8 @@ Note down the location, as you will open the same in the next steps.
 Now click on the first icon Explorer present on the left sidebar.
 
 Click on the button called Open folder and navigate to the location of folder task_10102.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/ee5a967f-4049-4e11-9acb-c9e8305df109">
 
 Visual Studio Code is now ready to use.
 
