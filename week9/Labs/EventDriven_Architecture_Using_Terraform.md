@@ -1,4 +1,4 @@
-# Create an EventBridge Rule to get notified on EC2 Instance state change using Terraform -whizlabs journey
+# Create an EventBridge Rule to get notified on EC2 Instance state change using Terraform
 
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/86cd56c4-e056-416d-afa6-e58955b1a920">
