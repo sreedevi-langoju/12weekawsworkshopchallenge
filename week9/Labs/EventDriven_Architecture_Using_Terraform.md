@@ -61,7 +61,7 @@ Name the file as variables.tf and press Enter to save it.
 
 Note: Don't change the location of the new file, keep it default, i.e. inside the task_10102 folder.
 
-Paste the below contents in variables.tf file.
+Paste the below contents in variables.tf file. You can find the same file week9/Labs repository.
 
 ```
  variable "access_key" {
@@ -88,7 +88,7 @@ Now expand the folder task_10102 and click on the New File icon to add the file.
 
 Name the file as terraform.tfvars and press Enter to save it.
 
-Paste the below content into the terraform.tfvars file.
+Paste the below content into the terraform.tfvars file.You can find the same file week9/Labs repository.
 
 ```
 region = "us-east-1"
@@ -111,7 +111,8 @@ To create a main.tf file, expand the folder task_10102 and click on the New File
 
 Name the file as main.tf and press Enter to save it.
 
-Paste the below content into the main.tf file.
+Paste the below content into the main.tf file.You can find the same file week9/Labs repository.
+
 ```
 provider "aws" {
     region     = "${var.region}"
@@ -215,6 +216,7 @@ resource "aws_sns_topic_subscription" "topic-subscription" {
 Save the file by pressing Ctrl + S.
 
 ## Task 8: Create a CloudWatch Event in main.tf file
+
  In this task, you will create a CloudWatch Event rule in main.tf.file. Using CloudWatch Events we will trigger SNS Notifications by stopping and starting an EC2 instance.
 
 To create a CloudWatch Event rule add another block of code just below the subscription code into the main.tf file
@@ -270,7 +272,7 @@ To create an output.tf file, expand the folder task_10102 and click on the New F
 
 Name the file as output.tf and press Enter to save it.
 
-Paste the below content into the output.tf file.
+Paste the below content into the output.tf file.You can find the same file week9/Labs repository.
 
 ```
 output "instance_id" {
