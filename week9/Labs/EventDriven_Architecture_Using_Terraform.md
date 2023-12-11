@@ -261,7 +261,9 @@ data "aws_iam_policy_document" "sns_topic_policy" {
 In above code we are creating a CloudWatch event rule that triggers when an Amazon Elastic Compute Cloud (Amazon EC2) instance changes state. When the event is triggered, it sends a notification to an Amazon Simple Notification Service (SNS) topic. The SNS topic is also given permission to publish messages by an Amazon Identity and Access Management (IAM) policy.
 
 Save the file by pressing Ctrl + S.
-Task 10: Create an Output file
+
+## Task 9: Create an Output file
+
 In this task, you will create an output.tf file where you will add details of the provider and resources.
 
 To create an output.tf file, expand the folder task_10102 and click on the New File icon to add the file.
@@ -270,6 +272,7 @@ Name the file as output.tf and press Enter to save it.
 
 Paste the below content into the output.tf file.
 
+```
 output "instance_id" {
   description = "ID of the EC2 instance"
   value       = aws_instance.web-server.id
@@ -281,61 +284,63 @@ output "topic_arn" {
 output "event_name" {
   description = "ARN of CloudWatch Rule"
   value       = aws_cloudwatch_event_rule.event.arn
-}			
+}
+```
+		
 In the above code, we will extract details of resources created to confirm that they are created.
 
-Task 11: Confirm the installation of Terraform by checking the version
+## Task 10: Confirm the installation of Terraform by checking the version
+
 In the Visual Studio Code, open Terminal by selecting View from the Menu bar and choose Terminal.
 
 If you are not in the newly created folder change your present working directory by running the below command.
 
-cd task_10102
+``` cd task_10102 ```
+
 To confirm the installation of Terraform, run the below command to check the version:
 
-terraform version
+``` terraform version ```
+
 If you are getting output as command not found: terraform, this means that terraform is not installed on your system, To install terraform follow the official guide link provided in the Prerequisite section above.
 
-Task 12: Apply terraform configurations
+## Task 11: Apply terraform configurations
+
 Initialize Terraform by running the below command,
 
-terraform init
+``` terraform init ```
 
 
 Note: terraform init will check for all the plugin dependencies and download them if required, this will be used for creating a deployment plan
 
 To generate the action plans run the below command,
 
-terraform plan
- Enter the value as your email-id and review the whole generated plan.
+``` terraform plan ```
 
-
+Enter the value as your email-id and review the whole generated plan.
 
 To create all the resources declared in main.tf configuration file, run the below command:
 
-terraform apply
- Enter the value as your email-id and you will be able to see the resources which will be created, approve the creation of all the resources by entering yes.
+``` terraform apply ```
+
+Enter the value as your email-id and you will be able to see the resources which will be created, approve the creation of all the resources by entering yes.
 
  It may take up to 2 minutes for the terraform apply command to create the resources.
 
 Id’s of all the resources created by terraform will be visible there.
 
 
+## Task 12: Confirm the subscription on your email id
 
-Task 13: Confirm the subscription on your email id
-You will receive an email in your mailbox from SNS.
-
-     
+You will receive an email in your mailbox from SNS.  
 
 Click on Confirm subscription.
-
-
 
 Your email address is now subscribed to SNS Topic MyServerMonitor.
 
 You can unsubscribe to the SNS Topic at any time.
 
-Task 14: * Sign-in intp AWS management Open Console 
- Check the resources in AWS Console
+## Task 13: Open AWS management Console
+
 Make sure you are in the US East (N. Virginia) us-east-1 Region.
 
 Navigate to EC2 by clicking on Services on the top, then click on EC2 in the Compute section.
@@ -362,7 +367,8 @@ You can see that the rule is created successfully.
 
 
 
-Task 15: Test Cloudwatch Event 
+## Task 14: Test Cloudwatch Event 
+
 Navigate to the EC2 Page in the AWS Management Console.
 
 Click on Instances in the Left Panel.
