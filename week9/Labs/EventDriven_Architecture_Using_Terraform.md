@@ -384,7 +384,7 @@ Click on Instances in the Left Panel.
 
 Select the MyEC2Server. Click on Instance state and Click on Stop instance.
 
-
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/59d347a0-aa5e-4aae-ad10-0fe69012ac14">
 
 Click on Stop in the pop up box.
 
@@ -392,7 +392,7 @@ Go back to your email address. You should have received some mail.
 
 Two CloudWatch Event emails have been sent due to the MyEC2Server State changes. (stopping and stopped).
 
-         
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/07f6ac58-e259-4b24-a461-80fbd5ecacad">      
 
 Navigate back to the EC2 Page and Start the EC2 instance. You will receive another two emails for the state changes. (pending and running).
 
