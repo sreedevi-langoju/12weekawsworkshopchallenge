@@ -263,7 +263,8 @@ data "aws_iam_policy_document" "sns_topic_policy" {
 }
 
 ```
-	
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/a1c7c763-604d-4532-9c0a-9e08605eb211">
+ 
 In above code we are creating a CloudWatch event rule that triggers when an Amazon Elastic Compute Cloud (Amazon EC2) instance changes state. When the event is triggered, it sends a notification to an Amazon Simple Notification Service (SNS) topic. The SNS topic is also given permission to publish messages by an Amazon Identity and Access Management (IAM) policy.
 
 Save the file by pressing Ctrl + S.
@@ -294,6 +295,8 @@ output "event_name" {
 ```
 		
 In the above code, we will extract details of resources created to confirm that they are created.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/46408365-8adf-43b4-91a8-02aaefaf991a">
 
 ## Task 10: Confirm the installation of Terraform by checking the version
 
