@@ -100,7 +100,9 @@ secret_key = "<YOUR AWS CONSOLE SECRET KEY>"
 ```
 In the above code, you are defining the dynamic values of variables declared earlier.
 
-Replace the values of access_key and secret_key by copying from the lab page.
+Replace the values of access_key and secret_key with your credentials.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/0baa5bf1-cbac-48a3-9054-c272139488e2">
 
 After replacing the values of access_key and secret_key, save the file by pressing Ctrl + S.
     
