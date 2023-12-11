@@ -82,6 +82,7 @@ variable "endpoint" {
 ```
 
 In the above content, you are declaring a variable called, access_key, secret_key, and region with a short description of all 3.
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e4e2d37d-6734-430e-ad4e-12fe4c5e90ad">
 
 After pasting the above contents, save the file by pressing ctrl + S.
 
