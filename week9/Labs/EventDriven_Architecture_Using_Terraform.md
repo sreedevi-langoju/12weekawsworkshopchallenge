@@ -124,7 +124,7 @@ In the above code, you are defining the provider as aws.
 Next, we want to tell Terraform to create a Security group for EC2 Instance
 
 To create a security group Paste the below content into the main.tf file after the provider
-
+```
 ############ Creating Security Group for EC2 ############
 resource "aws_security_group" "web-server" {
     name        = "web-server"
@@ -142,12 +142,14 @@ resource "aws_security_group" "web-server" {
         cidr_blocks = ["0.0.0.0/0"]
     }
 }			
-       
-Task 5: Create a Key pair in main.tf file
+```
+    
+## Task 4: Create a Key pair in main.tf file
  In this task, you will create a key pair for EC2 Instance
 
 To create a Key pair add another block of code just below the security group code into the main.tf file
 
+```
 ############ Creating Key pair for EC2 ############
 resource "tls_private_key" "example" {
   algorithm = "RSA"
@@ -158,14 +160,15 @@ resource "aws_key_pair" "whiz_key" {
   public_key = tls_private_key.example.public_key_openssh
 }			
 
-
+```
 Save the file by pressing Ctrl + S. 
 
-Task 6: Launch an EC2 Instance in main.tf file
+## Task 5: Launch an EC2 Instance in main.tf file
  In this task, you will Launch an EC2 Instance that  will be used for checking various features in CloudWatch.
 
 To Launch an EC2 Instance add another block of code just below the key pair code into the main.tf file
 
+```
 ################## Launching EC2 Instance ##################
 resource "aws_instance" "web-server" {
     ami             = "ami-01cc34ab2709337aa"
@@ -176,43 +179,47 @@ resource "aws_instance" "web-server" {
         Name = "MyEC2Server"
     }
 }			
-   
+```   
 
 Save the file by pressing Ctrl + S. 
 
-Task 7: Create SNS Topic in main.tf file
+## Task 6: Create SNS Topic in main.tf file
+
  In this task, you will create an SNS Topic in main.tf file
 
 To create an SNS Topic add another block of code just below the EC2 code into the main.tf file
-
+```
 ############ Creating an SNS Topic ############
 resource "aws_sns_topic" "topic" {
   name = "MyServerMonitor"
 }			
-
+```
 
 Save the file by pressing Ctrl + S.
 
-Task 8: Create SNS Topic Subscription in main.tf file
+## Task 7: Create SNS Topic Subscription in main.tf file
+
  In this task, you will create an SNS Topic Subscription 
 
 To create an SNS Topic Subscription add another block of code just below the SNS Topic code into the main.tf file
 
+```
 ############ Creating SNS Topic Subscription ############
 resource "aws_sns_topic_subscription" "topic-subscription" {
   topic_arn = aws_sns_topic.topic.arn
   protocol  = "email"
   endpoint= var.endpoint
 }			
-    
+```  
 
 Save the file by pressing Ctrl + S.
 
-Task 9: Create a CloudWatch Event in main.tf file
+## Task 8: Create a CloudWatch Event in main.tf file
  In this task, you will create a CloudWatch Event rule in main.tf.file. Using CloudWatch Events we will trigger SNS Notifications by stopping and starting an EC2 instance.
 
 To create a CloudWatch Event rule add another block of code just below the subscription code into the main.tf file
 
+```
 ############ Creating CloudWatch Event ############
 resource "aws_cloudwatch_event_rule" "event" {
   name        = "MyEC2StateChangeEvent"
@@ -247,7 +254,10 @@ data "aws_iam_policy_document" "sns_topic_policy" {
     }
     resources = [aws_sns_topic.topic.arn]
   }
-}			
+}
+
+```
+	
 In above code we are creating a CloudWatch event rule that triggers when an Amazon Elastic Compute Cloud (Amazon EC2) instance changes state. When the event is triggered, it sends a notification to an Amazon Simple Notification Service (SNS) topic. The SNS topic is also given permission to publish messages by an Amazon Identity and Access Management (IAM) policy.
 
 Save the file by pressing Ctrl + S.
