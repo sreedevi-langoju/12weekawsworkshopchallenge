@@ -1,3 +1,87 @@
+Lab Details
+This lab walks you through creating a real time data streaming system using Amazon Kinesis Data Streams (KDS).
+
+You will practice this lab using the services Amazon Kinesis, AWS Lambda, Amazon S3 and IAM.
+
+Duration : 1 hour 20 minutes
+
+AWS Region : US East (N. Virginia) us-east-1
+
+Introduction
+Amazon Kinesis Data Streams:
+Data streaming technology enables a customer to ingest, process and analyze high volumes of data from a variety of sources.
+
+Kinesis data streams is one such scalable and durable real-time data streaming service.
+
+A Kinesis data stream is an ordered sequence of data records meant to be written to and read from in real time.
+
+The pricing of the data streams is on a per-shard basis.
+
+Components:
+Data record - The unit of data stored by Kinesis Data Stream.
+
+Data stream - represents a group of data records. The data records in a data stream are distributed into shards.
+
+Retention period - Length of time Data records are accessible from streams. A Kinesis data stream stores records from 24 hours by default, up to 365 days.
+
+Kinesis Client Library - Ensures that for every shard there is a record processor running and processing the shard.
+
+A producer puts data records into shards..
+
+A consumer gets data records from shards
+
+Shard - It has a sequence of data records in a stream.
+
+There can be more than one shards. The number of shards required is mentioned while creating the data stream.
+
+Total capacity of stream is the sum of capacities of its shards.
+
+Ingest rate per shard - 1 MB or 1,000 messages per second.
+
+Data read rate per shard - 2 MB per second.
+
+Partition Key - Used to group data by shard within a stream.
+
+The stream records can be directly sent to services like S3, Redshift, Elasticsearch, etc. instead of creating consumer applications.
+
+Case Study
+We have an application which uploads text files to S3 Bucket.
+
+Whenever a file is uploaded to the S3 Bucket, it’s going to trigger a lambda function.
+
+The lambda function is a data producer, which reads the content from the S3 Bucket and then pushes the data to the Kinesis data stream.
+
+We have two consumers which consume the data from the stream.
+
+The consumers can do many things with the data.
+
+Suppose the consumer can read the data and send an email to the clients with the information or the data can be published into social media platforms or the data can be saved into the database.
+
+In this lab, we’ll log out the data and verify it.
+
+Architecture Diagram
+
+
+Task Details
+Sign in to AWS Management Console.
+
+Creating a Kinesis data stream.
+
+Creating a S3 Bucket and creating an event notification.
+
+Creating Lambda functions.
+
+Creating and uploading a test file to S3 bucket
+
+Testing the configuration
+
+Validation of the Lab
+
+
+
+
+
+
 Lab Steps
 Task 1: Sign in to AWS Management Console
 Click on the open console button, and you will get redirected to AWS Console in a new browser tab.
