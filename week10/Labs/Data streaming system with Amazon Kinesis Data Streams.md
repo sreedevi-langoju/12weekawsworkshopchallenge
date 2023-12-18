@@ -78,7 +78,7 @@ Testing the configuration
 Validation of the Lab
 
 
-
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/606db85e-c0ea-43e7-bc0d-99a2f89a9f6c">
 
 
 
