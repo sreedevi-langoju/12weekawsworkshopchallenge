@@ -415,12 +415,15 @@ Navigate to Kinesis by clicking on the Services menu, under the Analytics sectio
 
 Click on the created data stream and navigate to the Monitoring tab. You will be able to see the graph according to the logs generated.
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/aea58bd8-baf7-47b1-bfcb-d10ef66662c8" width=400 height=400>
 
 On the left navigation panel, click on the Data Firehose.
 
 Click on the created delivery stream and navigate to the Monitoring tab. You will be able to see the graph.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/aea58bd8-baf7-47b1-bfcb-d10ef66662c8" width=400 height=400>
+
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9b9f6fc3-f11f-40fb-864b-cbe3dc60f54e" width=400 height=400>
 
 Amazon Kinesis Data Streams supports the concept of shards, which are the fundamental units of data capacity within a stream. Each shard in a Kinesis Data Stream can handle up to 1 MB/sec of data input and 2 MB/sec of data output. However, with the use of Kinesis Data Firehose, you can easily ingest data into Kinesis Data Streams at a much higher rate, exceeding the individual shard limits.
 
