@@ -65,3 +65,97 @@ Select View all Instances to View Instance you Created
  Launch Status: Your instances are now launching, Navigate to Instances page from left menu and wait the status of the EC2 Instance changes to running and health check status changes to 2/2 checks passed
 
 Select the Instance and copy the Public IPv4 address from the Details section. Note down the Public IPv4 Address of your EC2 instance. A sample is shown in the screenshot below.
+
+
+Task 3: SSH into EC2 Instance
+Please follow the steps in SSH into EC2 Instance.
+ 
+
+Task 4: Host a sample website
+In this task, we will host a sample website by navigating to the HTML folder present in the var directory and then we will fetch the sample site using the wget command. 
+
+Switch to the root user :
+
+    sudo -s
+    
+Run all the updates using the yum command:
+
+    yum update -y
+    
+Install the LAMP server:
+
+    sudo amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2
+    
+Install the HTTPD :
+
+    sudo yum install -y httpd mariadb-server
+
+Start the HTTPD server:
+
+    sudo systemctl start httpd
+
+Enable the HTTPD Server:
+
+    sudo systemctl enable httpd
+
+Navigate to the HTML folder path.
+
+    cd /var/www/html
+
+Let us download a sample website template. Here I am downloading a zip file from the site using wget.
+
+    sudo wget https://www.free-css.com/assets/files/free-css-templates/download/page270/marvel.zip
+    
+You can check if it is downloaded in the HTML path using ls command.
+
+Unzip the downloaded html template. Use the zip file name to unzip.
+
+    sudo unzip marvel.zip
+    
+Use the command ls to list all the files and folders present in the present working directory. 
+
+
+
+   12. You will be able to see a zip file and a folder. When we unzipped the marvel.zip, we got the folder, 2115_marvel. 
+
+   13. Copy the folder name to a text editor.
+
+   14. To verify if the sample website is hosted, paste http://IP_Address/folder_name in the browser and press [Enter]
+
+   http://34.233.120.188/2115_marvel/
+
+
+You can see that the website is hosted successfully.
+
+   16. The website logs will be in the path “/var/log/httpd/access_log”. For each click and use of the website, the related logs will be collected and stored here.
+
+   17. You can check the logs using the following commands
+
+    sudo su
+    cd /var/log/httpd/
+    tail -10 access_log
+
+## Task 5: Set file permissions to httpd
+
+Now let's see how to store these continuous logs. Before proceeding, change the permission of the httpd folder, so that the file will be in readable, writable, and executable mode by ec2-user.
+
+Add the httpd group to your EC2 instance with the command
+
+    groupadd httpd
+    
+Add ec2-user user to the httpd group with the command
+
+    usermod -a -G httpd ec2-user
+    
+To refresh your permissions and include the new httpd group, log out completely with the command
+
+    exit
+    
+exit (if you are in the sudo, you have to exit twice)
+
+Follow the steps to SSH into EC2 Instance.
+
+Verify that the httpd group exists with the groups with the command
+
+    groups
+
