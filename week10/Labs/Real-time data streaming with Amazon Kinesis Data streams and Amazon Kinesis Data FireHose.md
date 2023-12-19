@@ -145,6 +145,8 @@ You can see that the website is hosted successfully.
     cd /var/log/httpd/
     tail -10 access_log
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/faa9d0ba-3e76-46c0-959c-5515af3d5d86" width=400 height=400>
+
 ## Task 5: Set file permissions to httpd
 
 Now let's see how to store these continuous logs. Before proceeding, change the permission of the httpd folder, so that the file will be in readable, writable, and executable mode by ec2-user.
