@@ -383,10 +383,6 @@ On the left navigation panel, click on the Data Firehose.
 Click on the created delivery stream and navigate to the Monitoring tab. You will be able to see the graph.
 
 
-
- 
-
-
 Amazon Kinesis Data Streams supports the concept of shards, which are the fundamental units of data capacity within a stream. Each shard in a Kinesis Data Stream can handle up to 1 MB/sec of data input and 2 MB/sec of data output. However, with the use of Kinesis Data Firehose, you can easily ingest data into Kinesis Data Streams at a much higher rate, exceeding the individual shard limits.
 
 
