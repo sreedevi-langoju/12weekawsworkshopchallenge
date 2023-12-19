@@ -364,10 +364,11 @@ Click on the log and select Open and save the file.
 Open the log file in any text editor in the local and check the logs.
 
 
-
 Note: The more the clicks in the page, the more the logs are generated. In this demo webpage, we have only 1 page. So try to open the webpage in many browsers and click on the links to generate the logs.
  
-Task 11: Checking the CloudWatch metrics of Kinesis Data Stream and Firehose
+## Task 11: Checking the CloudWatch metrics of Kinesis Data Stream and Firehose
+
+
 Let us the check the CloudWatch metrics of Kinesis Data Stream which records the data and Kinesis Delivery stream which reads the data from Data Stream.
 
 Make sure you are in the US East (N. Virginia) us-east-1 Region.
@@ -375,3 +376,85 @@ Make sure you are in the US East (N. Virginia) us-east-1 Region.
 Navigate to Kinesis by clicking on the Services menu, under the Analytics section.
 
 Click on the created data stream and navigate to the Monitoring tab. You will be able to see the graph according to the logs generated.
+
+
+On the left navigation panel, click on the Data Firehose.
+
+Click on the created delivery stream and navigate to the Monitoring tab. You will be able to see the graph.
+
+
+
+ 
+
+
+Amazon Kinesis Data Streams supports the concept of shards, which are the fundamental units of data capacity within a stream. Each shard in a Kinesis Data Stream can handle up to 1 MB/sec of data input and 2 MB/sec of data output. However, with the use of Kinesis Data Firehose, you can easily ingest data into Kinesis Data Streams at a much higher rate, exceeding the individual shard limits.
+
+
+## Task 12: Delete AWS Resources
+
+### Terminating EC2 Instance
+
+Make sure you are in the US East (N.Virginia) us-east-1 Region.
+
+Navigate to the Services menu at the top left corner and click on EC2 present under the Compute section.
+
+Click on Instances from the left navigation menu.
+
+Select the created instance and click on Instance state.
+
+From the drop-down menu select Terminate instance.
+
+Confirm the terminate by clicking on Terminate button.
+
+
+
+### Deleting Kinesis Data Streams
+
+Make sure you are in the US East (N.Virginia) us-east-1 Region.
+
+Navigate to Kinesis by clicking on the Services menu, under the Analytics section.
+
+On the left panel, click on the Data streams.
+
+Select the created data stream and click on the Actions button.
+
+Select Delete from the drop-down.
+
+Confirm by typing Delete and click on Delete button.
+
+
+
+### Deleting Kinesis Delivery Streams
+
+Make sure you are in the US East (N.Virginia) us-east-1 Region.
+
+Navigate to Kinesis by clicking on the Services menu, under the Analytics section.
+
+On the left panel, click on the Data Firehose.
+
+Select the created delivery stream.
+
+Select Delete.
+
+Confirm by typing the delivery stream name in the field and click on Delete button.
+
+
+
+## Completion and Conclusion
+You have successfully launched an EC2 Instance.
+
+You have successfully hosted a sample website.
+
+You have successfully set file permissions to httpd.
+
+You have successfully created Kinesis data stream.
+
+You have successfully created a S3 Bucket.
+
+You have successfully created Kinesis Data Firehose.
+
+You have successfully created and configured Kinesis Agent.
+
+You have successfully tested the real-time streaming of data.
+
+You have successfully checked the CloudWatch metrics of Kinesis Data Streams and Data Firehose.
