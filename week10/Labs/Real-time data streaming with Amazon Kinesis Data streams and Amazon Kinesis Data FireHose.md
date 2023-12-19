@@ -180,3 +180,17 @@ Make sure you are in the US East (N. Virginia) us-east-1 Region.
 Navigate to Kinesis by clicking on the Services menu, under the Analytics section.
 
 Under Get Started, select Kinesis Data Streams and click on Create data stream.
+
+Under Data stream name, enter the Data stream name as whiz-data-stream
+
+Click on Create data stream button.
+
+Once the data stream is created, click to open it.
+
+Click on the Configuration tab.
+
+Scroll down to Encryption and click on Edit button.
+
+Check Enable server-side encryption and use the default encryption key type, i.e Use AWS managed CMK.
+
+Click on Save changes button.
