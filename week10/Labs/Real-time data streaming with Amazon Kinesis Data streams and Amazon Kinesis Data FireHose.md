@@ -198,6 +198,8 @@ Under Data stream name, enter the Data stream name as whiz-data-stream
 
 Click on Create data stream button.
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/f8c1bb5f-ddfb-433a-9d6e-740b74425b93" width=400 height=400>
+
 Once the data stream is created, click to open it.
 
 Click on the Configuration tab.
@@ -210,7 +212,7 @@ Click on Save changes button.
 
 You have used AWS KMS to encrypt your data.
 
-
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/55c8bab6-0d08-4841-8f8e-14f3fd96f508" width=400 height=400>
 
 ## Task 7: Creating a S3 Bucket
 
