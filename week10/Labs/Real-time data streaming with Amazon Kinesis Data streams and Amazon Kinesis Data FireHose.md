@@ -247,6 +247,7 @@ Click on Create bucket button.
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/68f9591b-9b11-4562-8c4c-4a622c01b552"  width=400 height=400 >
 
+
 ## Task 8: Creating Kinesis Data Firehose
 
 Once the streaming service gets the data from the logs, then we need to push the data somewhere. It is not possible to post the data from the Kinesis Data Streams. So we will use Kinesis Data Firehose.
@@ -256,6 +257,8 @@ Make sure you are in the US East (N. Virginia) us-east-1 Region.
 Navigate to Kinesis by clicking on the Services menu, under the Analytics section.
 
 Under Get Started, select Kinesis Data Firehose and click on Create delivery stream.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/4c9f921e-c08b-4c0c-a60a-d681228529dd" width=400 height=400>
 
 Under Choose Source and Destination,
 
@@ -283,6 +286,8 @@ Click on Browse button.
 From the pop-up, select the S3 Bucket we have created earlier, in my case, whiz-demo-logs
 
 Click on Choose button.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/3dd61dfd-4f1d-40f2-a1aa-2755a82920ec" width=400 height=400>
 
  Expand the Buffer hints, compression and encryption section. Under the Buffer interval, make it to 60 seconds.
 
