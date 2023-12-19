@@ -361,6 +361,7 @@ You can check if the service is started properly by going through the log.
 
     head -10 aws-kinesis-agent.log
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/a2143126-9859-4780-9f24-8237e4e94607" width=400 height=400>
 
 We can see that the agent is successfully started.
 
