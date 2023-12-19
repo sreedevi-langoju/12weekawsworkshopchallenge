@@ -38,6 +38,8 @@ Choose an Amazon Machine Image (AMI): Choose Amazon Linux 2 AMI(HVM) from the dr
 
 Choose an Instance Type: Select t2.micro 
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/746b51f6-ae3a-48a4-9ce9-f504d6d10714">
+
 For Key pair : Choose Create a new key pair
 
 Key Pair name :  Enter  Whizkey
@@ -56,9 +58,11 @@ Select Add Security rule Button
 Choose Type: HTTP 
 Source:  Select Anywhere
 Under Advanced Details,
-IAM Instance profile : Select EC2_Role_<RANDOM_NUMBER>
+IAM Instance profile : Select EC2_Role_<RANDOM_NUMBER> 
 
 Keep Rest thing Default and Click on Launch Instance Button.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/3b95489e-065a-4104-b2db-31880ac2db50">
 
 Select View all Instances to View Instance you Created
 
