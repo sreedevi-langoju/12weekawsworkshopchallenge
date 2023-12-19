@@ -224,3 +224,49 @@ Encryption key type: Leave the key type as Amazon S3 key (SSE-S3).
 Bucket key: Select Enable
 
 Click on Create bucket button.
+
+
+## Task 8: Creating Kinesis Data Firehose
+
+Once the streaming service gets the data from the logs, then we need to push the data somewhere. It is not possible to post the data from the Kinesis Data Streams. So we will use Kinesis Data Firehose.
+
+Make sure you are in the US East (N. Virginia) us-east-1 Region.
+
+Navigate to Kinesis by clicking on the Services menu, under the Analytics section.
+
+Under Get Started, select Kinesis Data Firehose and click on Create delivery stream.
+
+Under Choose Source and Destination,
+
+Source: Choose Amazon Kinesis Data Streams
+
+Destination: Choose Amazon S3
+
+Under the Source settings,
+
+Click on Browse button.
+
+From the pop-up, select the Data Stream we have created earlier
+
+Click on Choose button.
+ 
+
+ Under Delivery stream name, Enter Delivery stream name as whiz-delivery-stream
+
+ Leave the Transform and convert records as default.
+
+ Under the Destination settings,
+
+Click on Browse button.
+
+From the pop-up, select the S3 Bucket we have created earlier, in my case, whiz-demo-logs
+
+Click on Choose button.
+
+ Expand the Buffer hints, compression and encryption section. Under the Buffer interval, make it to 60 seconds.
+
+ Expand the Advanced settings,
+
+Under Permissions, let it be as default, i.e Create or update IAM role. New IAM role with required permission would be created and will be assigned to this Kinesis delivery stream.
+
+Click on Create delivery stream button.
