@@ -363,6 +363,8 @@ You can check if the service is started properly by going through the log.
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/a2143126-9859-4780-9f24-8237e4e94607" width=400 height=400>
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/d8ca432b-b528-44d5-8c2f-fa7351928e51"  width=400 height=400 >
+
 We can see that the agent is successfully started.
 
 ## Task 10: Testing the real-time streaming of data
