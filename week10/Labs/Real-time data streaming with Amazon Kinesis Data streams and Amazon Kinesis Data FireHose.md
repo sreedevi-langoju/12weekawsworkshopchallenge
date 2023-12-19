@@ -349,3 +349,29 @@ Note: The folder_name is the unzipped folder of the sample website which we have
 Once you have followed the above step, click on the website links present to create more logs.
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/c4384ac6-ecc8-4017-b791-ec4603e44069">
+
+  Note: We are clicking the links in the sample website website to generate logs which will be streamed to the created S3 Bucket.
+  Navigate to S3 by clicking on the Services menu, under the Storage section.
+
+  Note: Wait for 3-5 minutes, if you are not able to see the logs. 
+  
+You will see a hierarchy of folders with year > month > date > hour.
+
+Click on the date or hour to see the logs created.
+
+Click on the log and select Open and save the file.
+
+Open the log file in any text editor in the local and check the logs.
+
+
+
+Note: The more the clicks in the page, the more the logs are generated. In this demo webpage, we have only 1 page. So try to open the webpage in many browsers and click on the links to generate the logs.
+ 
+Task 11: Checking the CloudWatch metrics of Kinesis Data Stream and Firehose
+Let us the check the CloudWatch metrics of Kinesis Data Stream which records the data and Kinesis Delivery stream which reads the data from Data Stream.
+
+Make sure you are in the US East (N. Virginia) us-east-1 Region.
+
+Navigate to Kinesis by clicking on the Services menu, under the Analytics section.
+
+Click on the created data stream and navigate to the Monitoring tab. You will be able to see the graph according to the logs generated.
