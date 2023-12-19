@@ -289,6 +289,7 @@ Click on Choose button.
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/3dd61dfd-4f1d-40f2-a1aa-2755a82920ec" width=400 height=400>
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/05a9aeae-b446-40e3-b6e7-1b28a325c739" width=400 height=400>
  Expand the Buffer hints, compression and encryption section. Under the Buffer interval, make it to 60 seconds.
 
  Expand the Advanced settings,
@@ -297,6 +298,7 @@ Under Permissions, let it be as default, i.e Create or update IAM role. New IAM 
 
 Click on Create delivery stream button.
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/52411a62-52b4-4476-8cc9-02b475dd6f8f">
 
 ## Task 9: Creating and configuring Kinesis Agent
 
