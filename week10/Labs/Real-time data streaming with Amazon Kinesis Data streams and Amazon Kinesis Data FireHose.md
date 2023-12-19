@@ -112,7 +112,8 @@ Navigate to the HTML folder path.
 Let us download a sample website template. Here I am downloading a zip file from the site using wget.
 
     sudo wget https://www.free-css.com/assets/files/free-css-templates/download/page270/marvel.zip
-    
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/932a03d3-4fb2-46bb-8217-fff187371fe4" width=400 height=400>    
 You can check if it is downloaded in the HTML path using ls command.
 
 Unzip the downloaded html template. Use the zip file name to unzip.
