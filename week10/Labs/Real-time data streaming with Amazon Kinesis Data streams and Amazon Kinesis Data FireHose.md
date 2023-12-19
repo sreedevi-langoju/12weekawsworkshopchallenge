@@ -70,12 +70,13 @@ Select View all Instances to View Instance you Created
 
 Select the Instance and copy the Public IPv4 address from the Details section. Note down the Public IPv4 Address of your EC2 instance. A sample is shown in the screenshot below.
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/381a257a-7ec9-4a4e-a72b-cdbeaf3ffafc">
 
-Task 3: SSH into EC2 Instance
+## Task 3: SSH into EC2 Instance
 Please follow the steps in SSH into EC2 Instance.
  
 
-Task 4: Host a sample website
+## Task 4: Host a sample website
 In this task, we will host a sample website by navigating to the HTML folder present in the var directory and then we will fetch the sample site using the wget command. 
 
 Switch to the root user :
