@@ -335,3 +335,17 @@ You can check if the service is started properly by going through the log.
 
 
 We can see that the agent is successfully started.
+
+## Task 10: Testing the real-time streaming of data
+
+Let us test by hosting the above sample website on multiple browsers or do some click activity on the website. The related logs will be collected on the listed S3 bucket.
+
+To test the data streaming, paste your IP_Address/folder_name in the multiple browsers and press enter.
+
+http://34.233.120.188/2115_marvel/
+
+Note: The folder_name is the unzipped folder of the sample website which we have noted earlier in the Task 5.
+
+Once you have followed the above step, click on the website links present to create more logs.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/c4384ac6-ecc8-4017-b791-ec4603e44069">
