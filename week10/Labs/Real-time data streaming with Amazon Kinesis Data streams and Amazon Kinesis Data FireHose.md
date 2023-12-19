@@ -87,6 +87,8 @@ Run all the updates using the yum command:
 
     yum update -y
     
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/717fc4de-5059-4943-8c50-65f686161801">
+    
 Install the LAMP server:
 
     sudo amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2
