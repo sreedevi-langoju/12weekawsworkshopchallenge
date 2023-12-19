@@ -113,22 +113,24 @@ Let us download a sample website template. Here I am downloading a zip file from
 
     sudo wget https://www.free-css.com/assets/files/free-css-templates/download/page270/marvel.zip
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/932a03d3-4fb2-46bb-8217-fff187371fe4" width=400 height=400>    
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/932a03d3-4fb2-46bb-8217-fff187371fe4" width=400 height=400>  
+
+
 You can check if it is downloaded in the HTML path using ls command.
 
 Unzip the downloaded html template. Use the zip file name to unzip.
 
     sudo unzip marvel.zip
-    
+
+  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9f09ce0e-ca56-446f-b480-cb79e555a91a" width=300 height=400>
+  
 Use the command ls to list all the files and folders present in the present working directory. 
 
+You will be able to see a zip file and a folder. When we unzipped the marvel.zip, we got the folder, 2115_marvel. 
 
+Copy the folder name to a text editor.
 
-   12. You will be able to see a zip file and a folder. When we unzipped the marvel.zip, we got the folder, 2115_marvel. 
-
-   13. Copy the folder name to a text editor.
-
-   14. To verify if the sample website is hosted, paste http://IP_Address/folder_name in the browser and press [Enter]
+To verify if the sample website is hosted, paste http://IP_Address/folder_name in the browser and press [Enter]
 
    http://34.233.120.188/2115_marvel/
 
