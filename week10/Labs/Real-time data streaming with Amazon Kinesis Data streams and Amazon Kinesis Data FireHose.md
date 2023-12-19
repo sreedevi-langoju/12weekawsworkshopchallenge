@@ -182,6 +182,7 @@ Change the directory permissions of /var/log/httpd and its subdirectories to add
     
 find /var/log/httpd -type d -exec sudo chmod 2775 {} +
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/58f506a3-111f-469e-ba35-c24ab6804884" width=400 height=400>
 
 ## Task 6: Creating Kinesis Data Stream
 
