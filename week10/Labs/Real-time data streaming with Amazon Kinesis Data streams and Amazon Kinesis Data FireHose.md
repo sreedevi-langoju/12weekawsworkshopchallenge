@@ -270,3 +270,68 @@ Click on Choose button.
 Under Permissions, let it be as default, i.e Create or update IAM role. New IAM role with required permission would be created and will be assigned to this Kinesis delivery stream.
 
 Click on Create delivery stream button.
+
+
+## Task 9: Creating and configuring Kinesis Agent
+
+Let us configure a Kinesis agent which will collect data and send it to Kinesis Data Streams.
+
+ SSH into the EC2 instance.
+
+Let us install the latest version of Kinesis agent on the instance.
+
+    sudo yum install –y https://s3.amazonaws.com/streaming-data-agent/aws-kinesis-agent-latest.amzn2.noarch.rpm
+    
+Type “y” if asked in the installation process.
+
+After installing the Kinesis agent, let us update the json file available in the path /etc/aws-kinesis/agent.json.
+
+Edit the agent.json,
+
+    sudo nano /etc/aws-kinesis/agent.json
+
+Remove all the content and paste the below JSON content.
+
+Note 1: Make sure you change the “awsAccessKeyId” , "awsSecretAccessKey"   in the JSON code wherever required.
+
+Note 2: Make sure the “filePattern” consists of the log file path which is default in this case and “kinesisStream” consists of the created Kinesis Data Stream name.
+
+Press “ctrl + x” to save. Press “y” to save the modified changes and press Enter (Follow the commands to save the file carefully).
+
+```
+{
+    "cloudwatch.emitMetrics": true,
+    "kinesis.endpoint": "",
+    "firehose.endpoint": "",
+    "awsAccessKeyId": "A*****************",
+    "awsSecretAccessKey": "B******************",
+    "flows": [
+      {
+        "filePattern": "/var/log/httpd/access_log",
+        "kinesisStream": "whiz-data-stream",
+        "partitionKeyOption": "RANDOM"
+      }
+    ]
+}
+```
+
+The name of the kinesis stream ( “kinesisStream” ) to which the agent sends data. Change the kinesisStream name according to the name you created.
+
+Whenever you change the configuration file (agent.json), you must stop and start the agent, using the commands.
+
+    sudo service aws-kinesis-agent stop
+    
+    sudo service aws-kinesis-agent start
+    
+Once the agent is started for the first time, a log file will be created. Check the log file using the commands,
+
+    cd /var/log/aws-kinesis-agent/
+    
+    ls -ltr
+
+You can check if the service is started properly by going through the log.
+
+    head -10 aws-kinesis-agent.log
+
+
+We can see that the agent is successfully started.
