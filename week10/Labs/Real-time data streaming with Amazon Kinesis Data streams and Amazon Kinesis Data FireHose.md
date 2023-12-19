@@ -245,6 +245,7 @@ Click on Create bucket button.
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e5cfe3af-d30b-4a3a-ac0e-8add2fc703c5" width=400 height=400>
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/68f9591b-9b11-4562-8c4c-4a622c01b552"  width=400 height=400 >
 
 ## Task 8: Creating Kinesis Data Firehose
 
