@@ -460,7 +460,7 @@ Select Delete from the drop-down.
 
 Confirm by typing Delete and click on Delete button.
 
-
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/025e8c29-0d67-47be-8d2f-fb1531456ab0" width=400 height=400>
 
 ### Deleting Kinesis Delivery Streams
 
@@ -476,7 +476,7 @@ Select Delete.
 
 Confirm by typing the delivery stream name in the field and click on Delete button.
 
-
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/2df1a6a8-9df4-47dd-99e0-858b4f02a318" width=400 height=400>
 
 ## Completion and Conclusion
 You have successfully launched an EC2 Instance.
