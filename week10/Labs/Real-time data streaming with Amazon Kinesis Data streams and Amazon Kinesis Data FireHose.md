@@ -214,6 +214,9 @@ You have used AWS KMS to encrypt your data.
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/55c8bab6-0d08-4841-8f8e-14f3fd96f508" width=400 height=400>
 
+
+
+
 ## Task 7: Creating a S3 Bucket
 
 In this task, we will create an S3 bucket where we will store the data from the firehose.
@@ -239,6 +242,8 @@ Encryption key type: Leave the key type as Amazon S3 key (SSE-S3).
 Bucket key: Select Enable
 
 Click on Create bucket button.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e5cfe3af-d30b-4a3a-ac0e-8add2fc703c5" width=400 height=400>
 
 
 ## Task 8: Creating Kinesis Data Firehose
