@@ -38,7 +38,7 @@ Choose an Amazon Machine Image (AMI): Choose Amazon Linux 2 AMI(HVM) from the dr
 
 Choose an Instance Type: Select t2.micro 
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/746b51f6-ae3a-48a4-9ce9-f504d6d10714">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/746b51f6-ae3a-48a4-9ce9-f504d6d10714" width=400 height=400>
 
 For Key pair : Choose Create a new key pair
 
@@ -62,7 +62,7 @@ IAM Instance profile : Select EC2_Role_<RANDOM_NUMBER>
 
 Keep Rest thing Default and Click on Launch Instance Button.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/3b95489e-065a-4104-b2db-31880ac2db50">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/3b95489e-065a-4104-b2db-31880ac2db50" width=400 height=400>
 
 Select View all Instances to View Instance you Created
 
@@ -70,7 +70,7 @@ Select View all Instances to View Instance you Created
 
 Select the Instance and copy the Public IPv4 address from the Details section. Note down the Public IPv4 Address of your EC2 instance. A sample is shown in the screenshot below.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/381a257a-7ec9-4a4e-a72b-cdbeaf3ffafc">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/381a257a-7ec9-4a4e-a72b-cdbeaf3ffafc" width=400 height=400>
 
 ## Task 3: SSH into EC2 Instance
 Please follow the steps in SSH into EC2 Instance.
@@ -87,7 +87,7 @@ Run all the updates using the yum command:
 
     yum update -y
     
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/717fc4de-5059-4943-8c50-65f686161801">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/717fc4de-5059-4943-8c50-65f686161801" width=400 height=400>
     
 Install the LAMP server:
 
