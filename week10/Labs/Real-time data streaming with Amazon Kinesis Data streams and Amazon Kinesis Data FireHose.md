@@ -300,6 +300,8 @@ Click on Create delivery stream button.
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/52411a62-52b4-4476-8cc9-02b475dd6f8f">
 
+
+
 ## Task 9: Creating and configuring Kinesis Agent
 
 Let us configure a Kinesis agent which will collect data and send it to Kinesis Data Streams.
@@ -367,6 +369,7 @@ You can check if the service is started properly by going through the log.
 
 We can see that the agent is successfully started.
 
+
 ## Task 10: Testing the real-time streaming of data
 
 Let us test by hosting the above sample website on multiple browsers or do some click activity on the website. The related logs will be collected on the listed S3 bucket.
@@ -390,12 +393,16 @@ You will see a hierarchy of folders with year > month > date > hour.
 
 Click on the date or hour to see the logs created.
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/57db9e83-490e-45b7-9889-7ae3e4504c20" width=400 height=400>
+
 Click on the log and select Open and save the file.
 
 Open the log file in any text editor in the local and check the logs.
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/100b2e96-239b-4cd1-ae32-441d20d8f024">
 
 Note: The more the clicks in the page, the more the logs are generated. In this demo webpage, we have only 1 page. So try to open the webpage in many browsers and click on the links to generate the logs.
+
  
 ## Task 11: Checking the CloudWatch metrics of Kinesis Data Stream and Firehose
 
@@ -413,6 +420,7 @@ On the left navigation panel, click on the Data Firehose.
 
 Click on the created delivery stream and navigate to the Monitoring tab. You will be able to see the graph.
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/aea58bd8-baf7-47b1-bfcb-d10ef66662c8" width=400 height=400>
 
 Amazon Kinesis Data Streams supports the concept of shards, which are the fundamental units of data capacity within a stream. Each shard in a Kinesis Data Stream can handle up to 1 MB/sec of data input and 2 MB/sec of data output. However, with the use of Kinesis Data Firehose, you can easily ingest data into Kinesis Data Streams at a much higher rate, exceeding the individual shard limits.
 
