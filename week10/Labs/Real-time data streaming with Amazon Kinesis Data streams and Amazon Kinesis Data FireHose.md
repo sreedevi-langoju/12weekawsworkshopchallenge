@@ -159,3 +159,24 @@ Verify that the httpd group exists with the groups with the command
 
     groups
 
+
+Change the group ownership of the /var/log/httpd directory and its contents to the httpd group,
+
+    sudo chown -R root:httpd /var/log/httpd
+    
+Change the directory permissions of /var/log/httpd and its subdirectories to add group write permissions and set the group ID on subdirectories created in the future,
+
+    sudo chmod 2775 /var/log/httpd
+    
+find /var/log/httpd -type d -exec sudo chmod 2775 {} +
+
+
+## Task 6: Creating Kinesis Data Stream
+
+Let us create a Kinesis data stream. The logs created in the EC2 sample website will be pushed to Kinesis data stream.
+
+Make sure you are in the US East (N. Virginia) us-east-1 Region.
+
+Navigate to Kinesis by clicking on the Services menu, under the Analytics section.
+
+Under Get Started, select Kinesis Data Streams and click on Create data stream.
