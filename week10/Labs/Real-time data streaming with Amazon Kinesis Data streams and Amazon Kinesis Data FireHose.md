@@ -40,7 +40,7 @@ Choose an Instance Type: Select t2.micro
 
 For Key pair : Choose Create a new key pair
 
-Key Pair name :  Enter  WhizKey
+Key Pair name :  Enter  Whizkey
 Key pair type : Choose RSA
 Private key file format: Choose .pem
 Click on Create key pair button.
@@ -57,3 +57,11 @@ Choose Type: HTTP
 Source:  Select Anywhere
 Under Advanced Details,
 IAM Instance profile : Select EC2_Role_<RANDOM_NUMBER>
+
+Keep Rest thing Default and Click on Launch Instance Button.
+
+Select View all Instances to View Instance you Created
+
+ Launch Status: Your instances are now launching, Navigate to Instances page from left menu and wait the status of the EC2 Instance changes to running and health check status changes to 2/2 checks passed
+
+Select the Instance and copy the Public IPv4 address from the Details section. Note down the Public IPv4 Address of your EC2 instance. A sample is shown in the screenshot below.
