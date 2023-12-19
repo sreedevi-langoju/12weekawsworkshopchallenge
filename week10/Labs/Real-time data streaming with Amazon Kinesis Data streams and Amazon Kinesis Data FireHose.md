@@ -194,3 +194,33 @@ Scroll down to Encryption and click on Edit button.
 Check Enable server-side encryption and use the default encryption key type, i.e Use AWS managed CMK.
 
 Click on Save changes button.
+
+You have used AWS KMS to encrypt your data.
+
+
+
+## Task 7: Creating a S3 Bucket
+
+In this task, we will create an S3 bucket where we will store the data from the firehose.
+
+Make sure you are in the US East (N. Virginia) us-east-1 Region.
+
+Navigate to S3 by clicking on the Services menu, under the Storage section.
+
+Click on Create bucket button.
+
+In the General Configuration,
+
+Bucket name: Enter whiz-demo-logs
+
+  Note: S3 Bucket names are globally unique, choose a name that is available.
+
+Region: Select US East (N. Virginia) us-east-1 (i.e same region as the Kinesis data stream).
+
+In the Default encryption,
+
+Encryption key type: Leave the key type as Amazon S3 key (SSE-S3).
+
+Bucket key: Select Enable
+
+Click on Create bucket button.
