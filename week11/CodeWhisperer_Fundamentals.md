@@ -24,6 +24,6 @@ It keeps an eye on your code's security, flagging vulnerabilities and offering s
 CodeWhisperer respects open-source code by flagging similar suggestions and avoids biased or unfair recommendations, ensuring fairness in your coding experience.
 
 
-Using Amazon CodeWhisperer with AWS Lambda:
+## Using Amazon CodeWhisperer with AWS Lambda:
 
 Please check here on how to use Amazon CodeWhisperer with AWS Lambda https://docs.aws.amazon.com/codewhisperer/latest/userguide/lambda-setup.html
