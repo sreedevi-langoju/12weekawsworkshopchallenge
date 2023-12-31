@@ -26,4 +26,8 @@ CodeWhisperer respects open-source code by flagging similar suggestions and avoi
 
 ## Using Amazon CodeWhisperer with AWS Lambda:
 
-Please check here on how to use Amazon CodeWhisperer with AWS Lambda https://docs.aws.amazon.com/codewhisperer/latest/userguide/lambda-setup.html
+Please check here on how to use Amazon CodeWhisperer with AWS Lambda: https://docs.aws.amazon.com/codewhisperer/latest/userguide/lambda-setup.html
+
+# Getting started with CodeWhisperer in VS Code :
+
+Please check here on how to use Amazon CodeWhisperer in Visual Studio Code: https://docs.aws.amazon.com/codewhisperer/latest/userguide/whisper-setup-ide-devs.html
