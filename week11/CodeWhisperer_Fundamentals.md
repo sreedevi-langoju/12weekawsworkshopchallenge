@@ -1,6 +1,6 @@
 # Amazon CodeWhisperer: 
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/87fb94ab-1f71-4eb6-981b-5618ac7e67d3" height=200 width=400>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/87fb94ab-1f71-4eb6-981b-5618ac7e67d3" height=200 width=400><br/>
 
 Amazon CodeWhisperer is a general purpose, machine learning-powered code generator that provides you with code recommendations in real time. As you write code, CodeWhisperer automatically generates suggestions based on your existing code and comments.
 
