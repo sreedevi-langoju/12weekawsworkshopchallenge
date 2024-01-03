@@ -70,9 +70,9 @@ You can also configure a test event for this function to ensure it works as expe
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/1da91de2-8385-4fb7-a5c9-d5dc87109756">
 
-<img src="(https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9d0ae884-9e8c-4c58-81c8-b4c70ce6a79e">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9d0ae884-9e8c-4c58-81c8-b4c70ce6a79e">
 
-
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/20cad989-9758-4110-9e26-a8570ae3d103">
 #### Step 4: Creating CloudWatch Events
 
 AWS CloudWatch is a monitoring service that provides valuable insights into your AWS resources and allows you to schedule tasks, making it an ideal choice for automating email dispatch at specific times.<br>
