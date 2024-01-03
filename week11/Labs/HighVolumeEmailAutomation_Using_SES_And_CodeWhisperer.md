@@ -94,6 +94,8 @@ Your Lambda function is now associated with the CloudWatch Event Rule as a trigg
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/568d64e4-4fda-4c45-a819-fb70eccfddb8">
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/7b948d1c-a1ee-465d-b3fe-5f746688ef6b">
+
 #### Conclusion
 
 As a result of these steps, your Lambda function will be triggered, and it will send out emails at the scheduled times, making mass emailing a breeze.<br>
