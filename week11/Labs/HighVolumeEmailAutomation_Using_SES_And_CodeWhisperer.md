@@ -16,10 +16,7 @@ To kickstart our journey into mass emailing automation with AWS, the first step 
 * In the 'Permissions' section, choose 'CloudWatch full access','AWSLambdaExecute' and 'SES full access' policies to grant the role the necessary permissions.<br>
 * Provide a meaningful name for the role and click 'Create role.'<br>
 
-
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/541263c4-48bb-4c44-a301-068008c90cb8" width="400">
-
-
 
 
 #### Step 2: Verify email addresses or domain to send emails through Amazon SES <br>
@@ -35,6 +32,8 @@ To verify your identity and send emails through Amazon Simple Email Service (SES
 You can now use the verified email address or domain to send emails through Amazon SES. <br>
 
 <img src="https://github.com/sreedevi-langoju/Mass_Emailing_Using_AWSServices/assets/135724041/46225b24-9db6-47c5-85a1-aad2c92b5222" width="300">
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/73b2fe8c-1616-4976-9bb1-3d45eb45457e">
 
 
 * If you want to verify an entire domain (e.g., yourcompany.com) instead of individual email addresses, you can do this from the SES console. Navigate to "Domains" and follow the steps to verify the domain. This involves adding DNS records to your domain's DNS settings.<br>
