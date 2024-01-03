@@ -26,16 +26,22 @@ You need to verify your email addresses or domain to send emails through Amazon 
 To verify your identity and send emails through Amazon Simple Email Service (SES), follow these steps:<br>
 * Going to the Amazon SES console.<br>
 * Going to Verified identities > create identity> select an individual email address.<br>
+
+<img src="https://github.com/sreedevi-langoju/Mass_Emailing_Using_AWSServices/assets/135724041/46225b24-9db6-47c5-85a1-aad2c92b5222" width="300">
+
 * Enter your email address to verify and then click on Create identity.<br>
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/73b2fe8c-1616-4976-9bb1-3d45eb45457e">
+
 * Amazon SES will send a confirmation email to the address you entered. Open your email client, find the email from AWS Notifications, and click on the link to confirm the email address. This link will take you to a confirmation page on the AWS website.<br>
 * Once you've clicked the confirmation link, you'll receive a confirmation success message, and the email address will be marked as verified in the SES console.
 You can now use the verified email address or domain to send emails through Amazon SES. <br>
 
-<img src="https://github.com/sreedevi-langoju/Mass_Emailing_Using_AWSServices/assets/135724041/46225b24-9db6-47c5-85a1-aad2c92b5222" width="300">
-
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/73b2fe8c-1616-4976-9bb1-3d45eb45457e">
 
 
+
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/3289c9f6-8432-4a75-bc9a-93bd9b3c9f36">
 * If you want to verify an entire domain (e.g., yourcompany.com) instead of individual email addresses, you can do this from the SES console. Navigate to "Domains" and follow the steps to verify the domain. This involves adding DNS records to your domain's DNS settings.<br>
 
 * Before sending production emails, consider sending a test email to verify that your setup works as expected. Use the "Send a Test Email" option in the SES console.<br>
