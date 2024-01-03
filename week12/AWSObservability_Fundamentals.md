@@ -22,10 +22,13 @@ By using these tools and integrating them into your AWS environment, you can gai
 </br></br>
 
 
+### Why Observability is Needed:
+
+
 <b>Observability</b> is crucial for understanding complex, distributed systems, especially in modern software architectures like microservices. Here's why it's essential and how it differs from traditional monitoring:
 
-### Why Observability is Needed:
-Complexity of Systems: Modern applications often consist of multiple interconnected services, running across various platforms (cloud, on-premises). Observability helps manage the complexity by providing insights into how these services interact and affect each other.
+#### Complexity of Systems: 
+Modern applications often consist of multiple interconnected services, running across various platforms (cloud, on-premises). Observability helps manage the complexity by providing insights into how these services interact and affect each other.
 
 #### Quick Problem Identification: 
 In complex systems, issues can arise from various points. Observability tools enable quick identification and troubleshooting of problems, reducing downtime and enhancing user experience.
