@@ -171,9 +171,9 @@ It will show the traffic response status along with the graph.
 
 Click on the Analyze Traces to view detailed information.
 
-
-
 It will show detailed information about HTTP Method, URL, User-Agent, HTTP Method, Trace List, etc.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/bebb6802-8e85-42e3-8d3b-9a6e28928c3e">
 
 You can click on any of the Trace List to view the traces.
 
