@@ -70,7 +70,7 @@ You can also configure a test event for this function to ensure it works as expe
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/1da91de2-8385-4fb7-a5c9-d5dc87109756">
 
-
+<img src="(https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9d0ae884-9e8c-4c58-81c8-b4c70ce6a79e">
 
 
 #### Step 4: Creating CloudWatch Events
