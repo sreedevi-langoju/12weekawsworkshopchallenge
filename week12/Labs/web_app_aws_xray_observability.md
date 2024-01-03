@@ -68,15 +68,15 @@ Before creating CloudFormation Stack, download this template and save it on your
 
 The CloudFormation template will create below resources:
 
-Elastic Beanstalk application: host sample X-Ray application.
+* Elastic Beanstalk application: host sample X-Ray application.
 
-IAM Role: used by the EC2 in Elastic Beanstalk.
+* IAM Role: used by the EC2 in Elastic Beanstalk.
 
-DynamoDB: store signup details.
+* DynamoDB: store signup details.
 
-S3 bucket: store the template.
+* S3 bucket: store the template.
 
-SQS and SQS: decouple the application.
+* SQS: decouple the application.
 
 
 On the CloudFormation dashboard, click on Create stack button.
@@ -93,8 +93,8 @@ Click on the Next button.
 On the Specify stack details page, provide the following details:
 
 Stack Name: Enter a name of your choice.
-NodejsPlatformVersion: Enter latest version of Amazon Linux 2 Node.js 18 (Use this link to get the latest version) 
 
+NodejsPlatformVersion: Enter latest version of Amazon Linux 2 Node.js 18 (Use this link to get the latest version) 
 
 S3BucketName : Enter S3 Bucket Name
 
@@ -106,7 +106,7 @@ VPC: Select the default VPC from the dropdown
 
 Click on the Next button.
 
- 
+ <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/c5a4c64c-b887-4f85-ba76-c9518f1749bf">
 
 On the Configure Stack options page, leave it as default and click on Next button in the bottom right corner.
 
