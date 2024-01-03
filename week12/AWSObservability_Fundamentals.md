@@ -19,7 +19,8 @@ Assesses the security and compliance of applications by analyzing the behavior o
 </br>
 By using these tools and integrating them into your AWS environment, you can gain deeper insights into your infrastructure, troubleshoot issues more effectively, and ensure the overall health and performance of your applications.
 
-</br>
+</br></br>
+
 
 <b>Observability</b> is crucial for understanding complex, distributed systems, especially in modern software architectures like microservices. Here's why it's essential and how it differs from traditional monitoring:
 
