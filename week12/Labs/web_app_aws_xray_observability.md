@@ -127,6 +127,8 @@ Go to EC2 Console by searching EC2 in the Services, and click on the Instances f
 
 Select the whizlabs-xray-stack instance and Copy the Elastic IP Address  ( it will be the application Public IPv4 that you will use to access the application).
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/4d5fa846-28f1-4103-8a26-9ab3864eba45">
+
 Open the IP in the new tab. It will open the sample X-ray application.
 
 Let’s generate some traffic by signing up for the application.
