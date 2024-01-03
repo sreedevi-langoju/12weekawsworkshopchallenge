@@ -120,7 +120,7 @@ Wait for 10 minutes till the stack status changes to CREATE_COMPLETE.
 
 Note: It will create an additional nested stack.
 
-
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/331444f0-a3fa-43ca-aea7-c4f1741478be">
 
 ## Task 4: Test the Application
 Go to EC2 Console by searching EC2 in the Services, and click on the Instances from the left side.
