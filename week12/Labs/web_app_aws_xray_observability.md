@@ -35,9 +35,11 @@ Region: Select US East (N. Virginia) us-east-1
 
     5. Click on Create bucket button.
 
+<img src="">
+
     6. Click on the bucket name you created.
 
-    7. Download this aws-xray-node-sample-app.zip file and save it on your local machine.
+    7. Download this aws-xray-node-sample-app.zip( in this repository)  file and save it on your local machine.
 
     8. To upload this zip file to our S3 bucket,
 
@@ -52,6 +54,8 @@ Click on the Upload button.
 You can watch the progress of the upload from within the transfer panel at the top of the screen.
 
 Once your file has been uploaded, it will be displayed in the bucket.
+
+<img src="">
 
 Copy the Bucket name and Object name for later use.
          
