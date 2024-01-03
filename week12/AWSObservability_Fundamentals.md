@@ -2,7 +2,11 @@
 
 <b>Observability</b> in AWS refers to the ability to understand and analyze what's happening within your systems by collecting and analyzing data from various sources. It involves gathering information on metrics, logs, traces, and other data points to provide insights into the performance, health, and behavior of your applications and infrastructure running on AWS services.
 
+AWS provides native monitoring, logging, alarming, and dashboards with Amazon CloudWatch  and tracing through AWS X-Ray . When deployed together, they provide the 3 pillars (Metric, Logs & Traces) of an observability solution.
+
 AWS offers various tools and services to enhance observability, such as:
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/4756d674-1dcb-4755-8842-8e4d849fd280">
 
 ### Amazon CloudWatch:
 Monitors and collects metrics, logs, and events from AWS services and resources, allowing you to set alarms, visualize data, and take automated actions based on predefined thresholds.
