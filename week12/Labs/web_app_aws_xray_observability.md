@@ -4,10 +4,10 @@ Let me walks you through the steps to deploy the sample web application using Cl
 
 ## Architecture Diagram:
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/b1237be4-e2c2-4a78-b822-d18a21fd8b67" width=400 height=400>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/b1237be4-e2c2-4a78-b822-d18a21fd8b67" width=500 height=400>
 
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/cfd9f0ca-8730-4c88-9902-854dbd41ef7e" width=400 height=400>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/cfd9f0ca-8730-4c88-9902-854dbd41ef7e" width=500 height=400>
 
 
 ## Task 1: Sign in to AWS Management Console
