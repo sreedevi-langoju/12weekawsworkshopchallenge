@@ -123,9 +123,10 @@ Note: It will create an additional nested stack.
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/331444f0-a3fa-43ca-aea7-c4f1741478be">
 
 ## Task 4: Test the Application
+
 Go to EC2 Console by searching EC2 in the Services, and click on the Instances from the left side.
 
-Select the whizlabs-xray-stack instance and Copy the Elastic IP Address  ( it will be the application Public IPv4 that you will use to access the application).
+Select the mystack instance and Copy the Elastic IP Address  ( it will be the application Public IPv4 that you will use to access the application).
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/4d5fa846-28f1-4103-8a26-9ab3864eba45">
 
@@ -152,6 +153,7 @@ Wait for a few minutes and then click on the Stop button.
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/3f2a2e2f-0c5e-41ab-9d19-1c0cfb2cc763">
 
 ## Task 5: Monitor the traffic in AWS X-Ray
+
 Go to the CloudWatch by clicking the Services menu at the top and search for CloudWatch in the search bar.
 
 Now click on Service Map from left navigation menu under the X-Ray traces.
@@ -177,38 +179,27 @@ It will show detailed information about HTTP Method, URL, User-Agent, HTTP Metho
 
 You can click on any of the Trace List to view the traces.
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9bb4bcb2-240a-4e07-94a4-843022edc65b">
+
 You can also filter the traces by clicking on Question mark(?) at the top right corner.
 
-Task 6 : Validation of the Lab
-Once the lab steps are completed, please click on the Validation button on the left side panel.
 
-This will validate the resources in the AWS account and displays whether you have completed this lab successfully or not.
+## Task 6: Clean up AWS Resources
 
-Sample output :
-
-
-
-Task 7: Clean up AWS Resources
 Delete CloudFormation Stack
+
 Make sure you are in the N.Virginia Region.
 
 Navigate to CloudFormation by clicking on the Services menu at the top and search for CloudFormation in the search bar.
 
-Select the whizlabs-xray-stack stack and click on the Delete button.
+Select the mystack stack and click on the Delete button.
 
 Now click on the Delete stack button in the prompt.
 
 Now, wait till your stack deletion is completed. It will also delete the nested stack.
 
-Completion and Conclusion
-You have successfully navigated to the X-Ray application.
+## Completion and Conclusion
 
-You have successfully deployed a sample X-ray application.
+You have successfully navigated to and deployed a sample X-ray application.
 
-You have successfully tested the application.
-
-You have successfully monitored the traffic in X-Ray.
-
-You have successfully completed the validation test.
-
-You have successfully deleted the AWS Resources.
+You have successfully tested the application and monitored the traffic in X-Ray.
