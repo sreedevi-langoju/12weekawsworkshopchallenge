@@ -16,7 +16,7 @@ To kickstart our journey into mass emailing automation with AWS, the first step 
 * In the 'Permissions' section, choose 'CloudWatch full access','AWSLambdaExecute' and 'SES full access' policies to grant the role the necessary permissions.<br>
 * Provide a meaningful name for the role and click 'Create role.'<br>
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/541263c4-48bb-4c44-a301-068008c90cb8" width="600">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/541263c4-48bb-4c44-a301-068008c90cb8" width="700">
 
 
 #### Step 2: Verify email addresses or domain to send emails through Amazon SES <br>
@@ -27,18 +27,18 @@ To verify your identity and send emails through Amazon Simple Email Service (SES
 * Going to the Amazon SES console.<br>
 * Going to Verified identities > create identity> select an individual email address.<br>
 
-<img src="https://github.com/sreedevi-langoju/Mass_Emailing_Using_AWSServices/assets/135724041/46225b24-9db6-47c5-85a1-aad2c92b5222" width="500">
+<img src="https://github.com/sreedevi-langoju/Mass_Emailing_Using_AWSServices/assets/135724041/46225b24-9db6-47c5-85a1-aad2c92b5222" width="600">
 
 * Enter your email address to verify and then click on Create identity.<br>
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/73b2fe8c-1616-4976-9bb1-3d45eb45457e" width="500">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/73b2fe8c-1616-4976-9bb1-3d45eb45457e" width="600">
 
 * Amazon SES will send a confirmation email to the address you entered. Open your email client, find the email from AWS Notifications, and click on the link to confirm the email address. This link will take you to a confirmation page on the AWS website.<br>
 * Once you've clicked the confirmation link, you'll receive a confirmation success message, and the email address will be marked as verified in the SES console.
 You can now use the verified email address or domain to send emails through Amazon SES. <br>
 
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/3289c9f6-8432-4a75-bc9a-93bd9b3c9f36"  width="500">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/3289c9f6-8432-4a75-bc9a-93bd9b3c9f36"  width="600">
 
 <br>
 
@@ -59,8 +59,7 @@ AWS Lambda is a serverless computing service that allows you to execute code wit
 * You can leave the rest of the settings as optional.<br>
 * Click 'Create function.'<br>
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/d45c1c94-3b84-47a7-9853-005573484105" width="500" height=400>
-
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/d45c1c94-3b84-47a7-9853-005573484105" width="600" height=600>
 
 
 Now that you have your Lambda function in place, you'll need to write code to send emails using it. 
