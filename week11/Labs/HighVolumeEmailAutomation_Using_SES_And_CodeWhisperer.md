@@ -38,7 +38,7 @@ To verify your identity and send emails through Amazon Simple Email Service (SES
 You can now use the verified email address or domain to send emails through Amazon SES. <br>
 
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/3289c9f6-8432-4a75-bc9a-93bd9b3c9f36">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/3289c9f6-8432-4a75-bc9a-93bd9b3c9f36"  width="500">
 
 <br>
 
@@ -61,7 +61,6 @@ AWS Lambda is a serverless computing service that allows you to execute code wit
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/d45c1c94-3b84-47a7-9853-005573484105" width="500" height=400>
 
-<img src="https://github.com/sreedevi-langoju/Mass_Emailing_Using_AWSServices/assets/135724041/2657a884-0916-4627-80e8-c3c5c09d1936" width="200">
 
 
 Now that you have your Lambda function in place, you'll need to write code to send emails using it. 
