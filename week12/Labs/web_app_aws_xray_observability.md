@@ -137,7 +137,9 @@ For this step, you can manually signup into the application. But you will automa
 
 Wait for a few minutes and then click on the Stop button.
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/1152cc6b-28c5-4ee9-8e91-340903420737">
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/063b20a9-566b-4d4f-bb1f-e49f7c296c7e">
 
      7. Hence, you have successfully created a few signup accounts in the sample application.
 
@@ -147,7 +149,7 @@ Wait for a few minutes and then click on the Stop button.
 
     10. You can view the signup details.
 
-
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/3f2a2e2f-0c5e-41ab-9d19-1c0cfb2cc763">
 
 ## Task 5: Monitor the traffic in AWS X-Ray
 Go to the CloudWatch by clicking the Services menu at the top and search for CloudWatch in the search bar.
