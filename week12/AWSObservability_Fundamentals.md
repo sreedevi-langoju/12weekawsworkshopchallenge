@@ -20,7 +20,7 @@ Assesses the security and compliance of applications by analyzing the behavior o
 By using these tools and integrating them into your AWS environment, you can gain deeper insights into your infrastructure, troubleshoot issues more effectively, and ensure the overall health and performance of your applications.
 
 
-### AWS X-Ray:
+### AWS X-Ray Service:
 
 
 <b>AWS X-Ray</b> is a service provided by Amazon Web Services (AWS) that helps developers analyze and debug distributed applications. It provides a way to understand the behavior of applications and the interactions between their components, especially in microservices architectures.
