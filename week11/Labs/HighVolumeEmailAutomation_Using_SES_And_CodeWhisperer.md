@@ -70,7 +70,10 @@ You can also configure a test event for this function to ensure it works as expe
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9d0ae884-9e8c-4c58-81c8-b4c70ce6a79e">
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/20cad989-9758-4110-9e26-a8570ae3d103">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/fc7d5001-b217-4019-9599-6b7979a5d16d">
+
+
+
 #### Step 4: Creating CloudWatch Events
 
 AWS CloudWatch is a monitoring service that provides valuable insights into your AWS resources and allows you to schedule tasks, making it an ideal choice for automating email dispatch at specific times.<br>
@@ -88,11 +91,11 @@ In the Lambda console, select the Lambda function to which you want to add a Clo
 
 Your Lambda function is now associated with the CloudWatch Event Rule as a trigger, and it will be invoked based on the schedule you defined in the rule. Test and monitor your Lambda function to ensure it works as expected when triggered by the CloudWatch Event Rule.<br>
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/52c611f1-7e9d-4a69-aca8-736e994bf21c" width="300">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/52c611f1-7e9d-4a69-aca8-736e994bf21c" width="400">
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/568d64e4-4fda-4c45-a819-fb70eccfddb8">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/568d64e4-4fda-4c45-a819-fb70eccfddb8"  width="400">
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/7b948d1c-a1ee-465d-b3fe-5f746688ef6b">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/7b948d1c-a1ee-465d-b3fe-5f746688ef6b"  width="400">
 
 #### Conclusion
 
