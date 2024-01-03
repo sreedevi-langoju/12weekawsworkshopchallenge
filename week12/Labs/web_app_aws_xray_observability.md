@@ -55,7 +55,7 @@ You can watch the progress of the upload from within the transfer panel at the t
 
 Once your file has been uploaded, it will be displayed in the bucket.
 
-<img src="">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/269c9e82-ff96-4835-b99e-d77263dcbf7b">
 
 Copy the Bucket name and Object name for later use.
          
