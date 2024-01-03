@@ -16,11 +16,11 @@ Records API calls made on your AWS account, providing audit logs for security an
 ### Amazon Inspector: 
 Assesses the security and compliance of applications by analyzing the behavior of AWS resources and identifying potential security issues.
 
-
-</br></br>
+</br>
 By using these tools and integrating them into your AWS environment, you can gain deeper insights into your infrastructure, troubleshoot issues more effectively, and ensure the overall health and performance of your applications.
 
-## AWs X-Ray:
+
+### AWS X-Ray:
 
 
 <b>AWS X-Ray</b> is a service provided by Amazon Web Services (AWS) that helps developers analyze and debug distributed applications. It provides a way to understand the behavior of applications and the interactions between their components, especially in microservices architectures.
