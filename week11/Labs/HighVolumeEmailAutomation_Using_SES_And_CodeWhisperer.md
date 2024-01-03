@@ -13,13 +13,13 @@ To kickstart our journey into mass emailing automation with AWS, the first step 
 * Open the AWS console, and in the search bar, type 'IAM' and select the IAM service.<br>
 * In the IAM dashboard, navigate to 'Roles' and click on 'Create role.'<br>
 * Select the use case as 'Lambda' and proceed to the next step.<br>
-* In the 'Permissions' section, choose 'CloudWatch full access' and 'SES full access' policies to grant the role the necessary permissions.<br>
+* In the 'Permissions' section, choose 'CloudWatch full access','AWSLambdaExecute' and 'SES full access' policies to grant the role the necessary permissions.<br>
 * Provide a meaningful name for the role and click 'Create role.'<br>
 
 
-<img src="https://github.com/sreedevi-langoju/Mass_Emailing_Using_AWSServices/assets/135724041/6b4c83bf-2413-439d-8874-1c3573edd786" width="400">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/541263c4-48bb-4c44-a301-068008c90cb8" width="400">
 
-<img src="https://github.com/sreedevi-langoju/Mass_Emailing_Using_AWSServices/assets/135724041/486aa4c8-da9d-48df-94d7-5d713c31ab0b" width="400">
+
 
 
 #### Step 2: Verify email addresses or domain to send emails through Amazon SES <br>
