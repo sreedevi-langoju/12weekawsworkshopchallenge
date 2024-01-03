@@ -16,6 +16,8 @@ Records API calls made on your AWS account, providing audit logs for security an
 ### Amazon Inspector: 
 Assesses the security and compliance of applications by analyzing the behavior of AWS resources and identifying potential security issues.
 
+
+
 By using these tools and integrating them into your AWS environment, you can gain deeper insights into your infrastructure, troubleshoot issues more effectively, and ensure the overall health and performance of your applications.
 
 
