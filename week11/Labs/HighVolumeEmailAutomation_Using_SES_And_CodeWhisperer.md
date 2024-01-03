@@ -4,7 +4,7 @@ Mass Emailing with Amazon Web Services- AWS Lambda, SES, CloudWatch, IAMRoles an
 
 The world of communication has evolved significantly in recent times, and businesses, organizations, and individuals often find themselves needing to send a large number of emails. However, manually managing this task can be tedious, time-consuming, and prone to errors. This is where Amazon Web Services (AWS) comes to the rescue, offering a seamless solution to automate mass emailing. In this blog, we will explore how to leverage AWS services, including AWS Lambda, CloudWatch, IAM Roles, and Simple Email Service (SES),and CodeWhisperer to create a robust and efficient mass emailing system with code companion.
 
-<img src="https://github.com/sreedevi-langoju/Mass_Emailing_Using_AWSServices/assets/135724041/c1ebc0a3-0850-400c-8f39-fa94b0dd85ed" width="300">
+<img src="https://github.com/sreedevi-langoju/Mass_Emailing_Using_AWSServices/assets/135724041/c1ebc0a3-0850-400c-8f39-fa94b0dd85ed" width="500">
 
 #### Step 1: Creating an IAM Role
 
@@ -16,7 +16,7 @@ To kickstart our journey into mass emailing automation with AWS, the first step 
 * In the 'Permissions' section, choose 'CloudWatch full access','AWSLambdaExecute' and 'SES full access' policies to grant the role the necessary permissions.<br>
 * Provide a meaningful name for the role and click 'Create role.'<br>
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/541263c4-48bb-4c44-a301-068008c90cb8" width="400">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/541263c4-48bb-4c44-a301-068008c90cb8" width="500">
 
 
 #### Step 2: Verify email addresses or domain to send emails through Amazon SES <br>
@@ -27,11 +27,11 @@ To verify your identity and send emails through Amazon Simple Email Service (SES
 * Going to the Amazon SES console.<br>
 * Going to Verified identities > create identity> select an individual email address.<br>
 
-<img src="https://github.com/sreedevi-langoju/Mass_Emailing_Using_AWSServices/assets/135724041/46225b24-9db6-47c5-85a1-aad2c92b5222" width="300">
+<img src="https://github.com/sreedevi-langoju/Mass_Emailing_Using_AWSServices/assets/135724041/46225b24-9db6-47c5-85a1-aad2c92b5222" width="500">
 
 * Enter your email address to verify and then click on Create identity.<br>
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/73b2fe8c-1616-4976-9bb1-3d45eb45457e">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/73b2fe8c-1616-4976-9bb1-3d45eb45457e" width="500">
 
 * Amazon SES will send a confirmation email to the address you entered. Open your email client, find the email from AWS Notifications, and click on the link to confirm the email address. This link will take you to a confirmation page on the AWS website.<br>
 * Once you've clicked the confirmation link, you'll receive a confirmation success message, and the email address will be marked as verified in the SES console.
