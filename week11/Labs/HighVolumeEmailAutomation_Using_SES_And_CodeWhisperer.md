@@ -59,7 +59,7 @@ AWS Lambda is a serverless computing service that allows you to execute code wit
 * You can leave the rest of the settings as optional.<br>
 * Click 'Create function.'<br>
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/d45c1c94-3b84-47a7-9853-005573484105">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/d45c1c94-3b84-47a7-9853-005573484105" width="500" height=400>
 
 <img src="https://github.com/sreedevi-langoju/Mass_Emailing_Using_AWSServices/assets/135724041/2657a884-0916-4627-80e8-c3c5c09d1936" width="200">
 
