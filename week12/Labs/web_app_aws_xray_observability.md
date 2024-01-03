@@ -169,3 +169,30 @@ Once the lab steps are completed, please click on the Validation button on the l
 This will validate the resources in the AWS account and displays whether you have completed this lab successfully or not.
 
 Sample output :
+
+
+
+Task 7: Clean up AWS Resources
+Delete CloudFormation Stack
+Make sure you are in the N.Virginia Region.
+
+Navigate to CloudFormation by clicking on the Services menu at the top and search for CloudFormation in the search bar.
+
+Select the whizlabs-xray-stack stack and click on the Delete button.
+
+Now click on the Delete stack button in the prompt.
+
+Now, wait till your stack deletion is completed. It will also delete the nested stack.
+
+Completion and Conclusion
+You have successfully navigated to the X-Ray application.
+
+You have successfully deployed a sample X-ray application.
+
+You have successfully tested the application.
+
+You have successfully monitored the traffic in X-Ray.
+
+You have successfully completed the validation test.
+
+You have successfully deleted the AWS Resources.
