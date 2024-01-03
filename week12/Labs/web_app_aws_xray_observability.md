@@ -1,5 +1,14 @@
 # Create a sample Web Application and monitor it in AWS X-Ray:
 
+Let me walks you through the steps to deploy the sample web application using CloudFormation and monitor it using AWS X-Ray.
+
+## Architecture Diagram:
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/b1237be4-e2c2-4a78-b822-d18a21fd8b67">
+
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/cfd9f0ca-8730-4c88-9902-854dbd41ef7e">
+
 
 ## Task 1: Sign in to AWS Management Console
 Click on the Open Console button, and you will get redirected to AWS Console in a new browser tab.
