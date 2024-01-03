@@ -90,8 +90,9 @@ In the Lambda console, select the Lambda function to which you want to add a Clo
 
 Your Lambda function is now associated with the CloudWatch Event Rule as a trigger, and it will be invoked based on the schedule you defined in the rule. Test and monitor your Lambda function to ensure it works as expected when triggered by the CloudWatch Event Rule.<br>
 
-<img src="https://github.com/sreedevi-langoju/Mass_Emailing_Using_AWSServices/assets/135724041/bc3f062f-aebe-42f8-ad1e-81195e2cfa5e" width="300">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/52c611f1-7e9d-4a69-aca8-736e994bf21c" width="300">
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/568d64e4-4fda-4c45-a819-fb70eccfddb8">
 
 #### Conclusion
 
