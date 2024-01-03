@@ -158,7 +158,7 @@ Now click on Service Map from left navigation menu under the X-Ray traces.
 
 In the service map, you will get insight into the traffic that flows through our application.
 
-
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e5e89319-b1f0-4330-a233-fc54c3aade88">
 
 Note: If you got a warning as Data not found, then click on 5 minutes at the top right corner and select 1 hour.
 
