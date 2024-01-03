@@ -86,7 +86,7 @@ In the Lambda console, select the Lambda function to which you want to add a Clo
 * Choose the Rule type as "scheduled expression."<br>
 * In the Schedule expression field, specify the cron or rate expression, e.g., rate(1 minute) for a 1-minute interval.<br>
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/52c611f1-7e9d-4a69-aca8-736e994bf21c" width="400">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/52c611f1-7e9d-4a69-aca8-736e994bf21c" width="600">
 
 * Click the "Add" button to add the CloudWatch Event Rule as a trigger for your Lambda function.<br>
 * After adding the rule, you'll see it listed as a trigger in the Lambda function's configuration page.<br>
@@ -98,10 +98,11 @@ Your Lambda function is now associated with the CloudWatch Event Rule as a trigg
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/568d64e4-4fda-4c45-a819-fb70eccfddb8"  width="400">
 
+As a result of these steps, your Lambda function will be triggered, and it will send out emails at the scheduled times, making mass emailing a breeze.<br>
+
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/7b948d1c-a1ee-465d-b3fe-5f746688ef6b"  width="400">
 
 #### Conclusion
 
-As a result of these steps, your Lambda function will be triggered, and it will send out emails at the scheduled times, making mass emailing a breeze.<br>
 In conclusion, by integrating AWS Lambda, IAM roles, CloudWatch, and SES, you can establish an efficient and reliable solution for sending mass emails.
 
