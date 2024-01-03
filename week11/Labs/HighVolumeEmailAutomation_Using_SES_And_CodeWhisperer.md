@@ -1,5 +1,6 @@
-## Mass_Emailing_Using_AWSServices
-Mass Emailing with Amazon Web Services- AWS Lambda, SES, CloudWatch and IAMRoles
+## High volume email automation using SES and CodeWhisperer:
+
+Mass Emailing with Amazon Web Services- AWS Lambda, SES, CloudWatch, IAMRoles and CodeWhisperer
 
 The world of communication has evolved significantly in recent times, and businesses, organizations, and individuals often find themselves needing to send a large number of emails. However, manually managing this task can be tedious, time-consuming, and prone to errors. This is where Amazon Web Services (AWS) comes to the rescue, offering a seamless solution to automate mass emailing. In this blog, we will explore how to leverage AWS services, including AWS Lambda, CloudWatch, IAM Roles, and Simple Email Service (SES), to create a robust and efficient mass emailing system.
 
