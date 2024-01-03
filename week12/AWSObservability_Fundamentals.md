@@ -51,7 +51,7 @@ Traditional monitoring often focuses on specific metrics or components. Observab
 
 In summary, observability provides a more comprehensive, adaptable, and deeper understanding of complex systems compared to traditional monitoring approaches, enabling better management, troubleshooting, and optimization of modern applications and infrastructure.
 
-<br/>
+</br>
 
 ### AWS X-Ray Service:
 
