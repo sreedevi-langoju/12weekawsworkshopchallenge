@@ -35,7 +35,7 @@ Region: Select US East (N. Virginia) us-east-1
 
     5. Click on Create bucket button.
 
-<img src="">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/47bd0ab0-2e95-4df6-9604-4a91782059b3">
 
     6. Click on the bucket name you created.
 
