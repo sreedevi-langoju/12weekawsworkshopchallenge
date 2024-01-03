@@ -163,12 +163,11 @@ In the service map, you will get insight into the traffic that flows through our
 Note: If you got a warning as Data not found, then click on 5 minutes at the top right corner and select 1 hour.
 
 
-
 Now click on any of the components to view the response distribution.
 
 It will show the traffic response status along with the graph.
 
-
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/1943acbc-f475-4369-90cc-79310451c6df">
 
 Click on the Analyze Traces to view detailed information.
 
