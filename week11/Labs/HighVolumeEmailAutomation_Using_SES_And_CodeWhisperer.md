@@ -16,7 +16,7 @@ To kickstart our journey into mass emailing automation with AWS, the first step 
 * In the 'Permissions' section, choose 'CloudWatch full access','AWSLambdaExecute' and 'SES full access' policies to grant the role the necessary permissions.<br>
 * Provide a meaningful name for the role and click 'Create role.'<br>
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/541263c4-48bb-4c44-a301-068008c90cb8" width="500">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/541263c4-48bb-4c44-a301-068008c90cb8" width="600">
 
 
 #### Step 2: Verify email addresses or domain to send emails through Amazon SES <br>
@@ -38,10 +38,10 @@ To verify your identity and send emails through Amazon Simple Email Service (SES
 You can now use the verified email address or domain to send emails through Amazon SES. <br>
 
 
-
-
-
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/3289c9f6-8432-4a75-bc9a-93bd9b3c9f36">
+
+<br>
+
 * If you want to verify an entire domain (e.g., yourcompany.com) instead of individual email addresses, you can do this from the SES console. Navigate to "Domains" and follow the steps to verify the domain. This involves adding DNS records to your domain's DNS settings.<br>
 
 * Before sending production emails, consider sending a test email to verify that your setup works as expected. Use the "Send a Test Email" option in the SES console.<br>
@@ -59,16 +59,18 @@ AWS Lambda is a serverless computing service that allows you to execute code wit
 * You can leave the rest of the settings as optional.<br>
 * Click 'Create function.'<br>
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/d45c1c94-3b84-47a7-9853-005573484105">
+
 <img src="https://github.com/sreedevi-langoju/Mass_Emailing_Using_AWSServices/assets/135724041/2657a884-0916-4627-80e8-c3c5c09d1936" width="200">
 
-<img src="https://github.com/sreedevi-langoju/Mass_Emailing_Using_AWSServices/assets/135724041/db90a61b-be29-4de1-abc9-2c40c3bd89e1" width="200">
 
-<img src="https://github.com/sreedevi-langoju/Mass_Emailing_Using_AWSServices/assets/135724041/1ae1fa21-3b46-40d6-a7ff-aa99041ab7b6" width="200">
+Now that you have your Lambda function in place, you'll need to write code to send emails using it. 
+
+You can also configure a test event for this function to ensure it works as expected.<br>
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/1da91de2-8385-4fb7-a5c9-d5dc87109756">
 
 
-Now that you have your Lambda function in place, you'll need to write code to send emails using it. You can also configure a test event for this function to ensure it works as expected.<br>
-
-<img src="https://github.com/sreedevi-langoju/Mass_Emailing_Using_AWSServices/assets/135724041/a7e7b0ef-d8b8-4880-a68f-a57f2ee4be4d" width="200">
 
 
 #### Step 4: Creating CloudWatch Events
