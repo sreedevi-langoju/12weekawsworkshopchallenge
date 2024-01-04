@@ -74,7 +74,7 @@ AWS Lambda is a serverless computing service that allows you to execute code wit
 * When you start typing out single lines of code, CodeWhisperer makes suggestions based on your current and previous inputs.You can provide single line comment or block of statements to get the code suggestions.Use below keys combinations to get or accept Code Whisperer suggestions.Please check below link for more details : https://docs.aws.amazon.com/codewhisperer/latest/userguide/whisper-code-examples.html
 <br>
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9102aefe-b47f-4e99-974c-ba1bff6f0e43">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9102aefe-b47f-4e99-974c-ba1bff6f0e43" width=600>
 
 * I used the multi-line comment : '''
 Write lambda_handler function send to multiple emails at a time using Amazon Simple Email Service 
@@ -90,13 +90,12 @@ And use SES_DESTINATION_EMAILS as list of emails in try exception block
 * Click on the "Edit" button to add or modify environmental variables.
 * Add Key-Value pairs: Here, you can add key-value pairs for our environmental variables SES_REGION, SES_SOURCE_EMAIL, SES_DESTINATION_EMAILS.
 
-    For example: SES_REGION : us-east-1
-                SES_SOURCE_EMAIL : test1@gmail.com
-                SES_DESTINATION_EMAILS: test2@gmail.com,test3@gmail.com,test4@gmail.com
+    For example: SES_REGION : us-east-1 <br>
+                SES_SOURCE_EMAIL : test1@gmail.com <br>
+                SES_DESTINATION_EMAILS: test2@gmail.com,test3@gmail.com,test4@gmail.com <br>
   
     Note: The email ids you are providing should be verified identities of in Amazon SES .
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9d0ae884-9e8c-4c58-81c8-b4c70ce6a79e">
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/fc7d5001-b217-4019-9599-6b7979a5d16d">
 
