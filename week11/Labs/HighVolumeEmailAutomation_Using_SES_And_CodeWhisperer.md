@@ -69,20 +69,20 @@ AWS Lambda is a serverless computing service that allows you to execute code wit
   
 * Check this link https://docs.aws.amazon.com/codewhisperer/latest/userguide/lambda-setup.html for the instructions to enable CodeWhisperer in Lambda console.You can see in Tools tab -> Amazon CodeWhisperer Suggestions option, enable it.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/1da91de2-8385-4fb7-a5c9-d5dc87109756">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/1da91de2-8385-4fb7-a5c9-d5dc87109756" width=600 >
 
 * When you start typing out single lines of code, CodeWhisperer makes suggestions based on your current and previous inputs.You can provide single line comment or block of statements to get the code suggestions.Use below keys combinations to get or accept Code Whisperer suggestions.Please check below link for more details : https://docs.aws.amazon.com/codewhisperer/latest/userguide/whisper-code-examples.html
 <br>
 
-  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9102aefe-b47f-4e99-974c-ba1bff6f0e43">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9102aefe-b47f-4e99-974c-ba1bff6f0e43">
 
-* I used the multi-line comment : ''''''
+* I used the multi-line comment : '''
 Write lambda_handler function send to multiple emails at a time using Amazon Simple Email Service 
 Use environmental variables for SES_REGION, SES_SOURCE_EMAIL, SES_DESTINATION_EMAILS without accesskeys
 And use SES_DESTINATION_EMAILS as list of emails in try exception block
 ''' to get the code suggestions.
 
-* <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/3bc69cab-9d9e-4e9d-8895-6424d7d6a41d" width=600>
+ <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/3bc69cab-9d9e-4e9d-8895-6424d7d6a41d" width=600>
 
 
 
