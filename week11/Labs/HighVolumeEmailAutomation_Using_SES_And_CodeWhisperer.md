@@ -1,4 +1,4 @@
-## High volume email automation using Amazon SES, AWS Lammbda and Amazon CodeWhisperer:
+# Sending Bulk Emails with Amazon SES using AWS Lambda and CodeWhisperer
 
 Bulk Emailing with Amazon Web Services- AWS Lambda, SES, CloudWatch, IAMRoles and CodeWhisperer
 
