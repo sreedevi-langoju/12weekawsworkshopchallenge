@@ -84,7 +84,17 @@ And use SES_DESTINATION_EMAILS as list of emails in try exception block
 
  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/3bc69cab-9d9e-4e9d-8895-6424d7d6a41d" width=600>
 
+* To provide environmental variables to lambda function, select your Lambda function.
 
+* select the "Configuration" tab. Scroll down to the "Environment variables" section.
+* Click on the "Edit" button to add or modify environmental variables.
+* Add Key-Value pairs: Here, you can add key-value pairs for our environmental variables SES_REGION, SES_SOURCE_EMAIL, SES_DESTINATION_EMAILS.
+
+    For example: SES_REGION : us-east-1
+                SES_SOURCE_EMAIL : test1@gmail.com
+                SES_DESTINATION_EMAILS: test2@gmail.com,test3@gmail.com,test4@gmail.com
+  
+    Note: The email ids you are providing should be verified identities of in Amazon SES .
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/9d0ae884-9e8c-4c58-81c8-b4c70ce6a79e">
 
