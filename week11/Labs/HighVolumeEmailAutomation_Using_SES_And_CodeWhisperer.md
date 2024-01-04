@@ -88,7 +88,7 @@ And use SES_DESTINATION_EMAILS as list of emails in try exception block
 
 * select the "Configuration" tab. Scroll down to the "Environment variables" section.
 * Click on the "Edit" button to add or modify environmental variables.
-* Add Key-Value pairs: Here, you can add key-value pairs for our environmental variables SES_REGION, SES_SOURCE_EMAIL, SES_DESTINATION_EMAILS.
+* Add Key-Value pairs: Here, you can add key-value pairs for our environmental variables SES_REGION, SES_SOURCE_EMAIL, SES_DESTINATION_EMAILS.click on "Save" to apply the changes.
 
     For example: SES_REGION : us-east-1 <br>
                 SES_SOURCE_EMAIL : test1@gmail.com <br>
@@ -97,7 +97,7 @@ And use SES_DESTINATION_EMAILS as list of emails in try exception block
     Note: The email ids you are providing should be verified identities of in Amazon SES .
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/fc7d5001-b217-4019-9599-6b7979a5d16d" width=600>
-
+<br>
 
 #### Step 4: Creating CloudWatch Events
 
@@ -120,14 +120,16 @@ In the Lambda console, select the Lambda function to which you want to add a Clo
 Your Lambda function is now associated with the CloudWatch Event Rule as a trigger, and it will be invoked based on the schedule you defined in the rule. Test and monitor your Lambda function to ensure it works as expected when triggered by the CloudWatch Event Rule.<br>
 
 
-
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/568d64e4-4fda-4c45-a819-fb70eccfddb8"  width="400">
 
-As a result of these steps, your Lambda function will be triggered, and it will send out emails at the scheduled times, making mass emailing a breeze.<br>
+As a result of these steps, your Lambda function will be triggered, and it will send out emails at the scheduled times, making bulk emailing a breeze. Check the email inboxes , you should be receiving the emails from SES.<br>
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/7b948d1c-a1ee-465d-b3fe-5f746688ef6b"  width="400">
 
-#### Conclusion
+#### Cleanup & Conclusion :
 
 In conclusion, by integrating AWS Lambda, IAM roles, CloudWatch, and SES, you can establish an efficient and reliable solution for sending mass emails.
+
+Cleaning up AWS resources after you're done using them is crucial to avoid unnecessary billing. Delete the Lambda function, IAM Role, and SES verified identities after completion of this implementation.
+Remember, before deleting any resources, ensure they are not in use by any critical applications or services. Always take precautions to prevent accidental deletion of important data or resources. Keeping a clean AWS environment not only helps in cost management but also reduces security risks and complexity in your infrastructure.
 
