@@ -1,6 +1,6 @@
 ## High volume email automation using SES and CodeWhisperer:
 
-Mass Emailing with Amazon Web Services- AWS Lambda, SES, CloudWatch, IAMRoles and CodeWhisperer
+Bulk Emailing with Amazon Web Services- AWS Lambda, SES, CloudWatch, IAMRoles and CodeWhisperer
 
 The world of communication has evolved significantly in recent times, and businesses, organizations, and individuals often find themselves needing to send a large number of emails. However, manually managing this task can be tedious, time-consuming, and prone to errors. This is where Amazon Web Services (AWS) comes to the rescue, offering a seamless solution to automate mass emailing. In this blog, we will explore how to leverage AWS services, including AWS Lambda, CloudWatch, IAM Roles, and Simple Email Service (SES),and CodeWhisperer to create a robust and efficient mass emailing system with code companion.
 
@@ -8,7 +8,7 @@ The world of communication has evolved significantly in recent times, and busine
 
 #### Step 1: Creating an IAM Role
 
-To kickstart our journey into mass emailing automation with AWS, the first step is setting up an Identity and Access Management (IAM) role. This role ensures secure access to AWS resources while executing your mass emailing tasks.<br>
+To kickstart our journey into bulk emailing automation with AWS, the first step is setting up an Identity and Access Management (IAM) role. This role ensures secure access to AWS resources while executing your bulk emailing tasks.<br>
 
 * Open the AWS console, and in the search bar, type 'IAM' and select the IAM service.<br>
 * In the IAM dashboard, navigate to 'Roles' and click on 'Create role.'<br>
@@ -62,9 +62,11 @@ AWS Lambda is a serverless computing service that allows you to execute code wit
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/d45c1c94-3b84-47a7-9853-005573484105" width="600" height=600>
 
 
-Now that you have your Lambda function in place, you'll need to write code to send emails using it. 
+* Now that you have your Lambda function in place, you'll need to write code to send emails using it. We are going to use Amazon CodeWhisperer to code faster.
+* Amazon CodeWhisperer is a general purpose, machine learning-powered code generator that provides you with code recommendations in real time. As you write code,   
+   CodeWhisperer automatically generates suggestions based on your existing code and comments.
+* Check this link https://docs.aws.amazon.com/codewhisperer/latest/userguide/lambda-setup.html for the instructions to enable CodeWhisperer in Lambda console.
 
-You can also configure a test event for this function to ensure it works as expected.<br>
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/1da91de2-8385-4fb7-a5c9-d5dc87109756">
 
