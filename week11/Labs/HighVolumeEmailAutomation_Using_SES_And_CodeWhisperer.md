@@ -96,7 +96,7 @@ And use SES_DESTINATION_EMAILS as list of emails in try exception block
   
     Note: The email ids you are providing should be verified identities of in Amazon SES .
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/fc7d5001-b217-4019-9599-6b7979a5d16d">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/fc7d5001-b217-4019-9599-6b7979a5d16d" width=600>
 
 
 #### Step 4: Creating CloudWatch Events
