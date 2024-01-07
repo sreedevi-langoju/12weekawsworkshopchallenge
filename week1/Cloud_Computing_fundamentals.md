@@ -16,8 +16,11 @@ Rapid elasticity: Resources can be rapidly scaled out and in, allowing for quick
 Measured service: Cloud systems automatically control and optimize resource usage by leveraging a metering capability at some level of abstraction. Resource usage can be monitored, controlled, and reported, providing transparency for both the provider and consumer.
 
 Service Models:
+
 Infrastructure as a Service (IaaS): Offers virtualized computing resources over the internet. Users can rent virtual machines, storage, and networking.
+
 Platform as a Service (PaaS): Provides a platform allowing customers to develop, run, and manage applications without dealing with the underlying infrastructure.
+
 Software as a Service (SaaS): Delivers software applications over the internet, eliminating the need for users to install, maintain, and update software.
 
 
