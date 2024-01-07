@@ -25,15 +25,22 @@ Software as a Service (SaaS): Delivers software applications over the internet, 
 
 
 Deployment Models:
+
 Public Cloud: Services are delivered over the public internet and shared across multiple customers.
+
 Private Cloud: Services are maintained on a private network, often within a firewall, providing dedicated infrastructure for a single organization.
+
 Hybrid Cloud: Combines public and private clouds, allowing data and applications to be shared between them.
 
 
 Advantages of Cloud Computing:
+
 Cost-Efficiency: Pay-as-you-go model reduces capital expenditure.
+
 Scalability: Easily scale resources up or down based on demand.
+
 Accessibility: Access services from anywhere with an internet connection.
+
 Reliability: Redundant systems provide high availability.
 
 
