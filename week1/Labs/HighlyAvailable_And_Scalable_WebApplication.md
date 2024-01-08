@@ -1,4 +1,4 @@
-# HighlyAvailable_And_Scalable_WebApplication:
+# Building HighlyAvailable And Scalable WebApplication:
 
 If you don't have a root AWS account yet, click  to learn how to create a new AWS account.
 
