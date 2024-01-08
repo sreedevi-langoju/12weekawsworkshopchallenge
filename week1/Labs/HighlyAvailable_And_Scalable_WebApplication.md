@@ -141,3 +141,9 @@ You must click the Access your Linux instance using Session Manager link below t
 
 In the database lab to be followed, connect to RDS using the IAM role granted to the web server. Therefore, refer to Accessing Linux instance using Session Manager: https://catalog.workshops.aws/general-immersionday/ko-KR/basic-modules/10-ec2/ec2-linux/3-ec2-1  to assign IAM role to EC2 instance. grant.
 
+#### Create a custom AMI
+In the AWS EC2 console, you can create an Custom AMI to meet your needs. This can then be used for future EC2 instance creation. In this page, let's create an AMI using the web server instance that we built earlier.
+
+* In the EC2 console, select the instance that we made earlier in this lab, and click Actions > Image and templates > Create Image. ![Create Image](/static/images/advanced-module/compute/v2/gid-ec2-17.png
+
+* In the Create Image console, type as shown below and press Create image to create the custom image.
