@@ -24,3 +24,16 @@ Specifically, we will walk you through the following topics.
 Fianl Architecture:
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/6507f685-b4ff-44af-a867-a4610864e9fb">
+
+* After logging in to the AWS console, select VPC from the service menu.
+* Select VPC Dashboard and click Launch VPC Wizard to create your own VPC.
+* To create a space to provision AWS resources used in this lab, we will create a VPC and Subnets. Select VPC, subnets, etc in Resource to create tab and change name tag to VPC-Lab. Leave the default setting for IPv4 CIDR block.
+* To design high availability architecture, we create 2 subnet space and select 2a and 2c for Customize AZs. And set the CIDR value of the public subnet that can communicate directly with the Internet as shown in the screen below. Set the CIDR value of the private subnet as:
+* 
+    KEY	                            VALUE
+2a Public subnet’s IPv4 CIDR	  10.0.10.0/24
+2c Public subnet’s IPv4 CIDR	  10.0.20.0/24
+2a Private subnet’s IPv4 CIDR	  10.0.100.0/24
+2c Private subnet’s IPv4 CIDR  	10.0.200.0/24
+
+
