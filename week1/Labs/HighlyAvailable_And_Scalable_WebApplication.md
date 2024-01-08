@@ -34,6 +34,9 @@ Fianl Architecture:
 2a Public subnet’s IPv4 CIDR	  10.0.10.0/24
 2c Public subnet’s IPv4 CIDR	  10.0.20.0/24
 2a Private subnet’s IPv4 CIDR	  10.0.100.0/24
-2c Private subnet’s IPv4 CIDR  	10.0.200.0/24
+2c Private subnet’s IPv4 CIDR     10.0.200.0/24
+
+* You can use a NAT gateway so that instances in your private subnets can connect to services outside your VPC, but external services cannot initiate direct connections to these instances. In this lab, we will create a NAT gateway in only one Availability Zone to save cost. Also, for DNS options, enable both DNS hostnames and DNS resolution. After confirming the setting value, click the Create VPC button.
+* As the VPC is created, you can see the process of creating network-related resources as shown in the screen below. For NAT Gateway, provisioning may take longer compared to other resources.
 
 
