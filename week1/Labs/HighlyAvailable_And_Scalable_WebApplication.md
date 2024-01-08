@@ -122,3 +122,8 @@ fi
 dnf update -y
 
 ```
+
+* Information indicating that the instance creation is in progress is displayed on the screen. You can view the list of EC2 instances by selecting View Instances in the lower right corner.
+
+* After the instance configuration is complete, you can check the Availability Zone in which the instance is running, and externally accessible IP and DNS information.
+* Wait for the instance's Instance state result to be Running. Open a new web browser tab and enter the Public DNS or IPv4 Public IP of your EC2 instance in the URL address field. If the page is displayed as shown below, the web server instance is configured normally.
