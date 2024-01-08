@@ -147,3 +147,16 @@ In the AWS EC2 console, you can create an Custom AMI to meet your needs. This ca
 * In the EC2 console, select the instance that we made earlier in this lab, and click Actions > Image and templates > Create Image. ![Create Image](/static/images/advanced-module/compute/v2/gid-ec2-17.png
 
 * In the Create Image console, type as shown below and press Create image to create the custom image.
+
+*         KEY	                VALUE
+        Image name	        Web Server v1
+    Image description	    LAMP web server AMI
+
+* Verify in the console that the image creation request in completed.
+
+* In the left navigation panel, Click the AMIs button located under IMAGES.
+* You can see that the Status of the AMI that you just created. It will show either Pending or Available.
+
+#### Terminate the instance
+Custom AMI (Golden Image) creation has been completed for the auto scaling by using the EC2 instance you just created. Therefore, the EC2 instance currently running is no longer needed, so let's try to terminate it. ( In Deploy auto scaling web service, we will use custom AMI to create a new web server.)
+In the left navigation panel of the EC2 dashboard, select Instances. Then select the instance that should be deleted. From there, click Instance state -> Terminate instance.
