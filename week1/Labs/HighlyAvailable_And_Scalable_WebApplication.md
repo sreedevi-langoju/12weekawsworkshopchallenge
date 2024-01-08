@@ -61,3 +61,21 @@ This compute lab uses Auto Scaling Group to deploy web service instances to priv
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/043003dc-bbae-4e09-b647-20e755aa4068">
 
+* The following items are contained in this chapter.
+
+    Launch web server instances and execute user data
+    Set up a security group
+    Create a custom Amazon Machine Image (AMI)
+    Launch an Application Load Balancer (ALB)
+    Configure a Launch Template
+    Configure an Auto Scaling Group
+    Test auto scaling and change manual settings
+    Hands-on Lab Sequence
+
+* The order of this lab is as follows:
+
+    1. Launch a web server instance
+    2. Deploy auto scaling web service
+    3. Check web service and test
+
+
