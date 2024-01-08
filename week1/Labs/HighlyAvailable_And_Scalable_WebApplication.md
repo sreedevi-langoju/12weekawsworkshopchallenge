@@ -127,3 +127,17 @@ dnf update -y
 
 * After the instance configuration is complete, you can check the Availability Zone in which the instance is running, and externally accessible IP and DNS information.
 * Wait for the instance's Instance state result to be Running. Open a new web browser tab and enter the Public DNS or IPv4 Public IP of your EC2 instance in the URL address field. If the page is displayed as shown below, the web server instance is configured normally.
+
+#### Access the web service:
+
+Go to the EC2 instance console. Select the instance you want to connect to and click the Connect button in the center.
+
+* In the Connect your instance window, select the EC2 Instance Connect tab, then click the Connect button in the lower right corner.
+* After a while, you can use the browser-based SSH console as shown below. Just close the window after the CLI test.
+
+#### Connect to the Linux instance using Session Manager:
+
+You must click the Access your Linux instance using Session Manager link below to proceed with the exercise.
+
+In the database lab to be followed, connect to RDS using the IAM role granted to the web server. Therefore, refer to Accessing Linux instance using Session Manager: https://catalog.workshops.aws/general-immersionday/ko-KR/basic-modules/10-ec2/ec2-linux/3-ec2-1  to assign IAM role to EC2 instance. grant.
+
