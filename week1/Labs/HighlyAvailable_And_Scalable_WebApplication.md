@@ -15,3 +15,7 @@ Specifically, we will walk you through the following topics.
 
 
 ### Step1: Network – Amazon VPC:
+
+Fianl Architecture:
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/6507f685-b4ff-44af-a867-a4610864e9fb">
