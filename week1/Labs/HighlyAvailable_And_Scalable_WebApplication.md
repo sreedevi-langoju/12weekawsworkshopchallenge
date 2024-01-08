@@ -40,4 +40,14 @@ Fianl Architecture:
 * As the VPC is created, you can see the process of creating network-related resources as shown in the screen below. For NAT Gateway, provisioning may take longer compared to other resources.
 * You can check the information of the created VPC. Check related information such as CIDR value, route table, network ACL, etc. Check that the values you just set are correct.
 
+### (option) Create VPC Endpoint :
+
+* In VPC Dashboard, select Endpoints. Click Create endpoint button.
+* Type s3 endpoint for name and select AWS services in Service category tab. In the search bar below, type s3 and select the list at the top.
+* For S3 VPC endpoints, there are gateway types and interface types. For this lab, select the gateway type. And for the deployment location, select the VPC-Lab-vpc created in this lab.
+* Choose a route table to reflect the endpoint. Select the two private subnets as shown below. Additional routing information for using the endpoint is automatically added to the selected route table.
+* You can also configure policies to control access to endpoints as shown below.
+* Confirm that the route to access Amazon S3 through the gateway endpoint has been automatically added to the private route table specified earlier.
+
+* NOTE : VPC endpoints are communications within the AWS network and have the security and compliance advantage of being able to control traffic through the endpoints. You can also optimize the data processing cost if you transfer your data through a VPC endpoint rather than a NAT gateway.
 
