@@ -157,6 +157,16 @@ In the AWS EC2 console, you can create an Custom AMI to meet your needs. This ca
 * In the left navigation panel, Click the AMIs button located under IMAGES.
 * You can see that the Status of the AMI that you just created. It will show either Pending or Available.
 
-#### Terminate the instance
-Custom AMI (Golden Image) creation has been completed for the auto scaling by using the EC2 instance you just created. Therefore, the EC2 instance currently running is no longer needed, so let's try to terminate it. ( In Deploy auto scaling web service, we will use custom AMI to create a new web server.)
-In the left navigation panel of the EC2 dashboard, select Instances. Then select the instance that should be deleted. From there, click Instance state -> Terminate instance.
+#### Terminate the instance :
+
+  Note:  Custom AMI (Golden Image) creation has been completed for the auto scaling by using the EC2 instance you just created. Therefore, the EC2 instance currently running is no longer needed, so let's try to terminate it.( In Deploy auto scaling web service, we will use custom AMI to create a new web server.)
+
+* In the left navigation panel of the EC2 dashboard, select Instances. Then select the instance that should be deleted. From there, click Instance state -> Terminate instance.
+* When the alert message appears, click Terminate to delete.
+* The instance status changes to Shutting down. After that, the instance status turned to terminated. The instance deletion is complete. You may see the instance for a short period of time for deletion logging.
+
+Architecture Configured So Far:
+
+If you mark the resources that have been configured so far in conceptual terms, it is same with the picture below.
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/bf7a6391-4ce0-485f-b55e-3e2007c21562">
+
