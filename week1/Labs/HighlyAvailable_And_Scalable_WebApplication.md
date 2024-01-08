@@ -78,4 +78,47 @@ This compute lab uses Auto Scaling Group to deploy web service instances to priv
     2. Deploy auto scaling web service
     3. Check web service and test
 
+#### Step 2(a) : Launch a web server instance:
 
+* In the AWS console search bar, type EC2  and select it. Then click EC2 Dashboard at the top of the left menu. Press the Launch instance button and select Launch instance from the menu.
+* In Name, put the value Web server for custom AMI. And check the default setting in Amazon Machine Image below.
+* Select t2.micro in Instance Type.
+* For Key pair, choose Proceed without a key pair.
+* Click the Edit button in Network settings to set the space where EC2 will be located.
+* And choose the VPC-Lab-vpc created in the previous lab, and for the subnet, choose public subnet. Auto-assign public IP is set to Enable.
+* Right below it, create Security groups to act as a network firewall. Security groups will specify the protocols and addresses you want to allow in your firewall policy. For the security group you are currently creating, this is the rule that applies to the EC2 that will be created. After entering Immersion Day - Web Server in Security group name and Description, select Add Security group rule and set HTTP to Type. Also allow TCP/80 for Web Service by specifying it. Select My IP in the source.
+* All other values accept the default values, expand by clicking on the Advanced Details tab at the bottom of the screen.
+* Enter the following values in the User data field and select Launch instance.
+
+```
+#!/bin/sh
+​
+#Install a LAMP stack
+dnf install -y httpd wget php-fpm php-mysqli php-json php php-devel
+dnf install -y mariadb105-server
+dnf install -y httpd php-mbstring
+​
+#Start the web server
+chkconfig httpd on
+systemctl start httpd
+​
+#Install the web pages for our lab
+if [ ! -f /var/www/html/immersion-day-app-php7.zip ]; then
+   cd /var/www/html
+   wget -O 'immersion-day-app-php7.zip' 'https://static.us-east-1.prod.workshops.aws/public/dd38a0a0-ae47-43f1-9065-f0bbcb15f684/assets/immersion-day-app-php7.zip'
+   unzip immersion-day-app-php7.zip
+fi
+​
+#Install the AWS SDK for PHP
+if [ ! -f /var/www/html/aws.zip ]; then
+   cd /var/www/html
+   mkdir vendor
+   cd vendor
+   wget https://docs.aws.amazon.com/aws-sdk-php/v3/download/aws.zip
+   unzip aws.zip
+fi
+​
+# Update existing packages
+dnf update -y
+
+```
