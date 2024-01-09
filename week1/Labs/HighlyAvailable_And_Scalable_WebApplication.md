@@ -429,7 +429,7 @@ Adding objects for static Web hosting
 
 This lab hosts static websites through S3. The static website serves as a redirect to an instance created by the VPC Lab when you click on a particular image. Therefore, prepare one image file, one HTML file, and an ALB DNS name.
 
-* Download the image file aws.png  and save it as aws.png: https://static.us-east-1.prod.workshops.aws/public/dd38a0a0-ae47-43f1-9065-f0bbcb15f684/static/common/s3_advanced_lab/aws.png
+* Download the image file aws.png  and save it as aws.png
 
 * Write index.html using the source code below.
 
@@ -449,6 +449,7 @@ This lab hosts static websites through S3. The static website serves as a redire
 </html>
 
   ```
+
 * Upload the aws.png file to S3. Click S3 Bucket that you just created.
 * Click the Upload button. Then click the Add files button. Select the pre-downloaded aws.png file through File Explorer. Alternatively, place the file in Drag and Drop to the screen.
 * Check the file information named aws.png to upload, then click the Upload button at the bottom.
