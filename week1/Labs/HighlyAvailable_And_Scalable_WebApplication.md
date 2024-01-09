@@ -256,3 +256,24 @@ Now, we've built a web service that is high available and automatically scales u
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/e57c57d5-d39b-4d9e-884c-ec2e346367df">
 
+
+### Step 4: Check web service and test:
+
+Now, let's test the service you have configured for successful operation. First, let's check whether you can access the website normally and whether the load balancer works, and then load the web server to see if Auto Scaling works.
+
+#### Step4(a): Check web service and load balancer:
+
+* To access through the Application Load Balancer configured for the web service, click the Load Balancers menu in the EC2 console and select the Web-ALB you created earlier. Copy DNS name from the basic configuration.
+* Open a new tab in your web browser and paste the copied DNS name. You can see that web service is working as shown below. For the figure below, you can see that the web instance placed in ap-northeast-2a is running this web page.
+* If you click the refresh button here, you can see that the host serving the web page has been replaced with an instance of another availability zone area (ap-northeast-2c) as shown below. This is because routing algorithms in ALB target groups behave Round Robin by default.
+* Currently, in the the Auto Scaling group, scaling policy's baseline has been set to 30% CPU utilization for each instance.
+
+If the average CPU utilization of an instance is less than 30%, Reduce the number of instances.
+If the average CPU utilization of an instance is over 30%, Additional instances will be deployed, load will be distributed, and adjusted to ensure that the average CPU utilization of the instances is 30%.
+* Now, let's test load to see whether Auto Scaling works well. On the web page above, click the LOAD TEST menu. The web page changes and the applied load is visible. Click on the logo at the top left of the page to see that each instance is under load.
+
+* Before load:
+
+* After load:
+
+
