@@ -433,7 +433,8 @@ This lab hosts static websites through S3. The static website serves as a redire
 
 * Write index.html using the source code below.
 
-  ```
+```
+
 <html>
     <head>
         <meta charset="utf-8">
@@ -448,7 +449,7 @@ This lab hosts static websites through S3. The static website serves as a redire
     </body>
 </html>
 
-  ```
+```
 
 * Upload the aws.png file to S3. Click S3 Bucket that you just created.
 * Click the Upload button. Then click the Add files button. Select the pre-downloaded aws.png file through File Explorer. Alternatively, place the file in Drag and Drop to the screen.
