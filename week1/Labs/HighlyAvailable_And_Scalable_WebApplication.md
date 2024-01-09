@@ -353,7 +353,30 @@ Master password	            awspassword
 * Subsequent items such as Backup, Entry, Backtrack, Monitoring, and Log exports all accept the default values, and press Create database to create a database.
 
 * A new RDS instance is now creating. This may take more than 5 minutes. You can use an RDS instance when the DB instance's status changed to Available.
+  
 
   <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/a6c8ca35-484e-4e12-a9c8-0e0dd589555f">
+
+
+#### Connect RDS with Web App server:
+
+The Web Server instance that you created in the previous computer lab contains code that generates a simple address book to RDS. The Endpoint URL of the RDS must be verified first in order to use the RDS on the EC2 Web Server.
+
+##### Storing RDS Credentials in AWS Secrets Manager:
+
+The web server we built includes sample code for our address book. In this lab, you specify which database to use in the sample code and how to connect it. We will store that information in AWS Secrets Manager.
+
+In this chapter, we will create a secret containing data connection information. Later, we will give the web server the appropriate permission to retrieve the secret.
+
+* In the console window, open AWS Secrets Manager (https://console.aws.amazon.com/secretsmanager/ ) and click the Store a new secret button.
+
+* Under Secret Type, choose Credentials for Amazon RDS database. Write down the user name and password you entered when creating the database. And under Database select the database you just created. Then click the Next button.
+
+* 
+        KEY	            VALUE
+    User name	        awsuser
+    Password	        awspassword
+
+
 
 
