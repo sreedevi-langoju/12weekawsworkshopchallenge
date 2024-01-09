@@ -350,4 +350,10 @@ Master password	            awspassword
     DB cluster parameter group	    default.aurora-mysql5.7
     DB parameter group	            default.aurora-mysql5.7
 
+* Subsequent items such as Backup, Entry, Backtrack, Monitoring, and Log exports all accept the default values, and press Create database to create a database.
+
+* A new RDS instance is now creating. This may take more than 5 minutes. You can use an RDS instance when the DB instance's status changed to Available.
+
+  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/a6c8ca35-484e-4e12-a9c8-0e0dd589555f">
+
 
