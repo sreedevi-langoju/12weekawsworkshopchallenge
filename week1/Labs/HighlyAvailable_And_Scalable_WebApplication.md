@@ -223,3 +223,15 @@ Before creating a launch template, let's create a security group for the instanc
 * Finally, in the Advanced details tab, set the IAM instance profile to SSMInstanceProfile. Leave all other settings as default, and click the Create launch template button at the bottom right to create a launch template.
 * After checking the values set in Summary on the right, click Create launch template to create a template.
 
+#### Step 3(e): Set Auto Scaling Group:
+  
+Now, let's create the Auto Scaling Group.
+
+* Enter the EC2 console and select Auto Scaling Groups at the bottom of the left navigation panel. Then click the Create Auto Scaling group button to create an Auto Scaling Group.
+* In [Step : Choose launch template or configuration], specify the name of the Auto Scaling group. In this workshop, we will designate it as Web-ASG. Then select the launch template that you just created named Web. The default settings for the launch template will be displayed. Confirm and click the lower right Next button.
+
+*             KEY	                    VALUE
+        Auto Scaling Group name	        Web-ASG
+          Launch Template                 Web
+
+
