@@ -377,6 +377,13 @@ In this chapter, we will create a secret containing data connection information.
     User name	        awsuser
     Password	        awspassword
 
+* Name your secret, mysecret. The sample code is written to ask for the secret by this specific name. Click Next.
+* Leave Secret rotation at default values. Click Next.
+* Review your choices. Click Store.
+* You can check the list of secret values with the name mysecret as shown below.
+* Click mysecret hyperlink and find Secret value tab. And click Retrieve secret value button.
+* Click Edit button, and check whether there is dbname and immersionday in key/value section. If they were not, click Add button, fill out the value and click save button.
+
 
 
 
