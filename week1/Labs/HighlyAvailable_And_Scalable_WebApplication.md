@@ -299,3 +299,28 @@ The order of this lab is as follows.
     3. Connect RDS with Web App server
     4. Access RDS from EC2
     5. (option) RDS Management Features
+
+
+#### Step 3(a): Create VPC security group:
+
+The RDS service uses the same security model as EC2. The most common usage format is to provide data as a database server to an EC2 instance operating as an applicatiojn server within the same VPC, or to configure it to be accessible to the DB Application client outside of the VPC. The VPC Security Group must be applied for proper access control.
+
+In the previous Compute - Amazon EC2 lab, we created web server EC2 instances using Launch Template and Auto Scaling Group. These instances use Launch Template to apply the security group ASG-Web-Inst-SG . Using this information, we will create a security group so that only web server instances within the Auto Scaling Group can access RDS instances.
+
+* On the left side of the VPC dashboard, select Security Groups and then select Create Security Group.
+
+* Enter Security group name and Description as shown below. Choose the VPC that was created in the first lab. It should be named VPC-Lab.
+* Scroll down to the Inbound rules column. Click Add rule to create a security group policy that allows access to RDS from the EC2 Web servers that you previously created through the Auto Scaling Group. Under Type, select MySQL/Aurora The port range should default to 3306. The protocol and port ranges are automatically specified. The Source type entry can specify the IP band (CIDR) that you want to allow acces to, or other security groups that the EC2 instances to access are already using. Select the security group(named ASG-Web-Inst-SG ) that is applied to the web instances of the Auto Scaling group in the Compute - Amazon EC2.
+* When settings are completed, click Create Security Group at the bottom of the list to create this security group.
+
+
+#### Create RDS instance:
+
+Since the security group that RDS will use has been created, let's create an instance of RDS Aurora (MySQL compatible).
+
+* In the AWS Management console, go to the RDS (Relational Database Service) .
+
+* Select Create Database in dashboard to start creating a RDS instance.
+
+* You want to select the RDS instances' database engine. In Amazon RDS, you can select the database engine based on open source or commercial database engine. In this lab, we will use Amazon Aurora with MySQL-compliant database engine. Select Standard Create in the choose a database creation method section. Set Engine type to Amazon Aurora, Set Edition to Amazon Aurora with MySQL compatibility, Set Capacity type to Provisioned and Version to Aurora (MySQL 5.7) 2.10.2.
+In the AWS Management console, go to the RDS (Relational Database Service) .
