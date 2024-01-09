@@ -314,7 +314,7 @@ In the previous Compute - Amazon EC2 lab, we created web server EC2 instances us
 * When settings are completed, click Create Security Group at the bottom of the list to create this security group.
 
 
-#### Create RDS instance:
+#### Step 5: Create RDS instance:
 
 Since the security group that RDS will use has been created, let's create an instance of RDS Aurora (MySQL compatible).
 
@@ -358,11 +358,11 @@ Master password	            awspassword
   <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/a6c8ca35-484e-4e12-a9c8-0e0dd589555f">
 
 
-#### Connect RDS with Web App server:
+#### Step 5(a): Connect RDS with Web App server:
 
 The Web Server instance that you created in the previous computer lab contains code that generates a simple address book to RDS. The Endpoint URL of the RDS must be verified first in order to use the RDS on the EC2 Web Server.
 
-##### Storing RDS Credentials in AWS Secrets Manager:
+##### Step5(b): Storing RDS Credentials in AWS Secrets Manager:
 
 The web server we built includes sample code for our address book. In this lab, you specify which database to use in the sample code and how to connect it. We will store that information in AWS Secrets Manager.
 
@@ -383,6 +383,31 @@ In this chapter, we will create a secret containing data connection information.
 * You can check the list of secret values with the name mysecret as shown below.
 * Click mysecret hyperlink and find Secret value tab. And click Retrieve secret value button.
 * Click Edit button, and check whether there is dbname and immersionday in key/value section. If they were not, click Add button, fill out the value and click save button.
+
+##### Step 5(c):Access RDS from EC2:
+
+<b>Allow the web server to access the secret</b>
+
+* Sign in to the AWS Management Console and open the IAM console  . In the navigation pane, choose Policies, and then choose Create Policy.
+* Click Choose a service.
+* Type Secrets Manager into the search box. Click Secrets Manager.
+* Under Access level, click on the carat next to Read and then check the box by GetSecretValue.
+* Click on the carat next to Resources. For this lab, select All resources. Click Next: Tags.
+* Click Next: Review.
+* On the Review Policy screen, give your new policy the name ReadSecrets. Click Create policy.
+* In the navigation pane, choose Roles and type SSMInstanceProfile into the search box. This is the role you created previously in Connect to your Linux instance using Session Manager. Click SSMInstanceProfile.
+* Under Permissions policies, click Attach policies.
+* Search for the policy you created called ReadSecrets. Check the box and click Attach policy.
+* Under Permissions policies, verify that AmazonSSMManagedInstanceCore and ReadSecrets are both listed.
+
+##### Try the Address Book:
+
+* Access the [EC2 Console] (https://console.aws.amazon.com/ec2/v2/home?instanceState=running ) window and click load balancer. After copying the DNS name of the load balancer created in the compute lab, open a new tab in your browser and paste it.
+
+* After connecting to the web server, go to the RDS tab.
+* Now you can check the data in the database you created.
+* This is a very basic exercise in interacting with a MySQL database managed by AWS. RDS can support much more complex relational database scenarios, but hopefully this simple example will make the point clear. You are free to add/edit/delete content from the RDS database using the Add Contact, Edit and Remove links in the address book.
+
 
 
 
