@@ -338,9 +338,16 @@ Master password	            awspassword
 
 * 
                 KEY            	        VALUE
-Virtual private cloud (VPC)	        VPC-Lab-vpc
-Subnet group                    	Create new DB subnet group
-Publicly accessible                 No
-VPC security group	                Choose existing: DB SG (In case of Default, click X button for remove it)
-Database port (Database Port)	    3306
+    Virtual private cloud (VPC)	        VPC-Lab-vpc
+    Subnet group                    	Create new DB subnet group
+    Publicly accessible                 No
+    VPC security group	                Choose existing: DB SG (In case of Default, click X button for remove it)
+    Database port (Database Port)	    3306
+
+* Scroll down and click Additional configuration. Set database options as shown below. Be aware of the uppercase and lowercase letters of Initial database name.
+*                 KEY	                VALUE
+    Initial database name	        immersionday
+    DB cluster parameter group	    default.aurora-mysql5.7
+    DB parameter group	            default.aurora-mysql5.7
+
 
