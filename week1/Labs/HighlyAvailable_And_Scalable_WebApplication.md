@@ -323,4 +323,24 @@ Since the security group that RDS will use has been created, let's create an ins
 * Select Create Database in dashboard to start creating a RDS instance.
 
 * You want to select the RDS instances' database engine. In Amazon RDS, you can select the database engine based on open source or commercial database engine. In this lab, we will use Amazon Aurora with MySQL-compliant database engine. Select Standard Create in the choose a database creation method section. Set Engine type to Amazon Aurora, Set Edition to Amazon Aurora with MySQL compatibility, Set Capacity type to Provisioned and Version to Aurora (MySQL 5.7) 2.10.2.
-In the AWS Management console, go to the RDS (Relational Database Service) .
+In the AWS Management console, go to the RDS (Relational Database Service).
+
+* Select Production in Template. Under Settings, we want to specify administrator information for identifying the RDS instances. Enter the information as it appears below.
+
+* 
+  KEY                        	VALUE
+DB cluster identifier       rdscluster
+Master username	            awsuser
+Master password	            awspassword
+
+* Under DB instance size select Memory Optimized class. Under Availability & durability select Create an Aurora Replica or reader node in a different AZ. Select db.r5.large for instance type.
+* Set up network and security on the Connectivity page. Select the VPC-Lab that you created earlier in the Virtual private cloud (VPC) and specify the subnet that the RDS instance will be placed in, public access, and security groups. Enter the information as it appears below.
+
+* 
+                KEY            	        VALUE
+Virtual private cloud (VPC)	        VPC-Lab-vpc
+Subnet group                    	Create new DB subnet group
+Publicly accessible                 No
+VPC security group	                Choose existing: DB SG (In case of Default, click X button for remove it)
+Database port (Database Port)	    3306
+
