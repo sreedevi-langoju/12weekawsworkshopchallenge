@@ -215,8 +215,8 @@ Before creating a launch template, let's create a security group for the instanc
 * Leave the other parts as default. Let's take a look at the Network Settings section. First, in Networking platform select Virtual Private Cloud(VPC). In security group section, find and apply ASG-Web-Inst-SG created before.
 * Follow the Storage's default values without any additional change. Go down and define the Instance tags. Click Add tag and Name for Key and Web Instance for Value. Select Resource types as Instances and Volumes.
   
-*             KEY            	VALUE
-           Key                	Name
+*             KEY               VALUE
+           Key                  Name
           Value	              Web Instance
         Resource Types	    Instances and Volumes
 
