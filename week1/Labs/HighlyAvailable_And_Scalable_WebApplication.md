@@ -207,7 +207,19 @@ Before creating a launch template, let's create a security group for the instanc
 * Let's proceed with setting up the launch template step by step. First, set Launch template name and Template version description as shown below, and select Checkbox for Provide guidance in Auto Scaling guidance. Select this checkbox to enable the template you create to be utilized by Amazon EC2 Auto Scaling.
 
 *         KEY	                                        VALUE
-Launch template name                    	            Web
-Template version description	        Immersion Day Web Instances Template – Web only
-Auto Scaling guidance	                Provide guidance to help me set up a template that I can use with EC2 Auto Scaling Click this check box
+        Launch template name                    	            Web
+        Template version description	        Immersion Day Web Instances Template – Web only
+        Auto Scaling guidance	                Provide guidance to help me set up a template that I can use with EC2 Auto Scaling Click this check box
+
+* Scroll down to set the launch template contents. In Amazon Machine Image(AMI), set the AMI to Web Server v1, which was created in the previous EC2 lab. You can find it by typing Web Server v1 in the search section, or you can scroll down to find it in the My AMI section. Next, select t2.micro for the instance type. We are not going to configure SSH access because this is only for Web service server. Therefore, we do not use key pairs.
+* Leave the other parts as default. Let's take a look at the Network Settings section. First, in Networking platform select Virtual Private Cloud(VPC). In security group section, find and apply ASG-Web-Inst-SG created before.
+* Follow the Storage's default values without any additional change. Go down and define the Instance tags. Click Add tag and Name for Key and Web Instance for Value. Select Resource types as Instances and Volumes.
+  
+*             KEY            	VALUE
+           Key                	Name
+          Value	              Web Instance
+        Resource Types	    Instances and Volumes
+
+* Finally, in the Advanced details tab, set the IAM instance profile to SSMInstanceProfile. Leave all other settings as default, and click the Create launch template button at the bottom right to create a launch template.
+* After checking the values set in Summary on the right, click Create launch template to create a template.
 
