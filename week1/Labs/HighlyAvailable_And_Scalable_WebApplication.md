@@ -458,5 +458,10 @@ This lab hosts static websites through S3. The static website serves as a redire
 * If you check the objects in your S3 bucket, you should see 2 files.
 
 
+#### View objects:
+
+Now that you've added an object to your bucket, let's check it out in your web browser.
+View Objects
+In the Amazon S3 Console, please click the object you want to see. You can see detailed information about the object as shown below.
 
 
