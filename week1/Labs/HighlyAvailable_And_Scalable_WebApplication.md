@@ -408,6 +408,7 @@ In this chapter, we will create a secret containing data connection information.
 * Now you can check the data in the database you created.
 * This is a very basic exercise in interacting with a MySQL database managed by AWS. RDS can support much more complex relational database scenarios, but hopefully this simple example will make the point clear. You are free to add/edit/delete content from the RDS database using the Add Contact, Edit and Remove links in the address book.
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/af934568-3a77-4b19-bf82-b23cd0c3e7a3">
 
 
 
