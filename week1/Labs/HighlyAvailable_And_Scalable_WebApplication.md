@@ -201,4 +201,13 @@ Before creating a launch template, let's create a security group for the instanc
 * Leave outbound rules' default settings and click Create Security Group to create a new security group. This creates a security group that allows traffic only for HTTP connections (TCP 80) that enter the instance via ALB from the Internet.
 
 #### Step 3(d): Create launch template
-In the EC2 console, select Launch Templates from the left navigation panel. Then click Create Launch Template.
+
+* In the EC2 console, select Launch Templates from the left navigation panel. Then click Create Launch Template.
+
+* Let's proceed with setting up the launch template step by step. First, set Launch template name and Template version description as shown below, and select Checkbox for Provide guidance in Auto Scaling guidance. Select this checkbox to enable the template you create to be utilized by Amazon EC2 Auto Scaling.
+
+*         KEY	                                        VALUE
+Launch template name                    	            Web
+Template version description	        Immersion Day Web Instances Template – Web only
+Auto Scaling guidance	                Provide guidance to help me set up a template that I can use with EC2 Auto Scaling Click this check box
+
