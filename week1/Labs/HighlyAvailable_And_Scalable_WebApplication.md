@@ -171,9 +171,9 @@ If you mark the resources that have been configured so far in conceptual terms, 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/bf7a6391-4ce0-485f-b55e-3e2007c21562">
 
 
-### Step 3 : Deploy auto scaling web service:
+### Step 2 : Deploy auto scaling web service:
 
-#### Step 3(a): Configure Application Load Balancer:
+#### Step 2(a): Configure Application Load Balancer:
 
 AWS Elastic Load Balancer supports three types of load balancers: Application Load Balancer, Network Load Balancer, and Classic Load Balancer. In this lab, you will configure and set up the Application Load Balancer to handle load balancing HTTP requests.
 
@@ -186,21 +186,21 @@ AWS Elastic Load Balancer supports three types of load balancers: Application Lo
 * This is where we would register our instances. However, as we mentioned earlier, there are not instances to register at this moment. Click Create target group.
 * Again, move into the Load balancers page, click refresh button and select Web-TG. And then Click Create load balancer.
 
-#### Step 3(b): Configure launch template:
+#### Step 2(b): Configure launch template:
 
 Now that ALB has been created, it's time to place the instances behind the load balancer. To configure an Amazon EC2 instance to start with Auto Scaling Group, you can use Launch Template, Launch Configuration, or EC2 Instance. In this workshop, we will use the Launch Template to create an Auto Scaling group.
 The launch template configures all parameters within a resource at once, reducing the number of steps required to create an instance. Launch templates make it easier to implement best practices with support for Auto Scaling and spot fleets, as well as spot and on-demand instances. This helps you manage costs more conveniently, improve security, and minimize the risk of deployment errors.
 
 The launch template contains information that Amazon EC2 needs to start an instance, such as AMI and instance type. The Auto Scaling group refers to this and adds new instances when a scaling out event occurs. If you need to change the configuration of the EC2 instance to start in the Auto Scaling group, you can create a new version of the launch template and assign it to the Auto Scaling group. You can also select a specific version of the launch template that you use to start an EC2 instance in the Auto Scaling group, if necessary. You can change this setting at any time.
 
-#### Step 3(c): Create security group:
+#### Step 2(c): Create security group:
 Before creating a launch template, let's create a security group for the instances created through the launch template to use.
 
 * From the left navigation panel of the EC2 console, select Security Groups under the Network & Security heading and click Create Security Group in the upper right corner.
 * Scroll down to modify the Inbound rules. First, select the Add rule button to add the Inbound rules, and select HTTP in the Type. For Source, type ALB in the search bar to search for the security group created earlier Web-ALB-SG. This will configure the security group to only receive HTTP traffic coming from ALB.
 * Leave outbound rules' default settings and click Create Security Group to create a new security group. This creates a security group that allows traffic only for HTTP connections (TCP 80) that enter the instance via ALB from the Internet.
 
-#### Step 3(d): Create launch template
+#### Step 2(d): Create launch template
 
 * In the EC2 console, select Launch Templates from the left navigation panel. Then click Create Launch Template.
 
@@ -223,7 +223,7 @@ Before creating a launch template, let's create a security group for the instanc
 * Finally, in the Advanced details tab, set the IAM instance profile to SSMInstanceProfile. Leave all other settings as default, and click the Create launch template button at the bottom right to create a launch template.
 * After checking the values set in Summary on the right, click Create launch template to create a template.
 
-#### Step 3(e): Set Auto Scaling Group:
+#### Step 2(e): Set Auto Scaling Group:
   
 Now, let's create the Auto Scaling Group.
 
@@ -257,7 +257,7 @@ Now, we've built a web service that is high available and automatically scales u
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/e57c57d5-d39b-4d9e-884c-ec2e346367df">
 
 
-### Step 4: Check web service and test:
+### Step : Check web service and test:
 
 Now, let's test the service you have configured for successful operation. First, let's check whether you can access the website normally and whether the load balancer works, and then load the web server to see if Auto Scaling works.
 
@@ -284,3 +284,18 @@ If the average CPU utilization of an instance is over 30%, Additional instances 
 
   Note: So far, we've checked that Auto Scaling group is working through a load test on the web service. If the page that causes the CPU load is working, close the page to prevent additional load.
 
+  ### Step3: Database – Amazon Aurora:
+
+ ##### Final Architecture:
+ 
+In this database lab, we will deploy RDS Aurora instance in VPC-Lab and configure the web service(Apache + PHP) in Auto Scaling Group to use RDS Aurora(MySQL). When the connection to the database is completed, create a new version of the existing custom AMI and update the Auto Scaling Group to use the new version of AMI. In addtion, we conduct a test to add/modify/delete contacts in a simple address book stored in RDS' DB through the web browser.
+
+##### Hands-on Lab Sequence:
+
+The order of this lab is as follows.
+
+    1. Create VPC security group
+    2. Create RDS instance
+    3. Connect RDS with Web App server
+    4. Access RDS from EC2
+    5. (option) RDS Management Features
