@@ -244,3 +244,15 @@ Now, let's create the Auto Scaling Group.
             KEY	        VALUE
             Key	        Name
             Value	ASG-Web-Instance
+
+* Now we are in the final stage of review. After checking the all settings, click the Create Auto Scaling Group button at the bottom right.
+
+* Auto Scaling group has been created. You can see the Auto Scaling group created in the Auto Scaling group console as shown below.
+* Instances created through the Auto Scaling group can also be viewed from the EC2 Instance menu.
+
+  #### Architecture Configured So Far
+  
+Now, we've built a web service that is high available and automatically scales under load! The configuration of the services we have created so far is as follows.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/e57c57d5-d39b-4d9e-884c-ec2e346367df">
+
