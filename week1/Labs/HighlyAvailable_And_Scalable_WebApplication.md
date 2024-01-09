@@ -463,7 +463,15 @@ This lab hosts static websites through S3. The static website serves as a redire
 #### View objects:
 
 Now that you've added an object to your bucket, let's check it out in your web browser.
-View Objects
-In the Amazon S3 Console, please click the object you want to see. You can see detailed information about the object as shown below.
+
+* In the Amazon S3 Console, please click the object you want to see. You can see detailed information about the object as shown below.
+* Return to the previous page and select the Permissions tab in the bucket. To modify the application of Block public access (bucket settings), press the right Edit button.
+* Return to the previous page and select the Permissions tab in the bucket. To modify the application of Block public access (bucket settings), press the right Edit button.
+* Enter confirm in the bucket's Edit Block public access pop up window and press the Confirm button.
+* Click the Objects tab, select the uploaded files, click the Action drop-down button, and press the Make public button to set them to public.
+* When the confirmation window pops up, press the Make public button again to confirm.
+* Return to the bucket page, select index.html, and click the Object URL link in the Show Details entry.
+* When you access the HTML object file object URL, the following screen is printed.
+* When you click on an image, it is redirected to the instance's web page you created.
 
 
