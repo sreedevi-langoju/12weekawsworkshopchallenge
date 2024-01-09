@@ -412,4 +412,51 @@ In this chapter, we will create a secret containing data connection information.
 
 
 
+### Step6: Create Bucket on S3:
+
+All objects in Amazon S3 are stored within a bucket. You must create a Bucket before storing data on Amazon S3.
+
+#### Create Bucket:
+
+* From the AWS Management Console, connect to S3 . Press Create bucket to create a bucket.
+* Enter a unique bucket name in the Bucket name field. For this lab, type immersion-day-user_name, substituiting user-name with your name. All bucket names in Amazon S3 have to be unique and cannot be duplicated. In the Region drop-down box, specify the region to create the bucket. In this lab, select the region closest to you. The images will show the Asia Pacific (Seoul) region. Object Ownership change to ACLs enabled. Bucket settings for Block Public Access use default values, and select Create bucket in the lower right corner.
+* A bucket has been created on Amazon S3.
+
+#### Adding objects to buckets:
+
+If the bucket has been created successfully, you are ready to add the object. Objects can be any kind of file, including text files, image files, and video files. When you add a file to Amazon S3, you can include information about the permissions and access settings for that file in the metadata.
+Adding objects for static Web hosting
+
+This lab hosts static websites through S3. The static website serves as a redirect to an instance created by the VPC Lab when you click on a particular image. Therefore, prepare one image file, one HTML file, and an ALB DNS name.
+
+* Download the image file aws.png  and save it as aws.png: https://static.us-east-1.prod.workshops.aws/public/dd38a0a0-ae47-43f1-9065-f0bbcb15f684/static/common/s3_advanced_lab/aws.png
+
+* Write index.html using the source code below.
+
+  ```
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> AWS General Immersion Day S3 HoL </title>
+    </head>
+    <body>
+        <center>
+        <br>
+        <h2> Click image to be redirected to the EC2 instance that you created </h2>
+        <img src="{{Replace with your S3 URL Address}}" onclick="window.location='DNS Name'"/>
+        </center>
+    </body>
+</html>
+
+  ```
+* Upload the aws.png file to S3. Click S3 Bucket that you just created.
+* Click the Upload button. Then click the Add files button. Select the pre-downloaded aws.png file through File Explorer. Alternatively, place the file in Drag and Drop to the screen.
+* Check the file information named aws.png to upload, then click the Upload button at the bottom.
+* Check the URL information to fill in the image URL in index.html file. Select the uploaded aws.png file and copy the Object URL information from the details on the right.
+* Paste Object URL into the image URL part of the index.html. Then specify the ALB DNS Name of the load balancer created by Deploy auto scaling web service to redirect to ALB when you click on the image.
+* Upload the index.html file to S3 following the same instructions as you did to upload the image.
+* If you check the objects in your S3 bucket, you should see 2 files.
+
+
+
 
