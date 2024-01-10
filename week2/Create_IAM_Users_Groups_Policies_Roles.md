@@ -299,7 +299,7 @@ Now that we've created a policy, we'll need to create a bucket to test permissio
 * On the S3 console you should be able to view all buckets and download objects. Select any bucket and object within, and verify that you can download the object. Now attempt to delete an object.
 * The console won't allow this action since we didn't grant delete permissions in the policy we created.
 
-
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/52e6af44-e882-4975-8c10-37c68f124acc" height=400 width=600>
 
 #### Conclusion
 Congratulations! You successfully created a policy, attached it to a user, and verified that the permissions were set properly.
