@@ -136,7 +136,7 @@ dnf update -y
 
   <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/2eb87c40-715f-45a0-ab0c-e4068ed2e6e6"  height=300 width=600>
 
-  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/2c0df987-8a94-45f5-8750-5efe810ceafe">
+  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/2c0df987-8a94-45f5-8750-5efe810ceafe" height=300 width=600>
 
 ####  Step 2(b) :Access the web service:
 
