@@ -615,7 +615,7 @@ Delete the resources you created for the lab in reverse order.
     
 *  Uncheck the Take a final snapshot button, check the I acknowledge that automatic backups, including system snapshots and point-in-time recovery, are no longer available when I delete an instance button, and type delete me in the blank. Click Delete DB Cluster and the DB cluster will be deleted.
 
-
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/15e3ac1e-0a74-4854-956a-6277935d8bf5">
 
 <b>2. Delete a Amazon RDS Snapshot</b>
 
