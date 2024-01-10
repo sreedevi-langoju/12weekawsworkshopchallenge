@@ -86,7 +86,7 @@ Create a new user with the name PowerUser and skip the step of adding any permis
 
 If you're unsure of how to create a user, please refer to the Creating an IAM User lab.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/1a8d98db-812f-4c45-8ae3-c0dac2c872b9">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/ef7c8fb8-92ac-459b-b6ad-25e3f045911c">
 
 #### To create an IAM user group and attach policies through the group (console)
 
