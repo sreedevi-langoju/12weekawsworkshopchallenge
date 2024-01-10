@@ -438,7 +438,7 @@ In this chapter, we will create a secret containing data connection information.
 
  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/f734ed85-893a-4737-bb66-675eab77c71e"> 
 
-##### Step 5(c):Access RDS from EC2:
+##### Step d(e):Access RDS from EC2:
 
 <b>Allow the web server to access the secret</b>
 
@@ -453,6 +453,8 @@ In this chapter, we will create a secret containing data connection information.
 * Under Permissions policies, click Attach policies.
 * Search for the policy you created called ReadSecrets. Check the box and click Attach policy.
 * Under Permissions policies, verify that AmazonSSMManagedInstanceCore and ReadSecrets are both listed.
+  
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/e5934230-e5d4-40cc-8fc4-a91fdc9a9eb1">
 
 ##### Try the Address Book:
 
@@ -462,7 +464,7 @@ In this chapter, we will create a secret containing data connection information.
 * Now you can check the data in the database you created.
 * This is a very basic exercise in interacting with a MySQL database managed by AWS. RDS can support much more complex relational database scenarios, but hopefully this simple example will make the point clear. You are free to add/edit/delete content from the RDS database using the Add Contact, Edit and Remove links in the address book.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/af934568-3a77-4b19-bf82-b23cd0c3e7a3">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/5b27c13b-13b4-4227-89d2-5b838821dc6d">
 
 
 
@@ -475,6 +477,8 @@ All objects in Amazon S3 are stored within a bucket. You must create a Bucket be
 * From the AWS Management Console, connect to S3 . Press Create bucket to create a bucket.
 * Enter a unique bucket name in the Bucket name field. For this lab, type immersion-day-user_name, substituiting user-name with your name. All bucket names in Amazon S3 have to be unique and cannot be duplicated. In the Region drop-down box, specify the region to create the bucket. In this lab, select the region closest to you. The images will show the Asia Pacific (Seoul) region. Object Ownership change to ACLs enabled. Bucket settings for Block Public Access use default values, and select Create bucket in the lower right corner.
 * A bucket has been created on Amazon S3.
+
+ <img src=""> 
 
 #### Adding objects to buckets:
 
@@ -513,6 +517,7 @@ This lab hosts static websites through S3. The static website serves as a redire
 * Upload the index.html file to S3 following the same instructions as you did to upload the image.
 * If you check the objects in your S3 bucket, you should see 2 files.
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/8e23cc25-2b26-4e41-9d66-cabdbd432b27">
 
 #### View objects:
 
@@ -528,6 +533,8 @@ Now that you've added an object to your bucket, let's check it out in your web b
 * When you access the HTML object file object URL, the following screen is printed.
 * When you click on an image, it is redirected to the instance's web page you created.
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/213dd1a5-c75a-45c1-bf0d-46d137738627" height=500 width=500>
+
 ### Enable Static Web Site Hosting:
 
 Static Web Site Settings
@@ -537,6 +544,10 @@ A static website refers to a website that contains static content (HTML, image, 
 * Activate the static website hosting function and select the hosting type and enter the index.html value in the Index document value, then click the save changes button.
 * Click Bucket website endpoint created in the Static website hosting entry to access the static website.
 * This allows you to host static websites using Amazon S3.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/885c1f91-7ef2-45ca-9bc2-a8044417a8d0" height=500 width=500>
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/09cd885f-e8f1-4fc7-ba0a-8c2144654a7a" height=500 width=500>
 
 #### Move objects:
 
