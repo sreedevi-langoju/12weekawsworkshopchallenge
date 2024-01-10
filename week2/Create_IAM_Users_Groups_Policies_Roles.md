@@ -1,12 +1,15 @@
-Creating IAM users, groups, roles, and policies involves using the AWS Management Console, AWS CLI (Command Line Interface), or AWS SDKs (Software Development Kits). Here's a basic overview of how you can create these IAM entities using the AWS Management Console:
+# AWS Identity and Access Management (IAM) -Users, User Groups, Roles, Policies:
 
-Creating an IAM User:
+ 
+Creating IAM users, groups, roles, and policies involves using the AWS Management Console, AWS CLI (Command Line Interface), or AWS SDKs (Software Development Kits). AWS Identity and Access Management (IAM) Immersion Day- How to create the IAM entities using the AWS Management Console:
+
+### Creating an IAM User:
 
 Now, we're going to create an Administrator user. When we create an IAM user, we create a password for that user and attach permissions to the IAM user that give them administrator privileges.
 
 You can create up to 5000 IAM Users in a single AWS account. You may need to create an IAM User when you onboard someone who needs access to AWS, or when launching a new workload that needs to make API calls to AWS.
 
-Creating an IAM User through the Console:
+#### Creating an IAM User through the Console:
 
 * Sign in to the AWS Management Console and open the IAM console.  In the left side navigation pane, choose Users and then choose Add users.
 * Type the user name as demouser for the new user, this is the sign-in name for AWS.
