@@ -303,7 +303,9 @@ Create an S3 bucket and upload a test.txt file(find test.txt  in this repository
 #### Test newly granted permissions:
 
 * Take note of the credentials for the newly created IAM User, then log into this account with the sign-in link  on the page. Navigate to the S3 console to test permissions.
-* Using a different browser or incognito mode can allow you to sign into AWS as a different user. If you use the same browser, you'll have to sign out first
+* Using a different browser or incognito mode can allow you to sign into AWS as a different user. If you use the same browser, you'll have to sign out first.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/d3f48e27-c546-46b5-9ce6-81bba6aa918f" width=300 height=400>  
   
 * On the S3 console you should be able to view all buckets and download objects. Select any bucket and object within, and verify that you can download the object. Now attempt to delete an object.
   
