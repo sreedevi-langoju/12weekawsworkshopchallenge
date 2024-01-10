@@ -70,6 +70,7 @@ The .csv file keeps track of the users password. If it was auto-generated, pleas
 * You can find the ARN for a user by navigating to the IAM console, choosing Users from the left side panel, then selecting the User you want more detail on.
 * Navigate to the sign-in page . Sign in with the new user you just created. You should be able to sign and test the permissions of the new IAM User you created!
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/f7e8d336-ed37-481c-b7ad-cd1d7b9ca406">
 
 ### Creating a User Group:
 
