@@ -73,15 +73,15 @@ To set up a user group, you need to create the group, add users to the group, th
 2.Creating a new user group called Developers
 3.Adding PowerUser user to the Developers group. This will grant them permissions to manage our EC2 Server resources for the business.
 
-Creating an IAM User
+#### Creating an IAM User
 
 Create a new user with the name PowerUser and skip the step of adding any permissions. By not attaching any policies to the user upon creation, you will essentially create a user with no permissions at all. Alternatively, you can remove any policies from an existing user to acheive the same goal.
 
 If you're unsure of how to create a user, please refer to the Creating an IAM User lab.
 
-<b>Creating an IAM User Group through the Console</b>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/1a8d98db-812f-4c45-8ae3-c0dac2c872b9">
 
-To create an IAM user group and attach policies through the group (console)
+#### To create an IAM user group and attach policies through the group (console)
 
 * Sign in to the AWS Management Console and open the IAM console ]
 
@@ -91,9 +91,9 @@ To create an IAM user group and attach policies through the group (console)
   
 * In the list of policies, select the check box for each policy that you want to apply to all members of the group. We need to give our Developers EC2 access, so we'll choose the AWS Managed Policy "AmazonEC2FullAccess". Type AmazonEC2FullAccess in the search bar and select the appropriate policy.
 
-
 * Choose Create group.
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/30caed4c-2479-4ee1-b555-2c191af646ad">
 
 Note: You can have up to 300 IAM groups per account
 
