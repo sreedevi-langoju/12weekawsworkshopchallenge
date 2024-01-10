@@ -1,11 +1,14 @@
 # Building HighlyAvailable And Scalable WebApplication:
 
+I will walk you throught the steps for AWS General Immersion Day - Advanced hands-on lab introducing AWS core services(VPC, EC2, RDS, S3) enable you to build your own web application same as the architecture below.
+
 If you don't have a root AWS account yet, click  to learn how to create a new AWS account.
 
-Create an IAM user
+<b>Create an IAM user</b>:
+
 If you already have an AWS account or create an AWS account, create an IAM user that has access to AWS account. Log in to the AWS account, you can create a IAM user using IAM console. Create an IAM user with Administrator role. If you already have an IAM user with administrator role, continue.
 
-I will walk you throught the steps for AWS General Immersion Day - Advanced hands-on lab introducing AWS core services(VPC, EC2, RDS, S3) enable you to build your own web application same as the architecture below.
+
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/8c3b1e87-30ea-4940-8f65-6ff9b2d30008" width=600 height=600>
 
 ### Hands on Lab Configuration: 
@@ -40,6 +43,8 @@ Fianl Architecture:
 * As the VPC is created, you can see the process of creating network-related resources as shown in the screen below. For NAT Gateway, provisioning may take longer compared to other resources.
 * You can check the information of the created VPC. Check related information such as CIDR value, route table, network ACL, etc. Check that the values you just set are correct.
 
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/50d4f4c3-4071-44d3-b30b-f941f217f83f" height=400 width=400>
 
 ### (option) Create VPC Endpoint :
 
