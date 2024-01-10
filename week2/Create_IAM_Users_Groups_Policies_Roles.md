@@ -124,6 +124,8 @@ In this exercise, we're going to create a role for an EC2 instance and grant it 
 * 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/a0886a85-9fc8-4cf3-8e49-3b384d669014">
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/7256b5c5-f30c-428d-b7aa-21eaa83f11de">
+
 Congratulations! You have successfully created your first IAM Role!
 
 
