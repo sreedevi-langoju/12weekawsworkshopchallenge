@@ -143,7 +143,7 @@ Go to the EC2 instance console. Select the instance you want to connect to and c
 * In the Connect your instance window, select the EC2 Instance Connect tab, then click the Connect button in the lower right corner.
 * After a while, you can use the browser-based SSH console as shown below. Just close the window after the CLI test.
 
- <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/53a74d26-313f-4e93-a01c-fceff464e697"   height=300 width=60> 
+ <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/53a74d26-313f-4e93-a01c-fceff464e697" height=400 width=400> 
 
 #### Connect to the Linux instance using Session Manager:
 
