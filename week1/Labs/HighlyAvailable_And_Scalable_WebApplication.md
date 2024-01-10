@@ -9,7 +9,7 @@ If you don't have a root AWS account yet, click  to learn how to create a new AW
 If you already have an AWS account or create an AWS account, create an IAM user that has access to AWS account. Log in to the AWS account, you can create a IAM user using IAM console. Create an IAM user with Administrator role. If you already have an IAM user with administrator role, continue.
 
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/8c3b1e87-30ea-4940-8f65-6ff9b2d30008" width=600 height=600>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/8c3b1e87-30ea-4940-8f65-6ff9b2d30008" width=700 height=600>
 
 ### Hands on Lab Configuration: 
 
@@ -26,7 +26,7 @@ Specifically, we will walk you through the following topics.
 
 Fianl Architecture:
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/6507f685-b4ff-44af-a867-a4610864e9fb">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/6507f685-b4ff-44af-a867-a4610864e9fb"  height=400 width=500>
 
 * After logging in to the AWS console, select VPC from the service menu.
 * Select VPC Dashboard and click Launch VPC Wizard to create your own VPC.
@@ -65,7 +65,7 @@ Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure,
 
 This compute lab uses Auto Scaling Group to deploy web service instances to private subnets in your VPC that you created earlier in this network lab. This configures the highly available web services so that external users can access the Sample Web Page through the web
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/043003dc-bbae-4e09-b647-20e755aa4068">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/043003dc-bbae-4e09-b647-20e755aa4068"  height=400 width=500>
 
 * The following items are contained in this chapter.
 
@@ -134,7 +134,9 @@ dnf update -y
 * After the instance configuration is complete, you can check the Availability Zone in which the instance is running, and externally accessible IP and DNS information.
 * Wait for the instance's Instance state result to be Running. Open a new web browser tab and enter the Public DNS or IPv4 Public IP of your EC2 instance in the URL address field. If the page is displayed as shown below, the web server instance is configured normally.
 
-#### Access the web service:
+  <img src="">
+
+####  Step 2(b) :Access the web service:
 
 Go to the EC2 instance console. Select the instance you want to connect to and click the Connect button in the center.
 
