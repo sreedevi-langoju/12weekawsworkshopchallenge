@@ -26,7 +26,7 @@ Specifically, we will walk you through the following topics.
 
 Fianl Architecture:
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/6507f685-b4ff-44af-a867-a4610864e9fb"  height=400 width=500>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/793f3939-53ea-41c9-bb98-f1c03384c26c" height=400 width=500>
 
 * After logging in to the AWS console, select VPC from the service menu.
 * Select VPC Dashboard and click Launch VPC Wizard to create your own VPC.
