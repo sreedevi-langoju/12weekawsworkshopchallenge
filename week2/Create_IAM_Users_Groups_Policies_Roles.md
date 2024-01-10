@@ -159,7 +159,7 @@ For Version we can use the latest available, which is "2012-10-17”. For the va
 }
 ```
 ##### ID
-For ID, lets use an online generator  to generate a UUID identifier
+For ID, lets use an online generator(https://www.uuidgenerator.net/) to generate a UUID identifier
 ```
 {
   "Version": "2012-10-17",
@@ -197,6 +197,112 @@ We want to allow the user to have certain S3 permissions. So we will use the “
 ##### Principal
 
 Principal specifies which identities are subject to the policy, but because this is an identity-based policy that the user will assume directly, the Principal is redundant and will not be used. A resource-based policy requires a principal to be identified.
-Action
-We want to grant permission to list and download objects from S3, so we will list the the following actions: GetObject, ListBucket, ListAllMyBuckets. For a list of all S3 defined actions, click here 
+
+##### Action
+ We want to grant permission to list and download objects from S3, so we will list the the following actions: GetObject, ListBucket, ListAllMyBuckets. For a list of all S3 defined actions, click here 
+
+```
+{
+  "Version": "2012-10-17",
+  "Id": "04d02149-8a5d-489d-9315-1541fde69f1b",
+  "Statement": [
+      {
+          "Sid": "1",
+          "Effect": "Allow",
+          "Action": [
+            "s3:GetObject",
+            "s3:ListBucket",
+            "s3:ListAllMyBuckets"
+        ]
+      }
+  ]
+}
+```
+##### Resource
+We need the data scientists to have access to all S3 objects, so we will use the wildcard  (*). If we wanted to only give permissions for certain resources, we could have listed their ARNs instead.
+```
+{
+  "Version": "2012-10-17",
+  "Id": "04d02149-8a5d-489d-9315-1541fde69f1b",
+  "Statement": [
+      {
+          "Sid": "1",
+          "Effect": "Allow",
+          "Action": [
+            "s3:GetObject",
+            "s3:ListBucket",
+            "s3:ListAllMyBuckets"
+        ],
+        "Resource": "*"
+      }
+  ]
+}
+```
+##### Condition
+We want our policy to be applied all the time, not under certain conditions. So we will not include a condition block.
+
+Recap
+We now have our completed policy below. It allows anyone who inherits the policy to see existing S3 buckets in the account, and view/download the objects within each bucket.
+```
+{
+  "Version": "2012-10-17",
+  "Id": "04d02149-8a5d-489d-9315-1541fde69f1b",
+  "Statement": [
+      {
+          "Sid": "1",
+          "Effect": "Allow",
+          "Action": [
+            "s3:GetObject",
+            "s3:ListBucket",
+            "s3:ListAllMyBuckets"
+        ],
+        "Resource": "*"
+      }
+  ]
+}
+```
+
+ Note: It may not be best practice to set the Resource to the wildcard "*" which will allow access to all S3 buckets in the account. It may be better to specify which buckets the user has access to by using the bucket ARN. See Granting Least Privilege 
+ 
+* Give the new policy a name such as S3ExamplePolicy and a brief description. In the summary section, verify that the policy we created is giving the correct permissions. This policy should be giving limited "List" and "Read" permissions for S3 resources. If everything looks correct, choose Create Policy.
+
+
+
+#### Creating and Testing a Custom S3 Policy:
+
+Now that we've created a policy, we'll need to create a bucket to test permissions, and assign our new policy to a user and test it out.
+
+* Create an S3 bucket and upload a dummy .txt file
+* From the Console Home Screen , select “S3” or type “S3” in the search bar at the top of the screen.
+
+* Select Create bucket once inside the S3 service
+
+* Once on the Create bucket tab, insert a unique bucket name. This name must be universally unique. An example could be s3policytest.{Your_Name}.
+
+* Leave all other setting default and select Create bucket at the bottom of the screen.
+
+* Navigate to your bucket and choose Upload
+
+
+* [Optional] create a quick text file using the following command: echo -e "hello world" >> test.txt
+
+* Upload any file to your bucket, try to keep it small. Click Upload when done.
+
+* Create a user with the correct permissions
+* We need to attach this policy to an IAM identity in order to use it. Reference the "Creating an IAM User" lab to create a new user named S3User, but instead of the AdministratorAccess policy, grant the new account the S3 policy we created in a previous step.
+
+
+#### Test newly granted permissions:
+
+* Take note of the credentials for the newly created IAM User, then log into this account with the sign-in link  on the page. Navigate to the S3 console to test permissions.
+* Using a different browser or incognito mode can allow you to sign into AWS as a different user. If you use the same browser, you'll have to sign out first
+* On the S3 console you should be able to view all buckets and download objects. Select any bucket and object within, and verify that you can download the object. Now attempt to delete an object.
+* The console won't allow this action since we didn't grant delete permissions in the policy we created.
+
+
+
+#### Conclusion
+Congratulations! You successfully created a policy, attached it to a user, and verified that the permissions were set properly.
+
+
 
