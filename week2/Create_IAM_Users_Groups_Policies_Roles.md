@@ -131,4 +131,72 @@ In this exercise, we're going to create a role for an EC2 instance and grant it 
 
 Congratulations! You have successfully created your first IAM Role!
 
+### Creating a Custom policy:
+
+In this lab we will be creating an AWS Identity Policy to grant access to S3. We will then be using that policy to test our access in our new account.
+
+1. Write the policy
+2. Create a new user
+3. Attach our policy to the new user
+4. Test permissions
+
+#### Designing a Custom S3 Policy:
+
+We are going to create a JSON policy. A company has hired a new data scientist whose AWS account must have access to list and download S3 objects. We need to make a policy that, when attached to the scientist's identity in AWS, provides these permissions for S3. This requires an identity-based policy. Let's walk through creating a policy that fulfills our needs.
+
+* From the Console Home Screen , type “IAM“ into the services search bar on top of the screen and choose the IAM service.
+* From here Select Policies, either on the tab on the left or the middle of the screen.
+* On the next page select Create Policy
+
+* From the Create Policy page, we'll be walking through creating a custom policy manually, so we'll need to edit the JSON directly. Click on the JSON tab to get started
+
+##### Version
+For Version we can use the latest available, which is "2012-10-17”. For the vast majority of cases, the latest version should be used
+```
+{
+  "Version": "2012-10-17",
+  "Statement": []
+}
+```
+##### ID
+For ID, lets use an online generator  to generate a UUID identifier
+```
+{
+  "Version": "2012-10-17",
+  "Id": "04d02149-8a5d-489d-9315-1541fde69f1b",
+  "Statement": []
+}
+```
+##### SID
+SID only requires uniqueness inside each policy, since this is the first statement in the statement array, lets use 1
+```
+{
+  "Version": "2012-10-17",
+  "Id": "04d02149-8a5d-489d-9315-1541fde69f1b",
+  "Statement": [
+      {
+          "Sid": "1"
+      }
+  ]
+}
+```
+##### Effect
+We want to allow the user to have certain S3 permissions. So we will use the “Allow” value. Valid values are Allow and Deny
+```
+{
+  "Version": "2012-10-17",
+  "Id": "04d02149-8a5d-489d-9315-1541fde69f1b",
+  "Statement": [
+      {
+          "Sid": "1",
+          "Effect": "Allow"
+      }
+  ]
+}
+```
+##### Principal
+
+Principal specifies which identities are subject to the policy, but because this is an identity-based policy that the user will assume directly, the Principal is redundant and will not be used. A resource-based policy requires a principal to be identified.
+Action
+We want to grant permission to list and download objects from S3, so we will list the the following actions: GetObject, ListBucket, ListAllMyBuckets. For a list of all S3 defined actions, click here 
 
