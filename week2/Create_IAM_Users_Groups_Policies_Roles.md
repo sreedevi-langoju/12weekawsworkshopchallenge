@@ -62,69 +62,36 @@ The .csv file keeps track of the users password. If it was auto-generated, pleas
 * Navigate to the sign-in page . Sign in with the new user you just created. You should be able to sign and test the permissions of the new IAM User you created!
 
 
+### Creating a User Group:
+
+To set up a user group, you need to create the group, add users to the group, then give the group permissions based on the type of work that you expect the users in the group to do. In this lab, we'll be:
+
+1.Creating a new user called PowerUser
+2.Creating a new user group called Developers
+3.Adding PowerUser user to the Developers group. This will grant them permissions to manage our EC2 Server resources for the business.
+
+Creating an IAM User
+
+Create a new user with the name PowerUser and skip the step of adding any permissions. By not attaching any policies to the user upon creation, you will essentially create a user with no permissions at all. Alternatively, you can remove any policies from an existing user to acheive the same goal.
+
+If you're unsure of how to create a user, please refer to the Creating an IAM User lab.
+
+<b>Creating an IAM User Group through the Console</b>
+
+To create an IAM user group and attach policies through the group (console)
+
+* Sign in to the AWS Management Console and open the IAM console ]
+
+* In the navigation pane, choose User groups and then choose Create group.
+
+* For User group name, type the name of the group as Developers. In the list of users, select the check box for each user that you want to add to the group. If you created the user previously, you can choose PowerUser.
+  
+* In the list of policies, select the check box for each policy that you want to apply to all members of the group. We need to give our Developers EC2 access, so we'll choose the AWS Managed Policy "AmazonEC2FullAccess". Type AmazonEC2FullAccess in the search bar and select the appropriate policy.
 
 
+* Choose Create group.
 
 
+Note: You can have up to 300 IAM groups per account
 
-
-
-
-
-
-Configure Permissions:
-
-Add user to existing groups with predefined permissions or attach policies directly to the user.
-Review:
-
-Review the user details and permissions.
-Complete the process by creating the user.
-Creating an IAM Group:
-Sign in to the AWS Management Console and navigate to IAM.
-
-Choose Groups:
-
-Click on "Groups" in the left-hand sidebar.
-Click "Create group."
-Set Group Details:
-
-Enter the group name and attach policies to the group.
-Review and create the group.
-Add Users to the Group:
-
-Once the group is created, select the group and add users to it.
-Creating an IAM Role:
-Sign in to the AWS Management Console and navigate to IAM.
-
-Select Roles:
-
-Click on "Roles" in the left-hand sidebar.
-Click "Create role."
-Choose the Type of Trusted Entity:
-
-Select the service or type of trusted entity that will assume this role (e.g., AWS service, another AWS account, etc.).
-Set Permissions:
-
-Attach policies defining permissions for this role.
-Set Role Name and Review:
-
-Provide a name and description for the role.
-Review and create the role.
-Creating IAM Policies:
-Sign in to the AWS Management Console and navigate to IAM.
-
-Choose Policies:
-
-Click on "Policies" in the left-hand sidebar.
-Click "Create policy."
-Select Policy Generator or Create Your Own:
-
-You can use the policy generator or choose "JSON" to create a policy from scratch.
-Define Policy Details:
-
-Specify the resources, actions, and conditions for the policy.
-Review and create the policy.
-Attach Policies:
-
-Once created, you can attach policies to users, groups, or roles.
-This process provides a basic guideline for creating IAM users, groups, roles, and policies using the AWS Management Console. The steps might slightly vary based on the specific requirements and services you're working with. Always follow the principle of least privilege when assigning permissions to ensure a secure IAM setup.
+Congratulations! You've created a group and attached permissions. Our permissions will now be standardized among all our developers.
