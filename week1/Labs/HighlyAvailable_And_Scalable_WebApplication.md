@@ -474,4 +474,49 @@ Now that you've added an object to your bucket, let's check it out in your web b
 * When you access the HTML object file object URL, the following screen is printed.
 * When you click on an image, it is redirected to the instance's web page you created.
 
+### Enable Static Web Site Hosting:
 
+Static Web Site Settings
+A static website refers to a website that contains static content (HTML, image, video) or client-side scripts (Javascript) on a web page. In contrast, dynamic websites require server-side processing, including server-side scripts such as PHP, JSP, or ASP.NET. Server-side scripting is not supported on Amazon S3. If you want to host a dynamic website, you can use other services such as EC2 on AWS.
+
+* In the S3 console, select the bucket you just created, and click the Properties tab. Scroll down and click the Edit button on Static website hosting.
+* Activate the static website hosting function and select the hosting type and enter the index.html value in the Index document value, then click the save changes button.
+* Click Bucket website endpoint created in the Static website hosting entry to access the static website.
+* This allows you to host static websites using Amazon S3.
+
+#### Move objects:
+
+You have seen the ability to add objects to buckets and verify them so far. Now, let's see how we can move objects to different buckets or folders.
+Move Objects
+
+* Create a temporary bucket for moving objects between buckets (Bucket name: immersion-day-myname-target). Substitute myname with your name. Rememeber the naming rules for the bucket. Block all public access Uncheckbox for quick configuration.
+
+* Check the notification window below and select Create bucket.
+* In the Amazon S3 Console, select the bucket that contains the object (the first bucket you created) and click the checkbox for the object you want to move. Select the Actions menu at the top to see the various functions you can perform on that object. Select Move from the listed features.
+
+* Select the destination as bucket, then click the Browse S3 button to find the new bucket you just created.
+* Click the bucket name in the pop-up window, then select the destination (arrival) bucket. Click the Choose destination button.
+* Check that the object has moved to the target bucket.
+
+
+#### Enable Bucket versioning:
+
+You can use Bucket Versioning if you want to update existing files to the latest version within the same bucket, but still want to keep the existing version.
+Enable versioning
+
+* In the Amazon S3 Console, select the first S3 bucket we created. Select the Properties menu. Click the Edit button in Bucket Versioning.
+* Click the enable radio button on Bucket Versioning, then click Save changes.
+* In this lab, the index.html file will be modified and re-uploaded with the same name. Make some changes to the index.html file. Then upload the modified file to the same S3 bucket.
+
+* When the changed file is completely uploaded, click the object in the S3 Console. You can view current version information by clicking the Versions tab on the page that contains object details.
+
+#### Deleting objects and buckets:
+
+You can delete unnecessary objects and buckets to avoid unnecessary costs.
+
+* In the Amazon S3 Console, select the Bucket that you want to delete. Then click Delete. A dialog box appears for deletion.
+* There is a warning that buckets cannot be deleted because they are not empty. Select empty bucket configuration to empty buckets.
+* Empty bucket performs a one-time deletion of all objects in the bucket. Confirm by typing permanently delete in the box. Then click the Empty button.
+* Now the bucket is empty. Perform task 1 again. Enter a bucket name and press the Delete bucket button.
+
+## Congratulations!! You have completed all the workshop. Thank you for your efforts.
