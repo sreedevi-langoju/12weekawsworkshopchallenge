@@ -43,7 +43,7 @@ b)Custom password. Each user is assigned the password that you type in the box.
 
 * Because we're creating a new Administrator user, we'll choose the Attach Existing Policies option. Pick the AdministratorAccess policy and attach it to your user to grant the relevant permissions. Choose Next: Tags.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/6014d69b-dcdc-475c-a5e8-b5b151b92e30" width=600 height=500>  
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/6014d69b-dcdc-475c-a5e8-b5b151b92e30" width=700 height=500>  
 
 *[Optional] You can add metadata to the user by attaching tags as key-value pairs. Add a key-value pair if desired.
 
@@ -55,7 +55,7 @@ Take note of the new credentials and the sign-in link. When you are ready to pro
 The URL is a quick sign on page that auto-fills your information
 The .csv file keeps track of the users password. If it was auto-generated, please make sure you download it or you will have to recreate your user.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/a8500804-f850-4618-9e8e-42b3cd4faf57" width=600 height=500>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/a8500804-f850-4618-9e8e-42b3cd4faf57" width=700 height=500>
 
 * IAM Users are identified in the following ways:
 
@@ -70,7 +70,7 @@ The .csv file keeps track of the users password. If it was auto-generated, pleas
 * You can find the ARN for a user by navigating to the IAM console, choosing Users from the left side panel, then selecting the User you want more detail on.
 * Navigate to the sign-in page . Sign in with the new user you just created. You should be able to sign and test the permissions of the new IAM User you created!
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/f7e8d336-ed37-481c-b7ad-cd1d7b9ca406" width=600 height=500>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/f7e8d336-ed37-481c-b7ad-cd1d7b9ca406" width=700 height=500>
 
 ### Creating a User Group:
 
@@ -86,7 +86,7 @@ Create a new user with the name PowerUser and skip the step of adding any permis
 
 If you're unsure of how to create a user, please refer to the Creating an IAM User lab.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/1a8d98db-812f-4c45-8ae3-c0dac2c872b9" width=600 height=500>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/1a8d98db-812f-4c45-8ae3-c0dac2c872b9" width=700 height=500>
 
 #### To create an IAM user group and attach policies through the group (console)
 
@@ -100,7 +100,7 @@ If you're unsure of how to create a user, please refer to the Creating an IAM Us
 
 * Choose Create group.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/30caed4c-2479-4ee1-b555-2c191af646ad" width=600 height=500>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/30caed4c-2479-4ee1-b555-2c191af646ad" width=700 height=500>
 
 Note: You can have up to 300 IAM groups per account
 
