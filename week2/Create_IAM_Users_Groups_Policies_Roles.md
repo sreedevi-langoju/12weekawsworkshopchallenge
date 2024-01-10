@@ -20,6 +20,7 @@ Select AWS Management Console Access if the users require access to the AWS Mana
       * Custom password. Each user is assigned the password that you type in the box.
 
 * Normally, we recommend that you select Require password reset for production accounts to ensure that users are forced to change their password the first time they sign in.
+  
 * For this example, let's select
 
   Provide user access to the AWS Management Console
@@ -28,11 +29,12 @@ Select AWS Management Console Access if the users require access to the AWS Mana
   uncheck Users must create a new password at next sign-in
 
 * Once we're on the Set permissions page, we'll need to specify how we want to assign permissions to this set of new users. We'll need to choose one of the following three options:
-        * Add user to group. Choose this option if you want to assign the users to one or more groups that already have permissions policies.
+  
+        a) Add user to group. Choose this option if you want to assign the users to one or more groups that already have permissions policies.
 
-        * Copy permissions from existing user. Choose this option to copy all of the group memberships, attached managed policies, embedded inline policies, and any   existing permissions boundaries from an existing user to the new users.
+        b) Copy permissions from existing user. Choose this option to copy all of the group memberships, attached managed policies, embedded inline policies, and any   existing permissions boundaries from an existing user to the new users.
 
-        * Attach existing policies directly. Choose this option to see a list of the AWS managed and customer managed policies in your account. Select the policies that you want to attach to the new users or choose Create policy to open a new browser tab and create a new policy from scratch.
+        c) Attach existing policies directly. Choose this option to see a list of the AWS managed and customer managed policies in your account. Select the policies that you want to attach to the new users or choose Create policy to open a new browser tab and create a new policy from scratch.
 
 * Because we're creating a new Administrator user, we'll choose the Attach Existing Policies option. Pick the AdministratorAccess policy and attach it to your user to grant the relevant permissions. Choose Next: Tags.
 
@@ -48,9 +50,9 @@ The .csv file keeps track of the users password. If it was auto-generated, pleas
 
 * IAM Users are identified in the following ways:
 
- **A "friendly name" for the user, which is the name that you specified when you created the user, such as Richard or Anaya. These are the names you see in the AWS Management Console.
+      a)A "friendly name" for the user, which is the name that you specified when you created the user, such as Richard or Anaya. These are the names you see in the AWS Management Console.
 
- **An Amazon Resource Name (ARN) for the user. You use the ARN when you need to uniquely identify the user across all of AWS. For example, you could use an ARN to specify the user as a Principal in an IAM policy for an Amazon S3 bucket. An ARN for an IAM user might look like the following:
+      b)An Amazon Resource Name (ARN) for the user. You use the ARN when you need to uniquely identify the user across all of AWS. For example, you could use an ARN to specify the user as a Principal in an IAM policy for an Amazon S3 bucket. An ARN for an IAM user might look like the following:
 
   arn:aws:iam::123456789012:user/Administrator
   
