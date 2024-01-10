@@ -635,7 +635,9 @@ Click the Delete button.
 <b>4.1. Delete an Auto Scaling Group</b>
 
 * We're going to delete the Auto Scaling Group that we used during the lab. Type EC2 in the AWS Console search bar and select it. Select Auto Scaling Groups from the left menu. Select the Web-ASG that we created in the lab and click the Delete button on the Actions menu. 
-* Type delete in the blank and click the Delete button. 
+* Type delete in the blank and click the Delete button.
+
+ <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/9f98a136-d751-4d07-b3a3-0ed804c073a2"> 
     
 <b>4.2. Delete an Application Load Balancer</b>
 
