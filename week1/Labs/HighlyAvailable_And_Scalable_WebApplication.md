@@ -629,9 +629,8 @@ Click the Delete button.
 * Select mysecret. 
 * Click Delete secret on the Actions menu. 
 * To prevent accidental deletion of secrets, AWS Secrets Manager has a deletion wait time of minimum 7 days and maximum 30 days. Enter the minimum time of 7 days and press the Schedule deletion button.
-  
 
-
+  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/1780dc84-11f2-40ea-81e7-498cde1c38b0">
     
 <b>4. Compute</b>
 
