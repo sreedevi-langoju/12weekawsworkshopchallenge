@@ -95,3 +95,30 @@ To create an IAM user group and attach policies through the group (console)
 Note: You can have up to 300 IAM groups per account
 
 Congratulations! You've created a group and attached permissions. Our permissions will now be standardized among all our developers.
+
+### Creating an IAM Role:
+
+Roles and users are both AWS identities with permissions policies that determine what the identity can and cannot do in AWS. However, instead of being uniquely associated with one person, a role is intended to be assumable by anyone who needs it. Also, a role does not have standard long-term credentials such as a password or access keys associated with it. Instead, when you assume a role, it provides you with temporary security credentials for your role session.
+
+In this exercise, we're going to create a role for an EC2 instance and grant it trusted access to all S3 buckets in our account.
+
+#### Create a Role:
+
+* From the Console Home Screen ,type “IAM“ into the services search bar on top of the screen and choose the IAM service.
+
+* From here Select Roles, either on the tab on the left or the middle of the screen.
+
+* On the next page select Create role
+
+* From here we will select the service entity EC2 and press Next: Permissions
+
+* On the next page we will add a policy to give access to any s3 storage buckets in your account. This can be achieved by filtering the search for and selecting AmazonS3FullAccess as seen below. We'll go into how policies grant permissions a little later on.
+
+
+* Continue on to review and name your role EC2S3FullAccess and press Create role
+
+* You will now be redirected to the roles section of the IAM console. You can then use the search bar to verify your IAM Role was created. Click on your role to review.
+
+Congratulations! You have successfully created your first IAM Role!
+
+
