@@ -136,6 +136,8 @@ dnf update -y
 
   <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/2eb87c40-715f-45a0-ab0c-e4068ed2e6e6"  height=300 width=600>
 
+  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/2c0df987-8a94-45f5-8750-5efe810ceafe">
+
 ####  Step 2(b) :Access the web service:
 
 Go to the EC2 instance console. Select the instance you want to connect to and click the Connect button in the center.
@@ -149,7 +151,7 @@ Go to the EC2 instance console. Select the instance you want to connect to and c
 
 You must click the Access your Linux instance using Session Manager link below to proceed with the exercise.
 
-In the database lab to be followed, connect to RDS using the IAM role granted to the web server. Therefore, refer to Accessing Linux instance using Session Manager: https://catalog.workshops.aws/general-immersionday/ko-KR/basic-modules/10-ec2/ec2-linux/3-ec2-1  to assign IAM role to EC2 instance. grant.
+In the database lab to be followed, connect to RDS using the IAM role granted to the web server. Therefore, refer to Accessing Linux instance using Session Manager: https://catalog.workshops.aws/general-immersionday/ko-KR/basic-modules/10-ec2/ec2-linux/3-ec2-1  to assign IAM role to EC2 instance.
 
 #### Step 2(d) :Create a custom AMI
 In the AWS EC2 console, you can create an Custom AMI to meet your needs. This can then be used for future EC2 instance creation. In this page, let's create an AMI using the web server instance that we built earlier.
@@ -176,16 +178,18 @@ In the AWS EC2 console, you can create an Custom AMI to meet your needs. This ca
 * In the left navigation panel of the EC2 dashboard, select Instances. Then select the instance that should be deleted. From there, click Instance state -> Terminate instance.
 * When the alert message appears, click Terminate to delete.
 * The instance status changes to Shutting down. After that, the instance status turned to terminated. The instance deletion is complete. You may see the instance for a short period of time for deletion logging.
+* 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/1dd08244-05e2-4e28-bd81-08d2d245c820">
 
-Architecture Configured So Far:
+<b>Architecture Configured So Far:</b>
 
 If you mark the resources that have been configured so far in conceptual terms, it is same with the picture below.
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/bf7a6391-4ce0-485f-b55e-3e2007c21562">
 
 
-### Step 2 : Deploy auto scaling web service:
+### Step 3 : Deploy auto scaling web service:
 
-#### Step 2(a): Configure Application Load Balancer:
+#### Step 3(a): Configure Application Load Balancer:
 
 AWS Elastic Load Balancer supports three types of load balancers: Application Load Balancer, Network Load Balancer, and Classic Load Balancer. In this lab, you will configure and set up the Application Load Balancer to handle load balancing HTTP requests.
 
@@ -197,6 +201,8 @@ AWS Elastic Load Balancer supports three types of load balancers: Application Lo
 * In Listeners and routing column, click Create target group. Put Web-TG for Target group name and check all settings same with the screen below. After that click Next button.
 * This is where we would register our instances. However, as we mentioned earlier, there are not instances to register at this moment. Click Create target group.
 * Again, move into the Load balancers page, click refresh button and select Web-TG. And then Click Create load balancer.
+
+  <img src="">
 
 #### Step 2(b): Configure launch template:
 
