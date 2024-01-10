@@ -685,12 +685,16 @@ Click the Delete button.
 <b>5.2.Delete a NAT gateway</b>
 
 * Select NAT gateways from the left menu and select VPC-Lab-nat-public you created during the lab. Click the Delete NAT gateway button on the Actions menu. 
-* Type delete in the blank and click the Delete button. 
+* Type delete in the blank and click the Delete button.
+
+ <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/439c3b60-4403-45a7-bb1b-2248cf1e172b"> 
 
 <b>5.3. Delete an Elastic IP</b>
 
 * You've just deleted the NAT gateway, but this action doesn't automatically delete the Elastic IP that the NAT gateway used, so you need to remove it manually. * Select Elastic IPs from the left menu, and select VPC-Lab-eip-ap-northeast-2a. (The name after VPC-Lab-eip may vary depending on your region.) Click the Release Elastic IP addresses button on the Actions menu. If it says it is still associated with the NAT gateway and cannot be deleted, refresh the webpage and try again. 
-* Click the Release button. 
+* Click the Release button.
+  
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/a24931cb-bb7b-4e52-b4d0-7dfcaf18efa8">
 
 <b>5.4. Delete a Security Group</b>
 
