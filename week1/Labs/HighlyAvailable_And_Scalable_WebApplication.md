@@ -364,7 +364,7 @@ In the previous Compute - Amazon EC2 lab, we created web server EC2 instances us
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/4f620660-b025-4d60-987f-0d5c1850df94">
 
-#### Step 5: Create RDS instance:
+#### Step 6(b): Create RDS instance:
 
 Since the security group that RDS will use has been created, let's create an instance of RDS Aurora (MySQL compatible).
 
@@ -408,11 +408,13 @@ Master password	            awspassword
   <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/4609dd13-648c-4982-9e27-2f7bb6f63aea">
 
 
-#### Step 5(a): Connect RDS with Web App server:
+#### Step 6(c): Connect RDS with Web App server:
 
 The Web Server instance that you created in the previous computer lab contains code that generates a simple address book to RDS. The Endpoint URL of the RDS must be verified first in order to use the RDS on the EC2 Web Server.
 
-##### Step5(b): Storing RDS Credentials in AWS Secrets Manager:
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/3a936267-310a-4435-8a4b-44d97aa04df8">
+
+##### Step 6(d): Storing RDS Credentials in AWS Secrets Manager:
 
 The web server we built includes sample code for our address book. In this lab, you specify which database to use in the sample code and how to connect it. We will store that information in AWS Secrets Manager.
 
@@ -433,6 +435,8 @@ In this chapter, we will create a secret containing data connection information.
 * You can check the list of secret values with the name mysecret as shown below.
 * Click mysecret hyperlink and find Secret value tab. And click Retrieve secret value button.
 * Click Edit button, and check whether there is dbname and immersionday in key/value section. If they were not, click Add button, fill out the value and click save button.
+
+ <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/f734ed85-893a-4737-bb66-675eab77c71e"> 
 
 ##### Step 5(c):Access RDS from EC2:
 
