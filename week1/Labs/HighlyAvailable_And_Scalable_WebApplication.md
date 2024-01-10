@@ -564,20 +564,23 @@ Click the Delete button.
     * To prevent accidental deletion of secrets, AWS Secrets Manager has a deletion wait time of minimum 7 days and maximum 30 days. Enter the minimum time of 7         days and press the Schedule deletion button.
 
     
-Compute
-Delete an Auto Scaling Group
+<b>4. Compute</b>
 
-We're going to delete the Auto Scaling Group that we used during the lab. Type EC2 in the AWS Console search bar and select it. Select Auto Scaling Groups from the left menu. Select the Web-ASG that we created in the lab and click the Delete button on the Actions menu. 
-Type delete in the blank and click the Delete button. 
-Delete an Application Load Balancer
+<b>4.1. Delete an Auto Scaling Group</b>
 
-Next, we're going to delete the Application Load Balancers. Select Load Balancers from the left menu. Then select the Web-ALB that we created in the lab and click the Delete load balancer button in the Actions menu. Delete load balancer
-Type confirm in the blank and click the Delete button. Delete load balancer2
-Delete a Target Group
+    * We're going to delete the Auto Scaling Group that we used during the lab. Type EC2 in the AWS Console search bar and select it. Select Auto Scaling Groups from the left menu. Select the Web-ASG that we created in the lab and click the Delete button on the Actions menu. 
+    * Type delete in the blank and click the Delete button. 
+    
+<b>4.2. Delete an Application Load Balancer</b>
 
-We're going to delete the Target Group we created when we created the Application Load Balancer. Select Target Groups from the left menu. Select the Target Group we created in the lab, web-TG, and click the Delete button on the Actions menu. Select the Target Group
+    * Next, we're going to delete the Application Load Balancers. Select Load Balancers from the left menu. Then select the Web-ALB that we created in the lab and click the Delete load balancer button in the Actions menu. 
+    * Type confirm in the blank and click the Delete button. 
+    
+<b>4.3. Delete a Target Group</b>
 
-Click the Yes, delete button. Delete the Target Group
+    * We're going to delete the Target Group we created when we created the Application Load Balancer. Select Target Groups from the left menu. Select the Target     Group we created in the lab, web-TG, and click the Delete button on the Actions menu. 
+
+    * Click the Yes, delete button. 
 
 Delete EC2 AMIs
 
