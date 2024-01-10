@@ -702,10 +702,13 @@ Click the Delete button.
 * Select web-ALB-SG and click the Delete security groups button on the Actions menu. 
 * Click the Delete button.
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/8c0e468c-70fe-4baf-a847-e30749609558">
+
 <b>5.5. Delete a VPC</b>
 
 * Finally, select Your VPCs from the left menu, and select the VPC-Lab-vpc that you created during the lab. Click the Delete VPC button in the Actions menu. 
 * Type delete in the blank and click the Delete button.
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/9dcce654-52b3-4631-a599-738280df16e8">
   
 <b>We strongly recommend that you double-check to make sure you haven't missed anything, as some resources that weren't cleared may incur costs.</b>
