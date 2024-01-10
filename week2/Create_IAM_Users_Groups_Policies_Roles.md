@@ -43,6 +43,8 @@ b)Custom password. Each user is assigned the password that you type in the box.
 
 * Because we're creating a new Administrator user, we'll choose the Attach Existing Policies option. Pick the AdministratorAccess policy and attach it to your user to grant the relevant permissions. Choose Next: Tags.
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/6014d69b-dcdc-475c-a5e8-b5b151b92e30">  
+
 *[Optional] You can add metadata to the user by attaching tags as key-value pairs. Add a key-value pair if desired.
 
 * Here you can see all of the choices you made up to this point.
