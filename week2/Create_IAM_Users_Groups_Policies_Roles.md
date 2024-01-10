@@ -272,7 +272,7 @@ We now have our completed policy below. It allows anyone who inherits the policy
 
 Now that we've created a policy, we'll need to create a bucket to test permissions, and assign our new policy to a user and test it out.
 
-* Create an S3 bucket and upload a test.txt file(find test.txt  in this repository)
+Create an S3 bucket and upload a test.txt file(find test.txt  in this repository)
   
 * From the Console Home Screen , select “S3” or type “S3” in the search bar at the top of the screen.
 
@@ -289,6 +289,8 @@ Now that we've created a policy, we'll need to create a bucket to test permissio
 
 * Upload any file to your bucket, try to keep it small. Click Upload when done.
 
+  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/d9c41ba5-3653-4447-8e51-9332f49dc90e">
+
 #### Create a user with the correct permissions.
   
 * We need to attach this policy to an IAM identity in order to use it. Reference the "Creating an IAM User" lab to create a new user named S3User, but instead of the AdministratorAccess policy, grant the new account the S3 policy we created in a previous step.
@@ -300,7 +302,9 @@ Now that we've created a policy, we'll need to create a bucket to test permissio
 
 * Take note of the credentials for the newly created IAM User, then log into this account with the sign-in link  on the page. Navigate to the S3 console to test permissions.
 * Using a different browser or incognito mode can allow you to sign into AWS as a different user. If you use the same browser, you'll have to sign out first
+  
 * On the S3 console you should be able to view all buckets and download objects. Select any bucket and object within, and verify that you can download the object. Now attempt to delete an object.
+  
 * The console won't allow this action since we didn't grant delete permissions in the policy we created.
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/52e6af44-e882-4975-8c10-37c68f124acc" height=400 width=600>
