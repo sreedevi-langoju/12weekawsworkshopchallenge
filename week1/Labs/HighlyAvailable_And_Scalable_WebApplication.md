@@ -313,6 +313,8 @@ If the average CPU utilization of an instance is over 30%, Additional instances 
 
   <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/19d55fcb-1abd-4969-9e99-f42b2bd37c2d">
 
+  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/15253952-2cc6-4e09-9bdf-f32bb0f0cad0">
+
 * After load:
 
   <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/bd682e3c-ef1d-4998-9e35-69d83da1bb6a">
@@ -320,12 +322,15 @@ If the average CPU utilization of an instance is over 30%, Additional instances 
 
 * Enter Auto Scaling Groups from the left side menu of the EC2 console and click the Monitoring tab. Under Enabled metrics, click EC2 and set the right time frame to 1 hour. If you wait for a few seconds, you'll see the CPU Utilization (Percent) graph changes.
 * Wait for about 5 minutes (300 seconds) and click the Activity tab to see the additional EC2 instances deployed according to the scaling policy.
-* When you click on the Instance management tab, you can see that two additional instances have sprung up and a total of four are up and running.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/f4d5fbd7-32d1-4f80-ae09-6e6d338df986">
+  
+* When you click on the Instance management tab, you can see that two additional instances have sprung up and a total of four are up and running. 
 * If you use the ALB DNS that you copied earlier to access and refresh the web page, you can see that it is hosting the web page in two instances that were not there before. The current CPU load is 0% because it is a new instance. It can also be seen that each of them was created in a different availability zone. If it's not 0%, it can look more than 100% because it's a constant load situation.
 
   Note: So far, we've checked that Auto Scaling group is working through a load test on the web service. If the page that causes the CPU load is working, close the page to prevent additional load.
 
-  ### Step3: Database – Amazon Aurora:
+  ### Step 6: Database – Amazon Aurora:
 
  ##### Final Architecture:
  
@@ -342,7 +347,7 @@ The order of this lab is as follows.
     5. (option) RDS Management Features
 
 
-#### Step 3(a): Create VPC security group:
+#### Step 6(a): Create VPC security group:
 
 The RDS service uses the same security model as EC2. The most common usage format is to provide data as a database server to an EC2 instance operating as an applicatiojn server within the same VPC, or to configure it to be accessible to the DB Application client outside of the VPC. The VPC Security Group must be applied for proper access control.
 
@@ -351,9 +356,13 @@ In the previous Compute - Amazon EC2 lab, we created web server EC2 instances us
 * On the left side of the VPC dashboard, select Security Groups and then select Create Security Group.
 
 * Enter Security group name and Description as shown below. Choose the VPC that was created in the first lab. It should be named VPC-Lab.
+
+  
 * Scroll down to the Inbound rules column. Click Add rule to create a security group policy that allows access to RDS from the EC2 Web servers that you previously created through the Auto Scaling Group. Under Type, select MySQL/Aurora The port range should default to 3306. The protocol and port ranges are automatically specified. The Source type entry can specify the IP band (CIDR) that you want to allow acces to, or other security groups that the EC2 instances to access are already using. Select the security group(named ASG-Web-Inst-SG ) that is applied to the web instances of the Auto Scaling group in the Compute - Amazon EC2.
 * When settings are completed, click Create Security Group at the bottom of the list to create this security group.
 
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/4f620660-b025-4d60-987f-0d5c1850df94">
 
 #### Step 5: Create RDS instance:
 
@@ -396,7 +405,7 @@ Master password	            awspassword
 * A new RDS instance is now creating. This may take more than 5 minutes. You can use an RDS instance when the DB instance's status changed to Available.
   
 
-  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/a6c8ca35-484e-4e12-a9c8-0e0dd589555f">
+  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/4609dd13-648c-4982-9e27-2f7bb6f63aea">
 
 
 #### Step 5(a): Connect RDS with Web App server:
