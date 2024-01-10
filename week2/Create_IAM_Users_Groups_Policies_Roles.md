@@ -53,7 +53,9 @@ Take note of the new credentials and the sign-in link. When you are ready to pro
 
 * Take note of your sign in details including your sign-in URL and .csv file.
 The URL is a quick sign on page that auto-fills your information
-The .csv file keeps track of the users password. If it was auto-generated, please make sure you download it or you will have to recreate your user. 
+The .csv file keeps track of the users password. If it was auto-generated, please make sure you download it or you will have to recreate your user.
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/a8500804-f850-4618-9e8e-42b3cd4faf57">
 
 * IAM Users are identified in the following ways:
 
