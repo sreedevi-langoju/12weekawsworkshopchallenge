@@ -272,7 +272,8 @@ We now have our completed policy below. It allows anyone who inherits the policy
 
 Now that we've created a policy, we'll need to create a bucket to test permissions, and assign our new policy to a user and test it out.
 
-* Create an S3 bucket and upload a dummy .txt file
+* Create an S3 bucket and upload a test.txt file(find test.txt  in this repository)
+  
 * From the Console Home Screen , select “S3” or type “S3” in the search bar at the top of the screen.
 
 * Select Create bucket once inside the S3 service
@@ -288,8 +289,11 @@ Now that we've created a policy, we'll need to create a bucket to test permissio
 
 * Upload any file to your bucket, try to keep it small. Click Upload when done.
 
-* Create a user with the correct permissions
+#### Create a user with the correct permissions.
+  
 * We need to attach this policy to an IAM identity in order to use it. Reference the "Creating an IAM User" lab to create a new user named S3User, but instead of the AdministratorAccess policy, grant the new account the S3 policy we created in a previous step.
+
+ <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/21445478-abcd-4d43-a24d-601a83865aea"> 
 
 
 #### Test newly granted permissions:
