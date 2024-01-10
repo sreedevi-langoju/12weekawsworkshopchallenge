@@ -289,7 +289,7 @@ Now, let's create the Auto Scaling Group.
   
 Now, we've built a web service that is high available and automatically scales under load! The configuration of the services we have created so far is as follows.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/e57c57d5-d39b-4d9e-884c-ec2e346367df">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/e57c57d5-d39b-4d9e-884c-ec2e346367df" height=400 width=600>
 
 
 ### Step 5: Check web service and test:
