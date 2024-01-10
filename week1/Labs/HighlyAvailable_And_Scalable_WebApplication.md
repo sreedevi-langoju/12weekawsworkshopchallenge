@@ -167,6 +167,8 @@ In the AWS EC2 console, you can create an Custom AMI to meet your needs. This ca
 * In the left navigation panel, Click the AMIs button located under IMAGES.
 * You can see that the Status of the AMI that you just created. It will show either Pending or Available.
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/7b931d02-5986-4d26-a3ff-47a3a2373103" height=400 width=500>
+
 #### Terminate the instance :
 
   Note:  Custom AMI (Golden Image) creation has been completed for the auto scaling by using the EC2 instance you just created. Therefore, the EC2 instance currently running is no longer needed, so let's try to terminate it.( In Deploy auto scaling web service, we will use custom AMI to create a new web server.)
