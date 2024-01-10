@@ -640,7 +640,9 @@ Click the Delete button.
 <b>4.2. Delete an Application Load Balancer</b>
 
 * Next, we're going to delete the Application Load Balancers. Select Load Balancers from the left menu. Then select the Web-ALB that we created in the lab and click the Delete load balancer button in the Actions menu. 
-* Type confirm in the blank and click the Delete button. 
+* Type confirm in the blank and click the Delete button.
+
+ <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/4b437447-c9a1-4e96-90bd-ecf38c743f21"> 
     
 <b>4.3. Delete a Target Group</b>
 
