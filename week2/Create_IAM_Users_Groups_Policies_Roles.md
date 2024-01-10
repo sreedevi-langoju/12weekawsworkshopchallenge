@@ -55,7 +55,7 @@ Take note of the new credentials and the sign-in link. When you are ready to pro
 The URL is a quick sign on page that auto-fills your information
 The .csv file keeps track of the users password. If it was auto-generated, please make sure you download it or you will have to recreate your user.
 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/a8500804-f850-4618-9e8e-42b3cd4faf57" width=700 height=500>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/0b11442e-5a44-460e-a0c7-09269a4e8732">
 
 * IAM Users are identified in the following ways:
 
