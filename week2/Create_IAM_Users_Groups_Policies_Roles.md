@@ -282,6 +282,8 @@ Create an S3 bucket and upload a test.txt file(find test.txt  in this repository
 
 * Leave all other setting default and select Create bucket at the bottom of the screen.
 
+ <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/a60fa879-4340-458a-be70-a3ab74d21697"> 
+
 * Navigate to your bucket and choose Upload
 
 
@@ -295,7 +297,7 @@ Create an S3 bucket and upload a test.txt file(find test.txt  in this repository
   
 * We need to attach this policy to an IAM identity in order to use it. Reference the "Creating an IAM User" lab to create a new user named S3User, but instead of the AdministratorAccess policy, grant the new account the S3 policy we created in a previous step.
 
- <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/21445478-abcd-4d43-a24d-601a83865aea"> 
+ <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/cb2e9ef6-fbe6-48fd-9148-4adeaf2ab064" width=600 height=500> 
 
 
 #### Test newly granted permissions:
