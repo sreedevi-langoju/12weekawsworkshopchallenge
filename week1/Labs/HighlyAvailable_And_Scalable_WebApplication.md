@@ -184,7 +184,7 @@ In the AWS EC2 console, you can create an Custom AMI to meet your needs. This ca
 <b>Architecture Configured So Far:</b>
 
 If you mark the resources that have been configured so far in conceptual terms, it is same with the picture below.
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/bf7a6391-4ce0-485f-b55e-3e2007c21562">
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/bf7a6391-4ce0-485f-b55e-3e2007c21562" height=400 width=500>
 
 
 ### Step 3 : Deploy auto scaling web service:
@@ -196,15 +196,18 @@ AWS Elastic Load Balancer supports three types of load balancers: Application Lo
 * From the EC2 Management Console in the left navigation panel, click Load Balancers under Load Balancing. Then click Create Load Balancer. In the Select load balancer type, click the Create button under Application Load Balancer.
 * Name the load balancer. In this case, name Name as Web-ALB. Leave the other settings at their default values.
 * Scrolling down a little bit, there is a section for selecting availability zones. First, Select the VPC-Lab-vpc created previously. For Availability Zones select the 2 public subnets that were created previously. This should be Public Subnet for ap-northeast-2a and Public Subnet C for ap-northeast-2c.
+  
 * In the Security groups section, click the Create new security group hyperlink. Enter web-ALB-SG as the security group name and check the VPC information. Click the Add rule button and select HTTP as the Type and Anywhere-IPv4 as the Source. And create a security group.
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/ce0a191e-8b15-46b0-8279-0f49aded89ea" height=400 width=500>
+  
 * Return to the load balancer page again, click the refresh button, and select the web-ALB-SG you just created. Remove the default security group.
 * In Listeners and routing column, click Create target group. Put Web-TG for Target group name and check all settings same with the screen below. After that click Next button.
 * This is where we would register our instances. However, as we mentioned earlier, there are not instances to register at this moment. Click Create target group.
 * Again, move into the Load balancers page, click refresh button and select Web-TG. And then Click Create load balancer.
 
-  <img src="">
+  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/1627e490-421f-4de3-82fc-3f40a50332ec">
 
-#### Step 2(b): Configure launch template:
+#### Step 3(b): Configure launch template:
 
 Now that ALB has been created, it's time to place the instances behind the load balancer. To configure an Amazon EC2 instance to start with Auto Scaling Group, you can use Launch Template, Launch Configuration, or EC2 Instance. In this workshop, we will use the Launch Template to create an Auto Scaling group.
 The launch template configures all parameters within a resource at once, reducing the number of steps required to create an instance. Launch templates make it easier to implement best practices with support for Auto Scaling and spot fleets, as well as spot and on-demand instances. This helps you manage costs more conveniently, improve security, and minimize the risk of deployment errors.
