@@ -134,7 +134,7 @@ dnf update -y
 * After the instance configuration is complete, you can check the Availability Zone in which the instance is running, and externally accessible IP and DNS information.
 * Wait for the instance's Instance state result to be Running. Open a new web browser tab and enter the Public DNS or IPv4 Public IP of your EC2 instance in the URL address field. If the page is displayed as shown below, the web server instance is configured normally.
 
-  <img src="">
+  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/2eb87c40-715f-45a0-ab0c-e4068ed2e6e6"  height=300 width=500>
 
 ####  Step 2(b) :Access the web service:
 
