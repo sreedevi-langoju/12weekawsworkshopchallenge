@@ -658,11 +658,14 @@ Click the Delete button.
 <b>4.4. Delete EC2 AMIs</b>
 
 * Select AMIs from the left menu. Select the AMI named Web Server v1 that you created in the lab. Click the Deregister AMI button on the Actions menu. 
-* Click the Deregister AMI button. 
+* Click the Deregister AMI button.
+  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/2382ba5d-7e02-480b-b69d-435e477f2b57">
     
 <b>4.5. Delete EC2 Snapshots</b>
 
 * You've just deleted an AMI, but this action doesn't automatically remove the associated snapshot. So you need to remove it manually. From the left menu, choose Snapshots. Be sure to note the snapshot's creation date. Then, select the snapshot you created in the lab, and click the Delete snapshot button on the Actions menu. 
+
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/40efe728-cd19-4c46-ac4a-59c48d7e2ca2">
 
 * Click the Delete button. 
 
