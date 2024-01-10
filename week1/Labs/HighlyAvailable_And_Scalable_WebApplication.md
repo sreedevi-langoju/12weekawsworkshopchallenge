@@ -529,84 +529,84 @@ Delete the resources you created for the lab in reverse order.
 
 <b>1.Delete an Amazon RDS Cluster</b>
 
-    * After accessing to the Amazon RDS console, select DB Instances. 
+* After accessing to the Amazon RDS console, select DB Instances. 
     
-    * By default, an Amazon RDS cluster has delete protection enabled to prevent accidental deletions. To disable it, select the Cluster and click the Modify button. 
+* By default, an Amazon RDS cluster has delete protection enabled to prevent accidental deletions. To disable it, select the Cluster and click the Modify button. 
     
-    * Uncheck the Enable deletion protection button and click the Continue button. Enable deletion protection
+* Uncheck the Enable deletion protection button and click the Continue button. Enable deletion protection
     
-    *  For immediate deletion, select Apply immediately and click the Modify cluster button.
+*  For immediate deletion, select Apply immediately and click the Modify cluster button.
     
-    *  In order to delete a DB Cluster, you must first delete the DB instances included in the cluster. They can be deleted in any order, but we will delete the Writer instance first. Select the Writer instance, and click the Delete button on the Actions menu. 
+*  In order to delete a DB Cluster, you must first delete the DB instances included in the cluster. They can be deleted in any order, but we will delete the Writer instance first. Select the Writer instance, and click the Delete button on the Actions menu. 
     
-    *  Type delete me in the blank and click the Delete button. 
+*  Type delete me in the blank and click the Delete button. 
     
-    * This time, we will delete the Reader instance. Select the Reader instance and click the Delete button on the Actions menu. 
+* This time, we will delete the Reader instance. Select the Reader instance and click the Delete button on the Actions menu. 
     
-    *  Type delete me in the blank and click the Delete button.
+*  Type delete me in the blank and click the Delete button.
     
-    * Lastly, we will delete the DB Cluster. Click the Delete button on the Actions menu. 
+* Lastly, we will delete the DB Cluster. Click the Delete button on the Actions menu. 
     
-    *  Uncheck the Take a final snapshot button, check the I acknowledge that automatic backups, including system snapshots and point-in-time recovery, are no longer available when I delete an instance button, and type delete me in the blank. Click Delete DB Cluster and the DB cluster will be deleted.
+*  Uncheck the Take a final snapshot button, check the I acknowledge that automatic backups, including system snapshots and point-in-time recovery, are no longer available when I delete an instance button, and type delete me in the blank. Click Delete DB Cluster and the DB cluster will be deleted.
 
 
 
 <b>2. Delete a Amazon RDS Snapshot</b>
 
-    * To delete the snapshot of the DB Cluster created during the lab, select immersionday-snapshot and click the Delete snapshot button on the Actions menu. 
+* To delete the snapshot of the DB Cluster created during the lab, select immersionday-snapshot and click the Delete snapshot button on the Actions menu. 
 Click the Delete button. 
 
 <b>3. Delete a secret in AWS Secrets Manager</b>
 
-    * We're going to delete the secret that stored a RDS credential during the lab. Type Secrets Manager in the AWS console search bar and then select it. 
-    * Select mysecret. 
-    * Click Delete secret on the Actions menu. 
-    * To prevent accidental deletion of secrets, AWS Secrets Manager has a deletion wait time of minimum 7 days and maximum 30 days. Enter the minimum time of 7         days and press the Schedule deletion button.
+* We're going to delete the secret that stored a RDS credential during the lab. Type Secrets Manager in the AWS console search bar and then select it. 
+* Select mysecret. 
+* Click Delete secret on the Actions menu. 
+* To prevent accidental deletion of secrets, AWS Secrets Manager has a deletion wait time of minimum 7 days and maximum 30 days. Enter the minimum time of 7         days and press the Schedule deletion button.
 
     
 <b>4. Compute</b>
 
 <b>4.1. Delete an Auto Scaling Group</b>
 
-    * We're going to delete the Auto Scaling Group that we used during the lab. Type EC2 in the AWS Console search bar and select it. Select Auto Scaling Groups from the left menu. Select the Web-ASG that we created in the lab and click the Delete button on the Actions menu. 
-    * Type delete in the blank and click the Delete button. 
+* We're going to delete the Auto Scaling Group that we used during the lab. Type EC2 in the AWS Console search bar and select it. Select Auto Scaling Groups from the left menu. Select the Web-ASG that we created in the lab and click the Delete button on the Actions menu. 
+* Type delete in the blank and click the Delete button. 
     
 <b>4.2. Delete an Application Load Balancer</b>
 
-    * Next, we're going to delete the Application Load Balancers. Select Load Balancers from the left menu. Then select the Web-ALB that we created in the lab and click the Delete load balancer button in the Actions menu. 
-    * Type confirm in the blank and click the Delete button. 
+* Next, we're going to delete the Application Load Balancers. Select Load Balancers from the left menu. Then select the Web-ALB that we created in the lab and click the Delete load balancer button in the Actions menu. 
+* Type confirm in the blank and click the Delete button. 
     
 <b>4.3. Delete a Target Group</b>
 
-    * We're going to delete the Target Group we created when we created the Application Load Balancer. Select Target Groups from the left menu. Select the Target     Group we created in the lab, web-TG, and click the Delete button on the Actions menu. 
+* We're going to delete the Target Group we created when we created the Application Load Balancer. Select Target Groups from the left menu. Select the Target     Group we created in the lab, web-TG, and click the Delete button on the Actions menu. 
 
-    * Click the Yes, delete button. 
+* Click the Yes, delete button. 
 
 <b>4.4. Delete EC2 AMIs</b>
 
-    * Select AMIs from the left menu. Select the AMI named Web Server v1 that you created in the lab. Click the Deregister AMI button on the Actions menu. 
-    * Click the Deregister AMI button. 
+* Select AMIs from the left menu. Select the AMI named Web Server v1 that you created in the lab. Click the Deregister AMI button on the Actions menu. 
+* Click the Deregister AMI button. 
     
 <b>4.5. Delete EC2 Snapshots</b>
 
-    * You've just deleted an AMI, but this action doesn't automatically remove the associated snapshot. So you need to remove it manually. From the left menu, choose Snapshots. Be sure to note the snapshot's creation date. Then, select the snapshot you created in the lab, and click the Delete snapshot button on the Actions menu. 
+* You've just deleted an AMI, but this action doesn't automatically remove the associated snapshot. So you need to remove it manually. From the left menu, choose Snapshots. Be sure to note the snapshot's creation date. Then, select the snapshot you created in the lab, and click the Delete snapshot button on the Actions menu. 
 
-    * Click the Delete button. 
+* Click the Delete button. 
 
 <b>4.6. Delete template</b>
 
-    * Select Launch Templates from the left menu. Select the template named Web that you created in the lab. Click the Delete template button on the Actions menu. 
+* Select Launch Templates from the left menu. Select the template named Web that you created in the lab. Click the Delete template button on the Actions menu. 
 
-    * Type Delete in the blank and click the Delete button. 
+* Type Delete in the blank and click the Delete button. 
 
 
 <b>5.Network</b>
 
 <b>5.1. Delete VPC endpoints</b>
 
-    * You're almost there. Type VPC in the AWS Console search bar and select it. Select Endpoints from the left menu. Select S3 endpoint, the endpoint you created in the lab, and click the Delete VPC endpoints button on the Actions menu. 
+* You're almost there. Type VPC in the AWS Console search bar and select it. Select Endpoints from the left menu. Select S3 endpoint, the endpoint you created in the lab, and click the Delete VPC endpoints button on the Actions menu. 
 
-    * Type delete in the blank, and click the Delete button.
+* Type delete in the blank, and click the Delete button.
 
 
 <b>5.2.Delete a NAT gateway</b>
