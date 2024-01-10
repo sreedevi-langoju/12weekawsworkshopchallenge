@@ -582,30 +582,34 @@ Click the Delete button.
 
     * Click the Yes, delete button. 
 
-Delete EC2 AMIs
+<b>4.4. Delete EC2 AMIs</b>
 
-Select AMIs from the left menu. Select the AMI named Web Server v1 that you created in the lab. Click the Deregister AMI button on the Actions menu. Deregister AMI
-Click the Deregister AMI button. Deregister AMI2
-Delete EC2 Snapshots
+    * Select AMIs from the left menu. Select the AMI named Web Server v1 that you created in the lab. Click the Deregister AMI button on the Actions menu. 
+    * Click the Deregister AMI button. 
+    
+<b>4.5. Delete EC2 Snapshots</b>
 
-You've just deleted an AMI, but this action doesn't automatically remove the associated snapshot. So you need to remove it manually. From the left menu, choose Snapshots. Be sure to note the snapshot's creation date. Then, select the snapshot you created in the lab, and click the Delete snapshot button on the Actions menu. Delete snapshot
+    * You've just deleted an AMI, but this action doesn't automatically remove the associated snapshot. So you need to remove it manually. From the left menu, choose Snapshots. Be sure to note the snapshot's creation date. Then, select the snapshot you created in the lab, and click the Delete snapshot button on the Actions menu. 
 
-Click the Delete button. Delete snapshot2
+    * Click the Delete button. 
 
-Select Launch Templates from the left menu. Select the template named Web that you created in the lab. Click the Delete template button on the Actions menu. Delete template
+<b>4.6. Delete template</b>
 
-Type Delete in the blank and click the Delete button. Delete template2
+    * Select Launch Templates from the left menu. Select the template named Web that you created in the lab. Click the Delete template button on the Actions menu. 
 
-(Optional) Delete an EC2 instance
+    * Type Delete in the blank and click the Delete button. 
 
-If you went through the (Optional) Connect RDS Aurora section during the database lab, you need to delete the EC2 instance you created in the lab. Select Instances from the left menu. Select the EC2 instance you created during the lab, and click the Terminate instance button on the Instance state menu. Terminate instance
-Click the Terminate button. Terminate instance2
-Network
-Delete VPC endpoints
 
-You're almost there. Type VPC in the AWS Console search bar and select it. Select Endpoints from the left menu. Select S3 endpoint, the endpoint you created in the lab, and click the Delete VPC endpoints button on the Actions menu. Delete VPC endpoints
-Type delete in the blank, and click the Delete button. Delete VPC endpoints2
-Delete a NAT gateway
+<b>5.Network</b>
+
+<b>5.1. Delete VPC endpoints</b>
+
+    * You're almost there. Type VPC in the AWS Console search bar and select it. Select Endpoints from the left menu. Select S3 endpoint, the endpoint you created in the lab, and click the Delete VPC endpoints button on the Actions menu. 
+
+    * Type delete in the blank, and click the Delete button.
+
+
+<b>5.2.Delete a NAT gateway</b>
 
 Select NAT gateways from the left menu and select VPC-Lab-nat-public you created during the lab. Click the Delete NAT gateway button on the Actions menu. Delete NAT gateway
 Type delete in the blank and click the Delete button. Delete NAT gateway2
