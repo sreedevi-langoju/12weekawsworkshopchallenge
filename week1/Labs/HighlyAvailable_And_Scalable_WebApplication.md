@@ -520,3 +520,103 @@ You can delete unnecessary objects and buckets to avoid unnecessary costs.
 * Now the bucket is empty. Perform task 1 again. Enter a bucket name and press the Delete bucket button.
 
 ## Congratulations!! You have completed all the workshop. Thank you for your efforts.
+
+
+### Clean up resource:
+
+If you completed this workshop with your own account, we strongly recommend following this guide to delete the resources and avoid incurring costs
+Delete the resources you created for the lab in reverse order.
+Database
+Delete an Amazon RDS Cluster
+
+After accessing to the Amazon RDS console, select DB Instances. Rds first page
+
+By default, an Amazon RDS cluster has delete protection enabled to prevent accidental deletions. To disable it, select the Cluster and click the Modify button. Rds cluster modify
+
+Uncheck the Enable deletion protection button and click the Continue button. Enable deletion protection
+
+For immediate deletion, select Apply immediately and click the Modify cluster button. Modify cluster
+
+In order to delete a DB Cluster, you must first delete the DB instances included in the cluster. They can be deleted in any order, but we will delete the Writer instance first. Select the Writer instance, and click the Delete button on the Actions menu. Delete a DB Cluster
+
+Type delete me in the blank and click the Delete button. Delete a DB Cluster2
+
+This time, we will delete the Reader instance. Select the Reader instance and click the Delete button on the Actions menu. Delete Reader instance
+
+Type delete me in the blank and click the Delete button. Delete Reader instance2
+
+Lastly, we will delete the DB Cluster. Click the Delete button on the Actions menu. Delete DB Cluster
+
+Uncheck the Take a final snapshot button, check the I acknowledge that automatic backups, including system snapshots and point-in-time recovery, are no longer available when I delete an instance button, and type delete me in the blank. Click Delete DB Cluster and the DB cluster will be deleted.
+
+Delete DB Cluster2
+
+Delete a Amazon RDS Snapshot
+
+To delete the snapshot of the DB Cluster created during the lab, select immersionday-snapshot and click the Delete snapshot button on the Actions menu. Delete snapshot
+Click the Delete button. Delete snapshot2
+Delete a secret in AWS Secrets Manager
+
+We're going to delete the secret that stored a RDS credential during the lab. Type Secrets Manager in the AWS console search bar and then select it. RDS credentials
+Select mysecret. RDS credentials - mysecret
+Click Delete secret on the Actions menu. RDS credentials - delete
+To prevent accidental deletion of secrets, AWS Secrets Manager has a deletion wait time of minimum 7 days and maximum 30 days. Enter the minimum time of 7 days and press the Schedule deletion button. Schedule deletion
+Compute
+Delete an Auto Scaling Group
+
+We're going to delete the Auto Scaling Group that we used during the lab. Type EC2 in the AWS Console search bar and select it. Select Auto Scaling Groups from the left menu. Select the Web-ASG that we created in the lab and click the Delete button on the Actions menu. 
+Type delete in the blank and click the Delete button. 
+Delete an Application Load Balancer
+
+Next, we're going to delete the Application Load Balancers. Select Load Balancers from the left menu. Then select the Web-ALB that we created in the lab and click the Delete load balancer button in the Actions menu. Delete load balancer
+Type confirm in the blank and click the Delete button. Delete load balancer2
+Delete a Target Group
+
+We're going to delete the Target Group we created when we created the Application Load Balancer. Select Target Groups from the left menu. Select the Target Group we created in the lab, web-TG, and click the Delete button on the Actions menu. Select the Target Group
+
+Click the Yes, delete button. Delete the Target Group
+
+Delete EC2 AMIs
+
+Select AMIs from the left menu. Select the AMI named Web Server v1 that you created in the lab. Click the Deregister AMI button on the Actions menu. Deregister AMI
+Click the Deregister AMI button. Deregister AMI2
+Delete EC2 Snapshots
+
+You've just deleted an AMI, but this action doesn't automatically remove the associated snapshot. So you need to remove it manually. From the left menu, choose Snapshots. Be sure to note the snapshot's creation date. Then, select the snapshot you created in the lab, and click the Delete snapshot button on the Actions menu. Delete snapshot
+
+Click the Delete button. Delete snapshot2
+
+Select Launch Templates from the left menu. Select the template named Web that you created in the lab. Click the Delete template button on the Actions menu. Delete template
+
+Type Delete in the blank and click the Delete button. Delete template2
+
+(Optional) Delete an EC2 instance
+
+If you went through the (Optional) Connect RDS Aurora section during the database lab, you need to delete the EC2 instance you created in the lab. Select Instances from the left menu. Select the EC2 instance you created during the lab, and click the Terminate instance button on the Instance state menu. Terminate instance
+Click the Terminate button. Terminate instance2
+Network
+Delete VPC endpoints
+
+You're almost there. Type VPC in the AWS Console search bar and select it. Select Endpoints from the left menu. Select S3 endpoint, the endpoint you created in the lab, and click the Delete VPC endpoints button on the Actions menu. Delete VPC endpoints
+Type delete in the blank, and click the Delete button. Delete VPC endpoints2
+Delete a NAT gateway
+
+Select NAT gateways from the left menu and select VPC-Lab-nat-public you created during the lab. Click the Delete NAT gateway button on the Actions menu. Delete NAT gateway
+Type delete in the blank and click the Delete button. Delete NAT gateway2
+Delete an Elastic IP
+
+You've just deleted the NAT gateway, but this action doesn't automatically delete the Elastic IP that the NAT gateway used, so you need to remove it manually. Select Elastic IPs from the left menu, and select VPC-Lab-eip-ap-northeast-2a. (The name after VPC-Lab-eip may vary depending on your region.) Click the Release Elastic IP addresses button on the Actions menu. If it says it is still associated with the NAT gateway and cannot be deleted, refresh the webpage and try again. Release Elastic IP addresses
+Click the Release button. Release Elastic IP addresses2
+Delete a Security Group
+
+We're going to delete the Security Group you created during the lab. Select Security Groups from the left menu. Select Immersion Day - Web Server and DB-SG first, and then click the Delete security groups button on the Actions menu. The reason for not deleting all security groups at once is that some security groups reference other security groups in their inbound rules. A security group that is being referenced cannot be deleted until the security group that is referencing it is deleted. Therefore, delete the security groups in the following order: Immersion Day - Web Server, DB-SG -> ASG-Web-Inst-SG -> web-ALB-SG. Delete the security groups
+Type delete in the blank and click the Delete button. Delete the security groups2
+Select ASG-Web-Inst-SG and click the Delete security groups button on the Actions menu. Delete the security groups3
+Click the Delete button. Delete the security groups4
+Select web-ALB-SG and click the Delete security groups button on the Actions menu. Delete the security groups5
+Click the Delete button. Delete the security groups6
+Delete a VPC
+
+Finally, select Your VPCs from the left menu, and select the VPC-Lab-vpc that you created during the lab. Click the Delete VPC button in the Actions menu. Delete VPC
+Type delete in the blank and click the Delete button. Delete VPC2
+We strongly recommend that you double-check to make sure you haven't missed anything, as some resources that weren't cleared may incur costs.
