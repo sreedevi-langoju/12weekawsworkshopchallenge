@@ -273,7 +273,7 @@ We now have our completed policy below. It allows anyone who inherits the policy
  
 * Give the new policy a name such as S3ExamplePolicy and a brief description. In the summary section, verify that the policy we created is giving the correct permissions. This policy should be giving limited "List" and "Read" permissions for S3 resources. If everything looks correct, choose Create Policy.
 
-
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/34aab573-2c08-4f16-a385-cf7e1a967212" width=700 height=500>
 
 #### Creating and Testing a Custom S3 Policy:
 
