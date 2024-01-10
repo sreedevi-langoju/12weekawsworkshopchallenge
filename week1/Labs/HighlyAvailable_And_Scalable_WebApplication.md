@@ -526,32 +526,32 @@ You can delete unnecessary objects and buckets to avoid unnecessary costs.
 
 If you completed this workshop with your own account, we strongly recommend following this guide to delete the resources and avoid incurring costs
 Delete the resources you created for the lab in reverse order.
-Database
-Delete an Amazon RDS Cluster
 
-After accessing to the Amazon RDS console, select DB Instances. Rds first page
+1.Delete an Amazon RDS Cluster
 
-By default, an Amazon RDS cluster has delete protection enabled to prevent accidental deletions. To disable it, select the Cluster and click the Modify button. Rds cluster modify
+    * After accessing to the Amazon RDS console, select DB Instances. 
+    
+    * By default, an Amazon RDS cluster has delete protection enabled to prevent accidental deletions. To disable it, select the Cluster and click the Modify button. 
+    
+    * Uncheck the Enable deletion protection button and click the Continue button. Enable deletion protection
+    
+    *  For immediate deletion, select Apply immediately and click the Modify cluster button.
+    
+    *  In order to delete a DB Cluster, you must first delete the DB instances included in the cluster. They can be deleted in any order, but we will delete the Writer instance first. Select the Writer instance, and click the Delete button on the Actions menu. 
+    
+    *  Type delete me in the blank and click the Delete button. 
+    
+    * This time, we will delete the Reader instance. Select the Reader instance and click the Delete button on the Actions menu. 
+    
+    *  Type delete me in the blank and click the Delete button.
+    
+    * Lastly, we will delete the DB Cluster. Click the Delete button on the Actions menu. 
+    
+    *  Uncheck the Take a final snapshot button, check the I acknowledge that automatic backups, including system snapshots and point-in-time recovery, are no longer available when I delete an instance button, and type delete me in the blank. Click Delete DB Cluster and the DB cluster will be deleted.
 
-Uncheck the Enable deletion protection button and click the Continue button. Enable deletion protection
 
-For immediate deletion, select Apply immediately and click the Modify cluster button. Modify cluster
 
-In order to delete a DB Cluster, you must first delete the DB instances included in the cluster. They can be deleted in any order, but we will delete the Writer instance first. Select the Writer instance, and click the Delete button on the Actions menu. Delete a DB Cluster
-
-Type delete me in the blank and click the Delete button. Delete a DB Cluster2
-
-This time, we will delete the Reader instance. Select the Reader instance and click the Delete button on the Actions menu. Delete Reader instance
-
-Type delete me in the blank and click the Delete button. Delete Reader instance2
-
-Lastly, we will delete the DB Cluster. Click the Delete button on the Actions menu. Delete DB Cluster
-
-Uncheck the Take a final snapshot button, check the I acknowledge that automatic backups, including system snapshots and point-in-time recovery, are no longer available when I delete an instance button, and type delete me in the blank. Click Delete DB Cluster and the DB cluster will be deleted.
-
-Delete DB Cluster2
-
-Delete a Amazon RDS Snapshot
+2. Delete a Amazon RDS Snapshot
 
 To delete the snapshot of the DB Cluster created during the lab, select immersionday-snapshot and click the Delete snapshot button on the Actions menu. Delete snapshot
 Click the Delete button. Delete snapshot2
