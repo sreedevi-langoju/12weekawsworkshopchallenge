@@ -58,7 +58,8 @@ The .csv file keeps track of the users password. If it was auto-generated, pleas
   
 * A unique identifier for the user. This ID is returned only when you use the API, Tools for Windows PowerShell, or AWS CLI to create the user; you do not see this ID in the console.
 
-You can find the ARN for a user by navigating to the IAM console, choosing Users from the left side panel, then selecting the User you want
+* You can find the ARN for a user by navigating to the IAM console, choosing Users from the left side panel, then selecting the User you want more detail on.
+* Navigate to the sign-in page . Sign in with the new user you just created. You should be able to sign and test the permissions of the new IAM User you created!
 
 
 
