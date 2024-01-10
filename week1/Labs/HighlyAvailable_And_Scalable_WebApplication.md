@@ -134,7 +134,7 @@ dnf update -y
 * After the instance configuration is complete, you can check the Availability Zone in which the instance is running, and externally accessible IP and DNS information.
 * Wait for the instance's Instance state result to be Running. Open a new web browser tab and enter the Public DNS or IPv4 Public IP of your EC2 instance in the URL address field. If the page is displayed as shown below, the web server instance is configured normally.
 
-  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/2eb87c40-715f-45a0-ab0c-e4068ed2e6e6"  height=300 width=500>
+  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/2eb87c40-715f-45a0-ab0c-e4068ed2e6e6"  height=300 width=600>
 
 ####  Step 2(b) :Access the web service:
 
@@ -142,6 +142,8 @@ Go to the EC2 instance console. Select the instance you want to connect to and c
 
 * In the Connect your instance window, select the EC2 Instance Connect tab, then click the Connect button in the lower right corner.
 * After a while, you can use the browser-based SSH console as shown below. Just close the window after the CLI test.
+
+ <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/53a74d26-313f-4e93-a01c-fceff464e697"   height=300 width=60> 
 
 #### Connect to the Linux instance using Session Manager:
 
