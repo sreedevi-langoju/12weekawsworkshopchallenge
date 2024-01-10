@@ -121,6 +121,8 @@ In this exercise, we're going to create a role for an EC2 instance and grant it 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/6c394c50-0687-465d-a6f1-4404f2947c5b">
 
 * You will now be redirected to the roles section of the IAM console. You can then use the search bar to verify your IAM Role was created. Click on your role to review.
+* 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/a0886a85-9fc8-4cf3-8e49-3b384d669014">
 
 Congratulations! You have successfully created your first IAM Role!
 
