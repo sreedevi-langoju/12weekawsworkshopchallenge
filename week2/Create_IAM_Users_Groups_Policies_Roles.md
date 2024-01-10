@@ -115,7 +115,7 @@ In this exercise, we're going to create a role for an EC2 instance and grant it 
 
 * From here we will select the service entity EC2 and press Next: Permissions
 
- <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/3a4c6baf-c6f1-4c89-ac0a-5a64dfac1945"> 
+ <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/3a4c6baf-c6f1-4c89-ac0a-5a64dfac1945"  height=400 width=600> 
 
 * On the next page we will add a policy to give access to any s3 storage buckets in your account. This can be achieved by filtering the search for and selecting AmazonS3FullAccess as seen below. We'll go into how policies grant permissions a little later on.
 
@@ -125,7 +125,7 @@ In this exercise, we're going to create a role for an EC2 instance and grant it 
 
 * You will now be redirected to the roles section of the IAM console. You can then use the search bar to verify your IAM Role was created. Click on your role to review.
 * 
-<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/a0886a85-9fc8-4cf3-8e49-3b384d669014"  height=400 width=600>
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/a0886a85-9fc8-4cf3-8e49-3b384d669014"  height=400 width=700>
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/1d4ca983-0621-4d22-a71e-7ca6b7d044f4" height=400 width=600>
 
