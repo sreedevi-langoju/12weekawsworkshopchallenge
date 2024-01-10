@@ -468,19 +468,19 @@ In this chapter, we will create a secret containing data connection information.
 
 
 
-### Step6: Create Bucket on S3:
+### Step 7: Create Bucket on S3:
 
 All objects in Amazon S3 are stored within a bucket. You must create a Bucket before storing data on Amazon S3.
 
-#### Create Bucket:
+#### Step 7(a): Create Bucket:
 
 * From the AWS Management Console, connect to S3 . Press Create bucket to create a bucket.
 * Enter a unique bucket name in the Bucket name field. For this lab, type immersion-day-user_name, substituiting user-name with your name. All bucket names in Amazon S3 have to be unique and cannot be duplicated. In the Region drop-down box, specify the region to create the bucket. In this lab, select the region closest to you. The images will show the Asia Pacific (Seoul) region. Object Ownership change to ACLs enabled. Bucket settings for Block Public Access use default values, and select Create bucket in the lower right corner.
 * A bucket has been created on Amazon S3.
 
- <img src=""> 
 
-#### Adding objects to buckets:
+
+#### Step 7(b):Adding objects to buckets:
 
 If the bucket has been created successfully, you are ready to add the object. Objects can be any kind of file, including text files, image files, and video files. When you add a file to Amazon S3, you can include information about the permissions and access settings for that file in the metadata.
 Adding objects for static Web hosting
@@ -519,7 +519,7 @@ This lab hosts static websites through S3. The static website serves as a redire
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/8e23cc25-2b26-4e41-9d66-cabdbd432b27">
 
-#### View objects:
+#### Step 7(c):View objects:
 
 Now that you've added an object to your bucket, let's check it out in your web browser.
 
@@ -535,7 +535,7 @@ Now that you've added an object to your bucket, let's check it out in your web b
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/213dd1a5-c75a-45c1-bf0d-46d137738627" height=500 width=500>
 
-### Enable Static Web Site Hosting:
+### Step 7(d): Enable Static Web Site Hosting:
 
 Static Web Site Settings
 A static website refers to a website that contains static content (HTML, image, video) or client-side scripts (Javascript) on a web page. In contrast, dynamic websites require server-side processing, including server-side scripts such as PHP, JSP, or ASP.NET. Server-side scripting is not supported on Amazon S3. If you want to host a dynamic website, you can use other services such as EC2 on AWS.
@@ -549,7 +549,7 @@ A static website refers to a website that contains static content (HTML, image, 
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/09cd885f-e8f1-4fc7-ba0a-8c2144654a7a" height=500 width=500>
 
-#### Move objects:
+#### Step 7(e): Move objects:
 
 You have seen the ability to add objects to buckets and verify them so far. Now, let's see how we can move objects to different buckets or folders.
 Move Objects
@@ -563,6 +563,7 @@ Move Objects
 * Click the bucket name in the pop-up window, then select the destination (arrival) bucket. Click the Choose destination button.
 * Check that the object has moved to the target bucket.
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/79006a71-6ad2-43c8-ad41-047349f71262">
 
 #### Enable Bucket versioning:
 
