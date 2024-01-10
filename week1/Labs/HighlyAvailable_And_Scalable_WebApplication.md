@@ -611,22 +611,28 @@ Click the Delete button.
 
 <b>5.2.Delete a NAT gateway</b>
 
-Select NAT gateways from the left menu and select VPC-Lab-nat-public you created during the lab. Click the Delete NAT gateway button on the Actions menu. Delete NAT gateway
-Type delete in the blank and click the Delete button. Delete NAT gateway2
-Delete an Elastic IP
+* Select NAT gateways from the left menu and select VPC-Lab-nat-public you created during the lab. Click the Delete NAT gateway button on the Actions menu. 
+* Type delete in the blank and click the Delete button. 
 
-You've just deleted the NAT gateway, but this action doesn't automatically delete the Elastic IP that the NAT gateway used, so you need to remove it manually. Select Elastic IPs from the left menu, and select VPC-Lab-eip-ap-northeast-2a. (The name after VPC-Lab-eip may vary depending on your region.) Click the Release Elastic IP addresses button on the Actions menu. If it says it is still associated with the NAT gateway and cannot be deleted, refresh the webpage and try again. Release Elastic IP addresses
-Click the Release button. Release Elastic IP addresses2
-Delete a Security Group
+<b>5.3. Delete an Elastic IP</b>
 
-We're going to delete the Security Group you created during the lab. Select Security Groups from the left menu. Select Immersion Day - Web Server and DB-SG first, and then click the Delete security groups button on the Actions menu. The reason for not deleting all security groups at once is that some security groups reference other security groups in their inbound rules. A security group that is being referenced cannot be deleted until the security group that is referencing it is deleted. Therefore, delete the security groups in the following order: Immersion Day - Web Server, DB-SG -> ASG-Web-Inst-SG -> web-ALB-SG. Delete the security groups
-Type delete in the blank and click the Delete button. Delete the security groups2
-Select ASG-Web-Inst-SG and click the Delete security groups button on the Actions menu. Delete the security groups3
-Click the Delete button. Delete the security groups4
-Select web-ALB-SG and click the Delete security groups button on the Actions menu. Delete the security groups5
-Click the Delete button. Delete the security groups6
-Delete a VPC
+* You've just deleted the NAT gateway, but this action doesn't automatically delete the Elastic IP that the NAT gateway used, so you need to remove it manually. * Select Elastic IPs from the left menu, and select VPC-Lab-eip-ap-northeast-2a. (The name after VPC-Lab-eip may vary depending on your region.) Click the Release Elastic IP addresses button on the Actions menu. If it says it is still associated with the NAT gateway and cannot be deleted, refresh the webpage and try again. 
+* Click the Release button. 
 
-Finally, select Your VPCs from the left menu, and select the VPC-Lab-vpc that you created during the lab. Click the Delete VPC button in the Actions menu. Delete VPC
-Type delete in the blank and click the Delete button. Delete VPC2
-We strongly recommend that you double-check to make sure you haven't missed anything, as some resources that weren't cleared may incur costs.
+<b>5.4. Delete a Security Group</b>
+
+* We're going to delete the Security Group you created during the lab. Select Security Groups from the left menu. Select Immersion Day - Web Server and DB-SG first, and then click the Delete security groups button on the Actions menu. The reason for not deleting all security groups at once is that some security groups reference other security groups in their inbound rules. A security group that is being referenced cannot be deleted until the security group that is referencing it is deleted. Therefore, delete the security groups in the following order: Immersion Day - Web Server, DB-SG -> ASG-Web-Inst-SG -> web-ALB-SG.
+
+* Type delete in the blank and click the Delete button. 
+* Select ASG-Web-Inst-SG and click the Delete security groups button on the Actions menu. 
+* Click the Delete button.
+* Select web-ALB-SG and click the Delete security groups button on the Actions menu. 
+* Click the Delete button.
+
+<b>5.5. Delete a VPC</b>
+
+* Finally, select Your VPCs from the left menu, and select the VPC-Lab-vpc that you created during the lab. Click the Delete VPC button in the Actions menu. 
+* Type delete in the blank and click the Delete button.
+
+  
+<b>We strongly recommend that you double-check to make sure you haven't missed anything, as some resources that weren't cleared may incur costs.</b>
