@@ -527,7 +527,7 @@ You can delete unnecessary objects and buckets to avoid unnecessary costs.
 If you completed this workshop with your own account, we strongly recommend following this guide to delete the resources and avoid incurring costs
 Delete the resources you created for the lab in reverse order.
 
-1.Delete an Amazon RDS Cluster
+<b>1.Delete an Amazon RDS Cluster</b>
 
     * After accessing to the Amazon RDS console, select DB Instances. 
     
@@ -551,16 +551,19 @@ Delete the resources you created for the lab in reverse order.
 
 
 
-2. Delete a Amazon RDS Snapshot
+<b>2. Delete a Amazon RDS Snapshot</b>
 
-To delete the snapshot of the DB Cluster created during the lab, select immersionday-snapshot and click the Delete snapshot button on the Actions menu. Delete snapshot
-Click the Delete button. Delete snapshot2
-Delete a secret in AWS Secrets Manager
+    * To delete the snapshot of the DB Cluster created during the lab, select immersionday-snapshot and click the Delete snapshot button on the Actions menu. 
+Click the Delete button. 
 
-We're going to delete the secret that stored a RDS credential during the lab. Type Secrets Manager in the AWS console search bar and then select it. RDS credentials
-Select mysecret. RDS credentials - mysecret
-Click Delete secret on the Actions menu. RDS credentials - delete
-To prevent accidental deletion of secrets, AWS Secrets Manager has a deletion wait time of minimum 7 days and maximum 30 days. Enter the minimum time of 7 days and press the Schedule deletion button. Schedule deletion
+<b>3. Delete a secret in AWS Secrets Manager</b>
+
+    * We're going to delete the secret that stored a RDS credential during the lab. Type Secrets Manager in the AWS console search bar and then select it. 
+    * Select mysecret. 
+    * Click Delete secret on the Actions menu. 
+    * To prevent accidental deletion of secrets, AWS Secrets Manager has a deletion wait time of minimum 7 days and maximum 30 days. Enter the minimum time of 7         days and press the Schedule deletion button.
+
+    
 Compute
 Delete an Auto Scaling Group
 
