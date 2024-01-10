@@ -672,6 +672,7 @@ Click the Delete button.
 
 * Type Delete in the blank and click the Delete button. 
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/3dbee6fe-186f-4707-85fa-eb03f6ce423f">
 
 <b>5.Network</b>
 
@@ -680,7 +681,7 @@ Click the Delete button.
 * You're almost there. Type VPC in the AWS Console search bar and select it. Select Endpoints from the left menu. Select S3 endpoint, the endpoint you created in the lab, and click the Delete VPC endpoints button on the Actions menu. 
 
 * Type delete in the blank, and click the Delete button.
-
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/7c0716b9-f739-41bd-8008-1c8430db6008">
 
 <b>5.2.Delete a NAT gateway</b>
 
