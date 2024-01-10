@@ -621,13 +621,16 @@ Delete the resources you created for the lab in reverse order.
 
 * To delete the snapshot of the DB Cluster created during the lab, select immersionday-snapshot and click the Delete snapshot button on the Actions menu. 
 Click the Delete button. 
+  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/ab1b9765-bf37-400c-b030-58185c8a0760">
 
 <b>3. Delete a secret in AWS Secrets Manager</b>
 
 * We're going to delete the secret that stored a RDS credential during the lab. Type Secrets Manager in the AWS console search bar and then select it. 
 * Select mysecret. 
 * Click Delete secret on the Actions menu. 
-* To prevent accidental deletion of secrets, AWS Secrets Manager has a deletion wait time of minimum 7 days and maximum 30 days. Enter the minimum time of 7         days and press the Schedule deletion button.
+* To prevent accidental deletion of secrets, AWS Secrets Manager has a deletion wait time of minimum 7 days and maximum 30 days. Enter the minimum time of 7 days and press the Schedule deletion button.
+  
+
 
     
 <b>4. Compute</b>
