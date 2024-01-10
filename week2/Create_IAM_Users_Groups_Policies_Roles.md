@@ -46,6 +46,17 @@ Take note of the new credentials and the sign-in link. When you are ready to pro
 The URL is a quick sign on page that auto-fills your information
 The .csv file keeps track of the users password. If it was auto-generated, please make sure you download it or you will have to recreate your user. 
 
+* IAM Users are identified in the following ways:
+
+ **A "friendly name" for the user, which is the name that you specified when you created the user, such as Richard or Anaya. These are the names you see in the AWS Management Console.
+
+ **An Amazon Resource Name (ARN) for the user. You use the ARN when you need to uniquely identify the user across all of AWS. For example, you could use an ARN to specify the user as a Principal in an IAM policy for an Amazon S3 bucket. An ARN for an IAM user might look like the following:
+
+  arn:aws:iam::123456789012:user/Administrator
+  
+* A unique identifier for the user. This ID is returned only when you use the API, Tools for Windows PowerShell, or AWS CLI to create the user; you do not see this ID in the console.
+
+You can find the ARN for a user by navigating to the IAM console, choosing Users from the left side panel, then selecting the User you want
 
 
 
