@@ -57,6 +57,7 @@ Fianl Architecture:
 
 * NOTE : VPC endpoints are communications within the AWS network and have the security and compliance advantage of being able to control traffic through the endpoints. You can also optimize the data processing cost if you transfer your data through a VPC endpoint rather than a NAT gateway.
 
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/cca901cb-aad2-4b4e-b126-93692b1b023c"  height=400 width=500>
 
 ### Step 2: Compute – Amazon EC2
 
