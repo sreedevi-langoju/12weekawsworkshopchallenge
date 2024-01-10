@@ -203,6 +203,8 @@ AWS Elastic Load Balancer supports three types of load balancers: Application Lo
 * Return to the load balancer page again, click the refresh button, and select the web-ALB-SG you just created. Remove the default security group.
 * In Listeners and routing column, click Create target group. Put Web-TG for Target group name and check all settings same with the screen below. After that click Next button.
 * This is where we would register our instances. However, as we mentioned earlier, there are not instances to register at this moment. Click Create target group.
+<img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/52a3251f-8306-4fd3-a93d-490590900b13" height=400 width=500>
+  
 * Again, move into the Load balancers page, click refresh button and select Web-TG. And then Click Create load balancer.
 
   <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/1627e490-421f-4de3-82fc-3f40a50332ec">
@@ -250,7 +252,7 @@ Before creating a launch template, let's create a security group for the instanc
 
   <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/da3af74e-666f-455e-9094-5d7c11f52d81">
 
-#### Step 2(e): Set Auto Scaling Group:
+#### Step 4(c): Set Auto Scaling Group:
   
 Now, let's create the Auto Scaling Group.
 
@@ -290,15 +292,17 @@ Now, we've built a web service that is high available and automatically scales u
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/e57c57d5-d39b-4d9e-884c-ec2e346367df">
 
 
-### Step : Check web service and test:
+### Step 5: Check web service and test:
 
 Now, let's test the service you have configured for successful operation. First, let's check whether you can access the website normally and whether the load balancer works, and then load the web server to see if Auto Scaling works.
 
-#### Step4(a): Check web service and load balancer:
+#### Step 5(a): Check web service and load balancer:
 
 * To access through the Application Load Balancer configured for the web service, click the Load Balancers menu in the EC2 console and select the Web-ALB you created earlier. Copy DNS name from the basic configuration.
 * Open a new tab in your web browser and paste the copied DNS name. You can see that web service is working as shown below. For the figure below, you can see that the web instance placed in ap-northeast-2a is running this web page.
+  
 * If you click the refresh button here, you can see that the host serving the web page has been replaced with an instance of another availability zone area (ap-northeast-2c) as shown below. This is because routing algorithms in ALB target groups behave Round Robin by default.
+  
 * Currently, in the the Auto Scaling group, scaling policy's baseline has been set to 30% CPU utilization for each instance.
 
 If the average CPU utilization of an instance is less than 30%, Reduce the number of instances.
@@ -307,7 +311,11 @@ If the average CPU utilization of an instance is over 30%, Additional instances 
 
 * Before load:
 
+  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/19d55fcb-1abd-4969-9e99-f42b2bd37c2d">
+
 * After load:
+
+  <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/assets/135724041/bd682e3c-ef1d-4998-9e35-69d83da1bb6a">
 
 
 * Enter Auto Scaling Groups from the left side menu of the EC2 console and click the Monitoring tab. Under Enabled metrics, click EC2 and set the right time frame to 1 hour. If you wait for a few seconds, you'll see the CPU Utilization (Percent) graph changes.
