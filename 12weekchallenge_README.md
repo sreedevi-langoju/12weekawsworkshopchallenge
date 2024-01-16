@@ -167,7 +167,7 @@ Week 12 wrapped up with a focus on gaining practical insights into Observability
 * Deployed a sample X-Ray application using CloudFormation.
 * Conducted thorough testing of the application.
 * Monitored traffic using AWS X-Ray for detailed insights.
-* Documentation: Comprehensive guide on my GitHub repository.
+* Documentation: Comprehensive guide on my GitHub repository: https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/blob/main/week12/Labs/web_app_aws_xray_observability.md.
 
 ### Conclusion:
 
