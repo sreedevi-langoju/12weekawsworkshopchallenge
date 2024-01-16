@@ -97,6 +97,7 @@ Week 7 brought me into the world of containers, learning about Docker containers
 * Set up an ECS cluster and defined a Task Definition.
 * Validated the deployed Apache server's functionality.
 * Documentation: Step-by-step guide on my GitHub repository: https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/blob/main/week7/Labs/deploy-docker-apache-aws-ecs-ecr-guide.md.
+* LinkedIn post: https://www.linkedin.com/posts/activity-7134591528273932288-Na7m?utm_source=share&utm_medium=member_desktop.
 
 
 
