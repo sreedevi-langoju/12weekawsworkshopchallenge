@@ -120,7 +120,7 @@ Week 8 was all about Serverless Architecture, exploring AWS services like Lambda
 * Created S3 buckets and DynamoDB tables for data storage.
 * Used Step Functions to orchestrate CSV and image file processing via AWS Lambda and SNS.
 * Monitored executions and ensured proper notifications.
-* Documentation: Comprehensive guide available on my GitHub repository.
+* Documentation: Comprehensive guide available on my GitHub repository: https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/blob/main/week8/Labs/Serverless_FileProcessing_Using_StepFunctions.md.
 
 
 ### Week 9: Event-Driven Architecture & Terraform
