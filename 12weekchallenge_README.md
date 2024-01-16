@@ -2,11 +2,11 @@
 
 This 12-week workshop challenge is created to help cloud enthusiasts gain deep hands-on expertise on AWS. It's a collection of self-paced workshops developed by experts at AWS and is curated to help us gain expertise in AWS gradually. These workshops range from beginner-level to advanced, and the best part is that we can follow them at our own pace, whenever it suits us.Check this link for more details: https://12weeksworkshops.com/
 
-
-In this blog series, I will take you on my journey through this challenge, sharing my experiences, insights, and the theoretical concepts I learned along the way. 
-
-
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e6245f1b-0558-41c0-9ddd-7e3e769ddf54" height="500" width="500">
+
+
+In this blog series, I will take you on my journey through this challenge, sharing my experiences, insights, and the theoretical concepts I learned along the way. First of all a huge shoutout to Prasad Rao, Paula Ali Wakabi, Chi Che, Whizlabs India, Whizlabs, and AWS USER GROUP YAOUNDE for their incredible support and guidance throughout this journey. Your encouragement made this challenge truly unforgettable!
+
 
 ### Week 1: AWS Core Services Overview
 
@@ -169,4 +169,8 @@ Week 12 wrapped up with a focus on gaining practical insights into Observability
 * Monitored traffic using AWS X-Ray for detailed insights.
 * Documentation: Comprehensive guide on my GitHub repository.
 
-I hope you enjoy exploring these diverse AWS topics!
+### Conclusion:
+
+I hope you enjoyed exploring these diverse AWS topics!
+
+These 12 weeks have been a rollercoaster of learning, and I'm excited for more AWS adventures ahead. A big thank you to everyone who joined me on this journey. Let's keep exploring, learning, and building together! 
