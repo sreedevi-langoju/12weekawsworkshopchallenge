@@ -155,7 +155,7 @@ Week 11 focused on integrating an AI-powered code generator, Amazon CodeWhispere
 * Used CodeWhisperer's suggestions for Lambda function refinement.
 * Secured email verification with Amazon SES.
 * Created an IAM role and added a CloudWatch event trigger for automation.
-* Documentation: Step-by-step guide on my GitHub repository.
+* Documentation: Step-by-step guide on my GitHub repository: https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/blob/main/week11/Labs/HighVolumeEmailAutomation_Using_SES_And_CodeWhisperer.md.
 
 ### Week 12: Observability with AWS CloudWatch and X-Ray
 
