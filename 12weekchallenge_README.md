@@ -19,7 +19,7 @@ Hello AWS enthusiasts!  Week 1 of the 12 Weeks AWS Workshop Challenge was an exc
 * Deployed highly available web service instances using Auto Scaling Groups in private subnets.
 * Implemented and tested RDS Aurora for a simple address book.
 * Explored data manipulation techniques using Amazon S3, covering storage operations and static web page hosting.
-* Documentation: Detailed information and steps are available in my Week 1 GitHub repository.
+* Documentation: Detailed information and steps are available in my Week 1 GitHub repository: https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/tree/main/week1.
 
 Excited to kick off this journey!
 
