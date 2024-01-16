@@ -33,7 +33,7 @@ Week 2 of the 12 Weeks AWS Workshop Challenge delved into the crucial world of I
 * Explored IAM for secure entity management.
 * Delved into IAM for robust security measures.
 * Updated permissions for secure access controls.
-* Documentation: Find detailed insights and steps in my Week 2 GitHub repository.
+* Documentation: Find detailed insights and steps in my Week 2 GitHub repository: https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/tree/main/week2.
 
 Security is paramount, and IAM plays a key role! 
 
