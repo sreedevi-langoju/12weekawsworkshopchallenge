@@ -81,7 +81,7 @@ Week 6 was all about Infrastructure as Code (IaC), focusing on AWS CloudFormatio
 * Established a VPC with public and private subnets.
 * Launched an EC2 instance with an Apache web server.
 * Set up security groups for SSH and HTTP access.
-* Documentation: Detailed instructions available on my GitHub repository : https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/tree/main/week6.
+* Documentation: Detailed instructions available on my GitHub repository : https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/blob/main/week6/Labs/CloudFormation_VPC_EC2.md.
 
 
 ### Week 7: Containers with Docker and ECS
