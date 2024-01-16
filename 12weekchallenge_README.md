@@ -144,7 +144,7 @@ Week 10 was dedicated to Analytics, working on real-time data streaming with Ama
 * Deployed a sample website on an EC2 instance with Apache.
 * Captured real-time website logs using Kinesis Agent.
 * Established a data pipeline for log management with Kinesis Data Streams and Firehose.
-* Documentation: In-depth guide on my GitHub repository.
+* Documentation: In-depth guide on my GitHub repository: https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/blob/main/week10/Labs/Real-time%20data%20streaming%20with%20Amazon%20Kinesis%20Data%20streams%20and%20Amazon%20Kinesis%20Data%20Firehose.md.
 
 ### Week 11: AI Coding Companion - Amazon CodeWhisperer
 
