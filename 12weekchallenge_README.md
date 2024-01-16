@@ -57,7 +57,7 @@ Week 4 was all about storage, and I delved into the AWS Storage Gateway. This hy
 * Configured a File Gateway with an NFS file share, attached it to a Linux instance.
 * Migrated a set of data from the Linux instance to an S3 bucket.
 * Set up primary and secondary S3 buckets for data storage and Cross-Region Replication.
-* Documentation: Detailed instructions are on my GitHub repository. Check it out for a storage journey!
+* Documentation: Detailed instructions are on my GitHub repository: https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/blob/main/week4/Labs/HybridStorage_And_DataMigration.md.
 
 
 ### Week 4: Storage with AWS Storage Gateway
