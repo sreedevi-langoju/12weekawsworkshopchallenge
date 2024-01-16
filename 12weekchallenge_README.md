@@ -68,7 +68,7 @@ Week 5 took me on a journey into the world of databases. Explored vital services
 * Set up Mariadb on EC2 (Linux) as the source database, configured it, and inserted dummy data.
 * Launched Amazon RDS MySQL as the target database.
 * Configured Amazon DMS for the migration, smoothly replicating Mariadb to AWS RDS MySQL.
-* Documentation: Step-by-step guide available on my GitHub repository: https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/tree/main/week5.
+* Documentation: Step-by-step guide available on my GitHub repository: https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/blob/main/week5/DatabaseMigration/Labs/EC2MariaDB_RDSMySQL_Migration.md.
 
 
 ### Week 6: Infrastructure as Code (IaC)
