@@ -4,7 +4,7 @@ This 12-week workshop challenge is created to help cloud enthusiasts gain deep h
 
 <img src="https://github.com/sreedevi-langoju/12weekawsworkshopchallenge-/assets/135724041/e6245f1b-0558-41c0-9ddd-7e3e769ddf54" height="500" width="500">
 
-
+<br></br>
 In this blog series, I will take you on my journey through this challenge, sharing my experiences, insights, and the theoretical concepts I learned along the way. First of all a huge shoutout to Prasad Rao, Paula Ali Wakabi, Chi Che, Whizlabs India, Whizlabs, and AWS USER GROUP YAOUNDE for their incredible support and guidance throughout this journey. Your encouragement made this challenge truly unforgettable!
 
 
