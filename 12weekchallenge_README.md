@@ -46,7 +46,7 @@ Week 3 was all about diving deep into AWS Networking, and I explored the fascina
 * Successfully established VPC peering connections between VPC A and VPC B, and VPC A and VPC C.
 * Ensured non-overlapping IP addresses in connected VPCs.
 * Highlighted the non-transitive nature of VPC peering, ensuring VPC B won't have direct access to VPC C.
-* Documentation: Step-by-step guide available on my GitHub repository: https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/tree/main/week3.
+* Documentation: Step-by-step guide available on my GitHub repository: https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/blob/main/week3/VPC_Peering.md.
 
 ### Week 4: Storage with AWS Storage Gateway
 
