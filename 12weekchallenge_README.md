@@ -107,3 +107,66 @@ Week 7 brought me into the world of containers, learning about Docker containers
 * Set up an ECS cluster and defined a Task Definition.
 * Validated the deployed Apache server's functionality.
 * Documentation: Step-by-step guide on my GitHub repository.
+
+
+
+### Week 8: Serverless Architecture
+
+Week 8 was all about Serverless Architecture, exploring AWS services like Lambda, Step Functions, Rekognition, DynamoDB, SNS, and S3.
+
+#### Tasks Accomplished:
+
+* Established secure IAM roles for S3, DynamoDB, Rekognition, and SNS access.
+* Created S3 buckets and DynamoDB tables for data storage.
+* Used Step Functions to orchestrate CSV and image file processing via AWS Lambda and SNS.
+* Monitored executions and ensured proper notifications.
+* Documentation: Comprehensive guide available on my GitHub repository.
+
+
+### Week 9: Event-Driven Architecture & Terraform
+
+Week 9 was all about Event-Driven Architecture and Terraform. Explored services like EventBridge, SNS, SQS, Lambda, and Step Functions, managing events in the cloud.
+
+#### Tasks Accomplished:
+
+* Configured variables, security groups, and key pairs using Terraform.
+* Launched an EC2 instance, created SNS topics and subscriptions.
+* Set up a CloudWatch Event and tested SNS email functionality.
+* Implemented an EventBridge Rule for EC2 Instance state changes.
+* Documentation: Step-by-step guide available on my GitHub repository.
+
+### Week 10: Analytics with Amazon Kinesis
+
+Week 10 was dedicated to Analytics, working on real-time data streaming with Amazon Kinesis Data Streams and Firehose.
+
+#### Tasks Accomplished:
+
+* Deployed a sample website on an EC2 instance with Apache.
+* Captured real-time website logs using Kinesis Agent.
+* Established a data pipeline for log management with Kinesis Data Streams and Firehose.
+* Documentation: In-depth guide on my GitHub repository.
+
+### Week 11: AI Coding Companion - Amazon CodeWhisperer
+
+Week 11 focused on integrating an AI-powered code generator, Amazon CodeWhisperer. Streamlined Lambda function coding for bulk emailing via Amazon SES.
+
+#### Tasks Accomplished:
+
+* Used CodeWhisperer's suggestions for Lambda function refinement.
+* Secured email verification with Amazon SES.
+* Created an IAM role and added a CloudWatch event trigger for automation.
+* Documentation: Step-by-step guide on my GitHub repository.
+
+### Week 12: Observability with AWS CloudWatch and X-Ray
+
+Week 12 wrapped up with a focus on gaining practical insights into Observability in AWS.
+
+#### Tasks Accomplished:
+
+* Created an S3 bucket.
+* Deployed a sample X-Ray application using CloudFormation.
+* Conducted thorough testing of the application.
+* Monitored traffic using AWS X-Ray for detailed insights.
+* Documentation: Comprehensive guide on my GitHub repository.
+
+I hope you enjoy exploring these diverse AWS topics!
