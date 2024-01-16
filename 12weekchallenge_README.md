@@ -12,7 +12,7 @@ In this blog series, I will take you on my journey through this challenge, shari
 
 Hello AWS enthusiasts!  Week 1 of the 12 Weeks AWS Workshop Challenge was an exciting start, focusing on AWS Core Services Overview. I dedicated time to hands-on labs covering both basic and advanced modules, exploring fundamental AWS services.
 
-Tasks Accomplished:
+#### Tasks Accomplished:
 
 * Established a VPC with Public and Private Subnets across two Availability Zones.
 * Set up a NAT Gateway and routing for network traffic.
@@ -20,5 +20,21 @@ Tasks Accomplished:
 * Implemented and tested RDS Aurora for a simple address book.
 * Explored data manipulation techniques using Amazon S3, covering storage operations and static web page hosting.
 * Documentation: Detailed information and steps are available in my Week 1 GitHub repository.
+
+Excited to kick off this journey!
+
+
+### Week 2: Identity and Access Management (IAM)
+
+Week 2 of the 12 Weeks AWS Workshop Challenge delved into the crucial world of Identity and Access Management (IAM). Security took center stage as I managed IAM entities for robust security and permissions management.
+
+#### Tasks Accomplished:
+
+* Explored IAM for secure entity management.
+* Delved into IAM for robust security measures.
+* Updated permissions for secure access controls.
+* Documentation: Find detailed insights and steps in my Week 2 GitHub repository.
+
+Security is paramount, and IAM plays a key role! 
 
 
