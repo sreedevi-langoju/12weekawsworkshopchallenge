@@ -106,7 +106,7 @@ Week 7 brought me into the world of containers, learning about Docker containers
 * Pushed the Docker image to Amazon ECR for streamlined access.
 * Set up an ECS cluster and defined a Task Definition.
 * Validated the deployed Apache server's functionality.
-* Documentation: Step-by-step guide on my GitHub repository.
+* Documentation: Step-by-step guide on my GitHub repository: https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/blob/main/week7/Labs/deploy-docker-apache-aws-ecs-ecr-guide.md.
 
 
 
