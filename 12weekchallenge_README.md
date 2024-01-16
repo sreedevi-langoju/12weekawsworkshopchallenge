@@ -60,37 +60,50 @@ Week 4 was all about storage, and I delved into the AWS Storage Gateway. This hy
 * Documentation: Detailed instructions are on my GitHub repository. Check it out for a storage journey!
 
 
-Absolutely, let's break down each week of your 12 Weeks AWS Workshop Challenge!
+### Week 4: Storage with AWS Storage Gateway
 
-Week 3: AWS Networking - VPC Peering
+Week 4 was all about storage, and I delved into the AWS Storage Gateway. This hybrid cloud storage solution bridges the gap between on-premises environments and the cloud, providing virtually limitless cloud storage with low-latency access to frequently used data.
 
-Hey AWS enthusiasts! 🌐 Week 3 was all about diving deep into AWS Networking, and I explored the fascinating world of Amazon VPC Peering. This powerful networking feature allows connecting two Virtual Private Clouds (VPCs) for seamless traffic routing using private IPv4 or IPv6 addresses.
+#### Tasks Accomplished:
 
-Key Points:
+* Configured a File Gateway with an NFS file share, attached it to a Linux instance.
+* Migrated a set of data from the Linux instance to an S3 bucket.
+* Set up primary and secondary S3 buckets for data storage and Cross-Region Replication.
+* Documentation: Detailed instructions are on my GitHub repository. Check it out for a storage journey! 📂 #12WeekAWSWorkshopChallenge
 
-Successfully established VPC peering connections between VPC A and VPC B, and VPC A and VPC C.
-Ensured non-overlapping IP addresses in connected VPCs.
-Highlighted the non-transitive nature of VPC peering, ensuring VPC B won't have direct access to VPC C.
-Documentation: Step-by-step guide available on my GitHub repository. Dive in and explore the networking magic! 🚀 #12WeekAWSWorkshopChallenge
-
-Week 4: Storage with AWS Storage Gateway
-
-Hello Cloud Enthusiasts! ☁️ Week 4 was all about storage, and I delved into the AWS Storage Gateway. This hybrid cloud storage solution bridges the gap between on-premises environments and the cloud, providing virtually limitless cloud storage with low-latency access to frequently used data.
-
-Achievements:
-
-Configured a File Gateway with an NFS file share, attached it to a Linux instance.
-Migrated a set of data from the Linux instance to an S3 bucket.
-Set up primary and secondary S3 buckets for data storage and Cross-Region Replication.
-Documentation: Detailed instructions are on my GitHub repository. Check it out for a storage journey! 📂 #12WeekAWSWorkshopChallenge
-
-Week 5: AWS Databases - RDS and DMS
+### Week 5: AWS Databases - RDS and DMS
 
 Hey Cloud Explorers! 🚀 Week 5 took me on a journey into the world of databases. Explored vital services like Amazon RDS (Relational Database Service) and Database Migration with Amazon DMS (Database Migration Service).
 
-Accomplishments:
+#### Tasks Accomplished:
 
-Set up Mariadb on EC2 (Linux) as the source database, configured it, and inserted dummy data.
-Launched Amazon RDS MySQL as the target database.
-Configured Amazon DMS for the migration, smoothly replicating Mariadb to AWS RDS MySQL.
-Documentation: Step-by-step guide available on my GitHub repository. Dive into the database realm! 
+* Set up Mariadb on EC2 (Linux) as the source database, configured it, and inserted dummy data.
+* Launched Amazon RDS MySQL as the target database.
+* Configured Amazon DMS for the migration, smoothly replicating Mariadb to AWS RDS MySQL.
+* Documentation: Step-by-step guide available on my GitHub repository. Dive into the database realm! 
+
+
+### Week 6: Infrastructure as Code (IaC)
+
+Week 6 was all about Infrastructure as Code (IaC), focusing on AWS CloudFormation. This powerful tool automates resource creation and management through templates, providing consistency and efficiency.
+
+#### Tasks Accomplished:
+
+* Created an S3 bucket and uploaded YAML template files.
+* Established a VPC with public and private subnets.
+* Launched an EC2 instance with an Apache web server.
+* Set up security groups for SSH and HTTP access.
+* Documentation: Detailed instructions available on my GitHub repository.
+
+
+### Week 7: Containers with Docker and ECS
+
+Week 7 brought me into the world of containers, learning about Docker containers, image creation, and deployment on AWS Elastic Container Service (ECS).
+
+#### Tasks Accomplished:
+
+* Created a Docker image with Apache server and configurations.
+* Pushed the Docker image to Amazon ECR for streamlined access.
+* Set up an ECS cluster and defined a Task Definition.
+* Validated the deployed Apache server's functionality.
+* Documentation: Step-by-step guide on my GitHub repository.
