@@ -20,6 +20,7 @@ Hello AWS enthusiasts!  Week 1 of the 12 Weeks AWS Workshop Challenge was an exc
 * Implemented and tested RDS Aurora for a simple address book.
 * Explored data manipulation techniques using Amazon S3, covering storage operations and static web page hosting.
 * Documentation: Detailed information and steps are available in my Week 1 GitHub repository: https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/blob/main/week1/Labs/HighlyAvailable_And_Scalable_WebApplication.md.
+* LinkedIn Post: https://www.linkedin.com/posts/activity-7150978197046611968-9z7e?utm_source=share&utm_medium=member_desktop
 
 Excited to kick off this journey!
 
@@ -34,6 +35,7 @@ Week 2 of the 12 Weeks AWS Workshop Challenge delved into the crucial world of I
 * Delved into IAM for robust security measures.
 * Updated permissions for secure access controls.
 * Documentation: Find detailed insights and steps in my Week 2 GitHub repository: https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/blob/main/week2/Create_IAM_Users_Groups_Policies_Roles.md.
+* LinkedIn post: https://www.linkedin.com/posts/activity-7150978197046611968-9z7e?utm_source=share&utm_medium=member_desktop.
 
 Security is paramount, and IAM plays a key role! 
 
@@ -156,6 +158,7 @@ Week 12 wrapped up with a focus on gaining practical insights into Observability
 * Conducted thorough testing of the application.
 * Monitored traffic using AWS X-Ray for detailed insights.
 * Documentation: Comprehensive guide on my GitHub repository: https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/blob/main/week12/Labs/web_app_aws_xray_observability.md.
+* LinkedIn post: https://www.linkedin.com/posts/activity-7151566916409561088-6YaP?utm_source=share&utm_medium=member_desktop.
 
 ### Conclusion:
 
