@@ -73,7 +73,7 @@ Week 4 was all about storage, and I delved into the AWS Storage Gateway. This hy
 
 ### Week 5: AWS Databases - RDS and DMS
 
-Hey Cloud Explorers! 🚀 Week 5 took me on a journey into the world of databases. Explored vital services like Amazon RDS (Relational Database Service) and Database Migration with Amazon DMS (Database Migration Service).
+Week 5 took me on a journey into the world of databases. Explored vital services like Amazon RDS (Relational Database Service) and Database Migration with Amazon DMS (Database Migration Service).
 
 #### Tasks Accomplished:
 
@@ -93,7 +93,7 @@ Week 6 was all about Infrastructure as Code (IaC), focusing on AWS CloudFormatio
 * Established a VPC with public and private subnets.
 * Launched an EC2 instance with an Apache web server.
 * Set up security groups for SSH and HTTP access.
-* Documentation: Detailed instructions available on my GitHub repository.
+* Documentation: Detailed instructions available on my GitHub repository : https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/tree/main/week6.
 
 
 ### Week 7: Containers with Docker and ECS
