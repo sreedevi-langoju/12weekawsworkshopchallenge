@@ -111,6 +111,7 @@ Week 8 was all about Serverless Architecture, exploring AWS services like Lambda
 * Used Step Functions to orchestrate CSV and image file processing via AWS Lambda and SNS.
 * Monitored executions and ensured proper notifications.
 * Documentation: Comprehensive guide available on my GitHub repository: https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/blob/main/week8/Labs/Serverless_FileProcessing_Using_StepFunctions.md.
+* LinkedIn post: https://www.linkedin.com/posts/activity-7136773248230322176-Ha9S?utm_source=share&utm_medium=member_desktop
 
 
 ### Week 9: Event-Driven Architecture & Terraform
