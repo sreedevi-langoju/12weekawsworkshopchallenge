@@ -6,7 +6,15 @@ This 12-week workshop challenge is created to help cloud enthusiasts gain deep h
 
 <br></br>
 
-In this blog series, I will take you on my journey through this challenge, sharing my experiences, insights, and the theoretical concepts I learned along the way. First of all a huge shoutout to Prasad Rao, Paula Ali Wakabi, Chi Che, Whizlabs India, Whizlabs, and AWS USER GROUP YAOUNDE for their incredible support and guidance throughout this journey. Your encouragement made this challenge truly unforgettable!
+I have completed the amazing 12-week AWS Workshop Challenge! In this blog series, I will take you on my journey through this challenge, sharing my experiences, insights, and the theoretical concepts I learned along the way. 
+
+First of all a huge shoutout to Prasad Rao, Paula Ali Wakabi, Chi Che, Whizlabs India, Whizlabs, and AWS USER GROUP YAOUNDE for their incredible support and guidance throughout this journey. Your encouragement made this challenge truly unforgettable!
+
+It's been a wonderful learning experience, providing a great opportunity to gain hands-on experiences with multiple AWS services along with theoretical concepts. The sessions by our guest speakers each week were insightful and valuable. I appreciate their time and the knowledge they shared.
+
+Throughout this journey, I've learned the importance of documenting our work. It not only helps in building our profiles but also supports others interested in exploring and learning. Documentation is key to sharing knowledge and fostering a collaborative learning environment.
+
+Looking forward to applying these learnings in future endeavors!
 
 
 ### Week 1: AWS Core Services Overview
