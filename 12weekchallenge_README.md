@@ -37,4 +37,13 @@ Week 2 of the 12 Weeks AWS Workshop Challenge delved into the crucial world of I
 
 Security is paramount, and IAM plays a key role! 
 
+### Week 3: AWS Networking - VPC Peering
 
+Hey AWS enthusiasts! 🌐 Week 3 was all about diving deep into AWS Networking, and I explored the fascinating world of Amazon VPC Peering. This powerful networking feature allows connecting two Virtual Private Clouds (VPCs) for seamless traffic routing using private IPv4 or IPv6 addresses.
+
+#### Tasks Accomplished:
+
+* Successfully established VPC peering connections between VPC A and VPC B, and VPC A and VPC C.
+* Ensured non-overlapping IP addresses in connected VPCs.
+* Highlighted the non-transitive nature of VPC peering, ensuring VPC B won't have direct access to VPC C.
+* Documentation: Step-by-step guide available on my GitHub repository. Dive in and explore the networking magic!
