@@ -123,7 +123,8 @@ Week 9 was all about Event-Driven Architecture and Terraform. Explored services 
 * Launched an EC2 instance, created SNS topics and subscriptions.
 * Set up a CloudWatch Event and tested SNS email functionality.
 * Implemented an EventBridge Rule for EC2 Instance state changes.
-* Documentation: Step-by-step guide available on my GitHub repository: https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/blob/main/week9/Labs/EventDriven_Architecture_Using_Terraform.md
+* Documentation: Step-by-step guide available on my GitHub repository: https://github.com/sreedevi-langoju/12weekawsworkshopchallenge/blob/main/week9/Labs/EventDriven_Architecture_Using_Terraform.md.
+* LinkedIn post: https://www.linkedin.com/posts/activity-7140127110030917633-DCDm?utm_source=share&utm_medium=member_desktop
 
 ### Week 10: Analytics with Amazon Kinesis
 
