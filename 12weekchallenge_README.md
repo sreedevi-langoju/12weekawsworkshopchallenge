@@ -39,7 +39,7 @@ Security is paramount, and IAM plays a key role!
 
 ### Week 3: AWS Networking - VPC Peering
 
-Hey AWS enthusiasts! 🌐 Week 3 was all about diving deep into AWS Networking, and I explored the fascinating world of Amazon VPC Peering. This powerful networking feature allows connecting two Virtual Private Clouds (VPCs) for seamless traffic routing using private IPv4 or IPv6 addresses.
+Week 3 was all about diving deep into AWS Networking, and I explored the fascinating world of Amazon VPC Peering. This powerful networking feature allows connecting two Virtual Private Clouds (VPCs) for seamless traffic routing using private IPv4 or IPv6 addresses.
 
 #### Tasks Accomplished:
 
@@ -47,3 +47,14 @@ Hey AWS enthusiasts! 🌐 Week 3 was all about diving deep into AWS Networking, 
 * Ensured non-overlapping IP addresses in connected VPCs.
 * Highlighted the non-transitive nature of VPC peering, ensuring VPC B won't have direct access to VPC C.
 * Documentation: Step-by-step guide available on my GitHub repository. Dive in and explore the networking magic!
+
+### Week 4: Storage with AWS Storage Gateway
+
+Week 4 was all about storage, and I delved into the AWS Storage Gateway. This hybrid cloud storage solution bridges the gap between on-premises environments and the cloud, providing virtually limitless cloud storage with low-latency access to frequently used data.
+
+#### Tasks Accomplished:
+
+* Configured a File Gateway with an NFS file share, attached it to a Linux instance.
+* Migrated a set of data from the Linux instance to an S3 bucket.
+* Set up primary and secondary S3 buckets for data storage and Cross-Region Replication.
+* Documentation: Detailed instructions are on my GitHub repository. Check it out for a storage journey!
